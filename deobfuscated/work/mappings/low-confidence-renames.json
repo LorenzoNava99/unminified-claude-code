@@ -1,0 +1,489 @@
+{
+  "metadata": {
+    "phase": "3.5",
+    "confidence": "LOW",
+    "description": "Helper functions and utilities used throughout the codebase",
+    "total_mappings": 65,
+    "status": "READY TO APPLY",
+    "date": "2025-11-12"
+  },
+  "notes": [
+    "These mappings are LOW confidence because they are inferred from usage patterns",
+    "They represent helper functions, utilities, and internal dependencies",
+    "Names are descriptive but may not match original source exactly"
+  ],
+  "filesystem_helpers": {
+    "NA": {
+      "newName": "getFs",
+      "confidence": "LOW",
+      "location": "line 3804",
+      "reason": "Returns fs wrapper object (r59/s59)",
+      "description": "Gets the filesystem module wrapper"
+    },
+    "s59": {
+      "newName": "fsWrapper",
+      "confidence": "LOW",
+      "location": "line 3837",
+      "reason": "Custom fs module wrapper object",
+      "description": "Filesystem operations wrapper"
+    },
+    "r59": {
+      "newName": "fsModule",
+      "confidence": "LOW",
+      "location": "line 3952",
+      "reason": "Alias for s59",
+      "description": "Filesystem module reference"
+    },
+    "G4": {
+      "newName": "nodeFs",
+      "confidence": "LOW",
+      "reason": "Native Node.js fs module",
+      "description": "Node.js fs module"
+    }
+  },
+  "path_helpers": {
+    "Js": {
+      "newName": "resolveFilePath",
+      "confidence": "LOW",
+      "location": "line 504137",
+      "reason": "Resolves file path, handles special characters",
+      "description": "Resolves and normalizes file paths"
+    },
+    "G0": {
+      "newName": "getCwd",
+      "confidence": "LOW",
+      "location": "line 56190",
+      "reason": "Gets current working directory",
+      "description": "Get current working directory"
+    },
+    "WQ": {
+      "newName": "getHomedir",
+      "confidence": "LOW",
+      "reason": "Fallback for cwd, likely homedir",
+      "description": "Get home directory"
+    },
+    "O00": {
+      "newName": "pathModule",
+      "confidence": "LOW",
+      "reason": "Node.js path module (has .extname method)",
+      "description": "Path module"
+    },
+    "Vt2": {
+      "newName": "isAbsolutePath",
+      "confidence": "LOW",
+      "reason": "Checks if path is absolute",
+      "description": "Check if path is absolute"
+    },
+    "Kt2": {
+      "newName": "joinPath",
+      "confidence": "LOW",
+      "reason": "Joins path components",
+      "description": "Join path components"
+    },
+    "fB0": {
+      "newName": "getBasename",
+      "confidence": "LOW",
+      "reason": "Gets basename from path",
+      "description": "Get file basename"
+    }
+  },
+  "read_tool_schemas": {
+    "rAI": {
+      "newName": "readInputSchema",
+      "confidence": "MEDIUM",
+      "location": "line 489592",
+      "reason": "Zod schema for Read tool input",
+      "description": "Read tool input validation schema"
+    },
+    "tAI": {
+      "newName": "readOutputSchema",
+      "confidence": "MEDIUM",
+      "location": "line 489598",
+      "reason": "Zod schema for Read tool output",
+      "description": "Read tool output validation schema"
+    },
+    "oAI": {
+      "newName": "imageMediaTypes",
+      "confidence": "LOW",
+      "location": "line 489597",
+      "reason": "Enum of supported image MIME types",
+      "description": "Supported image media types"
+    }
+  },
+  "read_tool_helpers": {
+    "Xs2": {
+      "newName": "renderReadToolUseMessage",
+      "confidence": "LOW",
+      "reason": "Renders Read tool use message",
+      "description": "Render Read tool use message"
+    },
+    "Ws2": {
+      "newName": "renderReadToolUseProgressMessage",
+      "confidence": "LOW",
+      "reason": "Renders Read tool progress message",
+      "description": "Render Read tool progress message"
+    },
+    "Fs2": {
+      "newName": "renderReadToolResultMessage",
+      "confidence": "LOW",
+      "reason": "Renders Read tool result message",
+      "description": "Render Read tool result message"
+    },
+    "Cs2": {
+      "newName": "renderReadToolUseRejectedMessage",
+      "confidence": "LOW",
+      "reason": "Renders Read tool rejected message",
+      "description": "Render Read tool rejected message"
+    },
+    "Vs2": {
+      "newName": "renderReadToolUseErrorMessage",
+      "confidence": "LOW",
+      "reason": "Renders Read tool error message",
+      "description": "Render Read tool error message"
+    },
+    "Us2": {
+      "newName": "readFileLines",
+      "confidence": "LOW",
+      "location": "line 489836",
+      "reason": "Reads file lines with offset and limit",
+      "description": "Read file lines with pagination"
+    },
+    "Ys2": {
+      "newName": "readNotebook",
+      "confidence": "LOW",
+      "location": "line 489752",
+      "reason": "Reads Jupyter notebook file",
+      "description": "Read and parse Jupyter notebook"
+    },
+    "Js2": {
+      "newName": "formatNotebookResult",
+      "confidence": "LOW",
+      "location": "line 489913",
+      "reason": "Formats notebook result",
+      "description": "Format notebook tool result"
+    },
+    "Mm": {
+      "newName": "formatFileContent",
+      "confidence": "LOW",
+      "location": "line 489924",
+      "reason": "Formats file content for display",
+      "description": "Format file content"
+    }
+  },
+  "file_validation": {
+    "YaA": {
+      "newName": "suggestSimilarPath",
+      "confidence": "LOW",
+      "location": "line 489686",
+      "reason": "Suggests similar file path when not found",
+      "description": "Suggest similar file paths"
+    },
+    "sAI": {
+      "newName": "binaryFileExtensions",
+      "confidence": "LOW",
+      "location": "line 489703",
+      "reason": "Set of binary file extensions",
+      "description": "Binary file extensions set"
+    },
+    "cB1": {
+      "newName": "imageFileExtensions",
+      "confidence": "LOW",
+      "location": "line 489712",
+      "reason": "Set of image file extensions",
+      "description": "Image file extensions set"
+    },
+    "U0A": {
+      "newName": "isPdfSupportEnabled",
+      "confidence": "LOW",
+      "location": "line 489703",
+      "reason": "Checks if PDF support is enabled",
+      "description": "Check if PDF support is enabled"
+    },
+    "LjA": {
+      "newName": "isPdfExtension",
+      "confidence": "LOW",
+      "location": "line 489703",
+      "reason": "Checks if extension is PDF",
+      "description": "Check if file extension is PDF"
+    },
+    "lB1": {
+      "newName": "isFileReadable",
+      "confidence": "LOW",
+      "location": "line 489723",
+      "reason": "Checks if file is readable",
+      "description": "Check if file is readable"
+    },
+    "R00": {
+      "newName": "formatFileSizeError",
+      "confidence": "LOW",
+      "location": "line 489726",
+      "reason": "Formats file size error message",
+      "description": "Format file size error message"
+    }
+  },
+  "file_reading": {
+    "P00": {
+      "newName": "readImageFile",
+      "confidence": "LOW",
+      "location": "line 489790",
+      "reason": "Reads image file as base64",
+      "description": "Read image file"
+    },
+    "dv0": {
+      "newName": "readPdfFile",
+      "confidence": "LOW",
+      "location": "line 489809",
+      "reason": "Reads PDF file",
+      "description": "Read PDF file"
+    },
+    "pC": {
+      "newName": "getFileTimestamp",
+      "confidence": "LOW",
+      "location": "line 489767",
+      "reason": "Gets file modification timestamp",
+      "description": "Get file timestamp"
+    }
+  },
+  "validation_and_telemetry": {
+    "zs2": {
+      "newName": "validateContentSize",
+      "confidence": "LOW",
+      "location": "line 489761",
+      "reason": "Validates content size against limits",
+      "description": "Validate content size"
+    },
+    "kj": {
+      "newName": "recordFileOperation",
+      "confidence": "LOW",
+      "location": "line 489779",
+      "reason": "Records file operation telemetry",
+      "description": "Record file operation telemetry"
+    },
+    "Es2": {
+      "newName": "detectFramework",
+      "confidence": "LOW",
+      "location": "line 489859",
+      "reason": "Detects framework from file content",
+      "description": "Detect framework from file"
+    },
+    "AA": {
+      "newName": "logError",
+      "confidence": "LOW",
+      "location": "line 489847",
+      "reason": "Logs error",
+      "description": "Log error"
+    }
+  },
+  "constants": {
+    "R$A": {
+      "newName": "MAX_FILE_SIZE_BYTES",
+      "confidence": "LOW",
+      "location": "line 489747",
+      "reason": "Maximum file size in bytes",
+      "description": "Maximum file size"
+    },
+    "T00": {
+      "newName": "MAX_TOKEN_LIMIT",
+      "confidence": "LOW",
+      "location": "line 489748",
+      "reason": "Maximum token limit",
+      "description": "Maximum token limit"
+    },
+    "eAI": {
+      "newName": "FILE_CONTENT_SEPARATOR",
+      "confidence": "LOW",
+      "location": "line 489924",
+      "reason": "Separator for file content",
+      "description": "File content separator"
+    }
+  },
+  "feature_flags": {
+    "xaA": {
+      "newName": "isFrameworkDetectionDisabled",
+      "confidence": "LOW",
+      "location": "line 489857",
+      "reason": "Checks if framework detection is disabled",
+      "description": "Check if framework detection is disabled"
+    },
+    "aAI": {
+      "newName": "fileReadCallbacks",
+      "confidence": "LOW",
+      "location": "line 489874",
+      "reason": "Array of callbacks to run on file read",
+      "description": "File read callback hooks"
+    }
+  },
+  "formatting_helpers": {
+    "iW": {
+      "newName": "formatBytes",
+      "confidence": "LOW",
+      "location": "line 489755",
+      "reason": "Formats byte count as human-readable",
+      "description": "Format bytes"
+    },
+    "qm": {
+      "newName": "getLanguageServer",
+      "confidence": "LOW",
+      "location": "line 489844",
+      "reason": "Gets language server instance",
+      "description": "Get language server"
+    },
+    "s9": {
+      "newName": "createAbortController",
+      "confidence": "LOW",
+      "location": "line 489962",
+      "reason": "Creates AbortController",
+      "description": "Create abort controller"
+    }
+  },
+  "constants_identifiers": {
+    "IG": {
+      "newName": "LS_ERROR_CATEGORY",
+      "confidence": "LOW",
+      "reason": "Language server error category",
+      "description": "Language server error category"
+    },
+    "iMA": {
+      "newName": "FRAMEWORK_DETECTION_ERROR_CATEGORY",
+      "confidence": "LOW",
+      "location": "line 489871",
+      "reason": "Framework detection error category",
+      "description": "Framework detection error category"
+    }
+  },
+  "user_facing": {
+    "Ks2": {
+      "newName": "READ_TOOL_USER_FACING_NAME",
+      "confidence": "LOW",
+      "reason": "User-facing name for Read tool",
+      "description": "Read tool user-facing name"
+    },
+    "FMQ": {
+      "newName": "WRITE_TOOL_USER_FACING_NAME",
+      "confidence": "LOW",
+      "location": "line 310317",
+      "reason": "User-facing name for Write tool",
+      "description": "Write tool user-facing name"
+    }
+  },
+  "write_tool_schemas": {
+    "ly6": {
+      "newName": "writeInputSchema",
+      "confidence": "MEDIUM",
+      "location": "line 310325",
+      "reason": "Zod schema for Write tool input",
+      "description": "Write tool input validation schema"
+    },
+    "iy6": {
+      "newName": "writeOutputSchema",
+      "confidence": "MEDIUM",
+      "location": "line 310326",
+      "reason": "Zod schema for Write tool output",
+      "description": "Write tool output validation schema"
+    }
+  },
+  "write_tool_helpers": {
+    "CMQ": {
+      "newName": "renderWriteToolUseMessage",
+      "confidence": "LOW",
+      "location": "line 310324",
+      "reason": "Renders Write tool use message",
+      "description": "Render Write tool use message"
+    },
+    "VMQ": {
+      "newName": "renderWriteToolUseRejectedMessage",
+      "confidence": "LOW",
+      "location": "line 310340",
+      "reason": "Renders Write tool rejected message",
+      "description": "Render Write tool rejected message"
+    },
+    "KMQ": {
+      "newName": "renderWriteToolUseErrorMessage",
+      "confidence": "LOW",
+      "location": "line 310341",
+      "reason": "Renders Write tool error message",
+      "description": "Render Write tool error message"
+    },
+    "DMQ": {
+      "newName": "renderWriteToolUseProgressMessage",
+      "confidence": "LOW",
+      "location": "line 310342",
+      "reason": "Renders Write tool progress message",
+      "description": "Render Write tool progress message"
+    },
+    "EMQ": {
+      "newName": "renderWriteToolResultMessage",
+      "confidence": "LOW",
+      "location": "line 310343",
+      "reason": "Renders Write tool result message",
+      "description": "Render Write tool result message"
+    },
+    "dy6": {
+      "newName": "getFileDirname",
+      "confidence": "LOW",
+      "location": "line 310390",
+      "reason": "Gets directory name of file",
+      "description": "Get file directory name"
+    },
+    "UK": {
+      "newName": "detectEncoding",
+      "confidence": "LOW",
+      "location": "line 504069",
+      "reason": "Detects file encoding",
+      "description": "Detect file encoding"
+    }
+  },
+  "path_resolution": {
+    "g9": {
+      "newName": "resolveAbsolutePath",
+      "confidence": "LOW",
+      "location": "line 60069",
+      "reason": "Resolves path to absolute, handles ~, relative paths",
+      "description": "Resolve path to absolute"
+    },
+    "qP0": {
+      "newName": "normalizePath",
+      "confidence": "LOW",
+      "location": "line 60082",
+      "reason": "Normalizes path",
+      "description": "Normalize path"
+    },
+    "$P0": {
+      "newName": "getHomeDir",
+      "confidence": "LOW",
+      "location": "line 60085",
+      "reason": "Gets home directory",
+      "description": "Get home directory"
+    },
+    "Uh9": {
+      "newName": "joinPaths",
+      "confidence": "LOW",
+      "location": "line 60088",
+      "reason": "Joins path components",
+      "description": "Join paths"
+    },
+    "C2I": {
+      "newName": "getRelativePath",
+      "confidence": "LOW",
+      "reason": "Gets relative path",
+      "description": "Get relative path"
+    }
+  },
+  "hooks_and_events": {
+    "Tx": {
+      "newName": "fileEditHooks",
+      "confidence": "LOW",
+      "location": "line 310392",
+      "reason": "File edit hooks object",
+      "description": "File edit lifecycle hooks"
+    }
+  },
+  "zod_module": {
+    "k": {
+      "newName": "zod",
+      "confidence": "MEDIUM",
+      "reason": "Zod validation library",
+      "description": "Zod validation library"
+    }
+  }
+}
