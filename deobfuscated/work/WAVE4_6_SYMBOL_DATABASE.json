@@ -1,0 +1,45 @@
+{
+  "comment": "Wave 4-6: High-confidence mid-frequency identifiers based on thorough code inspection",
+  "version": "1.0",
+  "strategy": "Conservative approach - only renaming identifiers with verified purpose through actual code inspection",
+
+  "opentelemetryExtended": {
+    "comment": "Additional OpenTelemetry modules - VERIFIED via export analysis",
+    "VF2": {
+      "name": "OtelAttributesProcessorExports",
+      "confidence": "high",
+      "occurrences": 10,
+      "verified": true,
+      "exports": ["createDenyListAttributesProcessor", "createAllowListAttributesProcessor", "createMultiAttributesProcessor", "createNoopAttributesProcessor"],
+      "line": 407096
+    },
+    "ZC2": {
+      "name": "OtlpSharedConfigExports",
+      "confidence": "high",
+      "occurrences": 10,
+      "verified": true,
+      "exports": ["getSharedConfigurationDefaults", "mergeOtlpSharedConfigurationWithDefaults", "wrapStaticHeadersInFunction", "validateTimeoutMillis"],
+      "line": 407697
+    },
+    "ZK2": {
+      "name": "OtlpSpanTransformExports",
+      "confidence": "high",
+      "occurrences": 10,
+      "verified": true,
+      "exports": ["createExportTraceServiceRequest", "toOtlpSpanEvent", "toOtlpLink", "sdkSpanToOtlpSpan"],
+      "line": 418985
+    }
+  },
+
+  "grpcAndNetworking": {
+    "comment": "gRPC load balancing - VERIFIED via export analysis",
+    "IE2": {
+      "name": "GrpcLoadBalancerExports",
+      "confidence": "high",
+      "occurrences": 10,
+      "verified": true,
+      "exports": ["createChildChannelControlHelper", "registerLoadBalancerType", "registerDefaultLoadBalancerType", "createLoadBalancer", "isLoadBalancerNameRegistered", "parseLoadBalancingConfig"],
+      "line": 421006
+    }
+  }
+}
