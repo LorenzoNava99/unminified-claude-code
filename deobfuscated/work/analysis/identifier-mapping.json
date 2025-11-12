@@ -60,8 +60,8 @@
   },
   "classAnalysis": {
     "QC": "ParseStatus - Validation status class with valid/dirty/aborted states (Zod library)",
-    "tL": "Unknown - needs context analysis",
-    "k8": "Unknown - needs context analysis",
+    "tL": "ParseContext - Zod parse context with parent, data, path, key (Zod library)",
+    "k8": "ZodType - Base Zod type class with _def, _getType, _parse methods (Zod library)",
     "oGA": "Unknown - needs context analysis",
     "eGA": "Unknown - needs context analysis",
     "R81": "Unknown - needs context analysis",
@@ -69,19 +69,28 @@
     "s81": "Unknown - needs context analysis",
     "BK0": "InterceptorManager - HTTP interceptor manager with use/eject/clear methods (Axios library)",
     "mK0": "FormDataEntry - Handles form data encoding for multipart/form-data (Axios library)",
-    "xZA": "Unknown - likely major component",
+    "xZA": "Axios - Main Axios HTTP client class with defaults, interceptors, request method (Axios library)",
     "k51": "Unknown - needs context analysis"
   },
   "additionalMappings": {
     "BK0": "InterceptorManager",
     "mK0": "FormDataEntry",
     "QC": "ParseStatus",
+    "tL": "ParseContext",
+    "k8": "ZodType",
+    "xZA": "Axios",
     "r61": "InterceptorManagerExport",
     "k9": "ABORTED_STATUS",
     "hGA": "makeIssue",
     "IQ": "addIssue",
     "y1": "utils",
-    "GI": "platformUtils"
+    "GI": "platformUtils",
+    "JT": "getParsedType",
+    "B8": "processCreateParams",
+    "M2": "errorUtil",
+    "bK9": "assertOptions",
+    "xOA": "validators",
+    "_ZA": "validatorsExport"
   },
   "parameterPatterns": {
     "note": "Single letter parameters (A, B, Q, I, G, Z, Y, J, X, W, F, C, V, K, D, E, H, U) are ubiquitous and context-dependent. These need function-level analysis to rename properly."

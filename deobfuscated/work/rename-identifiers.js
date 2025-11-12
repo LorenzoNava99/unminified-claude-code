@@ -98,7 +98,7 @@ function processFile(inputPath, outputPath) {
  * Main execution
  */
 function main() {
-  const workDir = path.join(__dirname, '..');
+  const workDir = __dirname;
 
   // Process the main deobfuscated file
   const inputFile = path.join(workDir, 'step2-restringer', 'deobfuscated-restringer.js');
