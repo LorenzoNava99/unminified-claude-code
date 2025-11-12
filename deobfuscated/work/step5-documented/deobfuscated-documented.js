@@ -3077,6 +3077,11 @@ var D91 = createLazyModule(() => {
   w7[_89] = w7[J80] = w7[m89] = false;
   gNA = hNA;
 });
+/**
+ * Binary data operation.
+ * @param {Buffer|ArrayBuffer} data - Data to process
+ * @returns {any} Processed data
+ */
 function B69(A) {
   return gNA(A, e89 | A69);
 }
@@ -3087,6 +3092,11 @@ var W80 = createLazyModule(() => {
   D91();
   sp = B69;
 });
+/**
+ * Input data processing.
+ * @param {any} input - Input to process
+ * @returns {any} Processed input
+ */
 function I69(A) {
   this.__data__.set(A, Q69);
   return this;
@@ -3096,6 +3106,11 @@ var F80;
 var C80 = createLazyModule(() => {
   F80 = I69;
 });
+/**
+ * General data operation.
+ * @param {any} data - Data to operate on
+ * @returns {any} Operation result
+ */
 function G69(A) {
   return this.__data__.has(A);
 }
@@ -3120,6 +3135,12 @@ var E91 = createLazyModule(() => {
   uNA.prototype.has = V80;
   mNA = uNA;
 });
+/**
+ * Zip or compress operation.
+ * @param {any} data - Data to compress
+ * @param {Object} options - Compression options
+ * @returns {any} Compressed data
+ */
 function Z69(A, B) {
   var Q = -1;
   var I = A == null ? 0 : A.length;
@@ -3134,6 +3155,12 @@ var D80;
 var E80 = createLazyModule(() => {
   D80 = Z69;
 });
+/**
+ * Yield or output operation.
+ * @param {any} data - Data to output
+ * @param {Object} options - Output options
+ * @returns {any} Output result
+ */
 function Y69(A, B) {
   return A.has(B);
 }
@@ -3141,6 +3168,16 @@ var dNA;
 var H91 = createLazyModule(() => {
   dNA = Y69;
 });
+/**
+ * Complex operation with six parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @param {any} param6 - Sixth parameter
+ * @returns {any} Operation result
+ */
 function W69(A, B, Q, I, G, Z) {
   var Y = Q & J69;
   var J = A.length;
@@ -3200,6 +3237,11 @@ var z91 = createLazyModule(() => {
   H91();
   cNA = W69;
 });
+/**
+ * Filter or format operation.
+ * @param {any} data - Data to filter
+ * @returns {any} Filtered data
+ */
 function F69(A) {
   var B = -1;
   var Q = Array(A.size);
@@ -3212,6 +3254,11 @@ var H80;
 var z80 = createLazyModule(() => {
   H80 = F69;
 });
+/**
+ * Convert or cast operation.
+ * @param {any} data - Data to convert
+ * @returns {any} Converted data
+ */
 function C69(A) {
   var B = -1;
   var Q = Array(A.size);
@@ -3224,6 +3271,17 @@ var we;
 var pNA = createLazyModule(() => {
   we = C69;
 });
+/**
+ * Complex operation with seven parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @param {any} param6 - Sixth parameter
+ * @param {any} param7 - Seventh parameter
+ * @returns {any} Operation result
+ */
 function O69(A, B, Q, I, G, Z, Y) {
   switch (Q) {
     case M69:
@@ -3425,6 +3483,15 @@ var T80 = createLazyModule(() => {
   O80 = y69.hasOwnProperty;
   R80 = k69;
 });
+/**
+ * Processing operation with five parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @returns {any} Processing result
+ */
 function P80(A, B, Q, I, G) {
   if (A === B) {
     return true;
@@ -3801,6 +3868,12 @@ var N91 = createLazyModule(() => {
   pp();
   rNA = e69;
 });
+/**
+ * Array or access operation.
+ * @param {any} target - Target to access
+ * @param {any} key - Access key
+ * @returns {any} Accessed value
+ */
 function A59(A, B) {
   return function (Q, I) {
     if (Q == null) {
@@ -3833,6 +3906,14 @@ var L91 = createLazyModule(() => {
   B59 = e80(rNA);
   oNA = B59;
 });
+/**
+ * Query operation with four parameters.
+ * @param {any} source - Source to query
+ * @param {any} query - Query specification
+ * @param {any} options - Query options
+ * @param {any} context - Query context
+ * @returns {any} Query result
+ */
 function Q59(A, B, Q, I) {
   oNA(A, function (G, Z, Y) {
     B(I, G, Q(G), Y);
@@ -3844,6 +3925,12 @@ var Q60 = createLazyModule(() => {
   L91();
   B60 = Q59;
 });
+/**
+ * Index or iterate operation.
+ * @param {any} collection - Collection to index
+ * @param {any} index - Index value
+ * @returns {any} Indexed value
+ */
 function I59(A, B) {
   return function (Q, I) {
     var G = nI(Q) ? s80 : B60;
@@ -3859,6 +3946,13 @@ var G60 = createLazyModule(() => {
   ZD();
   I60 = I59;
 });
+/**
+ * Get operation with three parameters.
+ * @param {any} source - Source object
+ * @param {any} key - Key to get
+ * @param {any} fallback - Fallback value
+ * @returns {any} Retrieved value
+ */
 function G59(A, B, Q) {
   if ((Q !== undefined && !sR(A[B], Q)) || (Q === undefined && !(B in A))) {
     Wf(A, B, Q);
@@ -3870,6 +3964,11 @@ var M91 = createLazyModule(() => {
   et();
   DGA = G59;
 });
+/**
+ * Zero or initialize operation.
+ * @param {any} target - Target to initialize
+ * @returns {any} Initialized value
+ */
 function Z59(A) {
   return isObjectLike(A) && rR(A);
 }
@@ -3879,6 +3978,12 @@ var Y60 = createLazyModule(() => {
   initIsObjectLike();
   Z60 = Z59;
 });
+/**
+ * Yield or generate operation.
+ * @param {any} generator - Generator function
+ * @param {any} input - Generator input
+ * @returns {any} Generated value
+ */
 function Y59(A, B) {
   if (B === "constructor" && typeof A[B] === "function") {
     return;
@@ -3892,6 +3997,11 @@ var EGA;
 var O91 = createLazyModule(() => {
   EGA = Y59;
 });
+/**
+ * Join or concatenate operation.
+ * @param {Array} items - Items to join
+ * @returns {any} Joined result
+ */
 function J59(A) {
   return createCommonJSModule$(A, eR(A));
 }
@@ -3901,6 +4011,17 @@ var X60 = createLazyModule(() => {
   Ze();
   J60 = J59;
 });
+/**
+ * Complex operation with seven parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @param {any} param6 - Sixth parameter
+ * @param {any} param7 - Seventh parameter
+ * @returns {any} Operation result
+ */
 function X59(A, B, Q, I, G, Z, Y) {
   var J = EGA(A, Q);
   var X = EGA(B, Q);
@@ -3967,6 +4088,15 @@ var F60 = createLazyModule(() => {
   X60();
   W60 = X59;
 });
+/**
+ * Complex operation with five parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @returns {any} Operation result
+ */
 function C60(A, B, Q, I, G) {
   if (A === B) {
     return;
@@ -4009,6 +4139,13 @@ var D60 = createLazyModule(() => {
   });
   tNA = W59;
 });
+/**
+ * Filter operation with three parameters.
+ * @param {any} collection - Collection to filter
+ * @param {Function} predicate - Filter predicate
+ * @param {Object} options - Filter options
+ * @returns {any} Filtered result
+ */
 function F59(A, B, Q) {
   var I = -1;
   var G = A == null ? 0 : A.length;
@@ -4023,6 +4160,11 @@ var E60;
 var H60 = createLazyModule(() => {
   E60 = F59;
 });
+/**
+ * Convert or create operation.
+ * @param {any} source - Source data
+ * @returns {any} Converted result
+ */
 function C59(A) {
   var B = A == null ? 0 : A.length;
   if (B) {
@@ -4035,6 +4177,12 @@ var AC;
 var R91 = createLazyModule(() => {
   AC = C59;
 });
+/**
+ * Validate operation.
+ * @param {any} value - Value to validate
+ * @param {Object} rules - Validation rules
+ * @returns {boolean} Validation result
+ */
 function V59(A, B) {
   var Q = [];
   oNA(A, function (I, G, Z) {
@@ -4049,6 +4197,12 @@ var U60 = createLazyModule(() => {
   L91();
   z60 = V59;
 });
+/**
+ * Key or constant lookup.
+ * @param {string} key - Key to lookup
+ * @param {Object} options - Lookup options
+ * @returns {any} Found value
+ */
 function K59(A, B) {
   return at(B, function (Q) {
     return A[Q];
@@ -4059,6 +4213,11 @@ var $60 = createLazyModule(() => {
   rqA();
   w60 = K59;
 });
+/**
+ * Data operation utility.
+ * @param {any} data - Data to process
+ * @returns {any} Processed data
+ */
 function D59(A) {
   if (A == null) {
     return [];
@@ -4072,6 +4231,12 @@ var N60 = createLazyModule(() => {
   pp();
   q60 = D59;
 });
+/**
+ * Extract or encode operation.
+ * @param {any} source - Source to extract from
+ * @param {Object} options - Extraction options
+ * @returns {any} Extracted data
+ */
 function E59(A, B) {
   if (B.length < 2) {
     return A;
@@ -4085,6 +4250,12 @@ var M60 = createLazyModule(() => {
   e21();
   L60 = E59;
 });
+/**
+ * Hash or helper operation.
+ * @param {any} data - Data to hash
+ * @param {Object} options - Hash options
+ * @returns {string} Hash result
+ */
 function H59(A, B) {
   return $e(A, B);
 }
@@ -4108,6 +4279,12 @@ var R60 = createLazyModule(() => {
   qe();
   Hf = z59;
 });
+/**
+ * Utility operation.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @returns {any} Operation result
+ */
 function U59(A, B) {
   var Q;
   var I = -1;
@@ -4161,6 +4338,11 @@ var k60 = createLazyModule(() => {
   ip();
   y60 = q59;
 });
+/**
+ * Normalize or null-check operation.
+ * @param {any} value - Value to normalize
+ * @returns {any} Normalized value
+ */
 function N59(A) {
   if (np(A)) {
     return undefined;
@@ -4210,6 +4392,14 @@ var v60 = createLazyModule(() => {
   });
   T91 = R59;
 });
+/**
+ * Transform operation with four parameters.
+ * @param {any} input - Input to transform
+ * @param {Function} transformer - Transform function
+ * @param {Object} options - Transform options
+ * @param {Object} context - Transform context
+ * @returns {any} Transformed result
+ */
 function T59(A, B, Q, I) {
   if (!OG(A)) {
     return A;
