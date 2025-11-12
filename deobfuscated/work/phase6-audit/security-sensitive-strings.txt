@@ -1,0 +1,200 @@
+    var A = /[^.]+$/.exec(eqA && eqA.keys && eqA.keys.IE_PROTO || "");
+  P29 = DNA(Object.keys, Object);
+        throw Error(`Invalid environment variable format: ${Q}, environment variables should be added as: -e KEY1=value1 -e KEY2=value2`);
+    name: "CLAUDE_CODE_MAX_OUTPUT_TOKENS",
+    sessionIngressToken: undefined,
+    oauthTokenFromFd: undefined,
+    apiKeyFromFd: undefined,
+    tokenCounter: null,
+    inputTokens: 0,
+    outputTokens: 0,
+    cacheReadInputTokens: 0,
+    cacheCreationInputTokens: 0,
+  I.inputTokens += B.input_tokens;
+  I.outputTokens += B.output_tokens;
+  I.cacheReadInputTokens += B.cache_read_input_tokens ?? 0;
+  I.cacheCreationInputTokens += B.cache_creation_input_tokens ?? 0;
+  return rp(Object.values(YB.modelUsage), "inputTokens");
+  return rp(Object.values(YB.modelUsage), "outputTokens");
+  return rp(Object.values(YB.modelUsage), "cacheReadInputTokens");
+  return rp(Object.values(YB.modelUsage), "cacheCreationInputTokens");
+  YB.tokenCounter = B("claude_code.token.usage", {
+    description: "Number of tokens used",
+    unit: "tokens"
+  return YB.tokenCounter;
+  return YB.sessionIngressToken;
+  YB.sessionIngressToken = A;
+  return YB.oauthTokenFromFd;
+  YB.oauthTokenFromFd = A;
+  return YB.apiKeyFromFd;
+  YB.apiKeyFromFd = A;
+      if (Object.keys(this._optionValues).length) {
+        Object.keys(Q.implied).filter(I => !B(I)).forEach(I => {
+  yFI = Object.keys(RG.modifier);
+  B39 = Object.keys(RG.color);
+  Q39 = Object.keys(RG.bgColor);
+        Object.keys(B).forEach(Q => {
+    tokenChars: O39
+    tokenChars: kGA
+    return Object.keys(A).map(B => {
+        return [B].concat(Object.keys(I).map(G => {
+      return Object.keys(this._extensions).join();
+      "Sec-WebSocket-Key": F,
+    if (Z.username || Z.password) {
+      G.auth = `${Z.username}:${Z.password}`;
+          delete G.headers.authorization;
+          G.auth = undefined;
+      if (G.auth && !I.headers.authorization) {
+        I.headers.authorization = "Basic " + Buffer.from(G.auth).toString("base64");
+        let f = Object.keys(x);
+    tokenChars: L79
+      let G = A.headers["sec-websocket-key"];
+        Gl(this, A, B, 400, "Missing or invalid Sec-WebSocket-Key header");
+          secure: !!A.socket.authorized || !!A.socket.encrypted,
+    for (let Q of Object.keys(B)) {
+      for (let I of Object.keys(B)) {
+${Object.keys(I).map(G => `${G}: ${I[G]}`).join(`\r
+      let Z = A.objectKeys(G).filter(J => typeof G[G[J]] !== "number");
+      return A.objectKeys(G).map(function (Z) {
+    A.objectKeys = typeof Object.keys === "function" ? G => Object.keys(G) : G => {
+  VB = Y6.arrayToEnum(["invalid_type", "invalid_literal", "custom", "invalid_union", "invalid_union_discriminator", "invalid_enum_value", "unrecognized_keys", "invalid_arguments", "invalid_return_type", "invalid_date", "invalid_string", "too_small", "too_big", "invalid_intersection_types", "not_multiple_of", "not_finite"]);
+    case VB.unrecognized_keys:
+      Q = `Unrecognized key(s) in object: ${Y6.joinValues(A.keys, ", ")}`;
+      let G = await I.key;
+        key: G,
+        key: G,
+    this._key = I;
+      if (Array.isArray(this._key)) {
+        this._cachedPath.push(...this._path, ...this._key);
+        this._cachedPath.push(...this._path, this._key);
+    let G = Y6.objectKeys(B);
+    let Z = Y6.objectKeys(A).filter(J => G.indexOf(J) !== -1);
+      let B = Y6.objectKeys(A);
+        keys: B
+        keys: Z
+      if (!(this._def.catchall instanceof XT) || this._def.unknownKeys !== "strip") {
+          key: {
+        let X = this._def.unknownKeys;
+              key: {
+              code: VB.unrecognized_keys,
+              keys: Y
+          throw Error("Internal ZodObject error: invalid unknownKeys value.");
+            key: {
+            let F = await W.key;
+              key: F,
+        unknownKeys: "strict",
+            if (B.code === "unrecognized_keys") {
+        unknownKeys: "strip"
+        unknownKeys: "passthrough"
+        unknownKeys: A._def.unknownKeys,
+    setKey(A, B) {
+      for (let Q of Y6.objectKeys(A)) {
+      for (let Q of Y6.objectKeys(this.shape)) {
+      for (let Q of Y6.objectKeys(this.shape)) {
+      for (let Q of Y6.objectKeys(this.shape)) {
+    keyof() {
+      return c30(Y6.objectKeys(this.shape));
+      unknownKeys: "strip",
+      unknownKeys: "strict",
+      unknownKeys: "strip",
+          options: Array.from(this.optionsMap.keys()),
+          throw Error(`A discriminator value for key \`${A}\` could not be extracted from all schema options`);
+    get keySchema() {
+      return this._def.keyType;
+      let G = this._def.keyType;
+          key: G._parse(new tL(Q, Y, Q.path, Y)),
+          keyType: A,
+        keyType: rL.create(),
+    get keySchema() {
+      return this._def.keyType;
+      let I = this._def.keyType;
+          key: I._parse(new tL(Q, Y, Q.path, [X, "key"])),
+            let X = await J.key;
+            key: X,
+      keyType: A,
+    progressToken: k.optional(n30)
+      progressToken: n30
+      maxTokens: k.number().int(),
+    stopReason: k.optional(k.enum(["endTurn", "stopSequence", "maxTokens"]).or(k.string())),
+      authInfo: B?.authInfo,
+      progressToken: B,
+      this._onerror(Error(`Received a progress notification for an unknown token: ${JSON.stringify(A)}`));
+      resumptionToken: G,
+      onresumptiontoken: Z
+            progressToken: D
+            resumptionToken: G,
+            onresumptiontoken: Z
+        resumptionToken: G,
+        onresumptiontoken: Z
+      Z = Object.keys(B);
+      if (I !== Object.keys(Q).length) {
+  jf.keywords = {
+  jf.arrayKeywords = {
+  jf.propsKeywords = {
+  jf.skipKeywords = {
+          if (F in jf.arrayKeywords) {
+        } else if (F in jf.propsKeywords) {
+        } else if (F in jf.keywords || A.allKeys && !(F in jf.skipKeywords)) {
+    if (Object.keys(A.schema).length === 0 || I !== G) {
+      allKeys: true
+            key: J,
+            key: X,
+      var F = Object.keys(Y).sort(I && I(Y));
+    if (B.opts.strictKeywords) {
+      var X = B.util.schemaUnknownRules(B.schema, B.RULES.keywords);
+        var W = "unknown keyword: " + X;
+        if (B.opts.strictKeywords === "log") {
+          G += " { keyword: '" + (f || "false schema") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: {} ";
+        throw Error("$ref: validation keywords used in schema at path \"" + B.errSchemaPath + "\" (see option extendRefs)");
+        B.logger.warn("$ref: keywords ignored in schema at path \"" + B.errSchemaPath + "\"");
+            G += " { keyword: '" + (f || "type") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: { type: '";
+            G += " { keyword: '" + (f || "type") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: { type: '";
+                var EA = Object.keys(V);
+                  var $1 = eA.code(B, eA.keyword, r.type);
+                  G += " { keyword: '" + (f || "type") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: { type: '";
+      return B.schema[G1.keyword] !== undefined || G1.implements && i1(G1);
+          throw Error("parent schema must have all required keywords: " + QA.join(","));
+            var RA = "keyword schema is invalid: " + G.errorsText(DA.errors);
+        yA = tA.call(G, BA, p.keyword, y, c);
+        throw Error("custom keyword \"" + p.keyword + "\"failed to compile");
+            G += " { keyword: '$ref' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(X) + " , params: { ref: '" + B.util.escapeQuotes(J) + "' } ";
+        if (B.opts.strictKeywords ? typeof E == "object" && Object.keys(E).length > 0 || E === false : B.util.schemaHasRules(E, B.RULES.all)) {
+      if (B.opts.strictKeywords) {
+        return typeof f == "object" && Object.keys(f).length > 0 || f === false;
+        G += " { keyword: 'anyOf' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+      G += " { keyword: 'const' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { allowedValue: schema" + Z + " } ";
+    var R = B.opts.strictKeywords ? typeof J == "object" && Object.keys(J).length > 0 || J === false : B.util.schemaHasRules(J, B.RULES.all);
+      G += " { keyword: 'contains' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+            G += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { property: '" + B.util.escapeQuotes(P) + "', missingProperty: '" + y + "', depsCount: " + $.length + ", deps: '" + B.util.escapeQuotes($.length == 1 ? $[0] : $.join(", ")) + "' } ";
+                G += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { property: '" + B.util.escapeQuotes(P) + "', missingProperty: '" + y + "', depsCount: " + $.length + ", deps: '" + B.util.escapeQuotes($.length == 1 ? $[0] : $.join(", ")) + "' } ";
+      if (B.opts.strictKeywords ? typeof N == "object" && Object.keys(N).length > 0 || N === false : B.util.schemaHasRules(N, B.RULES.all)) {
+      G += " { keyword: 'enum' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { allowedValues: schema" + Z + " } ";
+      G += " { keyword: 'format' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { format:  ";
+    var L = H !== undefined && (B.opts.strictKeywords ? typeof H == "object" && Object.keys(H).length > 0 || H === false : B.util.schemaHasRules(H, B.RULES.all));
+    var N = U !== undefined && (B.opts.strictKeywords ? typeof U == "object" && Object.keys(U).length > 0 || U === false : B.util.schemaHasRules(U, B.RULES.all));
+        G += " { keyword: 'if' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { failingKeyword: " + R + " } ";
+          G += " { keyword: 'additionalItems' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { limit: " + J.length + " } ";
+          if (B.opts.strictKeywords ? typeof i == "object" && Object.keys(i).length > 0 || i === false : B.util.schemaHasRules(i, B.RULES.all)) {
+      if (typeof R == "object" && (B.opts.strictKeywords ? typeof R == "object" && Object.keys(R).length > 0 || R === false : B.util.schemaHasRules(R, B.RULES.all))) {
+    } else if (B.opts.strictKeywords ? typeof J == "object" && Object.keys(J).length > 0 || J === false : B.util.schemaHasRules(J, B.RULES.all)) {
+        G += " { keyword: '" + ($ || "_exclusiveLimit") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+      G += " { keyword: '" + ($ || "_limit") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { comparison: " + _ + ", limit: " + K + ", exclusive: " + P + " } ";
+      G += " { keyword: '" + (E || "_limitItems") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { limit: " + K + " } ";
+      G += " { keyword: '" + (E || "_limitLength") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { limit: " + K + " } ";
+    G += " Object.keys(" + C + ").length " + D + " " + K + ") { ";
+      G += " { keyword: '" + (E || "_limitProperties") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { limit: " + K + " } ";
+      G += " { keyword: 'multipleOf' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { multipleOf: " + K + " } ";
+    if (B.opts.strictKeywords ? typeof J == "object" && Object.keys(J).length > 0 || J === false : B.util.schemaHasRules(J, B.RULES.all)) {
+        G += " { keyword: 'not' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+        G += " { keyword: 'not' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+        if (B.opts.strictKeywords ? typeof P == "object" && Object.keys(P).length > 0 || P === false : B.util.schemaHasRules(P, B.RULES.all)) {
+      G += " { keyword: 'oneOf' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { passingSchemas: " + N + " } ";
+      G += " { keyword: 'pattern' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { pattern:  ";
+    var H = "key" + Z;
+    var R = Object.keys(J || {}).filter(DA);
+    var x = Object.keys(P).filter(DA);
+    var g = typeof f == "object" && Object.keys(f).length;
+        G += " " + $ + " = " + $ + " || Object.keys(" + C + "); for (var " + U + "=0; " + U + "<" + $ + ".length; " + U + "++) { var " + H + " = " + $ + "[" + U + "]; ";
+              G += " { keyword: 'additionalProperties' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { additionalProperty: '" + K1 + "' } ";
+          if (B.opts.strictKeywords ? typeof TA == "object" && Object.keys(TA).length > 0 || TA === false : B.util.schemaHasRules(TA, B.RULES.all)) {
+                  G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + t1 + "' } ";

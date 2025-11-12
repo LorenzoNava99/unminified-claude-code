@@ -1,0 +1,100 @@
+          process.nextTick(D41, this, Y, I);
+        process.nextTick(c39, this, G, I);
+      if (A.setTimeout) {
+        A.setTimeout(0);
+      process.nextTick(TLA, A, I);
+      process.nextTick(Q, I);
+    process.nextTick(U30, Q._socket);
+      process.nextTick(U30, B._socket);
+    A._closeTimer = setTimeout(A._socket.destroy.bind(A._socket), 30000);
+        process.nextTick(M30, I);
+        process.nextTick(M30, I);
+        process.nextTick(_GA, this);
+            process.nextTick(_GA, this);
+          process.nextTick(_GA, this);
+            process.nextTick(_GA, this);
+      timeoutId: setTimeout(I, B),
+      resetTimeoutOnProgress: G,
+  _resetTimeout(A) {
+    B.timeoutId = setTimeout(B.onTimeout, B.timeout);
+    if (Y && Z && Y.resetTimeoutOnProgress) {
+        this._resetTimeout(I);
+      this._setupTimeout(D, U, Q?.maxTotalTimeout, L, Q?.resetTimeoutOnProgress ?? false);
+        } else if (typeof Y1.length !== "number" || Y1.split || Y1.setInterval || Y1.call) {
+    TG(this, XAA, setTimeout(J6(this, h81), J6(this, QZA)));
+    setTimeout(() => {
+      return Q => setTimeout(Q);
+  iW9 = typeof queueMicrotask !== "undefined" ? queueMicrotask.bind(Nl) : typeof process !== "undefined" && process.nextTick || uF0;
+    var B = typeof setImmediate == "function" ? setImmediate : typeof process == "object" && typeof process.nextTick == "function" ? process.nextTick : null;
+      setTimeout(A, 0);
+      process.nextTick(A.bind(this, null, B));
+  nE.prototype.setTimeout = function (A, B) {
+      Y.setTimeout(A);
+      Q._timeout = setTimeout(function () {
+          process.nextTick(K);
+            process.nextTick(K);
+            return setTimeout(() => {
+          process.nextTick(K, null, E);
+        Z = setTimeout(() => {
+        D.setTimeout(QA, function () {
+          setTimeout(U);
+    let Y = B && setTimeout(() => {
+      setTimeout(() => vl._safeFlushAndForget(this._sdkKey), EE0);
+      let I = setInterval(() => {
+          G.push(new Promise(Z => setTimeout(Z, Q.timeoutMs)).then(() => {
+    return setTimeout(() => {
+        let V = setTimeout(() => {
+      yield new Promise(B => setTimeout(B, Math.min(pE9 * (A * A), lE9)));
+    setTimeout: function (A, B) {
+      if (G?.setTimeout) {
+        return G.setTimeout.apply(G, hz0([A, B], fz0(Q)));
+      return setTimeout.apply(undefined, hz0([A, B], fz0(Q)));
+    Jz9.timeoutProvider.setTimeout(function () {
+      $z9.timeoutProvider.setTimeout(function () {
+      var B = requestAnimationFrame;
+        B = I.requestAnimationFrame;
+    requestAnimationFrame: function () {
+      return (Q?.requestAnimationFrame || requestAnimationFrame).apply(undefined, $U0([], wU0(A)));
+          G = qU0.animationFrameProvider.requestAnimationFrame(function (Y) {
+    setInterval: function (A, B) {
+      if (G?.setInterval) {
+        return G.setInterval.apply(G, xU0([A, B], _U0(Q)));
+      return setInterval.apply(undefined, xU0([A, B], _U0(Q)));
+      return bU0.intervalProvider.setInterval(Q.flush.bind(Q, this), G);
+      return Q._scheduled ||= Xw0.animationFrameProvider.requestAnimationFrame(function () {
+          setTimeout(function () {
+      let B = setTimeout(() => A.abort(), 1000);
+          process.nextTick(V);
+          process.nextTick(K);
+              setTimeout(function () {
+            process.nextTick(D);
+        process.nextTick(function () {
+      tRA = setTimeout(JG1, 0);
+    var G = setTimeout(function () {
+        I._timeout = setTimeout(function () {
+      this._timeout = setTimeout(function () {
+    Q.updateTimeout = setTimeout(() => {
+  let Z = setTimeout(() => {
+    G = setTimeout(() => {
+import { setTimeout as Rg9 } from "node:timers/promises";
+    F = setTimeout(() => {
+  var tj0 = typeof setTimeout === "function" ? setTimeout : null;
+        setTimeout(function () {
+              setTimeout(function () {
+                setTimeout(function () {
+              WA = setTimeout(JA, p);
+              WA = setTimeout(JA, sA(OA));
+                  WA = setTimeout(JA, p);
+                WA = setTimeout(JA, p);
+            throw Error("setTimeout has not been defined");
+              if (typeof setTimeout === "function") {
+                Y = setTimeout;
+            if (Y === setTimeout) {
+              return setTimeout($, 0);
+            if ((Y === X || !Y) && setTimeout) {
+              Y = setTimeout;
+              return setTimeout($, 0);
+          Z.nextTick = function ($) {
+            w1 = setTimeout(function () {
+            qB = requestAnimationFrame(e1);
+            Y1 = setTimeout(e1, n - v);

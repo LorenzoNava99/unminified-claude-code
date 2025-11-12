@@ -1,0 +1,300 @@
+45:      configurable: true,
+465:      configurable: true,
+568:      configurable: true,
+3957:  return process.env.CLAUDE_CONFIG_DIR ?? o59(t59(), ".claude");
+3996:  return process.env.AWS_REGION || process.env.AWS_DEFAULT_REGION || "us-east-1";
+3999:  return process.env.CLOUD_ML_REGION || "us-east5";
+4002:  return K0(process.env.CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR);
+4006:    return process.env.VERTEX_REGION_CLAUDE_HAIKU_4_5 || pL();
+4009:    return process.env.VERTEX_REGION_CLAUDE_3_5_HAIKU || pL();
+4012:    return process.env.VERTEX_REGION_CLAUDE_3_5_SONNET || pL();
+4015:    return process.env.VERTEX_REGION_CLAUDE_3_7_SONNET || pL();
+4018:    return process.env.VERTEX_REGION_CLAUDE_4_1_OPUS || pL();
+4021:    return process.env.VERTEX_REGION_CLAUDE_4_0_OPUS || pL();
+4024:    return process.env.VERTEX_REGION_CLAUDE_4_5_SONNET || pL();
+4027:    return process.env.VERTEX_REGION_CLAUDE_4_0_SONNET || pL();
+4417:  return YB.envVarValidators;
+4491:  return process.env.CLAUDE_CODE_DEBUG_LOGS_DIR ?? i50(dB(), "debug", `${L0()}.txt`);
+4508:    return K0(process.env.DEBUG) || K0(process.env.DEBUG_SDK) || process.argv.includes("--debug") || process.argv.includes("-d") || ty() || process.argv.some(A => A.startsWith("--debug="));
+4599:  KLA = process.env.CLAUDE_CODE_PROFILE_STARTUP === "1";
+4606:  return K0(process.env.ENABLE_EXPERIMENTAL_MCP_CLI);
+4870:      if (A.envVar !== undefined) {
+4871:        B.push(`env: ${A.envVar}`);
+5000:      this.envVar = undefined;
+5031:      this.envVar = A;
+5263:      this._outputConfiguration = {
+5274:      this._helpConfiguration = {};
+5277:      this._outputConfiguration = A._outputConfiguration;
+5280:      this._helpConfiguration = A._helpConfiguration;
+5331:      return Object.assign(new SI9(), this.configureHelp());
+5333:    configureHelp(A) {
+5335:        return this._helpConfiguration;
+5337:      this._helpConfiguration = A;
+5340:    configureOutput(A) {
+5342:        return this._outputConfiguration;
+5344:      Object.assign(this._outputConfiguration, A);
+5564:      if (A.envVar) {
+5566:          let Z = `error: option '${A.flags}' value '${G}' from env '${A.envVar}' is invalid.`;
+6170:      this._outputConfiguration.outputError(`${A}
+6171:`, this._outputConfiguration.writeErr);
+6173:        this._outputConfiguration.writeErr(`${this._showHelpAfterError}
+6176:        this._outputConfiguration.writeErr(`
+6189:        if (A.envVar && A.envVar in oZ.env) {
+6191:          if (this.getOptionValue(B) === undefined || ["default", "config", "env"].includes(this.getOptionValueSource(B))) {
+6193:              this.emit(`optionEnv:${A.name()}`, oZ.env[A.envVar]);
+6245:          return `environment variable '${Y.envVar}'`;
+6314:        this._outputConfiguration.writeOut(`${A}
+6397:        B.helpWidth = A && A.error ? this._outputConfiguration.getErrHelpWidth() : this._outputConfiguration.getOutHelpWidth();
+6408:        Q = I => this._outputConfiguration.writeErr(I);
+6410:        Q = I => this._outputConfiguration.writeOut(I);
+6621:  return process.env.USE_MCP_CLI_DIR || zI0(aI9(), "claude-code-mcp-cli");
+6625:    let A = process.env.CLAUDE_CODE_SESSION_ID;
+6698:      G[J.name] = J.config;
+6702:      configs: G,
+7334:  if (!process.env.WS_NO_BUFFER_UTIL) {
+7705:  } else if (!process.env.WS_NO_UTF_8_VALIDATE) {
+9985:        throw Error("server.handleUpgrade() was called more than once with the same socket, possibly due to a misconfiguration");
+22333:    var Q = B.pathExt !== undefined ? B.pathExt : process.env.PATHEXT;
+22447:  var IAA = process.platform === "win32" || process.env.OSTYPE === "cygwin" || process.env.OSTYPE === "msys";
+22456:    let I = A.match(/\//) || IAA && A.match(/\\/) ? [""] : [...(IAA ? [process.cwd()] : []), ...(B.path || process.env.PATH || "").split(Q)];
+22457:    let G = IAA ? B.pathExt || process.env.PATHEXT || ".EXE;.CMD;.BAT;.COM" : "";
+22563:    let B = A.env || process.env;
+22577:    let Q = A.options.env || process.env;
+22697:      A.command = process.env.comspec || "cmd.exe";
+22830:    let Q = EMA.env[B];
+22862:          ...this._serverParams.env
+23682:  configuredResource: B
+23977:    configuredResource: Q.resource
+24077:      url: new URL("/.well-known/openid-configuration", B.origin),
+24095:    url: new URL(`/.well-known/openid-configuration${G}`, B.origin),
+24099:    url: new URL(`${G}/.well-known/openid-configuration`, B.origin),
+25477:    ReactCurrentBatchConfig: tMA,
+26124:    this.config = Q;
+26150:        config: y1.toJSONObject(this.config),
+26217:    configurable: true,
+28237:    "application/vnd.3gpp.mcdata-service-config+xml": {
+28244:    "application/vnd.3gpp.mcdata-ue-config+xml": {
+28272:    "application/vnd.3gpp.mcptt-service-config+xml": {
+28280:    "application/vnd.3gpp.mcptt-ue-config+xml": {
+28284:    "application/vnd.3gpp.mcptt-ue-init-config+xml": {
+28312:    "application/vnd.3gpp.mcvideo-service-config+xml": {
+28320:    "application/vnd.3gpp.mcvideo-ue-config+xml": {
+28751:    "application/vnd.cluetrust.cartomobile-config": {
+28755:    "application/vnd.cluetrust.cartomobile-config-pkg": {
+29143:    "application/vnd.enphase.envoy": {
+30413:    "application/vnd.nokia.iptv.config+xml": {
+30621:    "application/vnd.oma-scws-config": {
+32439:    "application/x-ns-proxy-autoconfig": {
+33319:    "audio/vorbis-config": {
+35874:    var G = arguments.length > 2 && !!arguments[2] && arguments[2].nonConfigurable;
+35876:      throw new OC9("if provided, the `overrideIfSet` and `nonConfigurable` options must be booleans");
+35881:          configurable: !G,
+36670:          let X = this.env && this.env.FormData;
+36811:      configurable: true
+37039:  let I = Q.config.validateStatus;
+37043:    B(new JQ("Request failed with status code " + Q.status, [JQ.ERR_BAD_REQUEST, JQ.ERR_BAD_RESPONSE][Math.floor(Q.status / 100) - 4], Q.config, Q.request, Q));
+37094:    var Z = OAA("npm_config_" + Q + "_proxy") || OAA(Q + "_proxy") || OAA("npm_config_proxy") || OAA("all_proxy");
+37101:    var Q = (OAA("npm_config_no_proxy") || OAA("no_proxy")).toLowerCase();
+37128:    return process.env[A.toLowerCase()] || process.env[A.toUpperCase()] || "";
+37314:        configurable: false,
+37475:      A = process.env.DEBUG;
+37655:  TK0.inspectOpts = Object.keys(process.env).filter(A => {
+37661:    let I = process.env[B];
+37710:      process.env.DEBUG = A;
+37712:      delete process.env.DEBUG;
+37716:    return process.env.DEBUG;
+38115:          configurable: true,
+38121:          configurable: true,
+38690:  if (A.beforeRedirects.config) {
+38691:    A.beforeRedirects.config(A, B);
+38893:            config: B
+38898:            Blob: B.env && B.env.Blob
+38916:          config: B
+39009:        DA.config = B;
+39051:          y.beforeRedirects.config = B.beforeRedirect;
+39113:          config: B,
+39181:          G(new JQ("error trying to parse `config.timeout` to int", JQ.ERR_BAD_OPTION_VALUE, B, D));
+39457:          config: A,
+39852:          config: A,
+40428:  lJ.mergeConfig = XM;
+40470:    mergeConfig: lUI
+40753:    _download_config_specs: "download_config_specs"
+40758:    [oD0.Endpoint._download_config_specs]: "https://api.statsigcdn.com/v1"
+40829:  GE0._createLayerParameterExposure = GE0._createConfigExposure = GE0._mapExposures = GE0._createGateExposure = GE0._isExposureEvent = undefined;
+40830:  var BE0 = "statsig::config_exposure";
+40859:      Y.configVersion = B.__evaluation.version;
+40875:      config: B.name,
+40879:      J.configVersion = B.__evaluation.version;
+40886:  GE0._createConfigExposure = HD9;
+40898:      config: B.name,
+40905:      V.configVersion = B.__evaluation.version;
+41006:  WE0.UrlConfiguration = undefined;
+41011:    [iOA.Endpoint._download_config_specs]: "d"
+41035:  WE0.UrlConfiguration = XE0;
+41164:      let Z = I?.networkConfig;
+41165:      this._logEventUrlConfig = new uD9.UrlConfiguration(KE0.Endpoint._rgstr, Z?.logEventUrl, Z?.api, Z?.logEventFallbackUrls);
+41245:      let G = [A.eventName, Q, I.gate, I.config, I.ruleID, I.allocatedExperiment, I.parameterName, String(I.isExplicitParameter), I.reason].join("|");
+41264:          let G = (0, DE0._isUnloading)() && this._network.isBeaconSupported() && this._options?.networkConfig?.networkOverrideFunc == null;
+41308:        urlConfig: this._logEventUrlConfig,
+41501:      if (B != null && B.environment != null) {
+41502:        I.statsigEnvironment = B.environment;
+41911:          if (this._options?.networkConfig?.preventAllNetworkTraffic) {
+41931:          yield (this._options?.networkConfig?.networkOverrideFunc ?? fetch)(Ck.EXCEPTION_ENDPOINT, {
+42001:    _dynamicConfig: "c",
+42157:      this._networkOverrideFunc = A.networkConfig?.networkOverrideFunc;
+42520:      this._netConfig = {};
+42527:      if (this._options.networkConfig) {
+42528:        this._netConfig = this._options.networkConfig;
+42530:      if (this._netConfig.networkTimeoutMs) {
+42531:        this._timeout = this._netConfig.networkTimeoutMs;
+42580:        if (this._netConfig.preventAllNetworkTraffic) {
+42589:        let W = A.urlConfig.endpoint;
+42619:          D = yield (this._netConfig.networkOverrideFunc ?? fetch)(K, H);
+42629:          this._fallbackResolver.tryBumpExpiryTime(A.sdkKey, A.urlConfig);
+42638:          if (yield this._fallbackResolver.tryFetchUpdatedFallbackInfo(A.sdkKey, A.urlConfig, U, L)) {
+42639:            A.fallbackUrl = this._fallbackResolver.getActiveFallbackUrl(A.sdkKey, A.urlConfig);
+42684:        let Q = A.fallbackUrl ?? A.urlConfig.getUrl();
+42685:        if (A.urlConfig.endpoint === WM.Endpoint._initialize || A.urlConfig.endpoint === WM.Endpoint._download_config_specs) {
+42713:        bl.Log.warn(`Request encoding failed for ${A.urlConfig.getUrl()}`, G);
+42746:          bl.Log.warn(`Request compression failed for ${A.urlConfig.getUrl()}`, I);
+42751:      let Q = this._fallbackResolver.getActiveFallbackUrl(B.sdkKey, B.urlConfig);
+42803:    if (A.urlConfig.endpoint !== WM.Endpoint._initialize) {
+42811:    if (A.urlConfig.endpoint !== WM.Endpoint._initialize) {
+43052:  cH0._makeTypedGet = cH0._mergeOverride = cH0._makeLayer = cH0._makeExperiment = cH0._makeDynamicConfig = cH0._makeFeatureGate = undefined;
+43075:  cH0._makeDynamicConfig = dH0;
+43143:    if (!G || ("get" in G ? !B.__esModule : G.writable || G.configurable)) {
+43309:    getConfig(A) {
+43310:      return this._getDetailedStoreResult(this._values?.dynamic_configs, A);
+43313:      return this._getDetailedStoreResult(this._values?.layer_configs, A);
+43416:      dynamic_configs: G.dynamic_configs,
+43417:      layer_configs: G.layer_configs
+43423:        badMergedConfigs: G,
+43433:      layer_configs: Object.assign(Object.assign({}, A.layer_configs), B.layer_configs),
+43434:      dynamic_configs: Object.assign(Object.assign({}, A.dynamic_configs), B.dynamic_configs)
+43441:    EI1(A.deleted_configs, B.dynamic_configs);
+43442:    delete B.deleted_configs;
+43443:    EI1(A.deleted_layers, B.layer_configs);
+43499:      let Q = A?.networkConfig;
+43500:      this._initializeUrlConfig = new XRA.UrlConfiguration(XRA.Endpoint._initialize, Q?.initializeUrl, Q?.api, Q?.initializeFallbackUrls);
+43527:          urlConfig: this._initializeUrlConfig,
+43579:    let Z = A.getDynamicConfig(B.config_name, WRA).get(B.param_name);
+43584:      A.getDynamicConfig(B.config_name);
+43622:        case "dynamic_config":
+43781:      this.getDynamicConfig = this._memoize(m8.MemoPrefix._dynamicConfig, this._getDynamicConfigImpl.bind(this));
+43787:      this._user = this._configureUser(B, Q);
+43913:      this._user = this._configureUser(A, this._options);
+43915:    _configureUser(A, B) {
+43940:    _getDynamicConfigImpl(A, B) {
+43946:      } = this._store.getConfig(A);
+43947:      let Y = (0, m8._makeDynamicConfig)(A, Z, G);
+43948:      let J = (I = (Q = this.overrideAdapter) === null || Q === undefined ? undefined : Q.getDynamicConfigOverride) === null || I === undefined ? undefined : I.call(Q, Y, this._user, B);
+43950:      this._enqueueExposure(A, (0, m8._createConfigExposure)(this._user, X, this._store.getExposureMapping()), B);
+43952:        name: "dynamic_config_evaluation",
+43953:        dynamicConfig: X
+43963:      } = this._store.getConfig(A);
+43970:      this._enqueueExposure(A, (0, m8._createConfigExposure)(this._user, F, this._store.getExposureMapping()), B);
+44012:        __configuration: G,
+44017:        Y.__configuration = J.config;
+44019:        Y.get = (0, Kz0._makeParamStoreGetter)(this, J.config, B);
+44029:    if (!G || ("get" in G ? !B.__esModule : G.writable || G.configurable)) {
+44462:  vz0.config = undefined;
+44463:  vz0.config = {
+44540:      var B = Yz9.config.onUnhandledError;
+44591:    if (iz0.config.useDeprecatedSynchronousErrorHandling) {
+44615:    if (iz0.config.useDeprecatedSynchronousErrorHandling && gl) {
+44784:        if (Z && PI1.config.useDeprecatedNextContext) {
+44805:    if (PI1.config.useDeprecatedSynchronousErrorHandling) {
+44815:    var Q = PI1.config.onStoppedNotification;
+44977:    return A ?? kz9.config.Promise ?? Promise;
+45527:      configurable: true
+45657:      configurable: true
+53354:  cA.filter = cA.expand = cA.exhaustMap = cA.exhaustAll = cA.exhaust = cA.every = cA.endWith = cA.elementAt = cA.distinctUntilKeyChanged = cA.distinctUntilChanged = cA.distinct = cA.dematerialize = cA.delayWhen = cA.delay = cA.defaultIfEmpty = cA.debounceTime = cA.debounce = cA.count = cA.connect = cA.concatWith = cA.concatMapTo = cA.concatMap = cA.concatAll = cA.combineLatestWith = cA.combineLatestAll = cA.combineAll = cA.catchError = cA.bufferWhen = cA.bufferToggle = cA.bufferTime = cA.bufferCount = cA.buffer = cA.auditTime = cA.audit = cA.config = cA.NEVER = cA.EMPTY = cA.scheduled = cA.zip = cA.using = cA.timer = cA.throwError = cA.range = cA.race = cA.partition = cA.pairs = cA.onErrorResumeNext = cA.of = cA.never = cA.merge = undefined;
+53808:  Object.defineProperty(cA, "config", {
+53811:      return Rk9.config;
+55509:    var Q = process.env.PATH.split(ZT0 ? ";" : ":");
+55538:      var J = IYA.join(process.env.SYSTEMROOT, "System32", "WindowsPowerShell", "v1.0", "PowerShell.exe");
+55546:      var J = IYA.join(process.env.SYSTEMROOT, "System32", "cmd.exe");
+55859:  if (NA().existsSync(a71(dB(), ".config.json"))) {
+55860:    return a71(dB(), ".config.json");
+55863:  return a71(process.env.CLAUDE_CONFIG_DIR || tb9(), A);
+55881:  if (process.env.CURSOR_TRACE_ID) {
+55884:  if (process.env.VSCODE_GIT_ASKPASS_MAIN?.includes("/.cursor-server/")) {
+55887:  if (process.env.VSCODE_GIT_ASKPASS_MAIN?.includes("/.windsurf-server/")) {
+55890:  let A = process.env.__CFBundleIdentifier?.toLowerCase();
+55907:  if (process.env.VisualStudioVersion) {
+55910:  if (process.env.TERMINAL_EMULATOR === "JetBrains-JediTerm") {
+55916:  if (process.env.TERM === "xterm-ghostty") {
+55919:  if (process.env.TERM?.includes("kitty")) {
+55922:  if (process.env.TERM_PROGRAM) {
+55923:    return process.env.TERM_PROGRAM;
+55925:  if (process.env.STY) {
+55928:  if (process.env.KONSOLE_VERSION) {
+55931:  if (process.env.GNOME_TERMINAL_SERVICE) {
+55934:  if (process.env.XTERM_VERSION) {
+55937:  if (process.env.VTE_VERSION) {
+55940:  if (process.env.TERMINATOR_UUID) {
+55943:  if (process.env.KITTY_WINDOW_ID) {
+55946:  if (process.env.ALACRITTY_LOG) {
+55949:  if (process.env.TILIX_ID) {
+55952:  if (process.env.WT_SESSION) {
+55955:  if (process.env.SESSIONNAME && process.env.TERM === "cygwin") {
+55958:  if (process.env.MSYSTEM) {
+55959:    return process.env.MSYSTEM.toLowerCase();
+55961:  if (process.env.ConEmuANSI || process.env.ConEmuPID || process.env.ConEmuTask) {
+55964:  if (process.env.WSL_DISTRO_NAME) {
+55965:    return `wsl-${process.env.WSL_DISTRO_NAME}`;
+55967:  if (process.env.SSH_CONNECTION || process.env.SSH_CLIENT || process.env.SSH_TTY) {
+55970:  if (process.env.TERM) {
+55971:    let B = process.env.TERM;
+55981:    return process.env.TERM;
+56066:    if (process.env.CODESPACES === "true") {
+56069:    if (process.env.GITPOD_WORKSPACE_ID) {
+56072:    if (process.env.REPL_ID || process.env.REPL_SLUG) {
+56075:    if (process.env.PROJECT_DOMAIN) {
+56078:    if (process.env.VERCEL === "1") {
+56081:    if (process.env.RAILWAY_ENVIRONMENT_NAME || process.env.RAILWAY_SERVICE_NAME) {
+56084:    if (process.env.RENDER === "true") {
+56087:    if (process.env.NETLIFY === "true") {
+56090:    if (process.env.DYNO) {
+56093:    if (process.env.FLY_APP_NAME || process.env.FLY_MACHINE_ID) {
+56096:    if (process.env.CF_PAGES === "1") {
+56099:    if (process.env.DENO_DEPLOYMENT_ID) {
+56102:    if (process.env.AWS_LAMBDA_FUNCTION_NAME) {
+56105:    if (process.env.AWS_EXECUTION_ENV === "AWS_ECS_FARGATE") {
+56108:    if (process.env.AWS_EXECUTION_ENV === "AWS_ECS_EC2") {
+56120:    if (process.env.K_SERVICE) {
+56123:    if (process.env.GOOGLE_CLOUD_PROJECT) {
+56126:    if (process.env.WEBSITE_SITE_NAME || process.env.WEBSITE_SKU) {
+56129:    if (process.env.AZURE_FUNCTIONS_ENVIRONMENT) {
+56132:    if (process.env.APP_URL?.includes("ondigitalocean.app")) {
+56135:    if (process.env.SPACE_CREATOR_USER_ID) {
+56138:    if (process.env.GITHUB_ACTIONS === "true") {
+56141:    if (process.env.GITLAB_CI === "true") {
+56144:    if (process.env.CIRCLECI) {
+56147:    if (process.env.BUILDKITE) {
+56153:    if (process.env.KUBERNETES_SERVICE_HOST) {
+57762:    defaultConfig;
+57765:      this.name = "ConfigParseError";
+57767:      this.defaultConfig = Q;
+57797:  var Ef9 = process.env.GRACEFUL_FS_PLATFORM || process.platform;
+58278:  } else if (/\bgfs4\b/i.test(process.env.NODE_DEBUG || "")) {
+58315:    if (/\bgfs4\b/i.test(process.env.NODE_DEBUG || "")) {
+58327:  if (process.env.TEST_GRACEFUL_FS_GLOBAL_PATCH && !zZ.__patched) {
+58464:      configurable: true
+58474:      configurable: true
+58485:      configurable: true
+58496:      configurable: true
+60025:    process.env.SHELL = A;
+60049:    if (process.env.CLAUDE_CODE_GIT_BASH_PATH) {
+60050:      if (qG1(process.env.CLAUDE_CODE_GIT_BASH_PATH)) {
+60051:        return process.env.CLAUDE_CODE_GIT_BASH_PATH;
+60053:      console.error(`Claude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path "${process.env.CLAUDE_CODE_GIT_BASH_PATH}"`);
+60443:    env: B = process.env,
+60456:  path: B = ETA.env[DTA()],
+60485:  env: A = ETA.env,
+60500:  ignoreNonConfigurable: Q = false
+60527:  return A === undefined || A.configurable || A.writable === B.writable && A.enumerable === B.enumerable && A.configurable === B.configurable && (A.writable || A.value === B.value);
+61093:      configurable: false
+62160:    ...RTA.env,
+62193:  Q.env = pg9(Q);
+62266:      env: process.env,

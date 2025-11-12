@@ -1,0 +1,200 @@
+7765:      this._state = 0;
+7768:      if (this._opcode === 8 && this._state == 0) {
+7904:        this._state = 1;
+7906:        this._state = 2;
+7944:        this._state = 3;
+7946:        this._state = 4;
+7955:      this._state = 4;
+7974:        this._state = 5;
+7999:        if (this._state === 0) {
+8006:        this._state = 0;
+8028:          this._state = 0;
+8030:          this._state = 6;
+8033:            this._state = 0;
+8044:        if (this._state === 5 || this._allowSynchronousEvents) {
+8046:          this._state = 0;
+8048:          this._state = 6;
+8051:            this._state = 0;
+8080:        this._state = 0;
+8085:        this._state = 0;
+8087:        this._state = 6;
+8090:          this._state = 0;
+8147:      this._state = sL;
+8396:      this._state = d39;
+8406:          this._state = sL;
+8423:      this._state = m39;
+8431:        this._state = sL;
+8438:      while (this._state === sL && this._queue.length) {
+8870:  var Qk = ["CONNECTING", "OPEN", "CLOSING", "CLOSED"];
+8885:      this._readyState = u4.CONNECTING;
+8990:      this._readyState = u4.OPEN;
+8995:        this._readyState = u4.CLOSED;
+9003:      this._readyState = u4.CLOSED;
+9007:      if (this.readyState === u4.CLOSED) {
+9010:      if (this.readyState === u4.CONNECTING) {
+9014:      if (this.readyState === u4.CLOSING) {
+9020:      this._readyState = u4.CLOSING;
+9033:      if (this.readyState === u4.CONNECTING || this.readyState === u4.CLOSED) {
+9040:      if (this.readyState === u4.CONNECTING) {
+9041:        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+9053:      if (this.readyState !== u4.OPEN) {
+9063:      if (this.readyState === u4.CONNECTING) {
+9064:        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+9076:      if (this.readyState !== u4.OPEN) {
+9086:      if (this.readyState === u4.CONNECTING || this.readyState === u4.CLOSED) {
+9095:      if (this.readyState === u4.CONNECTING) {
+9096:        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+9105:      if (this.readyState !== u4.OPEN) {
+9122:      if (this.readyState === u4.CLOSED) {
+9125:      if (this.readyState === u4.CONNECTING) {
+9130:        this._readyState = u4.CLOSING;
+9135:  Object.defineProperty(u4, "CONNECTING", {
+9137:    value: Qk.indexOf("CONNECTING")
+9139:  Object.defineProperty(u4.prototype, "CONNECTING", {
+9141:    value: Qk.indexOf("CONNECTING")
+9143:  Object.defineProperty(u4, "OPEN", {
+9145:    value: Qk.indexOf("OPEN")
+9147:  Object.defineProperty(u4.prototype, "OPEN", {
+9149:    value: Qk.indexOf("OPEN")
+9151:  Object.defineProperty(u4, "CLOSING", {
+9153:    value: Qk.indexOf("CLOSING")
+9155:  Object.defineProperty(u4.prototype, "CLOSING", {
+9157:    value: Qk.indexOf("CLOSING")
+9159:  Object.defineProperty(u4, "CLOSED", {
+9161:    value: Qk.indexOf("CLOSED")
+9163:  Object.defineProperty(u4.prototype, "CLOSED", {
+9165:    value: Qk.indexOf("CLOSED")
+9382:      if (A.readyState !== u4.CONNECTING) {
+9454:    A._readyState = u4.CLOSING;
+9471:    A._readyState = u4.CLOSING;
+9556:    if (B.readyState === u4.CLOSED) {
+9559:    if (B.readyState === u4.OPEN) {
+9560:      B._readyState = u4.CLOSING;
+9577:    A._readyState = u4.CLOSING;
+9599:    A._readyState = u4.CLOSING;
+9608:      A._readyState = u4.CLOSING;
+9662:      if (A.readyState === A.CLOSED) {
+9683:      if (A.readyState === A.CONNECTING) {
+9710:      if (A.readyState === A.CONNECTING) {
+9847:      this._state = 0;
+9859:      if (this._state === 2) {
+9871:      if (this._state === 1) {
+9874:      this._state = 1;
+10041:    A._state = 2;
+23234:      this.CONNECTING = 0;
+23235:      this.OPEN = 1;
+23236:      this.CLOSED = 2;
+23277:        if (J6(this, pE) === this.CLOSED) {
+23280:        TG(this, pE, this.OPEN);
+23336:        if (J6(this, pE) === this.CONNECTING) {
+23355:      TG(this, pE, this.CONNECTING);
+23400:      if (J6(this, pE) !== this.CLOSED) {
+23404:        TG(this, pE, this.CLOSED);
+23424:    TG(this, pE, this.CONNECTING);
+23453:    if (J6(this, pE) !== this.CLOSED) {
+23454:      TG(this, pE, this.CLOSED);
+23467:    if (J6(this, pE) === this.CLOSED) {
+23470:    TG(this, pE, this.CONNECTING);
+23482:  FAA.CONNECTING = 0;
+23483:  FAA.OPEN = 1;
+23484:  FAA.CLOSED = 2;
+25259:  HAA.prototype.setState = function (A, B) {
+25261:      throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+25263:    this.updater.enqueueSetState(this, A, B, "setState");
+46033:      this.state = Q;
+46088:        this.work = this.state = this.scheduler = null;
+46477:      this.state = Q;
+66205:      o.state = M.memoizedState;
+66215:      o.state = M.memoizedState;
+66219:        o.state = M.memoizedState;
+66233:        o.state = M.memoizedState;
+66565:        Q1.state = QQ;
+66593:          Q1.state = F0;
+66625:        Q1.state = QQ;
+66659:          Q1.state = AI;
+68204:              l.state = b.memoizedState;
+68465:                          F0.state = i2.memoizedState;
+75287:          y.prototype.setState = function (TA, B1) {
+75289:              throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
+75291:            this.updater.enqueueSetState(this, TA, B1, "setState");
+76795:          if (J.env.npm_package_name === "pseudomap" && J.env.npm_lifecycle_script === "test") {
+79448:            var v = localStorageGetItem(LOCAL_STORAGE_OPEN_IN_EDITOR_URL);
+84498:            v2.state = uZ(v2.state, dR("state", null));
+87402:            bQ.state = uZ(bQ.state, BI("state"));
+88221:                if (T4.readyState === T4.OPEN) {
+90358:    this.state = {
+91815:    state = {
+91951:        this.setState({
+92000:      this.setState({
+92005:      this.setState({
+92010:      this.setState(B => {
+92020:      this.setState(A => {
+92028:      this.setState(A => {
+92038:      this.setState(Q => {
+92053:      this.setState(B => ({
+92061:      this.setState(B => ({
+92074:      this.setState(B => ({
+95378:    if (rPA.some(Z => Z.code === "ERR_DLOPEN_DISABLED")) {
+156029:      this.code = "UND_ERR_CLOSED";
+157574:      if (Q._state === _FB) {
+157576:        Q._state = kFB;
+157577:      } else if (Q._state === kFB && VQA >= Q._idleStart + Q._idleTimeout) {
+157578:        Q._state = tE1;
+157582:      if (Q._state === tE1) {
+157583:        Q._state = oE1;
+157609:    _state = oE1;
+157621:      if (this._state === oE1) {
+157627:      this._state = _FB;
+157630:      this._state = tE1;
+157903:    A[A.CLOSED_CONNECTION = 5] = "CLOSED_CONNECTION";
+159382:    return A.controller.state === "aborted";
+159385:    return A.controller.state === "aborted" || A.controller.state === "terminated";
+162132:      if (V.state?.state == null || V.state.state < 6) {
+168618:      this.state = "ongoing";
+168624:      this.state = "terminated";
+168632:      this.state = "aborted";
+171630:    CONNECTING: 0,
+171631:    OPEN: 1,
+171632:    CLOSING: 2,
+171633:    CLOSED: 3
+171709:    return A[BFA] === QFA.CONNECTING;
+171712:    return A[BFA] === QFA.OPEN;
+171715:    return A[BFA] === QFA.CLOSING;
+171718:    return A[BFA] === QFA.CLOSED;
+171725:    if (A[BFA] !== QFA.OPEN) {
+172055:      A[YFA] = ZFA.CLOSING;
+172071:      A[YFA] = ZFA.CLOSING;
+172073:      A[YFA] = ZFA.CLOSING;
+172101:    A[YFA] = ZFA.CLOSED;
+172119:    B[YFA] = ZFA.CLOSING;
+172475:        this.ws[xo4] = _o4.CLOSING;
+172687:      this[IU1] = rI.CONNECTING;
+172854:      this[IU1] = JFA.OPEN;
+172866:  rI.CONNECTING = rI.prototype.CONNECTING = JFA.CONNECTING;
+172867:  rI.OPEN = rI.prototype.OPEN = JFA.OPEN;
+172868:  rI.CLOSING = rI.prototype.CLOSING = JFA.CLOSING;
+172869:  rI.CLOSED = rI.prototype.CLOSED = JFA.CLOSED;
+172871:    CONNECTING: gg,
+172872:    OPEN: gg,
+172873:    CLOSING: gg,
+172874:    CLOSED: gg,
+172895:    CONNECTING: gg,
+172896:    OPEN: gg,
+172897:    CLOSING: gg,
+172898:    CLOSED: gg
+172998:    state = null;
+173013:      this.state = A.eventSourceSettings || {};
+173415:    CONNECTING: {
+173422:    OPEN: {
+173429:    CLOSED: {
+180903:      this.state = Int32Array.from(Uq.INIT);
+223250:    this.state = G || "scheme start";
+223271:      this.state = "scheme";
+223273:      this.state = "no scheme";
+223311:        this.state = "file";
+223313:        this.state = "special relative or authority";
+223315:        this.state = "special authority slashes";
+223317:        this.state = "path or authority";
+223321:        this.state = "opaque path";
+223325:      this.state = "no scheme";
+223341:      this.state = "fragment";
