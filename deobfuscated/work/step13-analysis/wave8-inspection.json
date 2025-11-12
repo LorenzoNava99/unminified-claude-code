@@ -1,0 +1,58 @@
+{
+  "wave": 8,
+  "occurrenceRange": "4-5",
+  "totalCandidates": 35,
+  "successfullyInspected": 3,
+  "results": [
+    {
+      "identifier": "AE2",
+      "occurrences": 5,
+      "exports": [
+        "ChannelCredentials",
+        "createCertificateProviderChannelCredentials"
+      ],
+      "totalExports": 2,
+      "category": "grpc",
+      "suggested": "GrpcAE2Exports",
+      "confidence": "medium",
+      "allExports": [
+        "ChannelCredentials",
+        "createCertificateProviderChannelCredentials"
+      ]
+    },
+    {
+      "identifier": "YE2",
+      "occurrences": 5,
+      "exports": [
+        "validateRetryThrottling",
+        "validateServiceConfig",
+        "extractAndSelectServiceConfig"
+      ],
+      "totalExports": 3,
+      "category": "validation",
+      "suggested": "ValidationYE2Exports",
+      "confidence": "medium",
+      "allExports": [
+        "validateRetryThrottling",
+        "validateServiceConfig",
+        "extractAndSelectServiceConfig"
+      ]
+    },
+    {
+      "identifier": "OE2",
+      "occurrences": 5,
+      "exports": [
+        "recognizedOptions",
+        "channelOptionsEqual"
+      ],
+      "totalExports": 2,
+      "category": "grpc",
+      "suggested": "GrpcOE2Exports",
+      "confidence": "medium",
+      "allExports": [
+        "recognizedOptions",
+        "channelOptionsEqual"
+      ]
+    }
+  ]
+}

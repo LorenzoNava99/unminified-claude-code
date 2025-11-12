@@ -1,0 +1,54 @@
+{
+  "totalMappings": 4,
+  "appliedRenames": 4,
+  "totalReplacements": 40,
+  "byCategory": {
+    "opentelemetryExtended": {
+      "mappings": 3,
+      "replacements": 30
+    },
+    "grpcAndNetworking": {
+      "mappings": 1,
+      "replacements": 10
+    }
+  },
+  "details": [
+    {
+      "old": "VF2",
+      "new": "OtelAttributesProcessorExports",
+      "replacements": 10,
+      "category": "opentelemetryExtended",
+      "verified": true
+    },
+    {
+      "old": "ZC2",
+      "new": "OtlpSharedConfigExports",
+      "replacements": 10,
+      "category": "opentelemetryExtended",
+      "verified": true
+    },
+    {
+      "old": "ZK2",
+      "new": "OtlpSpanTransformExports",
+      "replacements": 10,
+      "category": "opentelemetryExtended",
+      "verified": true
+    },
+    {
+      "old": "IE2",
+      "new": "GrpcLoadBalancerExports",
+      "replacements": 10,
+      "category": "grpcAndNetworking",
+      "verified": true
+    }
+  ],
+  "meta": {
+    "inputFile": "deobfuscated-renamed-wave23.js",
+    "outputFile": "deobfuscated-renamed-wave46.js",
+    "originalSize": 15072382,
+    "newSize": 15073262,
+    "wave": "Wave 4-6",
+    "strategy": "Conservative - verified identifiers only",
+    "timestamp": "2025-11-12T18:16:14.849Z"
+  }
+}

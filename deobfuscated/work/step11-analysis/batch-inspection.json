@@ -1,0 +1,410 @@
+{
+  "totalCandidates": 30,
+  "successfullyInspected": 26,
+  "results": [
+    {
+      "identifier": "XM1",
+      "occurrences": 8,
+      "exports": [
+        "AwsCrc32",
+        "Crc32",
+        "crc32"
+      ],
+      "totalExports": 3,
+      "category": "unknown",
+      "suggested": "XM1",
+      "allExports": [
+        "AwsCrc32",
+        "Crc32",
+        "crc32"
+      ]
+    },
+    {
+      "identifier": "Q42",
+      "occurrences": 8,
+      "exports": [
+        "isAttributeValue",
+        "isAttributeKey",
+        "sanitizeAttributes"
+      ],
+      "totalExports": 3,
+      "category": "opentelemetry-attributes",
+      "suggested": "OtelAttributeExports",
+      "allExports": [
+        "isAttributeValue",
+        "isAttributeKey",
+        "sanitizeAttributes"
+      ]
+    },
+    {
+      "identifier": "VE2",
+      "occurrences": 8,
+      "exports": [
+        "QueuePicker",
+        "UnavailablePicker",
+        "PickResultType"
+      ],
+      "totalExports": 3,
+      "category": "unknown",
+      "suggested": "VE2",
+      "allExports": [
+        "QueuePicker",
+        "UnavailablePicker",
+        "PickResultType"
+      ]
+    },
+    {
+      "identifier": "AU2",
+      "occurrences": 8,
+      "exports": [
+        "addCommonProtos",
+        "loadProtosWithOptionsSync",
+        "loadProtosWithOptions"
+      ],
+      "totalExports": 3,
+      "category": "unknown",
+      "suggested": "AU2",
+      "allExports": [
+        "addCommonProtos",
+        "loadProtosWithOptionsSync",
+        "loadProtosWithOptions"
+      ]
+    },
+    {
+      "identifier": "HE0",
+      "occurrences": 7,
+      "exports": [
+        "StatsigMetadataProvider",
+        "SDK_VERSION"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "HE0",
+      "allExports": [
+        "StatsigMetadataProvider",
+        "SDK_VERSION"
+      ]
+    },
+    {
+      "identifier": "IN0",
+      "occurrences": 7,
+      "exports": [
+        "never",
+        "NEVER"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "IN0",
+      "allExports": [
+        "never",
+        "NEVER"
+      ]
+    },
+    {
+      "identifier": "WG5",
+      "occurrences": 7,
+      "exports": [
+        "createDOMImplementation",
+        "createDocument",
+        "createIncrementalHTMLParser",
+        "createWindow",
+        "impl"
+      ],
+      "totalExports": 5,
+      "category": "parsing",
+      "suggested": "ParserExports",
+      "allExports": [
+        "createDOMImplementation",
+        "createDocument",
+        "createIncrementalHTMLParser",
+        "createWindow",
+        "impl"
+      ]
+    },
+    {
+      "identifier": "NL2",
+      "occurrences": 7,
+      "exports": [
+        "LoggerProvider",
+        "DEFAULT_LOGGER_NAME"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "NL2",
+      "allExports": [
+        "LoggerProvider",
+        "DEFAULT_LOGGER_NAME"
+      ]
+    },
+    {
+      "identifier": "PE0",
+      "occurrences": 6,
+      "exports": [
+        "_getFullUserHash",
+        "_normalizeUser"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "PE0",
+      "allExports": [
+        "_getFullUserHash",
+        "_normalizeUser"
+      ]
+    },
+    {
+      "identifier": "ZU0",
+      "occurrences": 6,
+      "exports": [
+        "pipeFromArray",
+        "pipe"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "ZU0",
+      "allExports": [
+        "pipeFromArray",
+        "pipe"
+      ]
+    },
+    {
+      "identifier": "CU0",
+      "occurrences": 6,
+      "exports": [
+        "operate",
+        "hasLift"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "CU0",
+      "allExports": [
+        "operate",
+        "hasLift"
+      ]
+    },
+    {
+      "identifier": "ON0",
+      "occurrences": 6,
+      "exports": [
+        "raceInit",
+        "race"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "ON0",
+      "allExports": [
+        "raceInit",
+        "race"
+      ]
+    },
+    {
+      "identifier": "KC1",
+      "occurrences": 6,
+      "exports": [
+        "STSClient",
+        "__Client"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "KC1",
+      "allExports": [
+        "STSClient",
+        "__Client"
+      ]
+    },
+    {
+      "identifier": "MA2",
+      "occurrences": 6,
+      "exports": [
+        "hyphenate",
+        "parse"
+      ],
+      "totalExports": 2,
+      "category": "parsing",
+      "suggested": "ParserExports",
+      "allExports": [
+        "hyphenate",
+        "parse"
+      ]
+    },
+    {
+      "identifier": "N22",
+      "occurrences": 6,
+      "exports": [
+        "NOOP_LOGGER_PROVIDER",
+        "NoopLoggerProvider"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "N22",
+      "allExports": [
+        "NOOP_LOGGER_PROVIDER",
+        "NoopLoggerProvider"
+      ]
+    },
+    {
+      "identifier": "Q92",
+      "occurrences": 6,
+      "exports": [
+        "HistogramAggregator",
+        "HistogramAccumulation"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "Q92",
+      "allExports": [
+        "HistogramAggregator",
+        "HistogramAccumulation"
+      ]
+    },
+    {
+      "identifier": "F92",
+      "occurrences": 6,
+      "exports": [
+        "nextGreaterSquare",
+        "ldexp"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "F92",
+      "allExports": [
+        "nextGreaterSquare",
+        "ldexp"
+      ]
+    },
+    {
+      "identifier": "X42",
+      "occurrences": 6,
+      "exports": [
+        "globalErrorHandler",
+        "setGlobalErrorHandler"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "X42",
+      "allExports": [
+        "globalErrorHandler",
+        "setGlobalErrorHandler"
+      ]
+    },
+    {
+      "identifier": "EY2",
+      "occurrences": 6,
+      "exports": [
+        "callWithTimeout",
+        "TimeoutError"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "EY2",
+      "allExports": [
+        "callWithTimeout",
+        "TimeoutError"
+      ]
+    },
+    {
+      "identifier": "FJ2",
+      "occurrences": 6,
+      "exports": [
+        "toAggregation",
+        "AggregationType"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "FJ2",
+      "allExports": [
+        "toAggregation",
+        "AggregationType"
+      ]
+    },
+    {
+      "identifier": "VJ2",
+      "occurrences": 6,
+      "exports": [
+        "DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR",
+        "DEFAULT_AGGREGATION_SELECTOR"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "VJ2",
+      "allExports": [
+        "DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR",
+        "DEFAULT_AGGREGATION_SELECTOR"
+      ]
+    },
+    {
+      "identifier": "NX2",
+      "occurrences": 6,
+      "exports": [
+        "normalizeType",
+        "normalizeArch"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "NX2",
+      "allExports": [
+        "normalizeType",
+        "normalizeArch"
+      ]
+    },
+    {
+      "identifier": "TF2",
+      "occurrences": 6,
+      "exports": [
+        "ExactPredicate",
+        "PatternPredicate"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "TF2",
+      "allExports": [
+        "ExactPredicate",
+        "PatternPredicate"
+      ]
+    },
+    {
+      "identifier": "ZL2",
+      "occurrences": 6,
+      "exports": [
+        "reconfigureLimits",
+        "loadDefaultConfig"
+      ],
+      "totalExports": 2,
+      "category": "unknown",
+      "suggested": "ZL2",
+      "allExports": [
+        "reconfigureLimits",
+        "loadDefaultConfig"
+      ]
+    },
+    {
+      "identifier": "G11",
+      "occurrences": 6,
+      "exports": [
+        "RandomIdGenerator",
+        "BatchSpanProcessor"
+      ],
+      "totalExports": 2,
+      "category": "opentelemetry-span",
+      "suggested": "OtelSpanExports",
+      "allExports": [
+        "RandomIdGenerator",
+        "BatchSpanProcessor"
+      ]
+    },
+    {
+      "identifier": "Z11",
+      "occurrences": 6,
+      "exports": [
+        "RandomIdGenerator",
+        "BatchSpanProcessor"
+      ],
+      "totalExports": 2,
+      "category": "opentelemetry-span",
+      "suggested": "OtelSpanExports",
+      "allExports": [
+        "RandomIdGenerator",
+        "BatchSpanProcessor"
+      ]
+    }
+  ]
+}

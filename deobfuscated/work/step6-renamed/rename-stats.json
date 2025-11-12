@@ -1,0 +1,453 @@
+{
+  "totalReplacements": 6720,
+  "byIdentifier": {
+    "DB9": 2,
+    "FB9": 2,
+    "CB9": 2,
+    "h21": 4,
+    "VB9": 2,
+    "KB9": 2,
+    "IA": 623,
+    "z": 2895,
+    "E$": 32,
+    "T": 1550,
+    "HA": 463,
+    "EB9": 3,
+    "aqA": 4,
+    "g21": 3,
+    "HB9": 3,
+    "zB9": 3,
+    "cJ": 12,
+    "cL": 11,
+    "UB9": 3,
+    "xW": 14,
+    "mp": 14,
+    "qB9": 2,
+    "SQ0": 4,
+    "wB9": 3,
+    "t7A": 7,
+    "yQ0": 3,
+    "kQ0": 2,
+    "MB9": 2,
+    "NB9": 3,
+    "LB9": 3,
+    "_Q0": 3,
+    "xQ0": 2,
+    "TB9": 2,
+    "OB9": 2,
+    "RB9": 2,
+    "vQ0": 4,
+    "bz": 10,
+    "dp": 11,
+    "PB9": 2,
+    "lX": 12,
+    "aR": 10,
+    "Y50": 3,
+    "dB": 47,
+    "K0": 106,
+    "Ne": 4,
+    "Z50": 2,
+    "Le": 5,
+    "pL": 11,
+    "k91": 3,
+    "QLA": 3,
+    "bB": 115,
+    "ILA": 4,
+    "GLA": 4,
+    "ZLA": 4,
+    "YB": 107,
+    "BK0": 2,
+    "mK0": 2,
+    "xZA": 5,
+    "r61": 4,
+    "QC": 16,
+    "tL": 11,
+    "k8": 43,
+    "k9": 54,
+    "hGA": 5,
+    "IQ": 78,
+    "JT": 10,
+    "B8": 45,
+    "M2": 62,
+    "bK9": 2,
+    "xOA": 6,
+    "_ZA": 6,
+    "y1": 178,
+    "GI": 25,
+    "AI0": 2,
+    "BI0": 2,
+    "QI0": 2,
+    "Yz0": 2,
+    "CRA": 4
+  },
+  "byType": {
+    "function": 5975,
+    "class": 566,
+    "variable": 150,
+    "constant": 4,
+    "constructor": "function Object() { [native code] }14"
+  },
+  "warnings": [],
+  "startTime": 1762964528212,
+  "fileSize": 14943099,
+  "duration": "2.58s",
+  "appliedRenames": [
+    {
+      "oldName": "z",
+      "newName": "createCommonJSModule",
+      "matches": 2895,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "T",
+      "newName": "createLazyModule",
+      "matches": 1550,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "IA",
+      "newName": "interopRequireWildcard",
+      "matches": 623,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "HA",
+      "newName": "nodeRequire",
+      "matches": 463,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "y1",
+      "newName": "utils",
+      "matches": 178,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "bB",
+      "newName": "noopFunction",
+      "matches": 115,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "YB",
+      "newName": "sessionState",
+      "matches": 107,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "K0",
+      "newName": "parseBoolean",
+      "matches": 106,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "IQ",
+      "newName": "addIssue",
+      "matches": 78,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "M2",
+      "newName": "errorUtil",
+      "matches": 62,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "k9",
+      "newName": "ABORTED_STATUS",
+      "matches": 54,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "dB",
+      "newName": "getClaudeConfigDir",
+      "matches": 47,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "B8",
+      "newName": "processCreateParams",
+      "matches": 45,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "k8",
+      "newName": "ZodType",
+      "matches": 43,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "E$",
+      "newName": "defineExports",
+      "matches": 32,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "GI",
+      "newName": "platformUtils",
+      "matches": 25,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "QC",
+      "newName": "ParseStatus",
+      "matches": 16,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "xW",
+      "newName": "Symbol",
+      "matches": 14,
+      "type": "constructor",
+      "confidence": "high"
+    },
+    {
+      "oldName": "mp",
+      "newName": "initSymbol",
+      "matches": 14,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "cJ",
+      "newName": "globalContext",
+      "matches": 12,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "lX",
+      "newName": "isObjectLike",
+      "matches": 12,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "cL",
+      "newName": "initGlobalContext",
+      "matches": 11,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "dp",
+      "newName": "initToTypeTag",
+      "matches": 11,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "pL",
+      "newName": "getDefaultCloudMLRegion",
+      "matches": 11,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "tL",
+      "newName": "ParseContext",
+      "matches": 11,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "bz",
+      "newName": "toTypeTag",
+      "matches": 10,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "aR",
+      "newName": "initIsObjectLike",
+      "matches": 10,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "JT",
+      "newName": "getParsedType",
+      "matches": 10,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "t7A",
+      "newName": "toStringTag",
+      "matches": 7,
+      "type": "symbol",
+      "confidence": "high"
+    },
+    {
+      "oldName": "xOA",
+      "newName": "validators",
+      "matches": 6,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "_ZA",
+      "newName": "validatorsExport",
+      "matches": 6,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "Le",
+      "newName": "getAWSRegion",
+      "matches": 5,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "xZA",
+      "newName": "Axios",
+      "matches": 5,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "hGA",
+      "newName": "makeIssue",
+      "matches": 5,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "h21",
+      "newName": "defineProperty",
+      "matches": 4,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "aqA",
+      "newName": "globalObjectRef",
+      "matches": 4,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "SQ0",
+      "newName": "objectPrototype",
+      "matches": 4,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "vQ0",
+      "newName": "symToStringTag",
+      "matches": 4,
+      "type": "symbol",
+      "confidence": "high"
+    },
+    {
+      "oldName": "Ne",
+      "newName": "parseBooleanNegative",
+      "matches": 4,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "ILA",
+      "newName": "bashMaxOutputLengthConfig",
+      "matches": 4,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "GLA",
+      "newName": "configValidators",
+      "matches": 4,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "ZLA",
+      "newName": "initConfigValidators",
+      "matches": 4,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "r61",
+      "newName": "InterceptorManagerExport",
+      "matches": 4,
+      "type": "class",
+      "confidence": "high"
+    },
+    {
+      "oldName": "CRA",
+      "newName": "StatsigClient",
+      "matches": 4,
+      "type": "class",
+      "confidence": "medium"
+    },
+    {
+      "oldName": "EB9",
+      "newName": "globalObject",
+      "matches": 3,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "g21",
+      "newName": "initGlobalObject",
+      "matches": 3,
+      "type": "function",
+      "confidence": "high"
+    },
+    {
+      "oldName": "HB9",
+      "newName": "selfObject",
+      "matches": 3,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "zB9",
+      "newName": "rootObject",
+      "matches": 3,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "UB9",
+      "newName": "symbolConstructor",
+      "matches": 3,
+      "type": "variable",
+      "confidence": "high"
+    },
+    {
+      "oldName": "wB9",
+      "newName": "hasOwnProperty",
+      "matches": 3,
+      "type": "function",
+      "confidence": "high"
+    }
+  ],
+  "summary": {
+    "totalIdentifiersRenamed": 78,
+    "totalOccurrencesReplaced": 6720,
+    "avgReplacementsPerIdentifier": "86.15",
+    "fileSizeMB": "14.25",
+    "replacementsPerMB": "471.55"
+  }
+}

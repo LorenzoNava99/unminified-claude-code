@@ -1,0 +1,249 @@
+{
+  "totalMappings": 18,
+  "appliedRenames": 18,
+  "totalReplacements": 119,
+  "byCategory": {
+    "opentelemetryAdvanced": {
+      "mappings": 8,
+      "replacements": 51
+    },
+    "domAndParsing": {
+      "mappings": 1,
+      "replacements": 7
+    },
+    "crcAndHashing": {
+      "mappings": 1,
+      "replacements": 8
+    },
+    "grpcExtended": {
+      "mappings": 1,
+      "replacements": 8
+    },
+    "protobuf": {
+      "mappings": 1,
+      "replacements": 8
+    },
+    "statsig": {
+      "mappings": 1,
+      "replacements": 7
+    },
+    "awsServices": {
+      "mappings": 1,
+      "replacements": 6
+    },
+    "errorHandling": {
+      "mappings": 1,
+      "replacements": 6
+    },
+    "platformUtils": {
+      "mappings": 1,
+      "replacements": 6
+    },
+    "predicates": {
+      "mappings": 1,
+      "replacements": 6
+    },
+    "config": {
+      "mappings": 1,
+      "replacements": 6
+    }
+  },
+  "details": [
+    {
+      "old": "Q42",
+      "new": "OtelAttributeUtilsExports",
+      "replacements": 8,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "isAttributeValue",
+        "isAttributeKey",
+        "sanitizeAttributes"
+      ]
+    },
+    {
+      "old": "XM1",
+      "new": "CrcUtilsExports",
+      "replacements": 8,
+      "category": "crcAndHashing",
+      "exports": [
+        "AwsCrc32",
+        "Crc32",
+        "crc32"
+      ]
+    },
+    {
+      "old": "VE2",
+      "new": "GrpcPickerExports",
+      "replacements": 8,
+      "category": "grpcExtended",
+      "exports": [
+        "QueuePicker",
+        "UnavailablePicker",
+        "PickResultType"
+      ]
+    },
+    {
+      "old": "AU2",
+      "new": "ProtobufLoaderExports",
+      "replacements": 8,
+      "category": "protobuf",
+      "exports": [
+        "addCommonProtos",
+        "loadProtosWithOptionsSync",
+        "loadProtosWithOptions"
+      ]
+    },
+    {
+      "old": "NL2",
+      "new": "OtelLoggerProviderExports",
+      "replacements": 7,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "LoggerProvider",
+        "DEFAULT_LOGGER_NAME"
+      ]
+    },
+    {
+      "old": "WG5",
+      "new": "DomImplementationExports",
+      "replacements": 7,
+      "category": "domAndParsing",
+      "exports": [
+        "createDOMImplementation",
+        "createDocument",
+        "createIncrementalHTMLParser",
+        "createWindow",
+        "impl"
+      ]
+    },
+    {
+      "old": "HE0",
+      "new": "StatsigMetadataExports",
+      "replacements": 7,
+      "category": "statsig",
+      "exports": [
+        "StatsigMetadataProvider",
+        "SDK_VERSION"
+      ]
+    },
+    {
+      "old": "N22",
+      "new": "OtelNoopLoggerExports",
+      "replacements": 6,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "NOOP_LOGGER_PROVIDER",
+        "NoopLoggerProvider"
+      ]
+    },
+    {
+      "old": "Q92",
+      "new": "OtelHistogramAggregatorExports",
+      "replacements": 6,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "HistogramAggregator",
+        "HistogramAccumulation"
+      ]
+    },
+    {
+      "old": "FJ2",
+      "new": "OtelAggregationTypeExports",
+      "replacements": 6,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "toAggregation",
+        "AggregationType"
+      ]
+    },
+    {
+      "old": "VJ2",
+      "new": "OtelAggregationSelectorsExports",
+      "replacements": 6,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR",
+        "DEFAULT_AGGREGATION_SELECTOR"
+      ]
+    },
+    {
+      "old": "G11",
+      "new": "OtelSpanProcessorExports",
+      "replacements": 6,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "RandomIdGenerator",
+        "BatchSpanProcessor"
+      ]
+    },
+    {
+      "old": "Z11",
+      "new": "OtelSpanProcessorReExports",
+      "replacements": 6,
+      "category": "opentelemetryAdvanced",
+      "exports": [
+        "RandomIdGenerator",
+        "BatchSpanProcessor"
+      ]
+    },
+    {
+      "old": "KC1",
+      "new": "StsClientExports",
+      "replacements": 6,
+      "category": "awsServices",
+      "exports": [
+        "STSClient",
+        "__Client"
+      ]
+    },
+    {
+      "old": "X42",
+      "new": "GlobalErrorHandlerExports",
+      "replacements": 6,
+      "category": "errorHandling",
+      "exports": [
+        "globalErrorHandler",
+        "setGlobalErrorHandler"
+      ]
+    },
+    {
+      "old": "NX2",
+      "new": "PlatformNormalizerExports",
+      "replacements": 6,
+      "category": "platformUtils",
+      "exports": [
+        "normalizeType",
+        "normalizeArch"
+      ]
+    },
+    {
+      "old": "TF2",
+      "new": "PredicateExports",
+      "replacements": 6,
+      "category": "predicates",
+      "exports": [
+        "ExactPredicate",
+        "PatternPredicate"
+      ]
+    },
+    {
+      "old": "ZL2",
+      "new": "ConfigLimitsExports",
+      "replacements": 6,
+      "category": "config",
+      "exports": [
+        "reconfigureLimits",
+        "loadDefaultConfig"
+      ]
+    }
+  ],
+  "meta": {
+    "inputFile": "deobfuscated-renamed-wave46.js",
+    "outputFile": "deobfuscated-renamed-wave7plus.js",
+    "originalSize": 15073262,
+    "newSize": 15075580,
+    "wave": "Wave 7+",
+    "strategy": "High-confidence via batch inspection",
+    "timestamp": "2025-11-12T18:20:54.125Z"
+  }
+}

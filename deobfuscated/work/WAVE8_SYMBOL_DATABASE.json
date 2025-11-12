@@ -1,0 +1,30 @@
+{
+  "comment": "Wave 8: Low-frequency high-value identifiers (3-5 occurrences)",
+  "version": "1.0",
+  "strategy": "Batch inspection of remaining low-frequency modules with clear purposes",
+
+  "grpcExtended": {
+    "comment": "Additional gRPC infrastructure modules",
+    "AE2": {
+      "name": "GrpcChannelCredentialsExports",
+      "confidence": "high",
+      "occurrences": 5,
+      "exports": ["ChannelCredentials", "createCertificateProviderChannelCredentials"],
+      "purpose": "gRPC channel credentials and certificate provider"
+    },
+    "OE2": {
+      "name": "GrpcChannelOptionsExports",
+      "confidence": "high",
+      "occurrences": 5,
+      "exports": ["recognizedOptions", "channelOptionsEqual"],
+      "purpose": "gRPC channel options utilities"
+    },
+    "YE2": {
+      "name": "GrpcServiceConfigValidationExports",
+      "confidence": "high",
+      "occurrences": 5,
+      "exports": ["validateRetryThrottling", "validateServiceConfig", "extractAndSelectServiceConfig"],
+      "purpose": "gRPC service configuration validation"
+    }
+  }
+}

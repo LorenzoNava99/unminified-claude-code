@@ -1,0 +1,233 @@
+{
+  "totalMappings": 34,
+  "appliedRenames": 34,
+  "totalReplacements": 1421,
+  "byCategory": {
+    "opentelemetry": {
+      "mappings": 6,
+      "replacements": 930
+    },
+    "numberedClasses": {
+      "mappings": 22,
+      "replacements": 401
+    },
+    "numberedFunctions": {
+      "mappings": 6,
+      "replacements": 90
+    }
+  },
+  "details": [
+    {
+      "old": "z32",
+      "new": "OtelSemanticAttributes",
+      "replacements": 548,
+      "category": "opentelemetry"
+    },
+    {
+      "old": "QZ2",
+      "new": "OtelSemanticConventions",
+      "replacements": 272,
+      "category": "opentelemetry"
+    },
+    {
+      "old": "JZ2",
+      "new": "OtelMetrics",
+      "replacements": 104,
+      "category": "opentelemetry"
+    },
+    {
+      "old": "RX9",
+      "new": "ReactExports",
+      "replacements": 37,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "CA6",
+      "new": "HtmlParserExports",
+      "replacements": 34,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "QJ2",
+      "new": "OtelAggregationExports",
+      "replacements": 32,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "WI5",
+      "new": "DomNamespaceExports",
+      "replacements": 31,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "TZ2",
+      "new": "OtelTimeExports",
+      "replacements": 26,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "MU2",
+      "new": "MetricsUtilsExports",
+      "replacements": 26,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "a22",
+      "new": "otelCoreUtils",
+      "replacements": 24,
+      "category": "numberedFunctions"
+    },
+    {
+      "old": "x00",
+      "new": "regexUtils",
+      "replacements": 23,
+      "category": "numberedFunctions"
+    },
+    {
+      "old": "FW2",
+      "new": "FileWriterExports",
+      "replacements": 22,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "x64",
+      "new": "base64Utils",
+      "replacements": 21,
+      "category": "numberedFunctions"
+    },
+    {
+      "old": "TK0",
+      "new": "ToolkitExports",
+      "replacements": 18,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "WU2",
+      "new": "WebUtilsExports",
+      "replacements": 18,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "f39",
+      "new": "kWebSocket",
+      "replacements": 18,
+      "category": "numberedFunctions"
+    },
+    {
+      "old": "OC2",
+      "new": "OAuthClientExports",
+      "replacements": 17,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "QF9",
+      "new": "QueryFormatterExports",
+      "replacements": 14,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "VE0",
+      "new": "ValidationErrorExports",
+      "replacements": 14,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "X92",
+      "new": "XmlParserExports",
+      "replacements": 14,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "GE0",
+      "new": "GenericErrorExports",
+      "replacements": 12,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "PV2",
+      "new": "PromiseValidatorExports",
+      "replacements": 12,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "FN2",
+      "new": "FunctionNodeExports",
+      "replacements": 12,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "YE0",
+      "new": "YieldExpressionExports",
+      "replacements": 11,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "WH2",
+      "new": "WebHookExports",
+      "replacements": 11,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "EC2",
+      "new": "Ec2ClientExports",
+      "replacements": 10,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "PS1",
+      "new": "ParseStateExports",
+      "replacements": 10,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "D42",
+      "new": "DataValidatorExports",
+      "replacements": 10,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "BW2",
+      "new": "BufferWrapperExports",
+      "replacements": 10,
+      "category": "numberedClasses"
+    },
+    {
+      "old": "YZ2",
+      "new": "otelSemanticConventionsExport",
+      "replacements": 2,
+      "category": "opentelemetry"
+    },
+    {
+      "old": "FZ2",
+      "new": "otelMetricsExport",
+      "replacements": 2,
+      "category": "opentelemetry"
+    },
+    {
+      "old": "M32",
+      "new": "otelSemanticAttributesExport",
+      "replacements": 2,
+      "category": "opentelemetry"
+    },
+    {
+      "old": "b39",
+      "new": "emptyBuffer",
+      "replacements": 2,
+      "category": "numberedFunctions"
+    },
+    {
+      "old": "h39",
+      "new": "noopConst",
+      "replacements": 2,
+      "category": "numberedFunctions"
+    }
+  ],
+  "meta": {
+    "inputFile": "deobfuscated-renamed-comprehensive.js",
+    "outputFile": "deobfuscated-renamed-wave23.js",
+    "originalSize": 15048963,
+    "newSize": 15072382,
+    "wave": "Wave 2+3",
+    "timestamp": "2025-11-12T16:43:46.437Z"
+  }
+}

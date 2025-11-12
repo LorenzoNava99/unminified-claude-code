@@ -1,0 +1,53 @@
+{
+  "totalMappings": 3,
+  "appliedRenames": 3,
+  "totalReplacements": 15,
+  "byCategory": {
+    "grpcExtended": {
+      "mappings": 3,
+      "replacements": 15
+    }
+  },
+  "details": [
+    {
+      "old": "AE2",
+      "new": "GrpcChannelCredentialsExports",
+      "replacements": 5,
+      "category": "grpcExtended",
+      "exports": [
+        "ChannelCredentials",
+        "createCertificateProviderChannelCredentials"
+      ]
+    },
+    {
+      "old": "OE2",
+      "new": "GrpcChannelOptionsExports",
+      "replacements": 5,
+      "category": "grpcExtended",
+      "exports": [
+        "recognizedOptions",
+        "channelOptionsEqual"
+      ]
+    },
+    {
+      "old": "YE2",
+      "new": "GrpcServiceConfigValidationExports",
+      "replacements": 5,
+      "category": "grpcExtended",
+      "exports": [
+        "validateRetryThrottling",
+        "validateServiceConfig",
+        "extractAndSelectServiceConfig"
+      ]
+    }
+  ],
+  "meta": {
+    "inputFile": "deobfuscated-renamed-wave7plus.js",
+    "outputFile": "deobfuscated-renamed-wave8.js",
+    "originalSize": 15075580,
+    "newSize": 15075975,
+    "wave": "Wave 8",
+    "strategy": "Low-frequency gRPC infrastructure",
+    "timestamp": "2025-11-12T19:20:47.096Z"
+  }
+}
