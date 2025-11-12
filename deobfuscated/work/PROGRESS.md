@@ -13,7 +13,7 @@
 |-------|--------|----------|-------|---------|-----------|
 | Phase 0: Initial Setup | ✅ Complete | 100% | Initial | 2025-11-12 | 2025-11-12 |
 | Phase 1: Analysis | ✅ Complete | 100% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | 2025-11-12 |
-| Phase 2: Function Analysis | 🔄 In Progress | 75% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | - |
+| Phase 2: Function Analysis | 🔄 In Progress | 80% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | - |
 | Phase 3: Renaming | ⏳ Available | 0% | - | - | - |
 | Phase 4: Module Extraction | ⏳ Available | 0% | - | - | - |
 | Phase 5: Type Definitions | ⏳ Available | 0% | - | - | - |
@@ -95,18 +95,20 @@
 
 ## Phase 2: Function Signature Analysis 🔄 IN PROGRESS
 
-**Status:** 75% Complete - Tool Mapping Done!
+**Status:** 80% Complete - Tools & Entry Point Mapped!
 **Current Agent:** claude/explore-project-setup-011CV4E2HNUYpg1m6kcyiSou
 **Started:** 2025-11-12
 **Estimated Duration:** 5-7 days
 
 ### Completed Tasks ✅
+- [x] 2.1 Entry point deep dive (main function, REPL startup) ✅ NEW
 - [x] 2.2a Mapped tool execution flow (executeToolUse, createToolExecutionStream, executeToolWithValidation)
 - [x] 2.2b Identified 14 tool name constants (A7=Read, x5=Edit, nW=Write, etc.)
 - [x] 2.2c Found ALL 16 tool object variables
 - [x] 2.2d Documented tool dispatch mechanism (line 358179)
-- [x] 2.7a Created 85 MEDIUM confidence rename mappings
+- [x] 2.7a Created 95 MEDIUM confidence rename mappings (was 85)
 - [x] 2.7b Documented telemetry, metrics, and helper functions
+- [x] 2.7c Identified API configuration constants (OAuth, production, local)
 
 ### Tool Objects Successfully Mapped (16/16) ✅
 1. I8 = readTool (line 489628)
@@ -126,17 +128,23 @@
 15. K01 = killShellTool (line 460522)
 16. D01 = bashOutputTool (line 460727)
 
-### Remaining Tasks (25%)
-- [ ] 2.1 Entry point deep dive (main function, REPL startup)
-- [ ] 2.3 API client detailed analysis (httpClient methods, request/response flow)
+### Entry Point Flow Mapped (NEW) ✅
+- h4I = cliEntryPoint (line 515437) - Called at end of file
+- _4I = mainFunction (line 513487) - Main application initialization
+- b4I = runApplication (line 513583) - Runs main application logic
+- q19 = showSetupScreens (line 513131) - Onboarding screens
+- $19 = completeOnboarding (line 513118) - Marks onboarding complete
+
+### Remaining Tasks (20%)
+- [ ] 2.3 API client detailed analysis (httpClient methods, streaming)
 - [ ] 2.4 Hook execution engine (command execution, JSON parsing)
 - [ ] 2.5 Agent system architecture (Task tool, subagent types)
 - [ ] 2.6 CLI command routing (Commander.js integration)
-- [ ] 2.7c Expand to 150+ MEDIUM confidence mappings
+- [ ] 2.7d Expand to 150+ MEDIUM confidence mappings
 
 ### Deliverables Created ✅
 - `analysis/tool-implementations.md` - Comprehensive tool mapping document (16 tools)
-- `mappings/medium-confidence-renames.json` - 85 MEDIUM confidence renames
+- `mappings/medium-confidence-renames.json` - 95 MEDIUM confidence renames
 
 ### Key Findings
 **Tool Execution Flow:**

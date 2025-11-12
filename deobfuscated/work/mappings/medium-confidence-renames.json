@@ -4,8 +4,8 @@
     "phase": "Phase 2 - Function Signature Analysis",
     "confidence_level": "MEDIUM",
     "description": "Renames with medium confidence based on usage patterns, context, and function signatures",
-    "total_mappings": 85,
-    "status": "75% Complete - Tool mapping done"
+    "total_mappings": 95,
+    "status": "80% Complete - Tools & entry point mapped"
   },
   "tool_names": {
     "A7": {
@@ -574,13 +574,87 @@
       "type": "function"
     }
   },
+  "entry_point": {
+    "h4I": {
+      "newName": "cliEntryPoint",
+      "confidence": "MEDIUM",
+      "reason": "Main CLI entry point function, called at end of file",
+      "location": "line 515437",
+      "type": "async-function",
+      "signature": "async function h4I()"
+    },
+    "_4I": {
+      "newName": "mainFunction",
+      "confidence": "MEDIUM",
+      "reason": "Main application function, handles initialization and setup",
+      "location": "line 513487",
+      "type": "async-function",
+      "signature": "async function _4I()"
+    },
+    "b4I": {
+      "newName": "runApplication",
+      "confidence": "MEDIUM",
+      "reason": "Runs the main application logic after initialization",
+      "location": "line 513583",
+      "type": "async-function",
+      "signature": "async function b4I()"
+    },
+    "q19": {
+      "newName": "showSetupScreens",
+      "confidence": "MEDIUM",
+      "reason": "Shows onboarding and setup screens",
+      "location": "line 513131",
+      "type": "async-function",
+      "signature": "async function q19(A, B, Q)"
+    },
+    "$19": {
+      "newName": "completeOnboarding",
+      "confidence": "MEDIUM",
+      "reason": "Marks onboarding as complete",
+      "location": "line 513118",
+      "type": "function"
+    },
+    "N19": {
+      "newName": "mainModule",
+      "confidence": "MEDIUM",
+      "reason": "Module exports containing main function and setup utilities",
+      "location": "line 513079",
+      "type": "module-export"
+    }
+  },
+  "api_config": {
+    "BASE_OAUTH_CONFIG": {
+      "newName": "BASE_OAUTH_CONFIG",
+      "confidence": "HIGH",
+      "reason": "OAuth configuration base object with scopes",
+      "location": "line 55822",
+      "type": "object-constant"
+    },
+    "PRODUCTION_API_CONFIG": {
+      "newName": "PRODUCTION_API_CONFIG",
+      "confidence": "HIGH",
+      "reason": "Production API configuration with Anthropic URLs",
+      "location": "line 55825",
+      "type": "object-constant"
+    },
+    "LOCAL_API_CONFIG": {
+      "newName": "LOCAL_API_CONFIG",
+      "confidence": "HIGH",
+      "reason": "Local development API configuration",
+      "location": "line 55839",
+      "type": "object-constant"
+    }
+  },
   "notes": [
-    "Phase 2 - 75% complete - tool mapping finished!",
+    "Phase 2 - 80% complete - tool mapping & entry point found!",
     "✅ 14 tool name constants identified",
     "✅ 16 tool objects fully mapped",
     "✅ Core execution flow documented (executeToolUse, createToolExecutionStream, executeToolWithValidation)",
-    "✅ 85 MEDIUM confidence renames created",
+    "✅ Entry point mapped: h4I → _4I → b4I",
+    "✅ API configuration constants identified",
+    "✅ 95 MEDIUM confidence renames created (was 85)",
     "Tools mapped: Read, Write, Edit, Bash, Grep, Glob, WebFetch, WebSearch, Task, TodoWrite, Skill, SlashCommand, NotebookEdit, BashOutput, KillShell, ExitPlanMode",
-    "Remaining Phase 2: API client analysis, entry point, hook engine, expand mappings to 150+"
+    "Entry flow: cliEntryPoint → mainFunction → runApplication",
+    "Remaining Phase 2 (20%): Hook engine analysis, expand to 150+ mappings"
   ]
 }
