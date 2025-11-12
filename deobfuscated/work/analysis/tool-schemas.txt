@@ -1,0 +1,200 @@
+  getOwnPropertyNames: VB9
+    name: "BASH_MAX_OUTPUT_LENGTH",
+    name: "CLAUDE_CODE_MAX_OUTPUT_TOKENS",
+    description: "Count of CLI sessions started"
+    description: "Count of lines of code modified, with the 'type' attribute indicating whether lines were added or removed"
+    description: "Number of pull requests created"
+    description: "Number of git commits created"
+    description: "Cost of the Claude Code session",
+    description: "Number of tokens used",
+    description: "Count of code editing tool permission decisions (accept/reject) for Edit, Write, and NotebookEdit tools"
+    description: "Total active time in seconds",
+    toolName: G,
+    let B = A.name() + (A.variadic === true ? "..." : "");
+    humanReadableArgName: DI9
+      return A._name + (A._aliases[0] ? "|" + A._aliases[0] : "") + (A.options.length ? " [options]" : "") + (B ? " " + B : "");
+    humanReadableArgName: jI9
+          A[I] = I === this._versionOptionName ? this._version : this[I];
+      let G = `error: too many arguments${this.parent ? ` for '${this.name()}'` : ""}. Expected ${B} argument${Q} but got ${A.length}.`;
+    name: A.name,
+  let B = A.name.startsWith("mcp__") ? A.name.split("__")[1] || "unknown" : "unknown";
+    name: A.name,
+    description: Q,
+      hostname: undefined,
+    G.host = Z.hostname.startsWith("[") ? Z.hostname.slice(1, -1) : Z.hostname;
+        [qf.extensionName]: K.offer()
+      G.auth = `${Z.username}:${Z.password}`;
+      A.servername = D30.isIP(A.host) ? "" : A.host;
+          [Il.extensionName]: [F]
+    description: G
+      description: G
+    description: G
+      typeName: zB.ZodEffects,
+      typeName: zB.ZodEffects,
+      typeName: zB.ZodDefault
+      typeName: zB.ZodBranded,
+      typeName: zB.ZodCatch
+      description: A
+    typeName: zB.ZodEnum,
+      typeName: zB.ZodString,
+      typeName: zB.ZodNumber,
+      typeName: zB.ZodBigInt,
+      typeName: zB.ZodBoolean,
+      typeName: zB.ZodDate,
+      typeName: zB.ZodSymbol,
+      typeName: zB.ZodUndefined,
+      typeName: zB.ZodNull,
+      typeName: zB.ZodAny,
+      typeName: zB.ZodUnknown,
+      typeName: zB.ZodNever,
+      typeName: zB.ZodVoid,
+      typeName: zB.ZodArray,
+        typeName: zB.ZodObject
+      typeName: zB.ZodObject,
+      typeName: zB.ZodObject,
+      typeName: zB.ZodObject,
+      typeName: zB.ZodUnion,
+        typeName: zB.ZodDiscriminatedUnion,
+      typeName: zB.ZodIntersection,
+      typeName: zB.ZodTuple,
+          typeName: zB.ZodRecord,
+        typeName: zB.ZodRecord,
+      typeName: zB.ZodMap,
+      typeName: zB.ZodSet,
+        typeName: zB.ZodFunction,
+      typeName: zB.ZodLazy,
+      typeName: zB.ZodLiteral,
+      typeName: zB.ZodNativeEnum,
+      typeName: zB.ZodPromise,
+      typeName: zB.ZodEffects,
+      typeName: zB.ZodEffects,
+      typeName: zB.ZodOptional,
+      typeName: zB.ZodNullable,
+      typeName: zB.ZodDefault,
+      typeName: zB.ZodCatch,
+      typeName: zB.ZodNaN,
+        typeName: zB.ZodPipeline
+      typeName: zB.ZodReadonly,
+    name: k.string(),
+    description: k.optional(k.string()),
+    description: k.optional(k.string()),
+    name: k.string(),
+    description: k.optional(k.string()),
+    description: k.optional(k.string()),
+      name: k.string(),
+    description: k.optional(k.string()),
+    description: k.optional(k.string()),
+      name: k.string(),
+    name: k.string().optional()
+    description: k.optional(k.string()),
+    description: k.optional(k.string()),
+    description: k.optional(k.string()),
+    description: k.optional(k.string()),
+    enumNames: k.optional(k.array(k.string()))
+    name: k.string()
+        name: k.string(),
+    name: k.optional(k.string()),
+              F1.error = F1.error || "Host's domain name can not be converted to ASCII via punycode: " + pQ;
+            Y1.error = Y1.error || "Host's domain name can not be converted to " + (!uA.iri ? "ASCII" : "Unicode") + " via punycode: " + q9;
+        o1.resourceName = (o1.path || "/") + (o1.query ? "?" + o1.query : "");
+              o1.error = o1.error || "Email address's domain name can not be converted to ASCII via punycode: " + pI;
+              o1.error = o1.error || "Email address's domain name can not be converted to " + (!F1.iri ? "ASCII" : "Unicode") + " via punycode: " + L9;
+    propertyNames: true,
+    hostname: b70,
+    hostname: b70,
+        G += " { keyword: 'propertyNames' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { propertyName: '" + N + "' } ";
+    propertyNames: yG0(),
+      description: {
+        propertyNames: {
+      propertyNames: {
+    description: "Meta-schema for $data reference (JSON Schema extension proposal)",
+  bJ9 = EMA.platform === "win32" ? ["APPDATA", "HOMEDRIVE", "HOMEPATH", "LOCALAPPDATA", "PATH", "PROCESSOR_ARCHITECTURE", "SYSTEMDRIVE", "SYSTEMROOT", "TEMP", "USERNAME", "USERPROFILE", "PROGRAMFILES"] : ["HOME", "LOGNAME", "PATH", "SHELL", "TERM", "USER"];
+    resource_name: k.string().optional(),
+    error_description: k.string().optional(),
+    client_name: k.string().optional(),
+    error_description: k.string().optional()
+  let G = Q.pathname.endsWith("/") ? Q.pathname : Q.pathname + "/";
+  let Z = I.pathname.endsWith("/") ? I.pathname : I.pathname + "/";
+        error_description: this.message
+      error_description: Z,
+      _globalName: null
+    let Z = Q ? Object.getOwnPropertyNames(A) : Object.keys(A);
+        name: this.name,
+        description: this.description,
+        fileName: this.fileName,
+    "application/mbms-associated-procedure-description+xml": {
+    "application/mbms-protection-description+xml": {
+    "application/mbms-user-service-description+xml": {
+    "application/vnd.kenameaapp": {
+    "application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml": {
+    "text/parameters": {
+        name: I,
+        filename: Q
+    xsrfCookieName: "XSRF-TOKEN",
+    xsrfHeaderName: "X-XSRF-TOKEN",
+      let V = Q(this.namespace + (typeof C === "undefined" ? ":" : C) + F);
+    A[0] = (this.useColors ? "%c" : "") + this.namespace + (this.useColors ? " %c" : " ") + A[0] + (this.useColors ? "%c " : " ") + "+" + NOA.exports.humanize(this.diff);
+      namespace: B,
+          F.hostname = "::1";
+    if (/^\[/.test(A.hostname) && !/^\[[:0-9a-f]+\]$/i.test(A.hostname)) {
+    Q.path = Q.search ? Q.pathname + Q.search : Q.pathname;
+      name: {
+      escapeName: Q
+    let G = `Content-Disposition: form-data; name="${Q(A)}"${!I && B.name ? `; filename="${Q(B.name)}"` : ""}${ff}`;
+      I.auth = (I.username || "") + ":" + (I.password || "");
+        I.auth = (I.auth.username || "") + ":" + (I.auth.password || "");
+    A.headers.host = A.hostname + (A.port ? ":" + A.port : "");
+          username: QA,
+        y.hostname = N.hostname.startsWith("[") ? N.hostname.slice(1, -1) : N.hostname;
+        YD0(y, B.proxy, $ + "//" + N.hostname + (N.port ? ":" + N.port : "") + y.path);
+    xsrfCookieName: Y,
+    xsrfHeaderName: Y,
+    xsrfHeaderName: G,
+    xsrfCookieName: Z,
+    Y.set("Authorization", "Basic " + btoa((J.username || "") + ":" + (J.password ? unescape(encodeURIComponent(J.password)) : "")));
+          name: "InitializeError",
+        name: c51(A, "name"),
+      eventName: iK9,
+      eventName: A,
+    eventName: A
+    let W = ((G = X?.explicit_parameters) === null || G === undefined ? undefined : G.includes(Q)) === true;
+      parameterName: Q,
+    getProviderName: () => "InMemory",
+        getProviderName: () => "LocalStorage",
+    getProviderName: () => zT.getProviderName(),
+            name: "pre_logs_flushed",
+              name: "logs_flushed",
+        eventName: "statsig::non_exposed_checks",
+          let V = C ? F.name : "No Name";
+                name: "error",
+              name: "error",
+          name: "session_expired"
+                name: "error",
+      return `${B.name}: ${B.message}`;
+          name: "pre_shutdown"
+        name: "values_updated",
+      name: A,
+      groupName: Q?.group_name ?? null
+      groupName: Q?.group_name ?? null,
+    if (A.getFeatureGate(B.gate_name, FRA(Q) ? undefined : WRA).value) {
+            name: "initialization_failure"
+        eventName: A,
+        name: "gate_evaluation",
+        name: "dynamic_config_evaluation",
+        name: "experiment_evaluation",
+        name: "layer_evaluation",
+        name: A,
+      pathname: "/"
+      A.rename = typeof A.rename !== "function" ? A.rename : function (F) {
+    toolName: SQ.string(),
+    name: I
+  name: `SIGRT${B + 1}`,
+  description: "Application-specific signal (realtime)",
+    name: "SIGHUP",
+    description: "Terminal closed",
+    name: "SIGINT",
+    description: "User interruption with CTRL-C",
+    name: "SIGQUIT",
+    description: "User interruption with CTRL-\\",
+    name: "SIGILL",
+    description: "Invalid machine instruction",

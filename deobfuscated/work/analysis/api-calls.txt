@@ -1,0 +1,30 @@
+23357:      TG(this, UMA, (B == null ? undefined : B.fetch) ?? globalThis.fetch);
+23882:  fetchFn: Z
+23899:    fetchFn: Z
+23912:      fetchFn: Z
+23927:      fetchFn: Z
+23941:        fetchFn: Z
+24002:async function eJ9(A, B, Q = fetch) {
+24015:async function i81(A, B, Q = fetch) {
+24041:async function KY0(A, B, Q = fetch) {
+24105:  fetchFn: B = fetch,
+24192:  fetchFn: X
+24219:  let D = await (X ?? fetch)(C, {
+24235:  fetchFn: Y
+24264:  let V = await (Y ?? fetch)(W, {
+24280:  fetchFn: I
+24291:  let Z = await (I ?? fetch)(G, {
+24323:    this._fetch = B?.fetch;
+24335:        fetchFn: this._fetch
+24365:    let I = this?._eventSourceInit?.fetch ?? this._fetch ?? fetch;
+24369:        fetch: async (Y, J) => {
+24447:      fetchFn: this._fetch
+24481:      let Y = await (this._fetch ?? fetch)(this._endpoint, Z);
+24488:            fetchFn: this._fetch
+24561:    this._fetch = B?.fetch;
+24575:        fetchFn: this._fetch
+24621:      let Y = await (this._fetch ?? fetch)(this._url, {
+24763:      fetchFn: this._fetch
+24810:      let F = await (this._fetch ?? fetch)(this._url, W);
+24821:            fetchFn: this._fetch
+24887:      let Z = await (this._fetch ?? fetch)(this._url, G);

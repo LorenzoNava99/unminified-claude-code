@@ -1,0 +1,100 @@
+  I80 = tR && tR.isSet;
+    createWriteStream(A) {
+      return G4.createWriteStream(A);
+      this.processedArgs = [];
+        throw Error(`Command passed to .addCommand() must have a name
+        throw Error(`Unexpected value for event passed to hook : '${A}'.
+      this.processedArgs = B;
+        Z = this._chainOrCall(Z, () => this._actionHandler(this.processedArgs));
+  streamIsTTY: B,
+    streamIsTTY: A && A.isTTY,
+    kWebSocket: Symbol("websocket"),
+      this._isServer = !!B;
+      this.params = this._isServer ? this.acceptAsServer(A) : this.acceptAsClient(A);
+          A(Error("The deflate stream was closed while data was being processed"));
+    acceptAsServer(A) {
+            } else if (!this._isServer) {
+      let I = this._isServer ? "client" : "server";
+      let I = this._isServer ? "server" : "client";
+    return M39 && typeof A === "object" && typeof A.arrayBuffer === "function" && typeof A.type === "string" && typeof A.stream === "function" && (A[Symbol.toStringTag] === "Blob" || A[Symbol.toStringTag] === "File");
+  } = HA("stream");
+    kWebSocket: y39
+      this._isServer = !!A.isServer;
+      this._compressed = false;
+        this._compressed = Q;
+      if (this._isServer) {
+        let I = this.createError(RangeError, "Unsupported WebSocket frame: payload length > 2^53 - 1", false, 1009, "WS_ERR_UNSUPPORTED_DATA_PAYLOAD_LENGTH");
+      if (this._compressed) {
+      let Z = new A(Q ? `Invalid WebSocket frame: ${B}` : B);
+  } = HA("stream");
+    kWebSocket: f39,
+        if (Z && I && I.params[I._isServer ? "server_no_context_takeover" : "client_no_context_takeover"]) {
+          let J = Error("The socket was closed while data was being compressed");
+  } = HA("stream");
+    kWebSocket: bW,
+        this._isServer = false;
+        this._isServer = true;
+        isServer: this._isServer,
+        uz(this, this._req, "WebSocket was closed before the connection was established");
+      this._sender.close(A, B, !this._isServer, Q => {
+        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+        B = !this._isServer;
+        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+        B = !this._isServer;
+        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+        mask: !this._isServer,
+        uz(this, this._req, "WebSocket was closed before the connection was established");
+      "Sec-WebSocket-Version": G.protocolVersion,
+      "Sec-WebSocket-Key": F,
+      Upgrade: "websocket"
+      G.headers["Sec-WebSocket-Extensions"] = J79({
+      G.headers["Sec-WebSocket-Protocol"] = Q.join(",");
+        G.headers["Sec-WebSocket-Origin"] = G.origin;
+      if (L === undefined || L.toLowerCase() !== "websocket") {
+      if (E.headers["sec-websocket-accept"] !== N) {
+        uz(A, H, "Invalid Sec-WebSocket-Accept header");
+      let $ = E.headers["sec-websocket-protocol"];
+      let P = E.headers["sec-websocket-extensions"];
+          uz(A, H, "Server sent a Sec-WebSocket-Extensions header but no extension was requested");
+          uz(A, H, "Invalid Sec-WebSocket-Extensions header");
+          uz(A, H, "Invalid Sec-WebSocket-Extensions header");
+      let I = Error(`WebSocket is not open: readyState ${A.readyState} (${Qk[A.readyState]})`);
+      B.pong(A, !this._isServer, E30);
+  } = HA("stream");
+  } = HA("stream");
+    kWebSocket: S79
+        WebSocket: P79,
+      let G = A.headers["sec-websocket-key"];
+      let Y = +A.headers["sec-websocket-version"];
+      if (Z === undefined || Z.toLowerCase() !== "websocket") {
+        Gl(this, A, B, 400, "Missing or invalid Sec-WebSocket-Key header");
+        Gl(this, A, B, 400, "Missing or invalid Sec-WebSocket-Version header", {
+          "Sec-WebSocket-Version": "13, 8"
+      let J = A.headers["sec-websocket-protocol"];
+          Gl(this, A, B, 400, "Invalid Sec-WebSocket-Protocol header");
+      let W = A.headers["sec-websocket-extensions"];
+          Gl(this, A, B, 400, "Invalid or unacceptable Sec-WebSocket-Extensions header");
+          origin: A.headers[`${Y === 8 ? "sec-websocket-origin" : "origin"}`],
+      let X = ["HTTP/1.1 101 Switching Protocols", "Upgrade: websocket", "Connection: Upgrade", `Sec-WebSocket-Accept: ${R79("sha1").update(B + j79).digest("base64")}`];
+      let W = new this.options.WebSocket(null, undefined, this.options);
+          X.push(`Sec-WebSocket-Protocol: ${F}`);
+        X.push(`Sec-WebSocket-Extensions: ${C}`);
+    A.assertEqual = G => {};
+    A.assertIs = B;
+    A.assertNever = Q;
+    static assert(A) {
+          Y6.assertNever(A.validation);
+      Y6.assertNever(A);
+      if (G.value !== "__proto__" && (typeof Z.value !== "undefined" || I.alwaysSet)) {
+          Y6.assertNever(G);
+          Y6.assertNever(G);
+          Y6.assertNever(G);
+          Y6.assertNever(G);
+          alwaysSet: X in I.data
+            alwaysSet: W in I.data
+              alwaysSet: W.alwaysSet
+          alwaysSet: Y in Q.data
+      Y6.assertNever(I);
+      includeContext: k.optional(k.enum(["none", "thisServer", "allServers"])),
+        this.assertCapabilityForMethod(A.method);
+    this.assertNotificationCapability(A.method);

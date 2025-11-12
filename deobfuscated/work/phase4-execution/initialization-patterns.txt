@@ -1,0 +1,223 @@
+15117:    await this._transport.start();
+22851:  async start() {
+22853:      throw Error("StdioClientTransport already started! If using Client class, note that connect() calls start() automatically.");
+24433:  async start() {
+24435:      throw Error("SSEClientTransport already started! If using Client class, note that connect() calls start() automatically.");
+24532:        start(G) {
+24749:  async start() {
+24751:      throw Error("StreamableHTTPClientTransport already started! If using Client class, note that connect() calls start() automatically.");
+37330:        Q.init(E);
+41187:    start() {
+43797:      this._logger.start();
+43895:        this._logger.start();
+46061:      var G = this._execute(Q, I);
+46335:        if (G = Q.execute(Q.state, Q.delay)) {
+46396:        if (Z = Q.execute(Q.state, Q.delay)) {
+46485:        return this._execute(Q, I);
+46668:        if (Z = Q.execute(Q.state, Q.delay)) {
+46748:        if (Z = Y.execute(Y.state, Y.delay)) {
+58719:    console.log("Using RetryOperation.start() is deprecated");
+76732:                  D[E].run();
+99853:    start() {},
+100375:        async start() {
+100724:      B._run(() => B._fromReadableStream(A));
+100732:      I._run(() => I._createMessage(A, {
+100744:    _run(A) {
+107916:      start() {},
+116903:    init(A) {
+116958:          A._init(this);
+124095:    init(A) {
+124150:          A._init(this);
+138863:    init(A) {
+138913:          A._init(this);
+144030:    init(A) {
+144080:          A._init(this);
+146844:    init(A) {
+146894:          A._init(this);
+149322:    init(A) {
+149372:          A._init(this);
+156612:      async start() {
+160392:        start() {},
+160482:        async start() {
+160832:      this.execute(this.socket.read() || kc4);
+160841:        this.execute(A);
+160844:    execute(A) {
+160865:          I = Q.llhttp_execute(this.ptr, EP, A.length);
+169355:      async start(D) {
+172248:      this.run(Q);
+172250:    run(A) {
+172363:                this.run(A);
+172370:              this.run(A);
+178603:        let J = await Z.run(Y);
+179128:      B._run(() => B._fromReadableStream(A));
+179136:      I._run(() => I._createMessage(A, {
+179148:    _run(A) {
+187575:    init(A) {
+187630:          A._init(this);
+198085:    init(A) {
+198140:          A._init(this);
+211449:    init(B) {
+211500:          Q._init(this);
+216218:    init(A) {
+216268:          A._init(this);
+224139:    return Lx8.setup(I, A, B, Q);
+224155:      Ru.init(A[tY]);
+224168:      Ru.init(Q[tY]);
+224243:        return Lx8.setup(Object.create(new.target.prototype), A, G);
+224783:    return xx8.setup(I, A, B, Q);
+224799:      aP.init(A[u5]);
+224812:      aP.init(Q[u5]);
+224846:        return xx8.setup(Object.create(new.target.prototype), A, Z);
+265165:        _bootstrap(Q, I) {
+265359:        _bootstrap(Q, I) {
+266197:      this._bootstrap(B, null);
+266207:      this._bootstrap(Q, B);
+266222:    _bootstrap(A, B) {
+275154:    __init() {
+278303:    run(A) {
+278333:Sentry.init({...});
+280197:      B.setup(A);
+280482:    init() {
+281243:      A.init();
+281685:      setup(A) {
+282032:      setup(A) {
+282149:      setup(A) {
+286322:      return YlA.run(Y, () => {
+286361:      setup(A) {
+286973:    __init() {
+287620:      setup(Q) {
+287704:      setup(Q) {
+287767:      setup(Q) {
+287864:    __init() {
+288353:      setup(G) {
+288447:    new DN6.Anr(A).setup(B);
+288899:      setup(Q) {
+288967:      setup(Q) {
+291516:      setup(I) {
+291674:      setup(Q) {
+304042:  initialize(A) {
+304176:        this.initialize(B);
+308528:    async start(W, F, C) {
+308585:    async initialize(W) {
+308714:      await Q.start(B.command, B.args || [], {
+308770:      await Q.initialize(H);
+309088:    m("[LSP SERVER MANAGER] initialize() called");
+309119:        H.start().catch(U => {
+309168:        await K.start();
+309502:  OO.initialize().then(() => {
+314568:    init(A) {
+314623:          A._init(this);
+330907:      sm.run(Z, "read", A, Q).then(I, Y);
+330927:      sm.run(J, "parse", A, Q).then(X, W);
+341248:    this.algorithm.initialize(A);
+341260:    this.mode.start(B);
+341920:    G.start(B);
+341938:    G.start(B);
+343139:          B.start();
+343162:      B.start();
+343170:      B.start();
+343216:    I.start();
+343524:    G.start(B);
+343542:    G.start(B);
+343821:    F.start(G, A);
+343828:        F.start(null, null);
+343833:          F.start(null, null);
+343849:      F.start(null, null);
+343858:        F.start(null, null);
+343914:    I.start();
+344161:          B.pools[C].start();
+344166:      W.start();
+344561:    I.start(B, Q);
+344569:    I.start(B, Q);
+346154:    I.start();
+346339:      Z.start();
+346401:      G.start();
+346449:      Q.start();
+347836:      U.start(H);
+347848:      U.start(H);
+347949:    F.start(Z);
+348024:      W.start(J);
+348087:        Z.start();
+348180:    K.start(V);
+348208:          U.start(H, null);
+348219:    C.start();
+348240:    return A.start().update(B).digest().getBytes();
+348564:          A.start();
+348634:      B.start();
+348690:      B.start();
+349282:    Q.start();
+350716:      D.start(X, K);
+350980:      i.start(J, A);
+351063:    F.start("MD5", J);
+351067:      F.start(null, null);
+351070:      F.start(null, null);
+351074:    F.start("SHA1", X);
+351079:      F.start(null, null);
+351082:      F.start(null, null);
+351091:    I.start("SHA1", A);
+353049:    Z.start({
+353094:    G.start({
+353117:    I.start("SHA1", A);
+353120:    I.start(null, null);
+353200:    J.start();
+354575:        B.start();
+354993:        I[J].start().update(Y);
+355018:          F.md.start().update(Y);
+355150:          Y.start(A.encryptedContent.parameter.copy());
+355336:      B.start(A.encryptedContent.parameter);
+355391:      D.start(UX.util.createBuffer().fillWithByte(0, 16));
+355413:    L.start("sha1", H);
+355446:    Q.start();
+400446:  async start(A) {
+423477:    start(A, B) {
+423487:      this.requester.start(A, X, (W, F) => {
+423500:        this.nextCall.start(W, D);
+423574:    start(A, B) {
+423576:      this.call.start(A, {
+423628:    start(A, B) {
+423653:      super.start(A, Z);
+423829:      D.start(C.metadata, {
+423899:      K.start(F.metadata, {
+423990:      K.start(F.metadata, {
+424045:      V.start(W.metadata, {
+425966:    return this.setup().encode(B, Q);
+425972:    return this.setup().decode(B, Q);
+425981:    return this.setup().verify(B);
+425984:    return this.setup().fromObject(B);
+425987:    return this.setup().toObject(B, Q);
+432698:    async start(A, B) {
+434952:    start(A, B) {
+435179:        this.child.start(Q, {
+435243:    start(A, B) {
+435766:      A.start(I, {
+435798:    start(A, B) {
+437619:    start(A) {
+437620:      this.responder.start(B => {
+437628:        this.nextCall.start(J);
+437965:    start(A) {
+438906:      start() {
+439444:      Q = [wg5("Calling start() is no longer necessary. It can be safely omitted.")];
+439485:    A.start({
+439545:    A.start({
+439577:    A.start({
+439625:    A.start({
+441907:    Zm5.setup();
+441908:    Ym5.setup();
+441909:    Jm5.setup();
+441910:    Xm5.setup();
+441911:    Wm5.setup();
+441912:    Fm5.setup();
+441913:    Cm5.setup();
+441914:    Vm5.setup();
+445593:    this.port = await this.authCodeListener.start();
+458908:    CQ.initialize(_X).catch(j0 => {
+470013:      return this._queue.criticalTasks.run(async () => {
+504711:  async start() {
+504972:  async start() {}
+506298:      j0A.initialize();
+506334:  Bp.init({
+508695:  async start() {
+508697:      throw Error("StdioServerTransport already started! If using Server class, note that connect() calls start() automatically.");
+511289:    start() {
+511361:      await CQ.initialize();
+511589:      _.start();

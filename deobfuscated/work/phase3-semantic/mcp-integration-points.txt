@@ -1,0 +1,100 @@
+3699:  let Q = A.match(/^MCP server ["']([^"']+)["']/);
+4606:  return K0(process.env.ENABLE_EXPERIMENTAL_MCP_CLI);
+6621:  return process.env.USE_MCP_CLI_DIR || zI0(aI9(), "claude-code-mcp-cli");
+6663:  let B = A.name.startsWith("mcp__") ? A.name.split("__")[1] || "unknown" : "unknown";
+15023:      super(`MCP error ${A}: ${B}`);
+24043:    "MCP-Protocol-Version": B
+24110:    "MCP-Protocol-Version": Q
+24132:        throw Error(`Incompatible OIDC provider at ${Y}: does not support S256 code challenge method required by MCP specification`);
+93443:      updatedMCPToolOutput: k.unknown().describe("Updates the output for MCP tools").optional()
+101353:  - IMPORTANT: If an MCP-provided web fetch tool is available, prefer using that tool instead of this one, as it may have fewer restrictions. All MCP-provided tools start with "mcp__".
+272063:      message: "Invalid MCP server or tool name. Names must contain only letters, numbers, hyphens, and underscores.",
+272066:        reason: "Security: Invalid characters in MCP identifier"
+272070:  let Z = `mcp__${I}__${G}`;
+272078:      message: `MCP tool ${I}/${G} has been denied`,
+272115:      reason: "MCP tool requires permission"
+293483:    message: "MCPB file path must end with .mcpb or .dxt"
+293484:  }).describe("Path to MCPB file relative to plugin root"), k.string().url().refine(A => A.endsWith(".mcpb") || A.endsWith(".dxt"), {
+293485:    message: "MCPB URL must end with .mcpb or .dxt"
+293486:  }).describe("URL to MCPB file")]);
+293533:    mcpServers: k.union([R8A.describe("MCP servers to include in the plugin (in addition to those in the .mcp.json file, if it exists)"), J$Q.describe("Path or URL to MCPB file containing MCP server configuration"), k.record(k.string(), Dm).describe("MCP server configurations keyed by server name"), k.array(k.union([R8A.describe("Path to MCP servers configuration file"), J$Q.describe("Path or URL to MCPB file"), k.record(k.string(), Dm).describe("Inline MCP server configurations")])).describe("Array of MCP server configurations (paths, MCPB files, or inline definitions)")])
+304331:      }, "Read MCP resource "), Q2.default.createElement(w, {
+335555:      name: "MCP tools",
+355717:    Y?.warn(`Extension ${B.name} has missing required configuration, skipping MCP config`);
+356058:    let I = Error(`Failed to generate MCP server configuration from manifest "${A.name}"`);
+356078:    m(`Failed to load MCPB cache metadata: ${G}`, {
+356094:  m(`Downloading MCPB from ${A}`);
+356119:    let Z = Error(`Failed to download MCPB file from ${A}: ${G}`);
+356165:    m(`MCPB extraction path missing: ${G.extractedPath}`);
+356171:      m(`MCPB source file missing: ${Z}`);
+356178:      m(`MCPB file modified: ${new Date(X)} > ${new Date(J)}`);
+356188:  m(`Loading MCPB from source: ${A}`);
+356191:    m(`Using cached MCPB from ${X.extractedPath} (hash: ${X.contentHash})`);
+356230:        let r = Error(`Failed to generate MCP server configuration from manifest "${R.name}"`);
+356258:      let N = Error(`MCPB file not found: ${L}`);
+356269:  m(`MCPB content hash: ${C}`);
+356271:    I("Extracting MCPB archive...");
+356276:    let L = Error("No manifest.json found in MCPB file");
+356281:  m(`MCPB manifest: ${D.name} v${D.version} by ${D.author.name}`);
+356283:    let L = Error(`MCPB manifest for "${D.name}" does not define a server configuration`);
+356317:      I("Generating MCP server configuration...");
+356327:      let f = Error(`Failed to generate MCP server configuration from manifest "${D.name}"`);
+356347:    I("Generating MCP server configuration...");
+356358:  m(`Successfully loaded MCPB: ${D.name} (extracted to ${E})`);
+356380:    m(`Loading MCP servers from MCPB: ${B}`);
+356383:      m(`MCPB [${A.name}]: ${J}`);
+356386:      m(`MCPB ${B} requires user configuration. User can configure via: /plugin → Manage plugins → ${A.name} → Configure`);
+356391:    m(`Loaded MCP server "${Y}" from MCPB (extracted to ${Z.extractedPath})`);
+356397:    m(`Failed to load MCPB ${B}: ${G}`, {
+356516:        m(`Invalid MCP server config for ${X} in ${I}: ${F.error.message}`, {
+356523:    m(`Failed to load MCP servers from ${I}: ${G}`, {
+356588:      m(`Missing environment variables in plugin MCP config: ${X.join(", ")}`, {
+356596:    m(`Missing environment variables in plugin MCP config: ${Y.join(", ")}`, {
+356647:      return `MCP server ${A.serverName} invalid: ${A.validationError}`;
+356653:      return `Failed to download MCPB from ${A.url}: ${A.reason}`;
+356655:      return `Failed to extract MCPB ${A.mcpbPath}: ${A.reason}`;
+356657:      return `MCPB manifest invalid at ${A.mcpbPath}: ${A.validationError}`;
+356781:    throw Error(`Cannot add MCP server "${A}": server is explicitly blocked by enterprise policy`);
+356785:    let Y = Z.length > 0 ? `Cannot add MCP server "${A}": not in enterprise allowlist. Allowed servers: ${Z.join(", ")}` : `Cannot add MCP server "${A}": not allowed by enterprise policy`;
+356800:          throw Error(`MCP server ${A} already exists in .mcp.json`);
+356807:          throw Error(`MCP server ${A} already exists in user config`);
+356814:          throw Error(`MCP server ${A} already exists in local config`);
+356819:      throw Error("Cannot add MCP server to scope: dynamic");
+356821:      throw Error("Cannot add MCP server to scope: enterprise");
+356870:      throw Error(`Cannot add MCP server to scope: ${Q}`);
+356881:          throw Error(`No MCP server found with name: ${A} in .mcp.json`);
+356907:          throw Error(`No user-scoped MCP server found with name: ${A}`);
+356917:          throw Error(`No project-local MCP server found with name: ${A}`);
+356924:      throw Error(`Cannot remove MCP server from scope: ${B}`);
+357142:        let V = `Plugin MCP loading error - ${C.type}: ${WS(C)}`;
+357146:        m(`Plugin not available for MCP: ${C.source} - error type: ${V}`);
+357158:      let V = `Plugin MCP server error - ${C.type}: ${WS(C)}`;
+357218:        message: "Does not adhere to MCP server configuration schema",
+357289:        message: `MCP config file not found: ${B}`,
+357325:        message: "MCP config is not a valid JSON",
+357388:  let Q = `mcp__${Ww(B)}__`;
+357392:  let Q = `mcp__${Ww(B)}__`;
+357396:  let Q = `mcp__${Ww(B)}__`;
+357400:  let Q = `mcp__${Ww(B)}__`;
+357411:  return `mcp__${Ww(A)}__`;
+357414:  return A.name?.startsWith("mcp__") || A.isMcp === true;
+357429:  let Q = `mcp__${Ww(B)}__`;
+357433:  let B = A.replace(/\s*\(MCP\)\s*$/, "");
+358188:      isMcp: G.startsWith("mcp__"),
+358529:      if ("updatedMCPToolOutput" in g) {
+358531:          x = g.updatedMCPToolOutput;
+358680:        if (F.updatedMCPToolOutput && Ev(B)) {
+358681:          W = F.updatedMCPToolOutput;
+358683:            updatedMCPToolOutput: W
+371235:  let J = `mcp__${I}__${G}`;
+371277:            AA(Error(`MCPCliPermissionRequest: No MCP suggestions found for ${I}/${G}`), El);
+371322:  }, " (MCP)")), Zz.default.createElement(w, {
+371520:  let Y = Z.endsWith(" (MCP)") ? Z.slice(0, -6) : Z;
+371601:  }), ")", Z.endsWith(" (MCP)") ? Kw.default.createElement(w, {
+371603:  }, " (MCP)") : ""), Kw.default.createElement(w, {
+390883:  if (I.length > 1 && I[1] === "(MCP)") {
+390884:    G = G + " (MCP)";
+393268:  }, E1.info, " MCP Server “", A, "” requests your input"), m2.default.createElement(S, {
+398552:      HG("useManageMCPConnections", `Failed to initialize servers as pending: ${F instanceof Error ? F.message : String(F)}`);
+398574:        HG("useManageMcpConnections", `Failed to get MCP resources: ${D instanceof Error ? D.message : String(D)}`);
+398586:      throw Error(`MCP server ${W} not found`);
