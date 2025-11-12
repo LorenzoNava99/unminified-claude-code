@@ -1,0 +1,175 @@
+{
+  "comment": "Wave 7+: Mid-tier identifiers (5-8 occurrences) - verified via export analysis",
+  "version": "1.0",
+  "strategy": "High-confidence identifiers based on batch inspection and export verification",
+
+  "opentelemetryAdvanced": {
+    "comment": "Additional OpenTelemetry modules - attribute utilities, logging, aggregation",
+    "Q42": {
+      "name": "OtelAttributeUtilsExports",
+      "confidence": "high",
+      "occurrences": 8,
+      "exports": ["isAttributeValue", "isAttributeKey", "sanitizeAttributes"],
+      "purpose": "OpenTelemetry attribute validation and sanitization utilities"
+    },
+    "NL2": {
+      "name": "OtelLoggerProviderExports",
+      "confidence": "high",
+      "occurrences": 7,
+      "exports": ["LoggerProvider", "DEFAULT_LOGGER_NAME"],
+      "purpose": "OpenTelemetry logger provider implementation"
+    },
+    "N22": {
+      "name": "OtelNoopLoggerExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["NOOP_LOGGER_PROVIDER", "NoopLoggerProvider"],
+      "purpose": "OpenTelemetry no-op logger provider for testing/disabled logging"
+    },
+    "Q92": {
+      "name": "OtelHistogramAggregatorExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["HistogramAggregator", "HistogramAccumulation"],
+      "purpose": "OpenTelemetry histogram aggregation for metrics"
+    },
+    "FJ2": {
+      "name": "OtelAggregationTypeExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["toAggregation", "AggregationType"],
+      "purpose": "OpenTelemetry aggregation type utilities"
+    },
+    "VJ2": {
+      "name": "OtelAggregationSelectorsExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR", "DEFAULT_AGGREGATION_SELECTOR"],
+      "purpose": "OpenTelemetry default aggregation selectors for metrics export"
+    },
+    "G11": {
+      "name": "OtelSpanProcessorExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["RandomIdGenerator", "BatchSpanProcessor"],
+      "purpose": "OpenTelemetry span processor and ID generation"
+    },
+    "Z11": {
+      "name": "OtelSpanProcessorReExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["RandomIdGenerator", "BatchSpanProcessor"],
+      "purpose": "Re-exports of OpenTelemetry span processor (imports from G11)"
+    }
+  },
+
+  "domAndParsing": {
+    "comment": "DOM implementation and parsing utilities",
+    "WG5": {
+      "name": "DomImplementationExports",
+      "confidence": "high",
+      "occurrences": 7,
+      "exports": ["createDOMImplementation", "createDocument", "createIncrementalHTMLParser", "createWindow", "impl"],
+      "purpose": "DOM implementation factory (domino/jsdom-style)"
+    }
+  },
+
+  "crcAndHashing": {
+    "comment": "CRC checksumming utilities",
+    "XM1": {
+      "name": "CrcUtilsExports",
+      "confidence": "high",
+      "occurrences": 8,
+      "exports": ["AwsCrc32", "Crc32", "crc32"],
+      "purpose": "CRC32 checksumming (AWS-compatible)"
+    }
+  },
+
+  "grpcExtended": {
+    "comment": "Additional gRPC utilities",
+    "VE2": {
+      "name": "GrpcPickerExports",
+      "confidence": "high",
+      "occurrences": 8,
+      "exports": ["QueuePicker", "UnavailablePicker", "PickResultType"],
+      "purpose": "gRPC load balancer picker implementations"
+    }
+  },
+
+  "protobuf": {
+    "comment": "Protocol Buffers loading utilities",
+    "AU2": {
+      "name": "ProtobufLoaderExports",
+      "confidence": "high",
+      "occurrences": 8,
+      "exports": ["addCommonProtos", "loadProtosWithOptionsSync", "loadProtosWithOptions"],
+      "purpose": "Protocol Buffers loading with common protos support"
+    }
+  },
+
+  "statsig": {
+    "comment": "Statsig feature flags and A/B testing",
+    "HE0": {
+      "name": "StatsigMetadataExports",
+      "confidence": "high",
+      "occurrences": 7,
+      "exports": ["StatsigMetadataProvider", "SDK_VERSION"],
+      "purpose": "Statsig SDK metadata provider"
+    }
+  },
+
+  "awsServices": {
+    "comment": "AWS service clients",
+    "KC1": {
+      "name": "StsClientExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["STSClient", "__Client"],
+      "purpose": "AWS STS (Security Token Service) client"
+    }
+  },
+
+  "errorHandling": {
+    "comment": "Global error handling",
+    "X42": {
+      "name": "GlobalErrorHandlerExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["globalErrorHandler", "setGlobalErrorHandler"],
+      "purpose": "Global error handler configuration"
+    }
+  },
+
+  "platformUtils": {
+    "comment": "Platform normalization utilities",
+    "NX2": {
+      "name": "PlatformNormalizerExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["normalizeType", "normalizeArch"],
+      "purpose": "OS type and architecture normalization"
+    }
+  },
+
+  "predicates": {
+    "comment": "Predicate/matcher utilities",
+    "TF2": {
+      "name": "PredicateExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["ExactPredicate", "PatternPredicate"],
+      "purpose": "Predicate matchers for exact and pattern matching"
+    }
+  },
+
+  "config": {
+    "comment": "Configuration utilities",
+    "ZL2": {
+      "name": "ConfigLimitsExports",
+      "confidence": "high",
+      "occurrences": 6,
+      "exports": ["reconfigureLimits", "loadDefaultConfig"],
+      "purpose": "Configuration limits management"
+    }
+  }
+}
