@@ -1,0 +1,34 @@
+Loading file...
+Found 26 HIGH confidence mappings to apply
+  ✓ DB9 → createRequire (2 occurrences)
+  ✓ FB9 → objectCreate (2 occurrences)
+  ✓ CB9 → getPrototypeOf (2 occurrences)
+  ✓ h21 → defineProperty (4 occurrences)
+  ✓ VB9 → getOwnPropertyNames (2 occurrences)
+  ✓ KB9 → hasOwnProperty (2 occurrences)
+  ✓ HA → require (463 occurrences)
+  ✓ T → lazyInit (1550 occurrences)
+  ✓ z → moduleWrapper (2895 occurrences)
+  ✓ IA → interopRequireDefault (623 occurrences)
+  ✓ E$ → defineExports (32 occurrences)
+  ✓ w4 → getApiConfig (36 occurrences)
+  ✓ XT0 → PRODUCTION_API_CONFIG (4 occurrences)
+  ✓ rb9 → LOCAL_API_CONFIG (3 occurrences)
+  ✓ CT0 → BASE_OAUTH_CONFIG (4 occurrences)
+  ✓ at → map (430 occurrences)
+  ✓ nI → isArray (19 occurrences)
+  ✓ nt → isSymbol (18 occurrences)
+  ✓ bz → baseGetTag (10 occurrences)
+  ✓ lX → isObject (12 occurrences)
+  ✓ rt → isFunction (14 occurrences)
+  ✓ cJ → globalThis (12 occurrences)
+  ✓ xW → Symbol (14 occurrences)
+  ✓ aqA → globalNode (4 occurrences)
+  ✓ HB9 → globalSelf (3 occurrences)
+  ✓ SB → httpClient (62 occurrences)
+
+Applied 26 renames
+Original size: 14943099 bytes
+New size: 15005472 bytes
+Writing to: /home/user/unminified-claude-code/deobfuscated/work/step2-renamed-high-confidence/deobfuscated-step2.js
+✓ Done!

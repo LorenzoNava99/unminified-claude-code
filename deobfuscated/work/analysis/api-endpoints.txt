@@ -1,0 +1,26 @@
+55827:    BASE_API_URL: "https://api.anthropic.com",
+55828:    CONSOLE_AUTHORIZE_URL: "https://console.anthropic.com/oauth/authorize",
+55830:    TOKEN_URL: "https://console.anthropic.com/v1/oauth/token",
+55841:    BASE_API_URL: "http://localhost:3000",
+55842:    CONSOLE_AUTHORIZE_URL: "http://localhost:3000/oauth/authorize",
+55844:    TOKEN_URL: "http://localhost:3000/v1/oauth/token",
+175485:  let I = `${w4().BASE_API_URL}/api/claude_cli_profile`;
+175501:  let B = `${w4().BASE_API_URL}/api/oauth/profile`;
+175820:    let I = `${w4().BASE_API_URL}/api/organization/claude_code_first_token_date`;
+400229:  let J = G ? w4().CLAUDE_AI_AUTHORIZE_URL : w4().CONSOLE_AUTHORIZE_URL;
+400257:  let J = await SB.post(w4().TOKEN_URL, Y, {
+400275:    let Q = await SB.post(w4().TOKEN_URL, B, {
+400713:    return (await SB.get(`${w4().BASE_API_URL}/api/oauth/account/settings`, {
+400730:    await SB.post(`${w4().BASE_API_URL}/api/oauth/account/grove_notice_viewed`, {}, {
+400747:    await SB.patch(`${w4().BASE_API_URL}/api/oauth/account/settings`, {
+400782:      let B = await SB.get(`${w4().BASE_API_URL}/api/claude_code_grove`, {
+446918:  let Q = `${w4().BASE_API_URL}/v1/sessions`;
+446978:    let G = `${w4().BASE_API_URL}/v1/sessions/${A}/events`;
+447044:  let Q = `${w4().BASE_API_URL}/v1/environment_providers`;
+447396:  let G = `${w4().BASE_API_URL}/v1/sessions/${A}`;
+447625:    let G = `${w4().BASE_API_URL}/v1/sessions/${A}/events`;
+447650:      let W = `${w4().BASE_API_URL}/v1/sessions/${A}`;
+447741:    let K = `${w4().BASE_API_URL}/v1/sessions`;
+448089:    let G = `${w4().BASE_API_URL}/v1/session_ingress/session/${A}`;
+463913:  let Q = `${w4().BASE_API_URL}/api/oauth/usage`;
+506217:  let B = `${w4().BASE_API_URL}/api/oauth/claude_cli/client_data`;

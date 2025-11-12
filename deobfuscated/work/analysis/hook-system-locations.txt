@@ -1,0 +1,20 @@
+59500:  UYA = ["PreToolUse", "PostToolUse", "Notification", "UserPromptSubmit", "SessionStart", "SessionEnd", "Stop", "SubagentStop", "PreCompact"];
+93430:      hookEventName: k.literal("PreToolUse"),
+93435:      hookEventName: k.literal("UserPromptSubmit"),
+93438:      hookEventName: k.literal("SessionStart"),
+93441:      hookEventName: k.literal("PostToolUse"),
+93550:    if (I.hookEvent === "SessionStart") {
+93551:      m(`Invalidating session env cache after SessionStart hook ${I.processId} completed`);
+292378:    hookEvent: "PostToolUse",
+292687:      hookEvent: "PreToolUse",
+295376:    PreToolUse: [],
+295377:    PostToolUse: [],
+295379:    UserPromptSubmit: [],
+295380:    SessionStart: [],
+295426:      PreToolUse: [],
+295427:      PostToolUse: [],
+295429:      UserPromptSubmit: [],
+295430:      SessionStart: [],
+295473:    m(`Warning: Failed to load plugin hooks. SessionStart hooks from plugins will not execute. Error: ${Y}. ${J}`, {
+295489:      hookName: "SessionStart",
+295490:      toolUseID: "SessionStart",
