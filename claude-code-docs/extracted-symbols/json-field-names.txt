@@ -1,0 +1,13 @@
+cwd
+hook_event_name
+permission_mode
+session_id
+source
+stderr
+stdin
+stdout
+stop_hook_active
+tool_input
+tool_name
+tool_response
+transcript_path

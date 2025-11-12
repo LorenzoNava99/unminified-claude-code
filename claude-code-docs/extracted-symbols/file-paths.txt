@@ -1,0 +1,15 @@
+.claude/agents
+.claude/commands
+.claude/hooks
+.claude/local
+.claude/my-project-instructions
+.claude/output-styles
+.claude/projects
+.claude/settings
+.claude/skills
+.claude/statusline
+.mcp.json
+CLAUDE.md
+managed-mcp.json
+managed-settings.json
+settings.json

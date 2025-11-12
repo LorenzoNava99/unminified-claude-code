@@ -1,0 +1,88 @@
+# Claude Code - All Extracted Symbols
+# Generated: 2025-11-12
+# Total Categories: 16
+# Total Symbols: 560+
+
+## TOOLS (17)
+TOOL: Agent
+TOOL: Bash
+TOOL: BashOutput
+TOOL: Edit
+TOOL: Glob
+TOOL: Grep
+TOOL: NotebookEdit
+TOOL: NotebookRead
+TOOL: Read
+TOOL: Skill
+TOOL: SlashCommand
+TOOL: Task
+TOOL: Tmux
+TOOL: TodoWrite
+TOOL: WebFetch
+TOOL: WebSearch
+TOOL: Write
+
+## SLASH COMMANDS (33)
+SLASH_CMD: /add-dir
+SLASH_CMD: /agents
+SLASH_CMD: /bashes
+SLASH_CMD: /bug
+SLASH_CMD: /clear
+SLASH_CMD: /compact
+SLASH_CMD: /config
+SLASH_CMD: /context
+SLASH_CMD: /cost
+SLASH_CMD: /doctor
+SLASH_CMD: /exit
+SLASH_CMD: /export
+SLASH_CMD: /help
+SLASH_CMD: /hooks
+SLASH_CMD: /init
+SLASH_CMD: /login
+SLASH_CMD: /logout
+SLASH_CMD: /mcp
+SLASH_CMD: /memory
+SLASH_CMD: /model
+SLASH_CMD: /output-style
+SLASH_CMD: /permissions
+SLASH_CMD: /pr_comments
+SLASH_CMD: /privacy-settings
+SLASH_CMD: /review
+SLASH_CMD: /sandbox
+SLASH_CMD: /rewind
+SLASH_CMD: /status
+SLASH_CMD: /statusline
+SLASH_CMD: /terminal-setup
+SLASH_CMD: /todos
+SLASH_CMD: /usage
+SLASH_CMD: /vim
+
+## HOOK EVENTS (9)
+HOOK_EVENT: PreToolUse
+HOOK_EVENT: PostToolUse
+HOOK_EVENT: UserPromptSubmit
+HOOK_EVENT: Stop
+HOOK_EVENT: SubagentStop
+HOOK_EVENT: SessionStart
+HOOK_EVENT: SessionEnd
+HOOK_EVENT: PreCompact
+HOOK_EVENT: Notification
+
+## PERMISSION MODES (4)
+PERMISSION_MODE: acceptEdits
+PERMISSION_MODE: bypassPermissions
+PERMISSION_MODE: default
+PERMISSION_MODE: plan
+
+## AGENT TYPES (6)
+AGENT_TYPE: Explore
+AGENT_TYPE: Plan
+AGENT_TYPE: code-reviewer
+AGENT_TYPE: debugger
+AGENT_TYPE: general-purpose
+AGENT_TYPE: test-runner
+
+## MODEL ALIASES (3)
+MODEL_ALIAS: haiku
+MODEL_ALIAS: opus
+MODEL_ALIAS: sonnet
