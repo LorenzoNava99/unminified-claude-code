@@ -1,0 +1,268 @@
+{
+  "meta": {
+    "version": "1.0",
+    "generated": "2025-11-12",
+    "sources": [
+      "sdk-tools.d.ts - Official tool type definitions",
+      "identifier-mapping.json - Parallel branch analysis (74 mappings)",
+      "Phase 1-7 pattern extraction (2000+ lines)",
+      "Architecture analysis (ARCHITECTURE.md)",
+      "Semantic analysis (SEMANTIC-ANALYSIS.md)"
+    ],
+    "totalMappings": 150,
+    "confidence": {
+      "high": "sdk-tools.d.ts, identifier-mapping verified",
+      "medium": "Context-based inference from architecture",
+      "low": "Single-letter parameters (context-dependent)"
+    }
+  },
+
+  "tools": {
+    "comment": "Built-in tool names from sdk-tools.d.ts",
+    "Agent": "Task/subagent execution",
+    "Bash": "Shell command execution",
+    "BashOutput": "Read background shell output",
+    "ExitPlanMode": "Exit planning mode",
+    "Edit": "FileEdit - Edit file content",
+    "Read": "FileRead - Read file content",
+    "Write": "FileWrite - Write file content",
+    "Glob": "File pattern matching",
+    "Grep": "Content search",
+    "KillShell": "Terminate background shell",
+    "ListMcpResources": "List MCP resources",
+    "Mcp": "MCP tool execution",
+    "NotebookEdit": "Edit Jupyter notebook",
+    "ReadMcpResource": "Read MCP resource",
+    "TimeMachine": "Access file history",
+    "TodoWrite": "Task list management",
+    "WebFetch": "Fetch and analyze web content",
+    "WebSearch": "Search the web",
+    "MultipleChoiceQuestion": "Ask user multiple choice question"
+  },
+
+  "coreIdentifiers": {
+    "comment": "From identifier-mapping.json (parallel branch) - HIGH CONFIDENCE",
+    "DB9": {"name": "createRequire", "type": "function", "module": "node:module"},
+    "FB9": {"name": "objectCreate", "type": "function", "module": "core"},
+    "CB9": {"name": "getPrototypeOf", "type": "function", "module": "core"},
+    "h21": {"name": "defineProperty", "type": "function", "module": "core"},
+    "VB9": {"name": "getOwnPropertyNames", "type": "function", "module": "core"},
+    "KB9": {"name": "objectHasOwnProperty", "type": "function", "module": "core"},
+    "IA": {"name": "interopRequireWildcard", "type": "function", "module": "interop"},
+    "z": {"name": "createCommonJSModule", "type": "function", "module": "module-system"},
+    "E$": {"name": "defineExports", "type": "function", "module": "module-system"},
+    "T": {"name": "createLazyModule", "type": "function", "module": "module-system"},
+    "HA": {"name": "nodeRequire", "type": "function", "module": "require"},
+    "EB9": {"name": "globalObject", "type": "variable", "module": "globals"},
+    "aqA": {"name": "globalObjectRef", "type": "variable", "module": "globals"},
+    "g21": {"name": "initGlobalObject", "type": "function", "module": "globals"},
+    "HB9": {"name": "selfObject", "type": "variable", "module": "globals"},
+    "zB9": {"name": "rootObject", "type": "variable", "module": "globals"},
+    "cJ": {"name": "globalContext", "type": "variable", "module": "context"},
+    "cL": {"name": "initGlobalContext", "type": "function", "module": "context"},
+    "UB9": {"name": "symbolConstructor", "type": "variable", "module": "symbol"},
+    "xW": {"name": "Symbol", "type": "constructor", "module": "symbol"},
+    "mp": {"name": "initSymbol", "type": "function", "module": "symbol"},
+    "qB9": {"name": "getRawTag", "type": "function", "module": "type-detection"},
+    "SQ0": {"name": "objectPrototype", "type": "variable", "module": "prototype"},
+    "wB9": {"name": "hasOwnProperty", "type": "function", "module": "core"},
+    "$B9": {"name": "objectToString", "type": "function", "module": "core"},
+    "t7A": {"name": "toStringTag", "type": "symbol", "module": "symbol"},
+    "yQ0": {"name": "getTag", "type": "function", "module": "type-detection"},
+    "kQ0": {"name": "initGetTag", "type": "function", "module": "type-detection"},
+    "MB9": {"name": "baseGetTag", "type": "function", "module": "type-detection"},
+    "NB9": {"name": "objectProto", "type": "variable", "module": "prototype"},
+    "LB9": {"name": "objToString", "type": "function", "module": "core"},
+    "_Q0": {"name": "baseToString", "type": "function", "module": "string"},
+    "xQ0": {"name": "initBaseToString", "type": "function", "module": "string"},
+    "TB9": {"name": "getTypeTag", "type": "function", "module": "type-detection"},
+    "OB9": {"name": "nullTag", "type": "constant", "value": "[object Null]"},
+    "RB9": {"name": "undefinedTag", "type": "constant", "value": "[object Undefined]"},
+    "vQ0": {"name": "symToStringTag", "type": "symbol", "module": "symbol"},
+    "bz": {"name": "toTypeTag", "type": "function", "module": "type-detection"},
+    "dp": {"name": "initToTypeTag", "type": "function", "module": "type-detection"},
+    "PB9": {"name": "isObjectLike", "type": "function", "module": "type-detection"},
+    "lX": {"name": "isObjectLike", "type": "function", "module": "type-detection"},
+    "aR": {"name": "initIsObjectLike", "type": "function", "module": "type-detection"},
+    "Y50": {"name": "randomUUID", "type": "function", "module": "crypto"}
+  },
+
+  "configIdentifiers": {
+    "comment": "Configuration and environment - HIGH CONFIDENCE",
+    "dB": {"name": "getClaudeConfigDir", "type": "function", "line": 3957},
+    "K0": {"name": "parseBoolean", "type": "function"},
+    "Ne": {"name": "parseBooleanNegative", "type": "function"},
+    "Z50": {"name": "parseEnvironmentVariables", "type": "function"},
+    "Le": {"name": "getAWSRegion", "type": "function"},
+    "pL": {"name": "getDefaultCloudMLRegion", "type": "function"},
+    "k91": {"name": "shouldMaintainProjectWorkingDir", "type": "function"},
+    "QLA": {"name": "getVertexRegionForModel", "type": "function", "lines": "4008-4027"},
+    "bB": {"name": "noopFunction", "type": "function"},
+    "ILA": {"name": "bashMaxOutputLengthConfig", "type": "variable"},
+    "GLA": {"name": "configValidators", "type": "variable"},
+    "ZLA": {"name": "initConfigValidators", "type": "function"},
+    "YB": {"name": "sessionState", "type": "variable", "line": 5}
+  },
+
+  "libraryClasses": {
+    "comment": "Identified library classes - HIGH CONFIDENCE",
+    "axios": {
+      "BK0": {"name": "InterceptorManager", "methods": ["use", "eject", "clear"]},
+      "mK0": {"name": "FormDataEntry", "purpose": "multipart/form-data encoding"},
+      "xZA": {"name": "Axios", "methods": ["request", "get", "post", "put", "delete"]},
+      "r61": {"name": "InterceptorManagerExport", "type": "export"}
+    },
+    "zod": {
+      "QC": {"name": "ParseStatus", "states": ["valid", "dirty", "aborted"]},
+      "tL": {"name": "ParseContext", "properties": ["parent", "data", "path", "key"]},
+      "k8": {"name": "ZodType", "methods": ["_parse", "_getType"]},
+      "k9": {"name": "ABORTED_STATUS", "type": "constant"},
+      "hGA": {"name": "makeIssue", "type": "function"},
+      "IQ": {"name": "addIssue", "type": "function"},
+      "JT": {"name": "getParsedType", "type": "function"},
+      "B8": {"name": "processCreateParams", "type": "function"},
+      "M2": {"name": "errorUtil", "type": "object"},
+      "bK9": {"name": "assertOptions", "type": "function"},
+      "xOA": {"name": "validators", "type": "object"},
+      "_ZA": {"name": "validatorsExport", "type": "export"}
+    },
+    "utils": {
+      "y1": {"name": "utils", "type": "object"},
+      "GI": {"name": "platformUtils", "type": "object"}
+    }
+  },
+
+  "mcpIdentifiers": {
+    "comment": "MCP protocol implementation - MEDIUM-HIGH CONFIDENCE",
+    "detectMCPServer": {"line": 3699, "pattern": "MCP server [\"']([^\"']+)[\"']"},
+    "toolNameFormat": {"line": 272070, "pattern": "mcp__${serverName}__${toolName}"},
+    "checkPKCES256": {"line": 24132, "message": "must support S256 code challenge method"},
+    "eGA": {"name": "MCPServerManager", "type": "class", "confidence": "medium"},
+    "R81": {"name": "MCPClient", "type": "class", "confidence": "medium"},
+    "oGA": {"name": "MCPTransport", "type": "class", "confidence": "medium"},
+    "_MA": {"name": "MCPToolHandler", "type": "class", "confidence": "medium"},
+    "s81": {"name": "MCPMessageBuffer", "type": "class", "confidence": "medium"}
+  },
+
+  "apiIdentifiers": {
+    "comment": "API client and streaming - MEDIUM CONFIDENCE",
+    "BASE_API_URL": {"line": 55827, "value": "https://api.anthropic.com"},
+    "anthropicApiClient": {"confidence": "medium"},
+    "bedrockClient": {"confidence": "medium"},
+    "vertexClient": {"confidence": "medium"},
+    "streamingHandler": {"confidence": "medium"},
+    "websocketClient": {"confidence": "medium"},
+    "sseParser": {"confidence": "medium"},
+    "Yz0": {"name": "NetworkCore", "line": 43496, "extends": "NetworkCore"},
+    "CRA": {"name": "StatsigClient", "line": 43765, "extends": "StatsigClientBase"}
+  },
+
+  "authIdentifiers": {
+    "comment": "Authentication and tokens - MEDIUM CONFIDENCE",
+    "sessionIngressToken": {"line": 5, "type": "variable"},
+    "oauthTokenFromFd": {"line": 6, "type": "variable"},
+    "apiKeyFromFd": {"line": 7, "type": "variable"},
+    "tokenCounter": {"line": 8, "type": "variable"},
+    "inputTokens": {"line": 9, "type": "variable"},
+    "outputTokens": {"line": 10, "type": "variable"},
+    "cacheReadInputTokens": {"line": 11, "type": "variable"},
+    "cacheCreationInputTokens": {"line": 12, "type": "variable"}
+  },
+
+  "storageIdentifiers": {
+    "comment": "LocalForage storage wrapper - HIGH CONFIDENCE",
+    "AI0": {"name": "LocalForageStore", "line": 4654, "module": "index.js"},
+    "BI0": {"name": "LocalForageDriver", "line": 4736, "module": "index.js"},
+    "QI0": {"name": "LocalForageConfig", "module": "index.js"}
+  },
+
+  "commonPatterns": {
+    "comment": "Frequent patterns requiring context-specific renaming",
+    "singleLetterParams": {
+      "A": "Usually: first argument, data, or value",
+      "B": "Usually: second argument, options, or config",
+      "Q": "Usually: query, request, or question",
+      "I": "Usually: index, item, or id",
+      "G": "Usually: group, getter, or generic",
+      "Z": "Usually: last item, zone, or end value",
+      "Y": "Usually: yield, year, or y-coordinate",
+      "J": "Usually: join, json, or j-index",
+      "X": "Usually: x-coordinate, xml, or extra",
+      "W": "Usually: width, worker, or wrapper",
+      "F": "Usually: function, filter, or flag",
+      "C": "Usually: count, callback, or class",
+      "V": "Usually: value, variable, or vector",
+      "K": "Usually: key, constant, or kind",
+      "D": "Usually: data, date, or delta",
+      "E": "Usually: event, element, or error",
+      "H": "Usually: height, handler, or header",
+      "U": "Usually: url, user, or utility"
+    },
+    "functionPatterns": {
+      "prefix_init": "Initialization function",
+      "prefix_get": "Getter function",
+      "prefix_set": "Setter function",
+      "prefix_is": "Boolean check function",
+      "prefix_has": "Existence check function",
+      "prefix_create": "Factory function",
+      "prefix_parse": "Parsing function",
+      "prefix_handle": "Event handler",
+      "prefix_execute": "Execution function",
+      "prefix_validate": "Validation function"
+    }
+  },
+
+  "environmentVariables": {
+    "comment": "330 environment variables from phase 2 extraction",
+    "ANTHROPIC_API_KEY": {"purpose": "API authentication"},
+    "CLAUDE_CONFIG_DIR": {"purpose": "Configuration directory", "line": 3957},
+    "CLAUDE_CODE_USE_BEDROCK": {"purpose": "AWS Bedrock provider flag"},
+    "ENABLE_EXPERIMENTAL_MCP_CLI": {"purpose": "MCP feature flag", "line": 4606},
+    "AWS_REGION": {"purpose": "AWS region selection"},
+    "VERTEX_REGION_CLAUDE_HAIKU_4_5": {"purpose": "Vertex region", "line": 4008},
+    "VERTEX_REGION_CLAUDE_3_5_SONNET": {"purpose": "Vertex region", "line": 4009},
+    "VERTEX_PROJECT": {"purpose": "GCP project ID"},
+    "DEBUG": {"purpose": "Debug logging flag"},
+    "CLAUDE_LOG_LEVEL": {"purpose": "Logging verbosity"},
+    "SENTRY_DSN": {"purpose": "Error reporting endpoint"},
+    "STATSIG_SDK_KEY": {"purpose": "Feature flags API key"}
+  },
+
+  "apiEndpoints": {
+    "comment": "180 API endpoints from phase 2 extraction",
+    "anthropic": [
+      "/v1/messages",
+      "/v1/messages/stream",
+      "/v1/oauth/authorize",
+      "/v1/oauth/token",
+      "/api/oauth/claude_cli/create_api_key"
+    ],
+    "bedrock": [
+      "https://bedrock.{region}.amazonaws.com",
+      "/model/{modelId}/invoke",
+      "/model/{modelId}/invoke-with-response-stream"
+    ],
+    "vertex": [
+      "https://aiplatform.googleapis.com/v1",
+      "/projects/{project}/locations/{region}/publishers/anthropic/models/{model}:streamRawPredict"
+    ]
+  },
+
+  "namingConventions": {
+    "classes": "PascalCase (e.g., WebSocketClient, ParseStatus)",
+    "functions": "camelCase (e.g., getClaudeConfigDir, parseBoolean)",
+    "constants": "SCREAMING_SNAKE_CASE (e.g., BASE_API_URL, MAX_TOKENS)",
+    "variables": "camelCase (e.g., sessionState, inputTokens)",
+    "private": "Prefix with underscore (e.g., _parseInternal)",
+    "modules": "kebab-case filenames (e.g., mcp-client.js, api-client.js)"
+  },
+
+  "renamingStrategy": {
+    "phase1": "Apply HIGH CONFIDENCE mappings (130 identifiers)",
+    "phase2": "Rename based on architecture context (top 200 frequent)",
+    "phase3": "Rename function names using call patterns",
+    "phase4": "Rename class names using inheritance/methods",
+    "phase5": "Rename parameters contextually (function-by-function)",
+    "phase6": "Validate with navigation tools and testing"
+  }
+}
