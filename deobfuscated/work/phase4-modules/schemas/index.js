@@ -13,8 +13,14 @@ const editSchemas = require('./edit-tool-schema');
 // Shell and search tools
 const bashSchemas = require('./bash-tool-schema');
 const grepSchemas = require('./grep-tool-schema');
+const globSchemas = require('./glob-tool-schema');
 
-// Task management tools
+// Web tools
+const webFetchSchemas = require('./webfetch-tool-schema');
+const webSearchSchemas = require('./websearch-tool-schema');
+
+// Agent and task tools
+const taskSchemas = require('./task-tool-schema');
 const todoWriteSchemas = require('./todowrite-tool-schema');
 
 module.exports = {
@@ -42,6 +48,30 @@ module.exports = {
   grepInputSchema: grepSchemas.grepInputSchema,
   grepOutputSchema: grepSchemas.grepOutputSchema,
   VCS_DIRECTORIES: grepSchemas.VCS_DIRECTORIES,
+
+  // Glob tool
+  globInputSchema: globSchemas.globInputSchema,
+  globOutputSchema: globSchemas.globOutputSchema,
+  MAX_GLOB_RESULTS: globSchemas.MAX_GLOB_RESULTS,
+
+  // WebFetch tool
+  webFetchInputSchema: webFetchSchemas.webFetchInputSchema,
+  webFetchOutputSchema: webFetchSchemas.webFetchOutputSchema,
+
+  // WebSearch tool
+  webSearchInputSchema: webSearchSchemas.webSearchInputSchema,
+  webSearchOutputSchema: webSearchSchemas.webSearchOutputSchema,
+  searchResultItemSchema: webSearchSchemas.searchResultItemSchema,
+  searchResultBlockSchema: webSearchSchemas.searchResultBlockSchema,
+
+  // Task tool
+  taskInputSchema: taskSchemas.taskInputSchema,
+  taskInputSchemaWithBackground: taskSchemas.taskInputSchemaWithBackground,
+  taskOutputSchema: taskSchemas.taskOutputSchema,
+  completedAgentResultSchema: taskSchemas.completedAgentResultSchema,
+  asyncLaunchedResultSchema: taskSchemas.asyncLaunchedResultSchema,
+  subAgentEnteredResultSchema: taskSchemas.subAgentEnteredResultSchema,
+  baseAgentResultSchema: taskSchemas.baseAgentResultSchema,
 
   // TodoWrite tool
   todoWriteInputSchema: todoWriteSchemas.todoWriteInputSchema,
