@@ -1,0 +1,848 @@
+{
+  "type": "module-boundaries",
+  "sourceFile": "step14-renamed/deobfuscated-renamed-wave8.js",
+  "totalLines": 515465,
+  "moduleBoundaries": {
+    "uncategorized": {
+      "moduleName": "uncategorized",
+      "symbolCount": 37,
+      "symbols": [
+        {
+          "name": "ReactExports",
+          "oldName": "RX9",
+          "startLine": 25218,
+          "endLine": 26184,
+          "lines": 966,
+          "occurrences": 37,
+          "exports": []
+        },
+        {
+          "name": "QueryFormatterExports",
+          "oldName": "QF9",
+          "startLine": 34969,
+          "endLine": 35064,
+          "lines": 95,
+          "occurrences": 14,
+          "exports": []
+        },
+        {
+          "name": "GenericErrorExports",
+          "oldName": "GE0",
+          "startLine": 40825,
+          "endLine": 40921,
+          "lines": 96,
+          "occurrences": 12,
+          "exports": []
+        },
+        {
+          "name": "YieldExpressionExports",
+          "oldName": "YE0",
+          "startLine": 40921,
+          "endLine": 41002,
+          "lines": 81,
+          "occurrences": 11,
+          "exports": []
+        },
+        {
+          "name": "ValidationErrorExports",
+          "oldName": "VE0",
+          "startLine": 41037,
+          "endLine": 41079,
+          "lines": 42,
+          "occurrences": 14,
+          "exports": []
+        },
+        {
+          "name": "StatsigMetadataExports",
+          "oldName": "HE0",
+          "startLine": 41401,
+          "endLine": 41418,
+          "lines": 17,
+          "occurrences": 7,
+          "exports": [
+            "StatsigMetadataProvider",
+            "SDK_VERSION"
+          ]
+        },
+        {
+          "name": "StsClientExports",
+          "oldName": "KC1",
+          "startLine": 129616,
+          "endLine": 129676,
+          "lines": 60,
+          "occurrences": 6,
+          "exports": [
+            "STSClient",
+            "__Client"
+          ]
+        },
+        {
+          "name": "CrcUtilsExports",
+          "oldName": "XM1",
+          "startLine": 208710,
+          "endLine": 208766,
+          "lines": 56,
+          "occurrences": 8,
+          "exports": [
+            "AwsCrc32",
+            "Crc32",
+            "crc32"
+          ]
+        },
+        {
+          "name": "HtmlParserExports",
+          "oldName": "CA6",
+          "startLine": 268555,
+          "endLine": 268831,
+          "lines": 276,
+          "occurrences": 34,
+          "exports": []
+        },
+        {
+          "name": "DomNamespaceExports",
+          "oldName": "WI5",
+          "startLine": 372079,
+          "endLine": 372193,
+          "lines": 114,
+          "occurrences": 31,
+          "exports": []
+        },
+        {
+          "name": "DomImplementationExports",
+          "oldName": "WG5",
+          "startLine": 388882,
+          "endLine": 388930,
+          "lines": 48,
+          "occurrences": 7,
+          "exports": [
+            "createDOMImplementation",
+            "createDocument",
+            "createIncrementalHTMLParser",
+            "createWindow",
+            "impl"
+          ]
+        },
+        {
+          "name": "otelCoreUtils",
+          "oldName": "a22",
+          "startLine": 401099,
+          "endLine": 401205,
+          "lines": 106,
+          "occurrences": 24,
+          "exports": []
+        },
+        {
+          "name": "XmlParserExports",
+          "oldName": "X92",
+          "startLine": 401548,
+          "endLine": 401575,
+          "lines": 27,
+          "occurrences": 14,
+          "exports": []
+        },
+        {
+          "name": "GlobalErrorHandlerExports",
+          "oldName": "X42",
+          "startLine": 402373,
+          "endLine": 402391,
+          "lines": 18,
+          "occurrences": 6,
+          "exports": [
+            "globalErrorHandler",
+            "setGlobalErrorHandler"
+          ]
+        },
+        {
+          "name": "DataValidatorExports",
+          "oldName": "D42",
+          "startLine": 402391,
+          "endLine": 402439,
+          "lines": 48,
+          "occurrences": 10,
+          "exports": []
+        },
+        {
+          "name": "OtelTimeExports",
+          "oldName": "TZ2",
+          "startLine": 403768,
+          "endLine": 403863,
+          "lines": 95,
+          "occurrences": 26,
+          "exports": []
+        },
+        {
+          "name": "OtelAggregationExports",
+          "oldName": "QJ2",
+          "startLine": 404968,
+          "endLine": 405080,
+          "lines": 112,
+          "occurrences": 32,
+          "exports": []
+        },
+        {
+          "name": "PlatformNormalizerExports",
+          "oldName": "NX2",
+          "startLine": 405894,
+          "endLine": 405924,
+          "lines": 30,
+          "occurrences": 6,
+          "exports": [
+            "normalizeType",
+            "normalizeArch"
+          ]
+        },
+        {
+          "name": "BufferWrapperExports",
+          "oldName": "BW2",
+          "startLine": 406238,
+          "endLine": 406280,
+          "lines": 42,
+          "occurrences": 10,
+          "exports": []
+        },
+        {
+          "name": "FileWriterExports",
+          "oldName": "FW2",
+          "startLine": 406280,
+          "endLine": 406370,
+          "lines": 90,
+          "occurrences": 22,
+          "exports": []
+        },
+        {
+          "name": "PredicateExports",
+          "oldName": "TF2",
+          "startLine": 407336,
+          "endLine": 407387,
+          "lines": 51,
+          "occurrences": 6,
+          "exports": [
+            "ExactPredicate",
+            "PatternPredicate"
+          ]
+        },
+        {
+          "name": "OAuthClientExports",
+          "oldName": "OC2",
+          "startLine": 407956,
+          "endLine": 408044,
+          "lines": 88,
+          "occurrences": 17,
+          "exports": []
+        },
+        {
+          "name": "PromiseValidatorExports",
+          "oldName": "PV2",
+          "startLine": 418550,
+          "endLine": 418609,
+          "lines": 59,
+          "occurrences": 12,
+          "exports": []
+        },
+        {
+          "name": "GrpcLoadBalancerExports",
+          "oldName": "IE2",
+          "startLine": 421006,
+          "endLine": 421098,
+          "lines": 92,
+          "occurrences": 10,
+          "exports": [
+            "createChildChannelControlHelper",
+            "registerLoadBalancerType",
+            "registerDefaultLoadBalancerType",
+            "createLoadBalancer",
+            "isLoadBalancerNameRegistered",
+            "parseLoadBalancingConfig"
+          ]
+        },
+        {
+          "name": "WebHookExports",
+          "oldName": "WH2",
+          "startLine": 423336,
+          "endLine": 423687,
+          "lines": 351,
+          "occurrences": 11,
+          "exports": []
+        },
+        {
+          "name": "WebUtilsExports",
+          "oldName": "WU2",
+          "startLine": 431474,
+          "endLine": 431659,
+          "lines": 185,
+          "occurrences": 18,
+          "exports": []
+        },
+        {
+          "name": "MetricsUtilsExports",
+          "oldName": "MU2",
+          "startLine": 431659,
+          "endLine": 432194,
+          "lines": 535,
+          "occurrences": 26,
+          "exports": []
+        },
+        {
+          "name": "FunctionNodeExports",
+          "oldName": "FN2",
+          "startLine": 441947,
+          "endLine": 442050,
+          "lines": 103,
+          "occurrences": 12,
+          "exports": []
+        },
+        {
+          "name": "ConfigLimitsExports",
+          "oldName": "ZL2",
+          "startLine": 442879,
+          "endLine": 442904,
+          "lines": 25,
+          "occurrences": 6,
+          "exports": [
+            "reconfigureLimits",
+            "loadDefaultConfig"
+          ]
+        }
+      ],
+      "lineRanges": [
+        {
+          "start": 25218,
+          "end": 26184,
+          "symbols": [
+            "ReactExports"
+          ]
+        },
+        {
+          "start": 34969,
+          "end": 35064,
+          "symbols": [
+            "QueryFormatterExports"
+          ]
+        },
+        {
+          "start": 40825,
+          "end": 41079,
+          "symbols": [
+            "GenericErrorExports",
+            "YieldExpressionExports",
+            "ValidationErrorExports"
+          ]
+        },
+        {
+          "start": 41401,
+          "end": 41418,
+          "symbols": [
+            "StatsigMetadataExports"
+          ]
+        },
+        {
+          "start": 129616,
+          "end": 129676,
+          "symbols": [
+            "StsClientExports"
+          ]
+        },
+        {
+          "start": 208710,
+          "end": 208766,
+          "symbols": [
+            "CrcUtilsExports"
+          ]
+        },
+        {
+          "start": 268555,
+          "end": 268831,
+          "symbols": [
+            "HtmlParserExports"
+          ]
+        },
+        {
+          "start": 372079,
+          "end": 372193,
+          "symbols": [
+            "DomNamespaceExports"
+          ]
+        },
+        {
+          "start": 388882,
+          "end": 388930,
+          "symbols": [
+            "DomImplementationExports"
+          ]
+        },
+        {
+          "start": 401099,
+          "end": 401205,
+          "symbols": [
+            "otelCoreUtils"
+          ]
+        },
+        {
+          "start": 401548,
+          "end": 401575,
+          "symbols": [
+            "XmlParserExports"
+          ]
+        },
+        {
+          "start": 402373,
+          "end": 402439,
+          "symbols": [
+            "GlobalErrorHandlerExports",
+            "DataValidatorExports"
+          ]
+        },
+        {
+          "start": 403768,
+          "end": 403863,
+          "symbols": [
+            "OtelTimeExports"
+          ]
+        },
+        {
+          "start": 404968,
+          "end": 405080,
+          "symbols": [
+            "OtelAggregationExports"
+          ]
+        },
+        {
+          "start": 405894,
+          "end": 405924,
+          "symbols": [
+            "PlatformNormalizerExports"
+          ]
+        },
+        {
+          "start": 406238,
+          "end": 406370,
+          "symbols": [
+            "BufferWrapperExports",
+            "FileWriterExports"
+          ]
+        },
+        {
+          "start": 407336,
+          "end": 407387,
+          "symbols": [
+            "PredicateExports"
+          ]
+        },
+        {
+          "start": 407956,
+          "end": 408044,
+          "symbols": [
+            "OAuthClientExports"
+          ]
+        },
+        {
+          "start": 418550,
+          "end": 418609,
+          "symbols": [
+            "PromiseValidatorExports"
+          ]
+        },
+        {
+          "start": 421006,
+          "end": 421098,
+          "symbols": [
+            "GrpcLoadBalancerExports"
+          ]
+        },
+        {
+          "start": 423336,
+          "end": 423687,
+          "symbols": [
+            "WebHookExports"
+          ]
+        },
+        {
+          "start": 431474,
+          "end": 432194,
+          "symbols": [
+            "WebUtilsExports",
+            "MetricsUtilsExports"
+          ]
+        },
+        {
+          "start": 441947,
+          "end": 442050,
+          "symbols": [
+            "FunctionNodeExports"
+          ]
+        },
+        {
+          "start": 442879,
+          "end": 442904,
+          "symbols": [
+            "ConfigLimitsExports"
+          ]
+        }
+      ],
+      "totalOccurrences": 449
+    },
+    "opentelemetry-extended": {
+      "moduleName": "opentelemetry-extended",
+      "symbolCount": 3,
+      "symbols": [
+        {
+          "name": "OtelAttributesProcessorExports",
+          "oldName": "VF2",
+          "startLine": 407096,
+          "endLine": 407159,
+          "lines": 63,
+          "occurrences": 10,
+          "exports": [
+            "createDenyListAttributesProcessor",
+            "createAllowListAttributesProcessor",
+            "createMultiAttributesProcessor",
+            "createNoopAttributesProcessor"
+          ]
+        },
+        {
+          "name": "OtlpSharedConfigExports",
+          "oldName": "ZC2",
+          "startLine": 407697,
+          "endLine": 407733,
+          "lines": 36,
+          "occurrences": 10,
+          "exports": [
+            "getSharedConfigurationDefaults",
+            "mergeOtlpSharedConfigurationWithDefaults",
+            "wrapStaticHeadersInFunction",
+            "validateTimeoutMillis"
+          ]
+        },
+        {
+          "name": "OtlpSpanTransformExports",
+          "oldName": "ZK2",
+          "startLine": 418985,
+          "endLine": 419096,
+          "lines": 111,
+          "occurrences": 10,
+          "exports": [
+            "createExportTraceServiceRequest",
+            "toOtlpSpanEvent",
+            "toOtlpLink",
+            "sdkSpanToOtlpSpan"
+          ]
+        }
+      ],
+      "lineRanges": [
+        {
+          "start": 407096,
+          "end": 407159,
+          "symbols": [
+            "OtelAttributesProcessorExports"
+          ]
+        },
+        {
+          "start": 407697,
+          "end": 407733,
+          "symbols": [
+            "OtlpSharedConfigExports"
+          ]
+        },
+        {
+          "start": 418985,
+          "end": 419096,
+          "symbols": [
+            "OtlpSpanTransformExports"
+          ]
+        }
+      ],
+      "totalOccurrences": 30
+    },
+    "opentelemetry-advanced": {
+      "moduleName": "opentelemetry-advanced",
+      "symbolCount": 8,
+      "symbols": [
+        {
+          "name": "OtelNoopLoggerExports",
+          "oldName": "N22",
+          "startLine": 400851,
+          "endLine": 400865,
+          "lines": 14,
+          "occurrences": 6,
+          "exports": [
+            "NOOP_LOGGER_PROVIDER",
+            "NoopLoggerProvider"
+          ]
+        },
+        {
+          "name": "OtelHistogramAggregatorExports",
+          "oldName": "Q92",
+          "startLine": 401242,
+          "endLine": 401391,
+          "lines": 149,
+          "occurrences": 6,
+          "exports": [
+            "HistogramAggregator",
+            "HistogramAccumulation"
+          ]
+        },
+        {
+          "name": "OtelAttributeUtilsExports",
+          "oldName": "Q42",
+          "startLine": 402263,
+          "endLine": 402336,
+          "lines": 73,
+          "occurrences": 8,
+          "exports": [
+            "isAttributeValue",
+            "isAttributeKey",
+            "sanitizeAttributes"
+          ]
+        },
+        {
+          "name": "OtelAggregationTypeExports",
+          "oldName": "FJ2",
+          "startLine": 405080,
+          "endLine": 405125,
+          "lines": 45,
+          "occurrences": 6,
+          "exports": [
+            "toAggregation",
+            "AggregationType"
+          ]
+        },
+        {
+          "name": "OtelAggregationSelectorsExports",
+          "oldName": "VJ2",
+          "startLine": 405125,
+          "endLine": 405141,
+          "lines": 16,
+          "occurrences": 6,
+          "exports": [
+            "DEFAULT_AGGREGATION_TEMPORALITY_SELECTOR",
+            "DEFAULT_AGGREGATION_SELECTOR"
+          ]
+        },
+        {
+          "name": "OtelLoggerProviderExports",
+          "oldName": "NL2",
+          "startLine": 442976,
+          "endLine": 443037,
+          "lines": 61,
+          "occurrences": 7,
+          "exports": [
+            "LoggerProvider",
+            "DEFAULT_LOGGER_NAME"
+          ]
+        },
+        {
+          "name": "OtelSpanProcessorExports",
+          "oldName": "G11",
+          "startLine": 444242,
+          "endLine": 444262,
+          "lines": 20,
+          "occurrences": 6,
+          "exports": [
+            "RandomIdGenerator",
+            "BatchSpanProcessor"
+          ]
+        },
+        {
+          "name": "OtelSpanProcessorReExports",
+          "oldName": "Z11",
+          "startLine": 444262,
+          "endLine": 444281,
+          "lines": 19,
+          "occurrences": 6,
+          "exports": [
+            "RandomIdGenerator",
+            "BatchSpanProcessor"
+          ]
+        }
+      ],
+      "lineRanges": [
+        {
+          "start": 400851,
+          "end": 400865,
+          "symbols": [
+            "OtelNoopLoggerExports"
+          ]
+        },
+        {
+          "start": 401242,
+          "end": 401391,
+          "symbols": [
+            "OtelHistogramAggregatorExports"
+          ]
+        },
+        {
+          "start": 402263,
+          "end": 402336,
+          "symbols": [
+            "OtelAttributeUtilsExports"
+          ]
+        },
+        {
+          "start": 405080,
+          "end": 405141,
+          "symbols": [
+            "OtelAggregationTypeExports",
+            "OtelAggregationSelectorsExports"
+          ]
+        },
+        {
+          "start": 442976,
+          "end": 443037,
+          "symbols": [
+            "OtelLoggerProviderExports"
+          ]
+        },
+        {
+          "start": 444242,
+          "end": 444281,
+          "symbols": [
+            "OtelSpanProcessorExports",
+            "OtelSpanProcessorReExports"
+          ]
+        }
+      ],
+      "totalOccurrences": 51
+    },
+    "grpc-extended": {
+      "moduleName": "grpc-extended",
+      "symbolCount": 4,
+      "symbols": [
+        {
+          "name": "GrpcChannelCredentialsExports",
+          "oldName": "AE2",
+          "startLine": 420641,
+          "endLine": 421006,
+          "lines": 365,
+          "occurrences": 5,
+          "exports": [
+            "ChannelCredentials",
+            "createCertificateProviderChannelCredentials"
+          ]
+        },
+        {
+          "name": "GrpcServiceConfigValidationExports",
+          "oldName": "YE2",
+          "startLine": 421098,
+          "endLine": 421432,
+          "lines": 334,
+          "occurrences": 5,
+          "exports": [
+            "validateRetryThrottling",
+            "validateServiceConfig",
+            "extractAndSelectServiceConfig"
+          ]
+        },
+        {
+          "name": "GrpcPickerExports",
+          "oldName": "VE2",
+          "startLine": 421446,
+          "endLine": 421507,
+          "lines": 61,
+          "occurrences": 8,
+          "exports": [
+            "QueuePicker",
+            "UnavailablePicker",
+            "PickResultType"
+          ]
+        },
+        {
+          "name": "GrpcChannelOptionsExports",
+          "oldName": "OE2",
+          "startLine": 421979,
+          "endLine": 422034,
+          "lines": 55,
+          "occurrences": 5,
+          "exports": [
+            "recognizedOptions",
+            "channelOptionsEqual"
+          ]
+        }
+      ],
+      "lineRanges": [
+        {
+          "start": 420641,
+          "end": 421507,
+          "symbols": [
+            "GrpcChannelCredentialsExports",
+            "GrpcServiceConfigValidationExports",
+            "GrpcPickerExports"
+          ]
+        },
+        {
+          "start": 421979,
+          "end": 422034,
+          "symbols": [
+            "GrpcChannelOptionsExports"
+          ]
+        }
+      ],
+      "totalOccurrences": 23
+    },
+    "protobuf": {
+      "moduleName": "protobuf",
+      "symbolCount": 1,
+      "symbols": [
+        {
+          "name": "ProtobufLoaderExports",
+          "oldName": "AU2",
+          "startLine": 430624,
+          "endLine": 430691,
+          "lines": 67,
+          "occurrences": 8,
+          "exports": [
+            "addCommonProtos",
+            "loadProtosWithOptionsSync",
+            "loadProtosWithOptions"
+          ]
+        }
+      ],
+      "lineRanges": [
+        {
+          "start": 430624,
+          "end": 430691,
+          "symbols": [
+            "ProtobufLoaderExports"
+          ]
+        }
+      ],
+      "totalOccurrences": 8
+    }
+  },
+  "extractionPriorities": [
+    {
+      "moduleName": "uncategorized",
+      "score": 637.4045847108677,
+      "symbols": 37,
+      "occurrences": 449,
+      "ranges": 24
+    },
+    {
+      "moduleName": "opentelemetry-advanced",
+      "score": 259.93366769681325,
+      "symbols": 8,
+      "occurrences": 51,
+      "ranges": 6
+    },
+    {
+      "moduleName": "grpc-extended",
+      "score": 203.02112417116058,
+      "symbols": 4,
+      "occurrences": 23,
+      "ranges": 2
+    },
+    {
+      "moduleName": "opentelemetry-extended",
+      "score": 195.80283605009393,
+      "symbols": 3,
+      "occurrences": 30,
+      "ranges": 3
+    },
+    {
+      "moduleName": "protobuf",
+      "score": 155.4242509439325,
+      "symbols": 1,
+      "occurrences": 8,
+      "ranges": 1
+    }
+  ]
+}
