@@ -602,6 +602,414 @@ const jsdocTemplates = {
  * @param {string} params.welcomeMessage - Welcome message text
  * @returns {void}
  */`,
+
+  // Base/Core utility functions
+  'function baseGetTag(': `/**
+ * Gets base toString tag without Symbol.toStringTag.
+ * @param {any} value - The value to check
+ * @returns {string} The base toString tag
+ */`,
+
+  'function dB9(': `/**
+ * Creates a base function for deep comparison operations.
+ * @param {Function} comparator - The comparison function
+ * @returns {Function} The base comparison function
+ */`,
+
+  'function lB9(': `/**
+ * Checks if two values are deeply equal.
+ * @param {any} value1 - The first value
+ * @param {any} value2 - The second value
+ * @returns {boolean} True if values are deeply equal
+ */`,
+
+  'function eB9(': `/**
+ * Base implementation for comparing values.
+ * @param {any} value - The value to compare
+ * @returns {boolean} Comparison result
+ */`,
+
+  // Validation functions
+  'function zQ9(': `/**
+ * Validates value against constraints.
+ * @param {any} value - Value to validate
+ * @returns {boolean} True if valid
+ */`,
+
+  'function wQ9(': `/**
+ * Validates and processes input.
+ * @param {any} value - Value to validate
+ * @param {Object} options - Validation options
+ * @param {Object} context - Validation context
+ * @returns {any} Validated value
+ */`,
+
+  // String functions
+  'function yQ9(': `/**
+ * Processes string value.
+ * @param {string} str - String to process
+ * @param {Object} options - Processing options
+ * @returns {string} Processed string
+ */`,
+
+  'function xQ9(': `/**
+ * Transforms string value.
+ * @param {string} str - String to transform
+ * @returns {string} Transformed string
+ */`,
+
+  'function vQ9(': `/**
+ * Validates and normalizes string.
+ * @param {string} str - String to normalize
+ * @param {Object} options - Normalization options
+ * @param {Object} context - Processing context
+ * @returns {string} Normalized string
+ */`,
+
+  // Object functions
+  'function bQ9(': `/**
+ * Deep clones an object.
+ * @param {Object} obj - Object to clone
+ * @returns {Object} Cloned object
+ */`,
+
+  'function hQ9(': `/**
+ * Merges objects deeply.
+ * @param {Object} target - Target object
+ * @returns {Object} Merged object
+ */`,
+
+  'function gQ9(': `/**
+ * Gets nested property from object.
+ * @param {Object} obj - Source object
+ * @param {string} path - Property path
+ * @returns {any} Property value
+ */`,
+
+  'function mQ9(': `/**
+ * Sets nested property on object.
+ * @param {Object} obj - Target object
+ * @returns {Object} Modified object
+ */`,
+
+  'function lQ9()': `/**
+ * Creates empty object with prototype.
+ * @returns {Object} New object
+ */`,
+
+  // Array functions
+  'function w29(': `/**
+ * Filters array by predicate.
+ * @param {Array} arr - Array to filter
+ * @returns {Array} Filtered array
+ */`,
+
+  'function y29(': `/**
+ * Maps array values.
+ * @param {Array} arr - Array to map
+ * @returns {Array} Mapped array
+ */`,
+
+  'function k29(': `/**
+ * Reduces array to single value.
+ * @param {Array} arr - Array to reduce
+ * @returns {any} Reduced value
+ */`,
+
+  'function b29(': `/**
+ * Finds element in array.
+ * @param {Array} arr - Array to search
+ * @returns {any} Found element
+ */`,
+
+  'function f29(': `/**
+ * Checks if array includes value.
+ * @param {Array} arr - Array to check
+ * @returns {boolean} True if includes
+ */`,
+
+  'function u29(': `/**
+ * Sorts array by comparator.
+ * @param {Array} arr - Array to sort
+ * @param {Function} comparator - Sort function
+ * @returns {Array} Sorted array
+ */`,
+
+  'function d29()': `/**
+ * Creates new empty array.
+ * @returns {Array} New array
+ */`,
+
+  'function c29(': `/**
+ * Flattens nested array.
+ * @param {Array} arr - Array to flatten
+ * @returns {Array} Flattened array
+ */`,
+
+  'function n29(': `/**
+ * Concatenates arrays.
+ * @param {Array} arr - Array to concatenate
+ * @returns {Array} Concatenated array
+ */`,
+
+  'function r29(': `/**
+ * Slices array.
+ * @param {Array} arr - Array to slice
+ * @returns {Array} Sliced array
+ */`,
+
+  'function t29(': `/**
+ * Splices array.
+ * @param {Array} arr - Array to splice
+ * @param {number} start - Start index
+ * @returns {Array} Spliced elements
+ */`,
+
+  'function e29()': `/**
+ * Gets array iterator.
+ * @returns {Iterator} Array iterator
+ */`,
+
+  // Comparison functions
+  'function z99(': `/**
+ * Checks strict equality.
+ * @param {any} a - First value
+ * @returns {boolean} True if equal
+ */`,
+
+  'function q99(': `/**
+ * Checks loose equality.
+ * @param {any} a - First value
+ * @returns {boolean} True if equal
+ */`,
+
+  'function j99(': `/**
+ * Compares values for sorting.
+ * @param {any} a - First value
+ * @returns {number} Comparison result (-1, 0, 1)
+ */`,
+
+  'function f99(': `/**
+ * Checks if value is less than.
+ * @param {any} a - First value
+ * @returns {boolean} True if less than
+ */`,
+
+  'function h99(': `/**
+ * Checks if value is greater than.
+ * @param {any} a - First value
+ * @param {any} b - Second value
+ * @param {Object} options - Comparison options
+ * @returns {boolean} True if greater than
+ */`,
+
+  'function g99(': `/**
+ * Checks value range.
+ * @param {any} value - Value to check
+ * @param {any} min - Minimum value
+ * @param {any} max - Maximum value
+ * @returns {boolean} True if in range
+ */`,
+
+  'function a99(': `/**
+ * Normalizes comparison value.
+ * @param {any} value - Value to normalize
+ * @returns {any} Normalized value
+ */`,
+
+  'function s99(': `/**
+ * Gets comparison key.
+ * @param {any} value - Value to get key for
+ * @returns {string} Comparison key
+ */`,
+
+  // Number/Math functions
+  'function v90(': `/**
+ * Performs mathematical operation.
+ * @param {number} a - First operand
+ * @param {number} b - Second operand
+ * @param {Object} options - Operation options
+ * @param {number} precision - Result precision
+ * @param {number} scale - Scale factor
+ * @returns {number} Operation result
+ */`,
+
+  'function o21(': `/**
+ * Rounds number to precision.
+ * @param {number} num - Number to round
+ * @param {number} precision - Decimal places
+ * @returns {number} Rounded number
+ */`,
+
+  // Path/File functions
+  'function w49(': `/**
+ * Resolves file path.
+ * @param {string} path - Path to resolve
+ * @param {Object} options - Resolution options
+ * @returns {string} Resolved path
+ */`,
+
+  'function y49(': `/**
+ * Normalizes file path.
+ * @param {string} path - Path to normalize
+ * @param {Object} options - Normalization options
+ * @returns {string} Normalized path
+ */`,
+
+  'function k49(': `/**
+ * Joins path segments.
+ * @param {string} path1 - First path segment
+ * @param {string} path2 - Second path segment
+ * @param {Object} options - Join options
+ * @returns {string} Joined path
+ */`,
+
+  'function x49(': `/**
+ * Gets directory name from path.
+ * @param {string} path - File path
+ * @returns {string} Directory name
+ */`,
+
+  'function i49(': `/**
+ * Gets base name from path.
+ * @param {string} path - File path
+ * @returns {string} Base name
+ */`,
+
+  'function a49(': `/**
+ * Gets file extension.
+ * @param {string} path - File path
+ * @returns {string} File extension
+ */`,
+
+  'function s49(': `/**
+ * Checks if path is absolute.
+ * @param {string} path - Path to check
+ * @param {Object} options - Check options
+ * @returns {boolean} True if absolute
+ */`,
+
+  'function o49(': `/**
+ * Checks if path exists.
+ * @param {string} path - Path to check
+ * @returns {boolean} True if exists
+ */`,
+
+  'function t49(': `/**
+ * Gets path statistics.
+ * @param {string} path - Path to stat
+ * @returns {Object} Path statistics
+ */`,
+
+  'function e49(': `/**
+ * Reads directory contents.
+ * @param {string} path - Directory path
+ * @param {Object} options - Read options
+ * @returns {Array<string>} Directory entries
+ */`,
+
+  // Buffer functions
+  'function b69(': `/**
+ * Creates buffer from data.
+ * @param {any} data - Data to buffer
+ * @returns {Buffer} Created buffer
+ */`,
+
+  'function f69(': `/**
+ * Converts buffer to string.
+ * @param {Buffer} buffer - Buffer to convert
+ * @returns {string} String representation
+ */`,
+
+  'function h69(': `/**
+ * Concatenates buffers.
+ * @param {Buffer} buf1 - First buffer
+ * @param {Buffer} buf2 - Second buffer
+ * @returns {Buffer} Concatenated buffer
+ */`,
+
+  'function g69(': `/**
+ * Slices buffer.
+ * @param {Buffer} buffer - Buffer to slice
+ * @returns {Buffer} Sliced buffer
+ */`,
+
+  'function u69(': `/**
+ * Copies buffer.
+ * @param {Buffer} source - Source buffer
+ * @param {Buffer} target - Target buffer
+ * @returns {number} Bytes copied
+ */`,
+
+  'function m69(': `/**
+ * Compares buffers.
+ * @param {Buffer} buf1 - First buffer
+ * @param {Buffer} buf2 - Second buffer
+ * @param {Object} options - Comparison options
+ * @returns {number} Comparison result
+ */`,
+
+  // Stream functions
+  'function d69(': `/**
+ * Creates readable stream.
+ * @param {any} source - Stream source
+ * @param {Object} options - Stream options
+ * @returns {ReadableStream} Readable stream
+ */`,
+
+  'function l69(': `/**
+ * Creates writable stream.
+ * @param {any} target - Stream target
+ * @param {Object} options - Stream options
+ * @returns {WritableStream} Writable stream
+ */`,
+
+  'function i69(': `/**
+ * Pipes streams together.
+ * @param {Stream} source - Source stream
+ * @returns {Stream} Destination stream
+ */`,
+
+  'function n69(': `/**
+ * Transforms stream data.
+ * @param {any} data - Data to transform
+ * @returns {any} Transformed data
+ */`,
+
+  'function a69(': `/**
+ * Ends stream.
+ * @param {Stream} stream - Stream to end
+ * @returns {void}
+ */`,
+
+  'function s69(': `/**
+ * Destroys stream.
+ * @param {Stream} stream - Stream to destroy
+ * @returns {void}
+ */`,
+
+  // Error functions
+  'function r69(': `/**
+ * Creates error object.
+ * @param {string} message - Error message
+ * @param {string} code - Error code
+ * @param {Object} options - Error options
+ * @param {Object} context - Error context
+ * @returns {Error} Error object
+ */`,
+
+  'function o69(': `/**
+ * Handles error.
+ * @param {Error} error - Error to handle
+ * @returns {void}
+ */`,
+
+  'function e69(': `/**
+ * Formats error message.
+ * @param {Error} error - Error to format
+ * @param {Object} options - Format options
+ * @returns {string} Formatted message
+ */`,
 };
 
 /**

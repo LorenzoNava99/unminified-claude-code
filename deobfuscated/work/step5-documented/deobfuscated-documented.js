@@ -139,6 +139,11 @@ var initGetTag = createLazyModule(() => {
   toStringTag = Symbol ? Symbol.toStringTag : undefined;
   getTag = getRawTag;
 });
+/**
+ * Gets base toString tag without Symbol.toStringTag.
+ * @param {any} value - The value to check
+ * @returns {string} The base toString tag
+ */
 function baseGetTag(A) {
   return objToString.call(A);
 }
@@ -351,7 +356,8 @@ var pQ0 = createLazyModule(() => {
 });
 /**
  * Checks if two values are deeply equal.
- * @param {any} value - The first value
+ * @param {any} value1 - The first value
+ * @param {any} value2 - The second value
  * @returns {boolean} True if values are deeply equal
  */
 function lB9(A) {
@@ -373,6 +379,11 @@ var u21 = createLazyModule(() => {
   pB9 = cB9.toString;
   ny = lB9;
 });
+/**
+ * Base implementation for comparing values.
+ * @param {any} value - The value to compare
+ * @returns {boolean} Comparison result
+ */
 function eB9(A) {
   if (!OG(A) || cQ0(A)) {
     return false;
@@ -604,6 +615,11 @@ var W20;
 var F20 = createLazyModule(() => {
   W20 = HQ9;
 });
+/**
+ * Validates value against constraints.
+ * @param {any} value - Value to validate
+ * @returns {boolean} True if valid
+ */
 function zQ9(A) {
   return A !== A;
 }
@@ -625,6 +641,13 @@ var K20;
 var D20 = createLazyModule(() => {
   K20 = UQ9;
 });
+/**
+ * Validates and processes input.
+ * @param {any} value - Value to validate
+ * @param {Object} options - Validation options
+ * @param {Object} context - Validation context
+ * @returns {any} Validated value
+ */
 function wQ9(A, B, Q) {
   if (B === B) {
     return K20(A, B, Q);
@@ -762,6 +785,12 @@ var l21 = createLazyModule(() => {
   w20 = Math.max;
   INA = SQ9;
 });
+/**
+ * Processes string value.
+ * @param {string} str - String to process
+ * @param {Object} options - Processing options
+ * @returns {string} Processed string
+ */
 function yQ9(A, B) {
   return QNA(INA(A, B, st), A + "");
 }
@@ -780,6 +809,11 @@ var Ae;
 var GNA = createLazyModule(() => {
   Ae = _Q9;
 });
+/**
+ * Transforms string value.
+ * @param {string} str - String to transform
+ * @returns {string} Transformed string
+ */
 function xQ9(A) {
   return A != null && Ae(A.length) && !rt(A);
 }
@@ -789,6 +823,13 @@ var Be = createLazyModule(() => {
   GNA();
   rR = xQ9;
 });
+/**
+ * Validates and normalizes string.
+ * @param {string} str - String to normalize
+ * @param {Object} options - Normalization options
+ * @param {Object} context - Processing context
+ * @returns {string} Normalized string
+ */
 function vQ9(A, B, Q) {
   if (!OG(Q)) {
     return false;
@@ -807,6 +848,11 @@ var L20 = createLazyModule(() => {
   H$();
   N20 = vQ9;
 });
+/**
+ * Deep clones an object.
+ * @param {Object} obj - Object to clone
+ * @returns {Object} Cloned object
+ */
 function bQ9(A) {
   return $20(function (B, Q) {
     var I = -1;
@@ -834,6 +880,11 @@ var O20 = createLazyModule(() => {
   L20();
   M20 = bQ9;
 });
+/**
+ * Merges objects deeply.
+ * @param {Object} target - Target object
+ * @returns {Object} Merged object
+ */
 function hQ9(A) {
   var B = A && A.constructor;
   var Q = (typeof B == "function" && B.prototype) || fQ9;
@@ -845,6 +896,12 @@ var ZNA = createLazyModule(() => {
   fQ9 = Object.prototype;
   Qe = hQ9;
 });
+/**
+ * Gets nested property from object.
+ * @param {Object} obj - Source object
+ * @param {string} path - Property path
+ * @returns {any} Property value
+ */
 function gQ9(A, B) {
   var Q = -1;
   var I = Array(A);
@@ -857,6 +914,11 @@ var R20;
 var T20 = createLazyModule(() => {
   R20 = gQ9;
 });
+/**
+ * Sets nested property on object.
+ * @param {Object} obj - Target object
+ * @returns {Object} Modified object
+ */
 function mQ9(A) {
   return isObjectLike(A) && toTypeTag(A) == uQ9;
 }
@@ -891,6 +953,10 @@ var QGA = createLazyModule(() => {
       };
   ay = pQ9;
 });
+/**
+ * Creates empty object with prototype.
+ * @returns {Object} New object
+ */
 function lQ9() {
   return false;
 }
@@ -920,6 +986,11 @@ var IGA = createLazyModule(() => {
   aQ9 = nQ9 || S20;
   oR = aQ9;
 });
+/**
+ * Filters array by predicate.
+ * @param {Array} arr - Array to filter
+ * @returns {Array} Filtered array
+ */
 function w29(A) {
   return isObjectLike(A) && Ae(A.length) && !!QG[toTypeTag(A)];
 }
@@ -1081,6 +1152,11 @@ var u20 = createLazyModule(() => {
   P29 = DNA(Object.keys, Object);
   g20 = P29;
 });
+/**
+ * Maps array values.
+ * @param {Array} arr - Array to map
+ * @returns {Array} Mapped array
+ */
 function y29(A) {
   if (!Qe(A)) {
     return g20(A);
@@ -1103,6 +1179,11 @@ var d20 = createLazyModule(() => {
   S29 = j29.hasOwnProperty;
   m20 = y29;
 });
+/**
+ * Reduces array to single value.
+ * @param {Array} arr - Array to reduce
+ * @returns {any} Reduced value
+ */
 function k29(A) {
   if (rR(A)) {
     return KNA(A);
@@ -1130,6 +1211,11 @@ var c20;
 var p20 = createLazyModule(() => {
   c20 = _29;
 });
+/**
+ * Finds element in array.
+ * @param {Array} arr - Array to search
+ * @returns {any} Found element
+ */
 function b29(A) {
   if (!OG(A)) {
     return c20(A);
@@ -1154,6 +1240,11 @@ var i20 = createLazyModule(() => {
   v29 = x29.hasOwnProperty;
   l20 = b29;
 });
+/**
+ * Checks if array includes value.
+ * @param {Array} arr - Array to check
+ * @returns {boolean} True if includes
+ */
 function f29(A) {
   if (rR(A)) {
     return KNA(A, true);
@@ -1168,6 +1259,12 @@ var Ze = createLazyModule(() => {
   Be();
   eR = f29;
 });
+/**
+ * Sorts array by comparator.
+ * @param {Array} arr - Array to sort
+ * @param {Function} comparator - Sort function
+ * @returns {Array} Sorted array
+ */
 function u29(A, B) {
   if (nI(A)) {
     return false;
@@ -1195,6 +1292,10 @@ var ZGA = createLazyModule(() => {
   m29 = mE(Object, "create");
   sy = m29;
 });
+/**
+ * Creates new empty array.
+ * @returns {Array} New array
+ */
 function d29() {
   this.__data__ = sy ? sy(null) : {};
   this.size = 0;
@@ -1204,6 +1305,11 @@ var a20 = createLazyModule(() => {
   ZGA();
   n20 = d29;
 });
+/**
+ * Flattens nested array.
+ * @param {Array} arr - Array to flatten
+ * @returns {Array} Flattened array
+ */
 function c29(A) {
   var B = this.has(A) && delete this.__data__[A];
   this.size -= B ? 1 : 0;
@@ -1213,6 +1319,11 @@ var s20;
 var r20 = createLazyModule(() => {
   s20 = c29;
 });
+/**
+ * Concatenates arrays.
+ * @param {Array} arr - Array to concatenate
+ * @returns {Array} Concatenated array
+ */
 function n29(A) {
   var B = this.__data__;
   if (sy) {
@@ -1239,6 +1350,11 @@ var t20 = createLazyModule(() => {
   i29 = l29.hasOwnProperty;
   o20 = n29;
 });
+/**
+ * Slices array.
+ * @param {Array} arr - Array to slice
+ * @returns {Array} Sliced array
+ */
 function r29(A) {
   var B = this.__data__;
   if (sy) {
@@ -1256,6 +1372,12 @@ var A90 = createLazyModule(() => {
   s29 = a29.hasOwnProperty;
   e20 = r29;
 });
+/**
+ * Splices array.
+ * @param {Array} arr - Array to splice
+ * @param {number} start - Start index
+ * @returns {Array} Spliced elements
+ */
 function t29(A, B) {
   var Q = this.__data__;
   this.size += this.has(A) ? 0 : 1;
@@ -1291,6 +1413,10 @@ var I90 = createLazyModule(() => {
   Je.prototype.set = B90;
   r21 = Je;
 });
+/**
+ * Gets array iterator.
+ * @returns {Iterator} Array iterator
+ */
 function e29() {
   this.__data__ = [];
   this.size = 0;
@@ -1507,6 +1633,12 @@ var zNA = createLazyModule(() => {
   We.prototype.set = M90;
   lp = We;
 });
+/**
+ * Rounds number to precision.
+ * @param {number} num - Number to round
+ * @param {number} precision - Decimal places
+ * @returns {number} Rounded number
+ */
 function o21(A, B) {
   if (typeof A != "function" || (B != null && typeof B != "function")) {
     throw TypeError(E99);
@@ -1532,6 +1664,11 @@ var t21 = createLazyModule(() => {
   o21.Cache = lp;
   I0 = o21;
 });
+/**
+ * Checks strict equality.
+ * @param {any} a - First value
+ * @returns {boolean} True if equal
+ */
 function z99(A) {
   var B = I0(A, function (I) {
     if (Q.size === H99) {
@@ -1569,6 +1706,11 @@ var j90 = createLazyModule(() => {
   });
   P90 = $99;
 });
+/**
+ * Checks loose equality.
+ * @param {any} a - First value
+ * @returns {boolean} True if equal
+ */
 function q99(A) {
   if (A == null) {
     return "";
@@ -1673,6 +1815,15 @@ var x90 = createLazyModule(() => {
   k90 = Symbol ? Symbol.isConcatSpreadable : undefined;
   _90 = P99;
 });
+/**
+ * Performs mathematical operation.
+ * @param {number} a - First operand
+ * @param {number} b - Second operand
+ * @param {Object} options - Operation options
+ * @param {number} precision - Result precision
+ * @param {number} scale - Scale factor
+ * @returns {number} Operation result
+ */
 function v90(A, B, Q, I, G) {
   var Z = -1;
   var Y = A.length;
@@ -1698,6 +1849,11 @@ var f90 = createLazyModule(() => {
   x90();
   b90 = v90;
 });
+/**
+ * Compares values for sorting.
+ * @param {any} a - First value
+ * @returns {number} Comparison result (-1, 0, 1)
+ */
 function j99(A) {
   var B = A == null ? 0 : A.length;
   if (B) {
@@ -1728,6 +1884,11 @@ var qNA = createLazyModule(() => {
   y99 = DNA(Object.getPrototypeOf, Object);
   De = y99;
 });
+/**
+ * Checks if value is less than.
+ * @param {any} a - First value
+ * @returns {boolean} True if less than
+ */
 function f99(A) {
   if (!isObjectLike(A) || toTypeTag(A) != k99) {
     return false;
@@ -1757,6 +1918,13 @@ var NNA = createLazyModule(() => {
   b99 = d90.call(Object);
   np = f99;
 });
+/**
+ * Checks if value is greater than.
+ * @param {any} a - First value
+ * @param {any} b - Second value
+ * @param {Object} options - Comparison options
+ * @returns {boolean} True if greater than
+ */
 function h99(A, B, Q) {
   var I = -1;
   var G = A.length;
@@ -1779,6 +1947,13 @@ var LNA;
 var e21 = createLazyModule(() => {
   LNA = h99;
 });
+/**
+ * Checks value range.
+ * @param {any} value - Value to check
+ * @param {any} min - Minimum value
+ * @param {any} max - Maximum value
+ * @returns {boolean} True if in range
+ */
 function g99(A, B, Q) {
   var I = A.length;
   Q = Q === undefined ? I : Q;
@@ -1793,6 +1968,11 @@ var p90 = createLazyModule(() => {
   e21();
   c90 = g99;
 });
+/**
+ * Normalizes comparison value.
+ * @param {any} value - Value to normalize
+ * @returns {any} Normalized value
+ */
 function a99(A) {
   return n99.test(A);
 }
@@ -1810,6 +1990,11 @@ var A91 = createLazyModule(() => {
   n99 = RegExp("[" + i99 + u99 + p99 + l99 + "]");
   MNA = a99;
 });
+/**
+ * Gets comparison key.
+ * @param {any} value - Value to get key for
+ * @returns {string} Comparison key
+ */
 function s99(A) {
   return A.split("");
 }
@@ -1978,6 +2163,12 @@ var FGA = createLazyModule(() => {
   Ee.prototype.set = H40;
   BT = Ee;
 });
+/**
+ * Resolves file path.
+ * @param {string} path - Path to resolve
+ * @param {Object} options - Resolution options
+ * @returns {string} Resolved path
+ */
 function w49(A, B) {
   return A && createCommonJSModule$(B, U$(B), A);
 }
@@ -2102,6 +2293,12 @@ var Y91 = createLazyModule(() => {
       };
   SNA = S49;
 });
+/**
+ * Normalizes file path.
+ * @param {string} path - Path to normalize
+ * @param {Object} options - Normalization options
+ * @returns {string} Normalized path
+ */
 function y49(A, B) {
   return createCommonJSModule$(A, SNA(A), B);
 }
@@ -2111,6 +2308,13 @@ var S40 = createLazyModule(() => {
   Y91();
   j40 = y49;
 });
+/**
+ * Joins path segments.
+ * @param {string} path1 - First path segment
+ * @param {string} path2 - Second path segment
+ * @param {Object} options - Join options
+ * @returns {string} Joined path
+ */
 function k49(A, B, Q) {
   var I = B(A);
   if (nI(A)) {
@@ -2135,6 +2339,11 @@ var X91 = createLazyModule(() => {
   pp();
   VGA = _49;
 });
+/**
+ * Gets directory name from path.
+ * @param {string} path - File path
+ * @returns {string} Directory name
+ */
 function x49(A) {
   return yNA(A, eR, SNA);
 }
@@ -2226,6 +2435,11 @@ var KGA = createLazyModule(() => {
   }
   ry = ap;
 });
+/**
+ * Gets base name from path.
+ * @param {string} path - File path
+ * @returns {string} Base name
+ */
 function i49(A) {
   var B = A.length;
   var Q = new A.constructor(B);
@@ -2250,6 +2464,11 @@ var C91 = createLazyModule(() => {
   n49 = globalContext.Uint8Array;
   ze = n49;
 });
+/**
+ * Gets file extension.
+ * @param {string} path - File path
+ * @returns {string} File extension
+ */
 function a49(A) {
   var B = new A.constructor(A.byteLength);
   new ze(B).set(new ze(A));
@@ -2260,6 +2479,12 @@ var vNA = createLazyModule(() => {
   C91();
   Ue = a49;
 });
+/**
+ * Checks if path is absolute.
+ * @param {string} path - Path to check
+ * @param {Object} options - Check options
+ * @returns {boolean} True if absolute
+ */
 function s49(A, B) {
   var Q = B ? Ue(A.buffer) : A.buffer;
   return new A.constructor(Q, A.byteOffset, A.byteLength);
@@ -2269,6 +2494,11 @@ var m40 = createLazyModule(() => {
   vNA();
   u40 = s49;
 });
+/**
+ * Checks if path exists.
+ * @param {string} path - Path to check
+ * @returns {boolean} True if exists
+ */
 function o49(A) {
   var B = new A.constructor(A.source, r49.exec(A));
   B.lastIndex = A.lastIndex;
@@ -2280,6 +2510,11 @@ var c40 = createLazyModule(() => {
   r49 = /\w*$/;
   d40 = o49;
 });
+/**
+ * Gets path statistics.
+ * @param {string} path - Path to stat
+ * @returns {Object} Path statistics
+ */
 function t49(A) {
   if (l40) {
     return Object(l40.call(A));
@@ -2296,6 +2531,12 @@ var n40 = createLazyModule(() => {
   l40 = p40 ? p40.valueOf : undefined;
   i40 = t49;
 });
+/**
+ * Reads directory contents.
+ * @param {string} path - Directory path
+ * @param {Object} options - Read options
+ * @returns {Array<string>} Directory entries
+ */
 function e49(A, B) {
   var Q = B ? Ue(A.buffer) : A.buffer;
   return new A.constructor(Q, A.byteOffset, A.length);
@@ -2981,6 +3222,11 @@ var S80 = createLazyModule(() => {
   iNA();
   j80 = v69;
 });
+/**
+ * Creates buffer from data.
+ * @param {any} data - Data to buffer
+ * @returns {Buffer} Created buffer
+ */
 function b69(A) {
   return A === A && !OG(A);
 }
@@ -2989,6 +3235,11 @@ var w91 = createLazyModule(() => {
   H$();
   nNA = b69;
 });
+/**
+ * Converts buffer to string.
+ * @param {Buffer} buffer - Buffer to convert
+ * @returns {string} String representation
+ */
 function f69(A) {
   var B = U$(A);
   var Q = B.length;
@@ -3005,6 +3256,12 @@ var k80 = createLazyModule(() => {
   pp();
   y80 = f69;
 });
+/**
+ * Concatenates buffers.
+ * @param {Buffer} buf1 - First buffer
+ * @param {Buffer} buf2 - Second buffer
+ * @returns {Buffer} Concatenated buffer
+ */
 function h69(A, B) {
   return function (Q) {
     if (Q == null) {
@@ -3017,6 +3274,11 @@ var aNA;
 var $91 = createLazyModule(() => {
   aNA = h69;
 });
+/**
+ * Slices buffer.
+ * @param {Buffer} buffer - Buffer to slice
+ * @returns {Buffer} Sliced buffer
+ */
 function g69(A) {
   var B = y80(A);
   if (B.length == 1 && B[0][2]) {
@@ -3033,6 +3295,12 @@ var x80 = createLazyModule(() => {
   $91();
   _80 = g69;
 });
+/**
+ * Copies buffer.
+ * @param {Buffer} source - Source buffer
+ * @param {Buffer} target - Target buffer
+ * @returns {number} Bytes copied
+ */
 function u69(A, B) {
   return A != null && B in Object(A);
 }
@@ -3040,6 +3308,13 @@ var v80;
 var b80 = createLazyModule(() => {
   v80 = u69;
 });
+/**
+ * Compares buffers.
+ * @param {Buffer} buf1 - First buffer
+ * @param {Buffer} buf2 - Second buffer
+ * @param {Object} options - Comparison options
+ * @returns {number} Comparison result
+ */
 function m69(A, B, Q) {
   B = AT(B, A);
   var I = -1;
@@ -3068,6 +3343,12 @@ var h80 = createLazyModule(() => {
   ip();
   f80 = m69;
 });
+/**
+ * Creates readable stream.
+ * @param {any} source - Stream source
+ * @param {Object} options - Stream options
+ * @returns {ReadableStream} Readable stream
+ */
 function d69(A, B) {
   return A != null && f80(A, B, v80);
 }
@@ -3077,6 +3358,12 @@ var u80 = createLazyModule(() => {
   h80();
   g80 = d69;
 });
+/**
+ * Creates writable stream.
+ * @param {any} target - Stream target
+ * @param {Object} options - Stream options
+ * @returns {WritableStream} Writable stream
+ */
 function l69(A, B) {
   if (Ye(A) && nNA(B)) {
     return aNA(w$(A), B);
@@ -3103,6 +3390,11 @@ var d80 = createLazyModule(() => {
   ip();
   m80 = l69;
 });
+/**
+ * Pipes streams together.
+ * @param {Stream} source - Source stream
+ * @returns {Stream} Destination stream
+ */
 function i69(A) {
   return function (B) {
     if (B == null) {
@@ -3116,6 +3408,11 @@ var c80;
 var p80 = createLazyModule(() => {
   c80 = i69;
 });
+/**
+ * Transforms stream data.
+ * @param {any} data - Data to transform
+ * @returns {any} Transformed data
+ */
 function n69(A) {
   return function (B) {
     return Ve(B, A);
@@ -3126,6 +3423,11 @@ var i80 = createLazyModule(() => {
   wNA();
   l80 = n69;
 });
+/**
+ * Ends stream.
+ * @param {Stream} stream - Stream to end
+ * @returns {void}
+ */
 function a69(A) {
   if (Ye(A)) {
     return c80(w$(A));
@@ -3141,6 +3443,11 @@ var a80 = createLazyModule(() => {
   ip();
   n80 = a69;
 });
+/**
+ * Destroys stream.
+ * @param {Stream} stream - Stream to destroy
+ * @returns {void}
+ */
 function s69(A) {
   if (typeof A == "function") {
     return A;
@@ -3166,6 +3473,14 @@ var qe = createLazyModule(() => {
   a80();
   QT = s69;
 });
+/**
+ * Creates error object.
+ * @param {string} message - Error message
+ * @param {string} code - Error code
+ * @param {Object} options - Error options
+ * @param {Object} context - Error context
+ * @returns {Error} Error object
+ */
 function r69(A, B, Q, I) {
   var G = -1;
   var Z = A == null ? 0 : A.length;
@@ -3179,6 +3494,11 @@ var s80;
 var r80 = createLazyModule(() => {
   s80 = r69;
 });
+/**
+ * Handles error.
+ * @param {Error} error - Error to handle
+ * @returns {void}
+ */
 function o69(A) {
   return function (B, Q, I) {
     var G = -1;
@@ -3205,6 +3525,12 @@ var q91 = createLazyModule(() => {
   t69 = o80();
   sNA = t69;
 });
+/**
+ * Formats error message.
+ * @param {Error} error - Error to format
+ * @param {Object} options - Format options
+ * @returns {string} Formatted message
+ */
 function e69(A, B) {
   return A && sNA(A, B, U$);
 }
