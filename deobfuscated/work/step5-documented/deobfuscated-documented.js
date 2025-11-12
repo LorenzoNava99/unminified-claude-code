@@ -4003,6 +4003,11 @@ function HGA(A) {
 function NA() {
   return r59;
 }
+/**
+ * Async generator for streaming data processing.
+ * @param {AsyncIterable} source - Source async iterable
+ * @yields {any} Processed data chunks
+ */
 async function* G50(A) {
   let Q = await a59(A, "r");
   try {
@@ -7046,6 +7051,10 @@ function xY(A) {
   I41.add(A);
   return () => I41.delete(A);
 }
+/**
+ * Initializes the application or subsystem.
+ * @returns {Promise<void>}
+ */
 async function HI0() {
   await Promise.all(Array.from(I41).map((A) => A()));
 }
@@ -7098,6 +7107,11 @@ function eI9(A) {
   }
   return B;
 }
+/**
+ * Performs application-level asynchronous operation.
+ * @param {Object} config - Configuration object
+ * @returns {Promise<any>} Operation result
+ */
 async function A39(A) {
   let B = A.name.startsWith("mcp__")
     ? A.name.split("__")[1] || "unknown"
@@ -7128,6 +7142,13 @@ async function A39(A) {
     server: B,
   };
 }
+/**
+ * Handles async workflow with multiple parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @returns {Promise<any>} Workflow result
+ */
 async function wI0(A, B, Q) {
   if (!pJ()) {
     return;
@@ -25914,9 +25935,19 @@ class eGA {
     this._buffer = undefined;
   }
 }
+/**
+ * Decodes JSON-RPC message from string.
+ * @param {string} message - JSON-RPC message string
+ * @returns {Object} Parsed message object
+ */
 function xJ9(A) {
   return CT.parse(JSON.parse(A));
 }
+/**
+ * Encodes data to JSON-RPC message format with newline.
+ * @param {Object} data - Data to encode
+ * @returns {string} JSON-RPC formatted string
+ */
 function DMA(A) {
   return `${JSON.stringify(A)}
 `;
@@ -27245,6 +27276,13 @@ function GZA(A) {
     return;
   }
 }
+/**
+ * Fetches OAuth 2.0 Protected Resource Metadata.
+ * @param {URL} resourceUrl - The protected resource URL
+ * @param {Object} options - Fetch options
+ * @param {Function} fetchFn - Custom fetch function
+ * @returns {Promise<Object>} Resource metadata
+ */
 async function eJ9(A, B, Q = fetch) {
   let I = await QX9(A, "oauth-protected-resource", Q, {
     protocolVersion: B?.protocolVersion,
@@ -27262,6 +27300,13 @@ async function eJ9(A, B, Q = fetch) {
   }
   return YY0.parse(await I.json());
 }
+/**
+ * Performs a fetch request with MCP protocol headers and fallback handling.
+ * @param {URL} url - The request URL
+ * @param {Object} headers - Request headers
+ * @param {Function} fetchFn - Custom fetch function
+ * @returns {Promise<Response>} Fetch response
+ */
 async function i81(A, B, Q = fetch) {
   try {
     return await Q(A, {
@@ -27278,6 +27323,13 @@ async function i81(A, B, Q = fetch) {
     throw I;
   }
 }
+/**
+ * Constructs a well-known URL path for OAuth/MCP discovery.
+ * @param {string} wellKnownType - Type of well-known resource
+ * @param {string} basePath - Base path
+ * @param {Object} options - URL construction options
+ * @returns {string} Constructed well-known URL path
+ */
 function AX9(A, B = "", Q = {}) {
   if (B.endsWith("/")) {
     B = B.slice(0, -1);
@@ -27288,6 +27340,13 @@ function AX9(A, B = "", Q = {}) {
     return `/.well-known/${A}${B}`;
   }
 }
+/**
+ * Fetches a resource with MCP protocol version header.
+ * @param {URL} url - The request URL
+ * @param {string} protocolVersion - MCP protocol version
+ * @param {Function} fetchFn - Custom fetch function
+ * @returns {Promise<Response>} Fetch response
+ */
 async function KY0(A, B, Q = fetch) {
   return await i81(
     A,
@@ -27297,9 +27356,23 @@ async function KY0(A, B, Q = fetch) {
     Q,
   );
 }
+/**
+ * Checks if a response indicates a client error or not found.
+ * @param {Response} response - HTTP response
+ * @param {string} pathname - Request pathname
+ * @returns {boolean} True if client error or not found
+ */
 function BX9(A, B) {
   return !A || (A.status >= 400 && A.status < 500 && B !== "/");
 }
+/**
+ * Fetches well-known metadata from an OAuth/MCP server.
+ * @param {URL} url - The server URL
+ * @param {string} wellKnownType - Type of well-known resource
+ * @param {Function} fetchFn - Custom fetch function
+ * @param {Object} options - Additional options
+ * @returns {Promise<Response>} Server response with metadata
+ */
 async function QX9(A, B, Q, I) {
   let Y = new URL(A);
   let J = I?.protocolVersion ?? Tf;
@@ -27318,6 +27391,11 @@ async function QX9(A, B, Q, I) {
   }
   return W;
 }
+/**
+ * Generates OAuth discovery URL variations for fallback.
+ * @param {string|URL} url - Base URL
+ * @returns {Array<Object>} Array of discovery URL options
+ */
 function IX9(A) {
   let B = typeof A === "string" ? new URL(A) : A;
   let Q = B.pathname !== "/";
@@ -27502,6 +27580,18 @@ async function ZX9(
   }
   return c81.parse(await D.json());
 }
+/**
+ * Refreshes an OAuth 2.0 access token using a refresh token.
+ * @param {URL} serverUrl - The authorization server URL
+ * @param {Object} options - Refresh options
+ * @param {Object} options.metadata - Server metadata
+ * @param {Object} options.clientInformation - Client information
+ * @param {string} options.refreshToken - The refresh token
+ * @param {URL} options.resource - Target resource URL
+ * @param {Function} options.addClientAuthentication - Auth callback
+ * @param {Function} options.fetchFn - Custom fetch function
+ * @returns {Promise<Object>} Token response with new access token
+ */
 async function n81(
   A,
   {
@@ -27558,6 +27648,15 @@ async function n81(
     ...(await V.json()),
   });
 }
+/**
+ * Registers a dynamic OAuth 2.0 client with the authorization server.
+ * @param {URL} serverUrl - The authorization server URL
+ * @param {Object} options - Registration options
+ * @param {Object} options.metadata - Server metadata
+ * @param {Object} options.clientMetadata - Client metadata for registration
+ * @param {Function} options.fetchFn - Custom fetch function
+ * @returns {Promise<Object>} Registered client information
+ */
 async function YX9(A, { metadata: B, clientMetadata: Q, fetchFn: I }) {
   let G;
   if (B) {
@@ -42378,6 +42477,11 @@ var gK0 = createLazyModule(() => {
   M51 = hK0;
 });
 var uK0;
+/**
+ * Async generator for Axios response streaming.
+ * @param {Response} response - HTTP response object
+ * @yields {Buffer} Data chunks from response stream
+ */
 async function* IK9(A) {
   if (A.stream) {
     yield* A.stream();
@@ -43724,11 +43828,22 @@ function* PK9(A, B) {
     I = G;
   }
 }
+/**
+ * Async generator for stream transformation.
+ * @param {AsyncIterable} source - Source stream
+ * @param {Function} transform - Transformation function
+ * @yields {any} Transformed data chunks
+ */
 async function* jK9(A, B) {
   for await (let Q of SK9(A)) {
     yield* PK9(Q, B);
   }
 }
+/**
+ * Async generator for SSE (Server-Sent Events) parsing.
+ * @param {AsyncIterable} source - Source event stream
+ * @yields {Object} Parsed SSE events
+ */
 async function* SK9(A) {
   if (A[Symbol.asyncIterator]) {
     yield* A;
@@ -63885,6 +64000,11 @@ function RT0(A) {
     return null;
   }
 }
+/**
+ * Async utility function for list operations.
+ * @param {Array} list - Input list
+ * @returns {Promise<any>} Processed list result
+ */
 async function ll(A) {
   try {
     let B = await Kf9(A, "utf8");
@@ -68027,6 +68147,12 @@ var NTA = (A) => A.length;
 var Gj0 = createLazyModule(() => {
   LYA();
 });
+/**
+ * Async graph/data structure operation.
+ * @param {Object} graph - Graph data structure
+ * @param {Object} options - Operation options
+ * @returns {Promise<any>} Operation result
+ */
 async function gG1(A, B) {
   return NYA(A, zg9, B);
 }
@@ -324699,12 +324825,31 @@ function TYQ() {
     ),
   );
 }
+/**
+ * Renders content with formatting options.
+ * @param {any} content - Content to render
+ * @param {Object} options - Rendering options
+ * @param {boolean} options.verbose - Verbose output flag
+ * @param {Object} options.theme - Theme configuration
+ * @param {Array} options.tools - Available tools
+ * @param {Object} options.style - Style configuration
+ * @returns {string} Rendered output
+ */
 function PYQ(A, B, { verbose: Q, theme: I, tools: G, style: Z }) {
   return yZ.createElement(Pa, {
     content: A,
     verbose: Q,
   });
 }
+/**
+ * Processes and displays messages with tool information.
+ * @param {Object} message - Message to process
+ * @param {Object} options - Processing options
+ * @param {boolean} options.verbose - Verbose output
+ * @param {Array} options.progressMessagesForMessage - Progress messages
+ * @param {Array} options.tools - Tool definitions
+ * @returns {any} Processed message
+ */
 function jYQ(A, { verbose: B, progressMessagesForMessage: Q, tools: I }) {
   return yZ.createElement(D6, {
     result: A,
@@ -349754,6 +349899,19 @@ function lT6(A, B, { theme: Q, verbose: I }) {
     return "";
   }
 }
+/**
+ * Handles in-progress tool calls with verbose logging.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @param {Object} options - Tool call options
+ * @param {boolean} options.verbose - Verbose flag
+ * @param {number} options.inProgressToolCallCount - Count of in-progress calls
+ * @param {any} param7 - Seventh parameter
+ * @returns {any} Tool call result
+ */
 function iT6(A, B, Q, I, G, { verbose: Z, inProgressToolCallCount: Y }, J) {
   let X = G.filter((W) => W.data.type !== "hook_progress");
   try {
@@ -561064,6 +561222,14 @@ var D10 = createLazyModule(() => {
   pr();
   G2 = interopRequireWildcard(VA(), 1);
 });
+/**
+ * Displays tool selection UI.
+ * @param {Object} params - UI parameters
+ * @param {Object} params.server - MCP server object
+ * @param {Function} params.onSelectTool - Tool selection callback
+ * @param {Function} params.onBack - Back button callback
+ * @returns {void}
+ */
 function E10({ server: A, onSelectTool: B, onBack: Q }) {
   let I = IB();
   let [G] = pB();
@@ -561188,6 +561354,14 @@ var H10 = createLazyModule(() => {
   R9();
   JE = interopRequireWildcard(VA(), 1);
 });
+/**
+ * Displays tool details UI.
+ * @param {Object} params - UI parameters
+ * @param {Object} params.tool - Tool object
+ * @param {Object} params.server - MCP server object
+ * @param {Function} params.onBack - Back button callback
+ * @returns {void}
+ */
 function z10({ tool: A, server: B, onBack: Q }) {
   let I = IB();
   let [G, Z] = R5.default.useState("");
@@ -565992,6 +566166,13 @@ Other exit codes - show stderr to user only`,
     };
   });
 });
+/**
+ * Displays tool exit confirmation UI.
+ * @param {Object} params - UI parameters
+ * @param {Array} params.toolNames - Names of tools
+ * @param {Function} params.onExit - Exit callback
+ * @returns {void}
+ */
 function Hi2({ toolNames: A, onExit: B }) {
   let [Q, I] = uF.useState([]);
   let [G, Z] = uF.useState({
@@ -568518,6 +568699,15 @@ function qe5(A) {
     }))
     .sort((Q, I) => Q.serverName.localeCompare(I.serverName));
 }
+/**
+ * Manages tool selection with confirmation flow.
+ * @param {Object} params - Tool management parameters
+ * @param {Array} params.tools - Available tools
+ * @param {Array} params.initialTools - Initially selected tools
+ * @param {Function} params.onComplete - Completion callback
+ * @param {Function} params.onCancel - Cancellation callback
+ * @returns {void}
+ */
 function TB1({ tools: A, initialTools: B, onComplete: Q, onCancel: I }) {
   let G = yX.useMemo(
     () =>
@@ -601922,6 +602112,13 @@ function fQ1() {
     ),
   );
 }
+/**
+ * Displays welcome message with theme.
+ * @param {Object} params - Display parameters
+ * @param {Object} params.theme - Theme configuration
+ * @param {string} params.welcomeMessage - Welcome message text
+ * @returns {void}
+ */
 function M9I({ theme: A, welcomeMessage: B }) {
   if (["light", "light-daltonized", "light-ansi"].includes(A)) {
     return z0.default.createElement(

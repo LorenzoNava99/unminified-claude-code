@@ -363,6 +363,245 @@ const jsdocTemplates = {
  * @param {Array} params.files - Array of file paths
  * @returns {Array} List of files
  */`,
+
+  // OAuth 2.0 functions
+  'async function n81(': `/**
+ * Refreshes an OAuth 2.0 access token using a refresh token.
+ * @param {URL} serverUrl - The authorization server URL
+ * @param {Object} options - Refresh options
+ * @param {Object} options.metadata - Server metadata
+ * @param {Object} options.clientInformation - Client information
+ * @param {string} options.refreshToken - The refresh token
+ * @param {URL} options.resource - Target resource URL
+ * @param {Function} options.addClientAuthentication - Auth callback
+ * @param {Function} options.fetchFn - Custom fetch function
+ * @returns {Promise<Object>} Token response with new access token
+ */`,
+
+  'async function YX9(': `/**
+ * Registers a dynamic OAuth 2.0 client with the authorization server.
+ * @param {URL} serverUrl - The authorization server URL
+ * @param {Object} options - Registration options
+ * @param {Object} options.metadata - Server metadata
+ * @param {Object} options.clientMetadata - Client metadata for registration
+ * @param {Function} options.fetchFn - Custom fetch function
+ * @returns {Promise<Object>} Registered client information
+ */`,
+
+  'async function eJ9(': `/**
+ * Fetches OAuth 2.0 Protected Resource Metadata.
+ * @param {URL} resourceUrl - The protected resource URL
+ * @param {Object} options - Fetch options
+ * @param {Function} fetchFn - Custom fetch function
+ * @returns {Promise<Object>} Resource metadata
+ */`,
+
+  'async function QX9(': `/**
+ * Fetches well-known metadata from an OAuth/MCP server.
+ * @param {URL} url - The server URL
+ * @param {string} wellKnownType - Type of well-known resource
+ * @param {Function} fetchFn - Custom fetch function
+ * @param {Object} options - Additional options
+ * @returns {Promise<Response>} Server response with metadata
+ */`,
+
+  'async function i81(': `/**
+ * Performs a fetch request with MCP protocol headers and fallback handling.
+ * @param {URL} url - The request URL
+ * @param {Object} headers - Request headers
+ * @param {Function} fetchFn - Custom fetch function
+ * @returns {Promise<Response>} Fetch response
+ */`,
+
+  'async function KY0(': `/**
+ * Fetches a resource with MCP protocol version header.
+ * @param {URL} url - The request URL
+ * @param {string} protocolVersion - MCP protocol version
+ * @param {Function} fetchFn - Custom fetch function
+ * @returns {Promise<Response>} Fetch response
+ */`,
+
+  // Async iterator functions
+  'async function* G50(': `/**
+ * Async generator for streaming data processing.
+ * @param {AsyncIterable} source - Source async iterable
+ * @yields {any} Processed data chunks
+ */`,
+
+  'async function* IK9(': `/**
+ * Async generator for Axios response streaming.
+ * @param {Response} response - HTTP response object
+ * @yields {Buffer} Data chunks from response stream
+ */`,
+
+  'async function* jK9(': `/**
+ * Async generator for stream transformation.
+ * @param {AsyncIterable} source - Source stream
+ * @param {Function} transform - Transformation function
+ * @yields {any} Transformed data chunks
+ */`,
+
+  'async function* SK9(': `/**
+ * Async generator for SSE (Server-Sent Events) parsing.
+ * @param {AsyncIterable} source - Source event stream
+ * @yields {Object} Parsed SSE events
+ */`,
+
+  // Other async functions
+  'async function HI0()': `/**
+ * Initializes the application or subsystem.
+ * @returns {Promise<void>}
+ */`,
+
+  'async function A39(': `/**
+ * Performs application-level asynchronous operation.
+ * @param {Object} config - Configuration object
+ * @returns {Promise<any>} Operation result
+ */`,
+
+  'async function wI0(': `/**
+ * Handles async workflow with multiple parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @returns {Promise<any>} Workflow result
+ */`,
+
+  'async function ll(': `/**
+ * Async utility function for list operations.
+ * @param {Array} list - Input list
+ * @returns {Promise<any>} Processed list result
+ */`,
+
+  'async function gG1(': `/**
+ * Async graph/data structure operation.
+ * @param {Object} graph - Graph data structure
+ * @param {Object} options - Operation options
+ * @returns {Promise<any>} Operation result
+ */`,
+
+  // Utility string/conversion functions
+  'function hQ0(': `/**
+ * Converts a value to a string representation.
+ * Handles arrays, symbols, and special numeric values like -0.
+ * @param {any} value - The value to convert
+ * @returns {string} The string representation
+ */`,
+
+  'function AX9(': `/**
+ * Constructs a well-known URL path for OAuth/MCP discovery.
+ * @param {string} wellKnownType - Type of well-known resource
+ * @param {string} basePath - Base path
+ * @param {Object} options - URL construction options
+ * @returns {string} Constructed well-known URL path
+ */`,
+
+  'function BX9(': `/**
+ * Checks if a response indicates a client error or not found.
+ * @param {Response} response - HTTP response
+ * @param {string} pathname - Request pathname
+ * @returns {boolean} True if client error or not found
+ */`,
+
+  'function IX9(': `/**
+ * Generates OAuth discovery URL variations for fallback.
+ * @param {string|URL} url - Base URL
+ * @returns {Array<Object>} Array of discovery URL options
+ */`,
+
+  // Stream/Buffer functions
+  'function DMA(': `/**
+ * Encodes data to JSON-RPC message format with newline.
+ * @param {Object} data - Data to encode
+ * @returns {string} JSON-RPC formatted string
+ */`,
+
+  'function xJ9(': `/**
+ * Decodes JSON-RPC message from string.
+ * @param {string} message - JSON-RPC message string
+ * @returns {Object} Parsed message object
+ */`,
+
+  // Display/Rendering functions
+  'function PYQ(': `/**
+ * Renders content with formatting options.
+ * @param {any} content - Content to render
+ * @param {Object} options - Rendering options
+ * @param {boolean} options.verbose - Verbose output flag
+ * @param {Object} options.theme - Theme configuration
+ * @param {Array} options.tools - Available tools
+ * @param {Object} options.style - Style configuration
+ * @returns {string} Rendered output
+ */`,
+
+  'function jYQ(': `/**
+ * Processes and displays messages with tool information.
+ * @param {Object} message - Message to process
+ * @param {Object} options - Processing options
+ * @param {boolean} options.verbose - Verbose output
+ * @param {Array} options.progressMessagesForMessage - Progress messages
+ * @param {Array} options.tools - Tool definitions
+ * @returns {any} Processed message
+ */`,
+
+  'function iT6(': `/**
+ * Handles in-progress tool calls with verbose logging.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @param {any} param4 - Fourth parameter
+ * @param {any} param5 - Fifth parameter
+ * @param {Object} options - Tool call options
+ * @param {boolean} options.verbose - Verbose flag
+ * @param {number} options.inProgressToolCallCount - Count of in-progress calls
+ * @param {any} param7 - Seventh parameter
+ * @returns {any} Tool call result
+ */`,
+
+  // UI/Interaction functions
+  'function E10(': `/**
+ * Displays tool selection UI.
+ * @param {Object} params - UI parameters
+ * @param {Object} params.server - MCP server object
+ * @param {Function} params.onSelectTool - Tool selection callback
+ * @param {Function} params.onBack - Back button callback
+ * @returns {void}
+ */`,
+
+  'function z10(': `/**
+ * Displays tool details UI.
+ * @param {Object} params - UI parameters
+ * @param {Object} params.tool - Tool object
+ * @param {Object} params.server - MCP server object
+ * @param {Function} params.onBack - Back button callback
+ * @returns {void}
+ */`,
+
+  'function Hi2(': `/**
+ * Displays tool exit confirmation UI.
+ * @param {Object} params - UI parameters
+ * @param {Array} params.toolNames - Names of tools
+ * @param {Function} params.onExit - Exit callback
+ * @returns {void}
+ */`,
+
+  'function TB1(': `/**
+ * Manages tool selection with confirmation flow.
+ * @param {Object} params - Tool management parameters
+ * @param {Array} params.tools - Available tools
+ * @param {Array} params.initialTools - Initially selected tools
+ * @param {Function} params.onComplete - Completion callback
+ * @param {Function} params.onCancel - Cancellation callback
+ * @returns {void}
+ */`,
+
+  'function M9I(': `/**
+ * Displays welcome message with theme.
+ * @param {Object} params - Display parameters
+ * @param {Object} params.theme - Theme configuration
+ * @param {string} params.welcomeMessage - Welcome message text
+ * @returns {void}
+ */`,
 };
 
 /**
