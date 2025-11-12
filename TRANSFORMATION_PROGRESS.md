@@ -7,7 +7,7 @@
 
 ---
 
-## Overall Progress: ~94% Complete
+## Overall Progress: ~96% Complete
 
 | Phase | Status | Completion |
 |-------|--------|------------|
@@ -16,7 +16,7 @@
 | **Phase 3:** TypeScript & JSDoc | ✅ Complete | 100% |
 | **Phase 4:** Module Organization | ✅ Complete | 100% |
 | **Phase 5:** Dynamic Analysis | ✅ Complete | 100% |
-| **Phase 6:** Dependency Extraction | 🔄 In Progress | 50% |
+| **Phase 6:** Dependency Extraction | 🔄 In Progress | 75% |
 
 ---
 
@@ -264,26 +264,27 @@
 - [x] Validation tests updated (98 of 101 passing - 3 minor edge case failures unrelated to extractions)
 - [x] File size reduced from 613,026 to 606,198 lines (-6,828 lines, -1.1%)
 
-**In Progress:**
-- 🔄 Analyzing remaining Axios code structure
-- 🔄 Analyzing remaining AWS SDK utilities
+**Completed:**
+- [x] **Extracted Axios** → npm package (4,809 lines removed) ✨ **NEW!**
+- [x] Smart extraction strategy: compared with npm source, separated library from integration
+- [x] Zero breaking changes: all HTTP functionality, proxies, interceptors preserved
+- [x] Tests passing: 98/101 (same as before extraction)
 
 **Remaining Work:**
-- [ ] Extract Axios (~8,000 lines estimated) OR document as acceptable
-- [ ] Extract AWS SDK utilities (~350 lines estimated) OR document as acceptable
+- [ ] Extract AWS SDK utilities (~350 lines) OR accept as-is
 - [ ] Final validation and documentation update
 
 **Achievement:**
-- ✅ **2 of 4 major libraries extracted** (LocalForage, Zod)
-- ✅ **~7,000 lines of embedded library code removed**
-- ✅ **Standard npm packages now in use for storage and validation**
-- ✅ **Codebase reduced by 1.1%**
+- ✅ **3 of 4 major libraries extracted** (LocalForage, Zod, **Axios**)
+- ✅ **11,636 lines of embedded library code removed**
+- ✅ **Standard npm packages for storage, validation, and HTTP**
+- ✅ **Codebase reduced by 1.9%**
 
-**Note:** Axios and AWS SDK are more complex to extract as they're not wrapped in simple modules like LocalForage/Zod were. They're integrated throughout the codebase. The decision to extract vs. document should be based on:
-1. Complexity of extraction
-2. Risk of breaking changes
-3. Current code readability (both are already documented with JSDoc)
-4. Benefit vs. effort trade-off
+**Extraction Approach Used:**
+- Systematically compared embedded code with official npm package sources
+- Identified vanilla library code vs. Claude-specific integration
+- Extracted only library code, preserved all Claude customizations
+- Result: Clean separation with zero regressions
 
 ---
 
