@@ -4,8 +4,8 @@
     "phase": "Phase 2 - Function Signature Analysis",
     "confidence_level": "MEDIUM",
     "description": "Renames with medium confidence based on usage patterns, context, and function signatures",
-    "total_mappings": 0,
-    "status": "In Progress"
+    "total_mappings": 85,
+    "status": "75% Complete - Tool mapping done"
   },
   "tool_names": {
     "A7": {
@@ -164,6 +164,78 @@
       "location": "line 460522",
       "type": "tool-object",
       "toolName": "KillShell"
+    },
+    "D01": {
+      "newName": "bashOutputTool",
+      "confidence": "MEDIUM",
+      "reason": "BashOutput tool implementation object",
+      "location": "line 460727",
+      "type": "tool-object",
+      "toolName": "BashOutput"
+    },
+    "KJ": {
+      "newName": "webFetchTool",
+      "confidence": "MEDIUM",
+      "reason": "WebFetch tool implementation object",
+      "location": "line 389974",
+      "type": "tool-object",
+      "toolName": "WebFetch"
+    },
+    "ewA": {
+      "newName": "webSearchTool",
+      "confidence": "MEDIUM",
+      "reason": "WebSearch tool implementation object",
+      "location": "line 461046",
+      "type": "tool-object",
+      "toolName": "WebSearch"
+    },
+    "Rm": {
+      "newName": "taskTool",
+      "confidence": "MEDIUM",
+      "reason": "Task tool implementation object",
+      "location": "line 460271",
+      "type": "tool-object",
+      "toolName": "Task"
+    },
+    "_G": {
+      "newName": "todoWriteTool",
+      "confidence": "MEDIUM",
+      "reason": "TodoWrite tool implementation object",
+      "location": "line 101849",
+      "type": "tool-object",
+      "toolName": "TodoWrite"
+    },
+    "fd": {
+      "newName": "skillTool",
+      "confidence": "MEDIUM",
+      "reason": "Skill tool implementation object",
+      "location": "line 391291",
+      "type": "tool-object",
+      "toolName": "Skill"
+    },
+    "hd": {
+      "newName": "slashCommandTool",
+      "confidence": "MEDIUM",
+      "reason": "SlashCommand tool implementation object",
+      "location": "line 391519",
+      "type": "tool-object",
+      "toolName": "SlashCommand"
+    },
+    "SO": {
+      "newName": "notebookEditTool",
+      "confidence": "MEDIUM",
+      "reason": "NotebookEdit tool implementation object",
+      "location": "line 329614",
+      "type": "tool-object",
+      "toolName": "NotebookEdit"
+    },
+    "wS": {
+      "newName": "exitPlanModeTool",
+      "confidence": "MEDIUM",
+      "reason": "ExitPlanMode tool implementation object",
+      "location": "line 390557",
+      "type": "tool-object",
+      "toolName": "ExitPlanMode"
     }
   },
   "tool_execution": {
@@ -503,12 +575,12 @@
     }
   },
   "notes": [
-    "Phase 2 in progress - mapping all tool implementations",
-    "14 tool name constants identified",
-    "7 tool objects fully mapped (Read, Write, Edit, Bash, Grep, Glob, KillShell)",
-    "Core execution flow documented",
-    "~65 MEDIUM confidence renames identified so far",
-    "Need to complete remaining 10 tool objects (WebFetch, WebSearch, Task, TodoWrite, Skill, SlashCommand, NotebookEdit, ExitPlanMode, BashOutput, and 1 more)",
-    "Next: Find remaining tool objects and complete mapping"
+    "Phase 2 - 75% complete - tool mapping finished!",
+    "✅ 14 tool name constants identified",
+    "✅ 16 tool objects fully mapped",
+    "✅ Core execution flow documented (executeToolUse, createToolExecutionStream, executeToolWithValidation)",
+    "✅ 85 MEDIUM confidence renames created",
+    "Tools mapped: Read, Write, Edit, Bash, Grep, Glob, WebFetch, WebSearch, Task, TodoWrite, Skill, SlashCommand, NotebookEdit, BashOutput, KillShell, ExitPlanMode",
+    "Remaining Phase 2: API client analysis, entry point, hook engine, expand mappings to 150+"
   ]
 }
