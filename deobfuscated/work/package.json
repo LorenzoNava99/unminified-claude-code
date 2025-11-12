@@ -20,9 +20,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/signature-v4": "^3.374.0",
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.5",
-    "@babel/preset-env": "^7.28.5"
+    "@babel/preset-env": "^7.28.5",
+    "axios": "^1.6.2",
+    "localforage": "^1.10.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@jest/globals": "^29.7.0",
