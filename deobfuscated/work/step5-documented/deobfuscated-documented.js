@@ -2452,6 +2452,12 @@ var RNA = {};
 E$(RNA, {
   default: () => CGA,
 });
+/**
+ * Normalizes data with options.
+ * @param {any} data - Data to normalize
+ * @param {Object} options - Normalization options
+ * @returns {any} Normalized data
+ */
 function N49(A, B) {
   if (B) {
     return A.slice();
@@ -2882,6 +2888,11 @@ var K91 = createLazyModule(() => {
   ZNA();
   fNA = $89;
 });
+/**
+ * Normalizes 89-series operation.
+ * @param {any} input - Input to normalize
+ * @returns {any} Normalized result
+ */
 function N89(A) {
   return isObjectLike(A) && ry(A) == q89;
 }
@@ -2903,6 +2914,11 @@ var A80 = createLazyModule(() => {
   L89 = t40 ? Ie(t40) : r40;
   e40 = L89;
 });
+/**
+ * Output or operation utility.
+ * @param {any} data - Data to output
+ * @returns {any} Output result
+ */
 function O89(A) {
   return isObjectLike(A) && ry(A) == M89;
 }
@@ -4777,6 +4793,10 @@ function HGA(A) {
   }
   return B;
 }
+/**
+ * Gets NA (not available) value or initializes.
+ * @returns {any} NA value
+ */
 function NA() {
   return r59;
 }
@@ -5273,6 +5293,10 @@ function x91(A, B) {
 function Me() {
   return sessionState.totalLinesAdded;
 }
+/**
+ * Offset or operation utility.
+ * @returns {any} Offset value
+ */
 function Oe() {
   return sessionState.totalLinesRemoved;
 }
@@ -5382,6 +5406,10 @@ function h91() {
 function g91() {
   return sessionState.prCounter;
 }
+/**
+ * N50 utility operation.
+ * @returns {any} Operation result
+ */
 function N50() {
   return sessionState.commitCounter;
 }
@@ -5403,6 +5431,10 @@ function m91() {
 function M50(A) {
   sessionState.loggerProvider = A;
 }
+/**
+ * O50 utility operation.
+ * @returns {any} Operation result
+ */
 function O50() {
   return sessionState.eventLogger;
 }
@@ -5412,6 +5444,11 @@ function R50(A) {
 function T50() {
   return sessionState.meterProvider;
 }
+/**
+ * P50 processing function.
+ * @param {any} input - Input to process
+ * @returns {any} Processed result
+ */
 function P50(A) {
   sessionState.meterProvider = A;
 }
@@ -5451,6 +5488,11 @@ function _50(A) {
 function x50() {
   return sessionState.sessionIngressToken;
 }
+/**
+ * Pe utility function.
+ * @param {any} param - Parameter
+ * @returns {any} Function result
+ */
 function Pe(A) {
   sessionState.sessionIngressToken = A;
 }
@@ -8274,6 +8316,12 @@ function X39(A, { streamIsTTY: B, sniffFlags: Q = true } = {}) {
   }
   return Z;
 }
+/**
+ * Operation with options parameter.
+ * @param {any} target - Target for operation
+ * @param {Object} options - Operation options
+ * @returns {any} Operation result
+ */
 function OI0(A, B = {}) {
   let Q = X39(A, {
     streamIsTTY: A && A.isTTY,
@@ -8312,6 +8360,13 @@ var TI0 = createLazyModule(() => {
   };
   RI0 = W39;
 });
+/**
+ * Processing operation with three parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @returns {any} Processing result
+ */
 function PI0(A, B, Q) {
   let I = A.indexOf(B);
   if (I === -1) {
@@ -29408,6 +29463,10 @@ function s9(A = WX9) {
   XX9(A, B.signal);
   return B;
 }
+/**
+ * NF0 utility function.
+ * @returns {any} Function result
+ */
 function NF0() {
   return s9(FX9);
 }
@@ -41350,6 +41409,11 @@ var VK0 = createLazyModule(() => {
     "user-agent",
   ]);
 });
+/**
+ * NZA processing function.
+ * @param {any} input - Input to process
+ * @returns {any} Processed result
+ */
 function NZA(A) {
   return A && String(A).trim().toLowerCase();
 }
@@ -41627,6 +41691,11 @@ var DK0 = createLazyModule(() => {
   HOA();
   DT();
 });
+/**
+ * OZA operation function.
+ * @param {any} data - Data to operate on
+ * @returns {any} Operation result
+ */
 function OZA(A) {
   return !!A && !!A.__CANCEL__;
 }
@@ -43088,6 +43157,13 @@ function yZA(A) {
   let B = /^([-+\w]{1,25})(:?\/\/|:)/.exec(A);
   return (B && B[1]) || "";
 }
+/**
+ * N51 operation with three parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @param {any} param3 - Third parameter
+ * @returns {any} Operation result
+ */
 function N51(A, B, Q) {
   let I = (Q && Q.Blob) || platformUtils.classes.Blob;
   let G = yZA(A);
@@ -43557,6 +43633,12 @@ import HK9 from "util";
 import hf from "zlib";
 import kAA from "stream";
 import { EventEmitter as zK9 } from "events";
+/**
+ * NK9 utility operation.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @returns {any} Operation result
+ */
 function NK9(A, B) {
   if (A.beforeRedirects.proxy) {
     A.beforeRedirects.proxy(A);
@@ -67209,6 +67291,11 @@ function Eh9(A) {
     };
   }
 }
+/**
+ * N8 utility function.
+ * @param {any} input - Input parameter
+ * @returns {any} Function result
+ */
 function N8(A) {
   let B = Eh9([...A]);
   if (B.success) {
@@ -67788,6 +67875,14 @@ var TP0 = ({ env: A = ETA.env, ...B } = {}) => {
   return A;
 };
 var PP0 = () => {};
+/**
+ * OG1 operation with configuration.
+ * @param {any} target - Target object
+ * @param {any} source - Source data
+ * @param {Object} options - Configuration options
+ * @param {boolean} options.ignoreNonConfigurable - Ignore non-configurable properties
+ * @returns {any} Operation result
+ */
 function OG1(A, B, { ignoreNonConfigurable: Q = false } = {}) {
   let { name: I } = A;
   for (let G of Reflect.ownKeys(B)) {
@@ -69663,6 +69758,11 @@ var PTA = createLazyModule(() => {
   TTA();
   K2();
 });
+/**
+ * NB utility function.
+ * @param {any} params - Function parameters
+ * @returns {any} Function result
+ */
 function NB(
   A,
   B,
@@ -81744,6 +81844,12 @@ function s1A(A) {
 var dTA = createLazyModule(() => {
   mTA();
 });
+/**
+ * PYA processing operation.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @returns {any} Processing result
+ */
 function PYA(A, B) {
   if (B <= 0) {
     return A.split(`
@@ -98773,6 +98879,12 @@ function qm9(A, B) {
     return A.slice(0, I + 1);
   }
 }
+/**
+ * Nm9 operation with limit.
+ * @param {any} input - Input data
+ * @param {number} limit - Operation limit
+ * @returns {any} Limited result
+ */
 function Nm9(A, B = Number.POSITIVE_INFINITY) {
   let Q = [];
   let I = 0;
@@ -98998,6 +99110,11 @@ var zy0 = createLazyModule(() => {
   lZ1();
   ZPA();
 });
+/**
+ * Om9 utility operation.
+ * @param {any} input - Input parameter
+ * @returns {any} Operation result
+ */
 function Om9(A) {
   for (let B = 0; B < A.length; B++) {
     let Q = A.charCodeAt(B);
@@ -99107,6 +99224,12 @@ function JPA(A, B) {
   let Q = B.y * A.width + B.x;
   return A.cells[Q];
 }
+/**
+ * Ny0 operation with two parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @returns {any} Operation result
+ */
 function Ny0(A, B) {
   let { x: Q, y: I } = B;
   let G = A.width;
@@ -102102,6 +102225,10 @@ function $k0({ children: A }) {
     A,
   );
 }
+/**
+ * OPA operation function.
+ * @returns {any} Operation result
+ */
 function OPA() {
   return Uk0.useContext(wk0);
 }
@@ -102113,6 +102240,11 @@ var $Y1 = createLazyModule(() => {
   Uk0 = interopRequireWildcard(VA(), 1);
   wk0 = wY1.default.createContext(false);
 });
+/**
+ * Nh utility function.
+ * @param {any} input - Input parameter
+ * @returns {any} Function result
+ */
 function Nh(A) {
   let { items: B, children: Q } = A;
   let I = k$.useContext(NPA);
@@ -102379,6 +102511,12 @@ function qZ(A) {
     .format(A)
     .toLowerCase();
 }
+/**
+ * PPA processing with options.
+ * @param {any} data - Data to process
+ * @param {Object} options - Processing options
+ * @returns {any} Processed result
+ */
 function PPA(A, B = {}) {
   let { style: Q = "narrow", numeric: I = "always", now: G = new Date() } = B;
   let Z = A.getTime() - G.getTime();
@@ -102661,6 +102799,13 @@ class gYA {
     return this.size;
   }
 }
+/**
+ * OY1 operation with separator and limit.
+ * @param {any} data - Data to process
+ * @param {string} separator - Separator string
+ * @param {number} limit - Operation limit
+ * @returns {any} Processed result
+ */
 function OY1(A, B = ",", Q = 67108736) {
   let G = "";
   for (let Z of A) {
@@ -110659,6 +110804,11 @@ async function Ov0(A) {
   B.releaseLock();
   await Q;
 }
+/**
+ * Pv0 utility function.
+ * @param {any} input - Input parameter
+ * @returns {any} Function result
+ */
 function Pv0(A) {
   let B = 0;
   for (let G of A) {
@@ -113825,6 +113975,10 @@ function Lb0() {
     .filter(({ isCompletable: A, isEnabled: B }) => A && B)
     .every(({ isComplete: A }) => A);
 }
+/**
+ * N0A initialization function.
+ * @returns {any} Initialized value
+ */
 function N0A() {
   let A = x6();
   if (Lb0() && !A.hasCompletedProjectOnboarding) {
@@ -113863,6 +114017,10 @@ function kJ1() {
     },
   ];
 }
+/**
+ * Ob0 utility operation.
+ * @returns {any} Operation result
+ */
 function Ob0() {
   let A = x6();
   xG({
@@ -114050,6 +114208,10 @@ var xJ1 = createLazyModule(() => {
 import { randomBytes as bJ1 } from "crypto";
 import { EOL as aI, homedir as xjA, platform as vjA } from "os";
 import { dirname as ln9, join as xk } from "path";
+/**
+ * PJA utility function.
+ * @returns {any} Function result
+ */
 function PJA() {
   return (
     (vjA() === "darwin" &&
@@ -116534,6 +116696,12 @@ function Dh0(A, B, Q) {
   }
   return false;
 }
+/**
+ * Or9 operation with two parameters.
+ * @param {any} param1 - First parameter
+ * @param {any} param2 - Second parameter
+ * @returns {any} Operation result
+ */
 function Or9(A, B) {
   if (A == null) {
     throw TypeError("anymatch: specify first argument");
@@ -117293,6 +117461,11 @@ function gr9(A) {
   m(`Detected deletion of ${A}`);
   kJA.forEach((Q) => Q(B));
 }
+/**
+ * Ph0 utility function.
+ * @param {any} input - Input parameter
+ * @returns {any} Function result
+ */
 function Ph0(A) {
   return Uk.find((B) => YU(B) === A);
 }
@@ -193026,6 +193199,11 @@ var FU1 = createLazyModule(() => {
     }
   });
 });
+/**
+ * NP utility operation.
+ * @param {any} input - Input parameter
+ * @returns {any} Operation result
+ */
 function NP(A) {
   let B = [];
   let Q = false;
@@ -195094,6 +195272,11 @@ function LU(A) {
   }
   return B;
 }
+/**
+ * OP utility operation.
+ * @param {any} input - Input parameter
+ * @returns {any} Operation result
+ */
 function OP(A) {
   if (A === null) {
     if (FQ() && !$H()) {
@@ -195363,6 +195546,11 @@ function De4(A) {
     .map((B) => (B.type === "text" ? B.text : ""))
     .join("");
 }
+/**
+ * Nn utility function.
+ * @param {any} input - Input parameter
+ * @returns {any} Function result
+ */
 function Nn(A) {
   let B = /\bultrathink\b/i.test(A);
   return {
@@ -195576,6 +195764,10 @@ var d9 = createLazyModule(() => {
   CwB = ND.default.createContext([{}, (A) => A]);
   FwB = ND.default.createContext(false);
 });
+/**
+ * O7 utility operation.
+ * @returns {any} Operation result
+ */
 function O7() {
   let [A, B] = pB();
   let Q = wFA.useCallback(() => {
@@ -196391,6 +196583,11 @@ var qwB = createLazyModule(() => {
   c1();
   cM = interopRequireWildcard(VA(), 1);
 });
+/**
+ * NwB operation with parameters.
+ * @param {Object} params - Operation parameters
+ * @returns {any} Operation result
+ */
 function NwB({
   placeholder: A,
   value: B,
@@ -196691,6 +196888,10 @@ function jU1(A) {
     Mn.forEach((Q) => Q(false));
   }
 }
+/**
+ * PwB utility operation.
+ * @returns {any} Operation result
+ */
 function PwB() {
   let A = () => {
     if (Mn.size === 0) {
@@ -246460,6 +246661,11 @@ var LoB = createLazyModule(() => {
   rCA();
   NoB = Symbol.for("brand.privateNullableHeaders");
 });
+/**
+ * OoB operation function.
+ * @param {any} input - Input parameter
+ * @returns {any} Operation result
+ */
 function OoB(A) {
   return A.replace(/[^A-Za-z0-9\-._~!$&'()*+,;=:@]+/g, encodeURIComponent);
 }
@@ -271425,6 +271631,11 @@ function Mu8(A) {
   delete B.batches;
   return B;
 }
+/**
+ * Ou8 utility function.
+ * @param {any} input - Input parameter
+ * @returns {any} Function result
+ */
 function Ou8(A) {
   let B = new MH(A);
   delete B.messages.batches;
