@@ -23,6 +23,14 @@ const webSearchSchemas = require('./websearch-tool-schema');
 const taskSchemas = require('./task-tool-schema');
 const todoWriteSchemas = require('./todowrite-tool-schema');
 
+// Specialized tools
+const notebookEditSchemas = require('./notebookedit-tool-schema');
+const slashCommandSchemas = require('./slashcommand-tool-schema');
+const skillSchemas = require('./skill-tool-schema');
+const bashOutputSchemas = require('./bashoutput-tool-schema');
+const killShellSchemas = require('./killshell-tool-schema');
+const exitPlanModeSchemas = require('./exitplanmode-tool-schema');
+
 module.exports = {
   // Read tool
   readInputSchema: readSchemas.readInputSchema,
@@ -78,5 +86,32 @@ module.exports = {
   todoWriteOutputSchema: todoWriteSchemas.todoWriteOutputSchema,
   todoItemSchema: todoWriteSchemas.todoItemSchema,
   todoListSchema: todoWriteSchemas.todoListSchema,
-  todoStatusSchema: todoWriteSchemas.todoStatusSchema
+  todoStatusSchema: todoWriteSchemas.todoStatusSchema,
+
+  // NotebookEdit tool
+  notebookEditInputSchema: notebookEditSchemas.notebookEditInputSchema,
+  notebookEditOutputSchema: notebookEditSchemas.notebookEditOutputSchema,
+  cellTypeSchema: notebookEditSchemas.cellTypeSchema,
+  editModeSchema: notebookEditSchemas.editModeSchema,
+
+  // SlashCommand tool
+  slashCommandInputSchema: slashCommandSchemas.slashCommandInputSchema,
+  slashCommandOutputSchema: slashCommandSchemas.slashCommandOutputSchema,
+
+  // Skill tool
+  skillInputSchema: skillSchemas.skillInputSchema,
+  skillOutputSchema: skillSchemas.skillOutputSchema,
+
+  // BashOutput tool
+  bashOutputInputSchema: bashOutputSchemas.bashOutputInputSchema,
+  bashOutputOutputSchema: bashOutputSchemas.bashOutputOutputSchema,
+  shellStatusSchema: bashOutputSchemas.shellStatusSchema,
+
+  // KillShell tool
+  killShellInputSchema: killShellSchemas.killShellInputSchema,
+  killShellOutputSchema: killShellSchemas.killShellOutputSchema,
+
+  // ExitPlanMode tool
+  exitPlanModeInputSchema: exitPlanModeSchemas.exitPlanModeInputSchema,
+  exitPlanModeOutputSchema: exitPlanModeSchemas.exitPlanModeOutputSchema
 };
