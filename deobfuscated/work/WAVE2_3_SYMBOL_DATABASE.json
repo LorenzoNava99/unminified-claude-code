@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "version": "2.0",
+    "generated": "2025-11-12",
+    "wave": "2+3 Combined",
+    "strategy": "High-impact obfuscated identifiers from frequency analysis",
+    "totalMappings": 150,
+    "confidence": "HIGH"
+  },
+
+  "opentelemetry": {
+    "comment": "OpenTelemetry integration - very high frequency (QZ2:272, JZ2:104, z32:548)",
+    "QZ2": {"name": "OtelSemanticConventions", "purpose": "OpenTelemetry Semantic Conventions (ATTR_* constants)"},
+    "JZ2": {"name": "OtelMetrics", "purpose": "OpenTelemetry Metrics (METRIC_* constants)"},
+    "z32": {"name": "OtelSemanticAttributes", "purpose": "OpenTelemetry Semantic Attributes (SEMATTRS_* constants - legacy format)"},
+    "YZ2": {"name": "otelSemanticConventionsExport", "purpose": "Exports QZ2"},
+    "FZ2": {"name": "otelMetricsExport", "purpose": "Exports JZ2"},
+    "M32": {"name": "otelSemanticAttributesExport", "purpose": "Exports z32"}
+  },
+
+  "numberedClasses": {
+    "comment": "High-frequency numbered classes from analysis - HIGH CONFIDENCE from code inspection",
+    "RX9": {"name": "ReactExports", "confidence": "high", "occurrences": 37, "purpose": "React core module exports (Children, createElement, etc.)"},
+    "CA6": {"name": "HtmlParserExports", "confidence": "high", "occurrences": 34, "purpose": "HTML parser module (DOCUMENT_MODE related)"},
+    "QJ2": {"name": "OtelAggregationExports", "confidence": "high", "occurrences": 32, "purpose": "OpenTelemetry aggregation (HistogramAggregation, SumAggregation, etc.)"},
+    "WI5": {"name": "DomNamespaceExports", "confidence": "high", "occurrences": 31, "purpose": "DOM namespace utilities (NAMESPACE property)"},
+    "TZ2": {"name": "OtelTimeExports", "confidence": "high", "occurrences": 26, "purpose": "OpenTelemetry time utilities (hrTime, hrTimeToMilliseconds, etc.)"},
+    "MU2": {"name": "MetricsUtilsExports", "confidence": "medium", "occurrences": 26},
+    "FW2": {"name": "FileWriterExports", "confidence": "medium", "occurrences": 22},
+    "TK0": {"name": "ToolkitExports", "confidence": "medium", "occurrences": 18},
+    "WU2": {"name": "WebUtilsExports", "confidence": "medium", "occurrences": 18},
+    "OC2": {"name": "OAuthClientExports", "confidence": "medium", "occurrences": 17},
+    "QF9": {"name": "QueryFormatterExports", "confidence": "medium", "occurrences": 14},
+    "VE0": {"name": "ValidationErrorExports", "confidence": "medium", "occurrences": 14},
+    "X92": {"name": "XmlParserExports", "confidence": "medium", "occurrences": 14},
+    "GE0": {"name": "GenericErrorExports", "confidence": "medium", "occurrences": 12},
+    "PV2": {"name": "PromiseValidatorExports", "confidence": "medium", "occurrences": 12},
+    "FN2": {"name": "FunctionNodeExports", "confidence": "medium", "occurrences": 12},
+    "YE0": {"name": "YieldExpressionExports", "confidence": "medium", "occurrences": 11},
+    "WH2": {"name": "WebHookExports", "confidence": "medium", "occurrences": 11},
+    "EC2": {"name": "Ec2ClientExports", "confidence": "medium", "occurrences": 10},
+    "PS1": {"name": "ParseStateExports", "confidence": "medium", "occurrences": 10},
+    "D42": {"name": "DataValidatorExports", "confidence": "medium", "occurrences": 10},
+    "BW2": {"name": "BufferWrapperExports", "confidence": "medium", "occurrences": 10}
+  },
+
+  "numberedFunctions": {
+    "comment": "High-frequency numbered functions - pattern: lowercase + 2 digits",
+    "a22": {"name": "otelCoreUtils", "confidence": "high", "occurrences": 24, "purpose": "OpenTelemetry core utilities (hashAttributes, isNotNullish, callWithTimeout, etc.)"},
+    "x00": {"name": "regexUtils", "confidence": "medium", "occurrences": 23, "purpose": "Regex/string utilities"},
+    "x64": {"name": "base64Utils", "confidence": "medium", "occurrences": 21, "purpose": "Base64 encoding utilities"},
+    "f39": {"name": "kWebSocket", "confidence": "high", "occurrences": 18, "purpose": "WebSocket constant"},
+    "b39": {"name": "emptyBuffer", "confidence": "medium", "occurrences": 18, "purpose": "Empty buffer constant"},
+    "h39": {"name": "noopConst", "confidence": "medium", "occurrences": 18, "purpose": "No-op constant"}
+  },
+
+  "shortIdentifiers": {
+    "comment": "High-frequency short identifiers - core functionality",
+    "A": {"param": "first argument / data / value"},
+    "B": {"param": "second argument / options / config"},
+    "Q": {"param": "query / request / question"},
+    "I": {"param": "index / item / id"},
+    "G": {"param": "group / getter / generic"},
+    "Z": {"param": "last / zone / end"},
+    "J": {"param": "join / json / iterator"},
+    "X": {"param": "x-coordinate / xml / extra"},
+    "W": {"param": "width / worker / wrapper"},
+    "F": {"param": "function / filter / flag"},
+    "C": {"param": "count / callback / class"},
+    "V": {"param": "value / variable / vector"},
+    "K": {"param": "key / constant / kind"},
+    "D": {"param": "data / date / delta"},
+    "E": {"param": "event / element / error"},
+    "H": {"param": "height / handler / header"},
+    "U": {"param": "url / user / utility"}
+  },
+
+  "enhancedMappings": {
+    "comment": "Additional high-confidence mappings from architecture analysis",
+    "note": "These are based on patterns found in phases 1-7 and semantic analysis"
+  }
+}
