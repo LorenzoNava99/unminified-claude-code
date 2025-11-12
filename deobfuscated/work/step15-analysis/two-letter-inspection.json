@@ -1,0 +1,109 @@
+{
+  "type": "two-letter-identifiers",
+  "totalInspected": 20,
+  "moduleCount": 0,
+  "functionCount": 19,
+  "variableCount": 1,
+  "results": [
+    {
+      "identifier": "id",
+      "occurrences": 1306,
+      "type": "variable"
+    },
+    {
+      "identifier": "v1",
+      "occurrences": 904,
+      "type": "function"
+    },
+    {
+      "identifier": "zA",
+      "occurrences": 863,
+      "type": "function"
+    },
+    {
+      "identifier": "BA",
+      "occurrences": 634,
+      "type": "function"
+    },
+    {
+      "identifier": "QA",
+      "occurrences": 625,
+      "type": "function"
+    },
+    {
+      "identifier": "YA",
+      "occurrences": 601,
+      "type": "function"
+    },
+    {
+      "identifier": "ZA",
+      "occurrences": 592,
+      "type": "function"
+    },
+    {
+      "identifier": "JA",
+      "occurrences": 553,
+      "type": "function"
+    },
+    {
+      "identifier": "XA",
+      "occurrences": 544,
+      "type": "function"
+    },
+    {
+      "identifier": "WA",
+      "occurrences": 529,
+      "type": "function"
+    },
+    {
+      "identifier": "fA",
+      "occurrences": 525,
+      "type": "function"
+    },
+    {
+      "identifier": "CA",
+      "occurrences": 517,
+      "type": "function"
+    },
+    {
+      "identifier": "FA",
+      "occurrences": 510,
+      "type": "function"
+    },
+    {
+      "identifier": "VA",
+      "occurrences": 506,
+      "type": "function"
+    },
+    {
+      "identifier": "KA",
+      "occurrences": 494,
+      "type": "function"
+    },
+    {
+      "identifier": "DA",
+      "occurrences": 485,
+      "type": "function"
+    },
+    {
+      "identifier": "EA",
+      "occurrences": 485,
+      "type": "function"
+    },
+    {
+      "identifier": "UA",
+      "occurrences": 474,
+      "type": "function"
+    },
+    {
+      "identifier": "wA",
+      "occurrences": 472,
+      "type": "function"
+    },
+    {
+      "identifier": "GA",
+      "occurrences": 471,
+      "type": "function"
+    }
+  ]
+}
