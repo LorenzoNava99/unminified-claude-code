@@ -1,0 +1,20 @@
+4508:    return K0(process.env.DEBUG) || K0(process.env.DEBUG_SDK) || process.argv.includes("--debug") || process.argv.includes("-d") || ty() || process.argv.some(A => A.startsWith("--debug="));
+4511:    let A = process.argv.find(Q => Q.startsWith("--debug="));
+4519:    return process.argv.includes("--debug-to-stderr") || process.argv.includes("-d2e");
+4642:      super(1, "commander.invalidArgument", A);
+5461:          if (B.code !== "commander.executeSubCommandAsync") {
+5496:        if (G.code === "commander.invalidArgument") {
+5805:          X(new e91(W, "commander.executeSubCommandAsync", "(close)"));
+5822:          let F = new e91(1, "commander.executeSubCommandAsync", "(error)");
+6184:      let G = Q.code || "commander.error";
+6215:        code: "commander.missingArgument"
+6221:        code: "commander.optionMissingArgument"
+6227:        code: "commander.missingMandatoryOptionValue"
+6251:        code: "commander.conflictingOption"
+6271:        code: "commander.unknownOption"
+6282:        code: "commander.excessArguments"
+6300:        code: "commander.unknownCommand"
+6316:        this._exit(0, "commander.version", A);
+6469:      this._exit(B, "commander.help", "(outputHelp)");
+6499:        this._exit(0, "commander.helpDisplayed", "(outputHelp)");
+37497:  NK0.exports = (A, B = process.argv) => {
