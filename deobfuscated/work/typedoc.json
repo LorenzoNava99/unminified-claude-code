@@ -1,0 +1,39 @@
+{
+  "entryPoints": [
+    "step5-documented/deobfuscated-documented.js",
+    "types.d.ts"
+  ],
+  "out": "docs",
+  "name": "Claude Code CLI - Deobfuscated Documentation",
+  "includeVersion": true,
+  "readme": "none",
+  "plugin": [],
+  "excludePrivate": false,
+  "excludeProtected": false,
+  "excludeInternal": false,
+  "disableSources": false,
+  "navigationLinks": {
+    "GitHub": "https://github.com/anthropics/claude-code"
+  },
+  "categorizeByGroup": true,
+  "defaultCategory": "Utilities",
+  "categoryOrder": [
+    "Core",
+    "MCP Protocol",
+    "HTTP Client",
+    "OAuth",
+    "Validation",
+    "Tools",
+    "Configuration",
+    "Utilities",
+    "*"
+  ],
+  "sort": ["source-order"],
+  "kindSortOrder": [
+    "Class",
+    "Interface",
+    "TypeAlias",
+    "Function",
+    "Variable"
+  ]
+}
