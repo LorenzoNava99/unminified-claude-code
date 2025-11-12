@@ -1,0 +1,100 @@
+// (c) Anthropic PBC. All rights reserved. Use is subject to the Legal Agreements outlined here: https://docs.claude.com/en/docs/claude-code/legal-and-compliance.
+  return process.env.CLAUDE_CONFIG_DIR ?? o59(t59(), ".claude");
+  return K0(process.env.CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR);
+  if (A?.startsWith("claude-haiku-4-5")) {
+    return process.env.VERTEX_REGION_CLAUDE_HAIKU_4_5 || pL();
+  if (A?.startsWith("claude-3-5-haiku")) {
+    return process.env.VERTEX_REGION_CLAUDE_3_5_HAIKU || pL();
+  if (A?.startsWith("claude-3-5-sonnet")) {
+    return process.env.VERTEX_REGION_CLAUDE_3_5_SONNET || pL();
+  if (A?.startsWith("claude-3-7-sonnet")) {
+    return process.env.VERTEX_REGION_CLAUDE_3_7_SONNET || pL();
+  if (A?.startsWith("claude-opus-4-1")) {
+    return process.env.VERTEX_REGION_CLAUDE_4_1_OPUS || pL();
+  if (A?.startsWith("claude-opus-4")) {
+    return process.env.VERTEX_REGION_CLAUDE_4_0_OPUS || pL();
+  if (A?.startsWith("claude-sonnet-4-5")) {
+    return process.env.VERTEX_REGION_CLAUDE_4_5_SONNET || pL();
+  if (A?.startsWith("claude-sonnet-4")) {
+    return process.env.VERTEX_REGION_CLAUDE_4_0_SONNET || pL();
+    name: "CLAUDE_CODE_MAX_OUTPUT_TOKENS",
+  YB.sessionCounter = B("claude_code.session.count", {
+  YB.locCounter = B("claude_code.lines_of_code.count", {
+  YB.prCounter = B("claude_code.pull_request.count", {
+  YB.commitCounter = B("claude_code.commit.count", {
+  YB.costCounter = B("claude_code.cost.usage", {
+    description: "Cost of the Claude Code session",
+  YB.tokenCounter = B("claude_code.token.usage", {
+  YB.codeEditToolDecisionCounter = B("claude_code.code_edit_tool.decision", {
+  YB.activeTimeCounter = B("claude_code.active_time.total", {
+  return YB.isNonInteractiveSession && YB.clientType !== "claude-vscode";
+  return process.env.CLAUDE_CODE_DEBUG_LOGS_DIR ?? i50(dB(), "debug", `${L0()}.txt`);
+  KLA = process.env.CLAUDE_CODE_PROFILE_STARTUP === "1";
+  return process.env.USE_MCP_CLI_DIR || zI0(aI9(), "claude-code-mcp-cli");
+    let A = process.env.CLAUDE_CODE_SESSION_ID;
+  var __dirname = "/home/runner/code/tmp/claude-cli-external-build-2201/node_modules/spawn-rx/lib/src";
+    SCOPES: [ab9, "user:profile", lRA, "user:sessions:claude_code"]
+    BASE_API_URL: "https://api.anthropic.com",
+    CONSOLE_AUTHORIZE_URL: "https://console.anthropic.com/oauth/authorize",
+    CLAUDE_AI_AUTHORIZE_URL: "https://claude.ai/oauth/authorize",
+    TOKEN_URL: "https://console.anthropic.com/v1/oauth/token",
+    API_KEY_URL: "https://api.anthropic.com/api/oauth/claude_cli/create_api_key",
+    ROLES_URL: "https://api.anthropic.com/api/oauth/claude_cli/roles",
+    CONSOLE_SUCCESS_URL: "https://console.anthropic.com/buy_credits?returnUrl=/oauth/code/success%3Fapp%3Dclaude-code",
+    CLAUDEAI_SUCCESS_URL: "https://console.anthropic.com/oauth/code/success?app=claude-code",
+    MANUAL_REDIRECT_URL: "https://console.anthropic.com/oauth/code/callback",
+    CLAUDE_AI_AUTHORIZE_URL: "http://localhost:4000/oauth/authorize",
+    API_KEY_URL: "http://localhost:3000/api/oauth/claude_cli/create_api_key",
+    ROLES_URL: "http://localhost:3000/api/oauth/claude_cli/roles",
+    CONSOLE_SUCCESS_URL: "http://localhost:3000/buy_credits?returnUrl=/oauth/code/success%3Fapp%3Dclaude-code",
+    CLAUDEAI_SUCCESS_URL: "http://localhost:3000/oauth/code/success?app=claude-code",
+  let A = `.claude${FT0()}.json`;
+  return a71(process.env.CLAUDE_CONFIG_DIR || tb9(), A);
+var BP0 = "https://json.schemastore.org/claude-code-settings.json";
+    if (process.env.CLAUDE_CODE_GIT_BASH_PATH) {
+      if (qG1(process.env.CLAUDE_CODE_GIT_BASH_PATH)) {
+        return process.env.CLAUDE_CODE_GIT_BASH_PATH;
+      console.error(`Claude Code was unable to find CLAUDE_CODE_GIT_BASH_PATH path "${process.env.CLAUDE_CODE_GIT_BASH_PATH}"`);
+    console.error("Claude Code on Windows requires git-bash (https://git-scm.com/downloads/win). If installed but not in PATH, set environment variable pointing to your bash.exe, similar to: CLAUDE_CODE_GIT_BASH_PATH=C:\\Program Files\\Git\\bin\\bash.exe");
+    claude: "rgb(215,119,87)",
+    claudeShimmer: "rgb(245,149,117)",
+    claudeBlue_FOR_SYSTEM_SPINNER: "rgb(87,105,247)",
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: "rgb(117,135,255)",
+    claude: "ansi:redBright",
+    claudeShimmer: "ansi:yellowBright",
+    claudeBlue_FOR_SYSTEM_SPINNER: "ansi:blue",
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: "ansi:blueBright",
+    claude: "ansi:redBright",
+    claudeShimmer: "ansi:yellowBright",
+    claudeBlue_FOR_SYSTEM_SPINNER: "ansi:blueBright",
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: "ansi:blueBright",
+    claude: "rgb(255,153,51)",
+    claudeShimmer: "rgb(255,183,101)",
+    claudeBlue_FOR_SYSTEM_SPINNER: "rgb(51,102,255)",
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: "rgb(101,152,255)",
+    claude: "rgb(215,119,87)",
+    claudeShimmer: "rgb(235,159,127)",
+    claudeBlue_FOR_SYSTEM_SPINNER: "rgb(147,165,255)",
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: "rgb(177,195,255)",
+    claude: "rgb(255,153,51)",
+    claudeShimmer: "rgb(255,183,101)",
+    claudeBlue_FOR_SYSTEM_SPINNER: "rgb(153,204,255)",
+    claudeBlueShimmer_FOR_SYSTEM_SPINNER: "rgb(183,224,255)",
+    continue: k.boolean().describe("Whether Claude should continue after hook (default: true)").optional(),
+  if (K0(process.env.CLAUDE_CODE_USE_BEDROCK)) {
+  } else if (K0(process.env.CLAUDE_CODE_USE_VERTEX)) {
+- This tool allows Claude Code to read images (eg PNG, JPG, etc). When reading an image file the contents are presented visually as Claude Code is a multimodal LLM.${U0A() ? `
+- Allows Claude to search the web and use the results to inform responses
+- Use this tool for accessing information beyond Claude's knowledge cutoff
+var ev0 = "You are Claude Code, Anthropic's official CLI for Claude.";
+var wn9 = "You are Claude Code, Anthropic's official CLI for Claude, running within the Claude Agent SDK.";
+var $n9 = "You are a Claude agent, built on Anthropic's Claude Agent SDK.";
+    let B = A || `Claude Code auto-stash - ${new Date().toISOString()}`;
+  if (B.includes("claude-sonnet-4-5") && B.includes("[1m]")) {
+  if (B.includes("claude-sonnet-4-5")) {
+  if (B.includes("claude-sonnet-4") && B.includes("[1m]")) {
+  if (B.includes("claude-sonnet-4")) {
+  if (B.includes("claude-opus-4-1")) {
+  if (B.includes("claude-opus-4")) {
+  if (B.includes("claude-3-7-sonnet")) {
+    return "Claude 3.7 Sonnet";

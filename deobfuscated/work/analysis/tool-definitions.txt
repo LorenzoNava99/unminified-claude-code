@@ -1,0 +1,100 @@
+4315:  YB.codeEditToolDecisionCounter = B("claude_code.code_edit_tool.decision", {
+6668:      toolPermissionContext: {
+14666:    tools: k.optional(k.object({
+22162:          if (!this._serverCapabilities?.tools) {
+22163:            throw Error(`Server does not support tools (required for ${A})`);
+22287:              throw new JD(YD.InvalidParams, `Structured content does not match the tool's output schema: ${this._ajv.errorsText(G.errors)}`);
+28838:    "application/vnd.criticaltools.wbs+xml": {
+29457:    "application/vnd.geogebra.tool": {
+29547:    "application/vnd.groove-tool-message": {
+29551:    "application/vnd.groove-tool-template": {
+29713:    "application/vnd.ims.lti.v2.toolconsumerprofile+json": {
+29717:    "application/vnd.ims.lti.v2.toolproxy+json": {
+29721:    "application/vnd.ims.lti.v2.toolproxy.id+json": {
+29725:    "application/vnd.ims.lti.v2.toolsettings+json": {
+29729:    "application/vnd.ims.lti.v2.toolsettings.simple+json": {
+34845:    "video/vnd.radgamettools.bink": {
+34848:    "video/vnd.radgamettools.smacker": {
+101060:          if (B.usage.server_tool_use != null) {
+101108:                        let J = new y2(`Unable to parse tool parameter JSON from model. Please retry your request or adjust your prompt. Error: ${Y}. JSON: ${G}`);
+101304:- This tool allows Claude Code to read images (eg PNG, JPG, etc). When reading an image file the contents are presented visually as Claude Code is a multimodal LLM.${U0A() ? `
+101307:- This tool can only read files, not directories. To read a directory, use an ls command via the ${m4} tool.
+178849:    toolRunner(A, B) {
+179462:          if (B.usage.server_tool_use != null) {
+218441:      if (B.toolUse !== undefined) {
+218444:      if (B.toolResult !== undefined) {
+218500:      if (B.tool !== undefined) {
+218518:      if (B.toolSpec !== undefined) {
+218619:      if (B.toolUse !== undefined) {
+218631:      if (B.toolUse !== undefined) {
+218913:    if (A.toolUse !== undefined) {
+218918:    if (A.toolResult !== undefined) {
+218980:    ...(A.toolConfig && {
+219016:    ...(A.toolConfig && {
+219054:    if (A.toolUse !== undefined) {
+220096:      toolResult: rA(Q => ({
+220099:      toolUse: rA(Q => ({
+220278:      toolSpec: rA(Q => ({
+220431:    if (A.toolResult != null) {
+220436:    if (A.toolUse != null) {
+220461:    if (A.toolUse != null) {
+235917:    if (y3("tool_use_examples", "enabled", false) && I === "firstParty") {
+236290:          if (F.type === "tool_use" && "id" in F && F.id === A) {
+236310:            if (F.type === "tool_use" && "id" in F && F.id === A) {
+236331:          if (F.type === "tool_use" && "id" in F) {
+236332:            Z.push(`${C}:tool_use:${F.id}`);
+236333:          } else if (F.type === "tool_result" && "tool_use_id" in F) {
+236334:            Z.push(`${C}:tool_result:${F.tool_use_id}`);
+236364:                  if (F.type === "tool_use" && "id" in F) {
+236365:                    Y.push(`${C}:tool_use:${F.id}`);
+236366:                  } else if (F.type === "tool_result" && "tool_use_id" in F) {
+236367:                    Y.push(`${C}:tool_result:${F.tool_use_id}`);
+236403:    GA("tengu_tool_use_tool_result_mismatch_error", {
+236482:  if (A instanceof $4 && A.status === 400 && A.message.includes("`tool_use` ids were found without `tool_result` blocks immediately after")) {
+236497:  if (A instanceof $4 && A.status === 400 && A.message.includes("unexpected `tool_use_id` found in `tool_result`")) {
+236498:    GA("tengu_unexpected_tool_result", {});
+240731:  if (Q.toolName !== VC || !Q.ruleContent?.startsWith("domain:")) {
+241236:      if ((Z.toolName === "Edit" || Z.toolName === "Read") && Z.ruleContent) {
+241435:    - If the commands are independent and can run in parallel, make multiple ${m4} tool calls in a single message. For example, if you need to run "git status" and "git diff", send a single message with two ${m4} tool calls in parallel.
+241467:1. You can call multiple tools in a single response. When multiple independent pieces of information are requested and all commands are likely to succeed, run multiple tool calls in parallel for optimal performance. run the following bash commands in parallel, each using the ${m4} tool:
+241508:1. You can call multiple tools in a single response. When multiple independent pieces of information are requested and all commands are likely to succeed, run multiple tool calls in parallel for optimal performance. run the following bash commands in parallel using the ${m4} tool, in order to understand the current state of the branch since it diverged from the main branch:
+243253:    "mcp-cli tools": {
+271083:              toolUseID: `bash-progress-${D++}`,
+271111:          if (TcA(RA.toolPermissionContext)) {
+271149:          GA("tengu_bash_tool_haiku_file_paths_read", {
+271168:      GA("tengu_bash_tool_command_executed", {
+272078:      message: `MCP tool ${I}/${G} has been denied`,
+272258:  if (CQ.isSandboxingEnabled() && CQ.isAutoAllowBashIfSandboxedEnabled() && m4A(A) && I.toolPermissionContext.mode === "acceptEdits") {
+292360:  if (!A.toolUseResult || !Z) {
+292363:  let F = Z.renderToolResultMessage(A.toolUseResult, R0A(I), {
+292398:      if (G.type === "tool_use" && G.id === A) {
+292583:    AA(Error(`Tools array is undefined for tool ${A.name}`), r81);
+292670:    AA(Error(`Error rendering tool use message for ${A.name}: ${G}`), IJ0);
+292693:    AA(Error(`Error rendering tool use progress message for ${A.name}: ${W}`), BJ0);
+292701:    AA(Error(`Error rendering tool use queued message for ${A.name}: ${B}`), QJ0);
+293303:        if ("tool_use_id" in A) {
+293354:  A.toolRequests.forEach((I, G) => {
+293355:    B[`tool_request_${G}_tokens`] = I;
+293357:  A.toolResults.forEach((I, G) => {
+293358:    B[`tool_result_${G}_tokens`] = I;
+293372:    A.toolRequests.forEach((Z, Y) => {
+293373:      B[`tool_request_${Y}_percent`] = Math.round(Z / A.total * 100);
+293375:    A.toolResults.forEach((Z, Y) => {
+293376:      B[`tool_result_${Y}_percent`] = Math.round(Z / A.total * 100);
+304356:      }, " tools for this command")), Q && Q2.default.createElement(YJ, {
+310197:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+310349:      if (fC(Q, I.toolPermissionContext, "edit", "deny") !== null) {
+310564:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+311021:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+311190:- If you want to read a specific file path, use the ${I8.name} or ${VN.name} tool instead of the ${c8} tool, to find the match more quickly
+311192:- If you are searching for code within a specific file or set of 2-3 files, use the ${I8.name} tool instead of the ${c8} tool, to find the match more quickly
+324977:        if (D.type === "tool_use" && cl6.has(D.name)) {
+324981:        } else if (D.type === "tool_result" && Z.includes(D.tool_use_id)) {
+325033:        if (E.type === "tool_result" && C(E.tool_use_id)) {
+325071:          if (H.type === "tool_use" && H.name === A7) {
+326860:  let G = $EA("tool", {
+326865:  let Y = Q.startSpan("claude_code.tool", {
+326885:  let G = A.startSpan("claude_code.tool.blocked_on_user", {
+326902:    if (Y.attributes["span.type"] === "tool.blocked_on_user") {
+326932:  let G = A.startSpan("claude_code.tool.execution", {
+326949:    if (Z.attributes["span.type"] === "tool.execution") {

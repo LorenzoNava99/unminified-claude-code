@@ -1,0 +1,40 @@
+6625:    let A = process.env.CLAUDE_CODE_SESSION_ID;
+173936:      return B.filter(I => I.inferenceProfileId?.includes("anthropic")).map(I => I.inferenceProfileId).filter(Boolean);
+174090:  let A = process.env.CLAUDE_AGENT_SDK_VERSION ? `, agent-sdk/${process.env.CLAUDE_AGENT_SDK_VERSION}` : "";
+174096:  }.VERSION} (external, ${process.env.CLAUDE_CODE_ENTRYPOINT}${A})`;
+175669:  return process.env.ANTHROPIC_SMALL_FAST_MODEL || zFA();
+175681:    A = process.env.ANTHROPIC_MODEL || Q.model || undefined;
+175706:  if (process.env.ANTHROPIC_DEFAULT_SONNET_MODEL) {
+175707:    return process.env.ANTHROPIC_DEFAULT_SONNET_MODEL;
+175712:  if (process.env.ANTHROPIC_DEFAULT_OPUS_MODEL) {
+175713:    return process.env.ANTHROPIC_DEFAULT_OPUS_MODEL;
+175718:  if (process.env.ANTHROPIC_DEFAULT_HAIKU_MODEL) {
+175719:    return process.env.ANTHROPIC_DEFAULT_HAIKU_MODEL;
+175844:    return "Sonnet 4.5 with 1M context · Smartest model for daily use";
+175846:  return "Sonnet 4.5 · Smartest model for daily use";
+176028:  if (process.env.CLAUDE_CODE_SUBAGENT_MODEL) {
+176029:    return process.env.CLAUDE_CODE_SUBAGENT_MODEL;
+176123:    description: "Sonnet 4.5 · Smartest model for daily use · $3/$15 per Mtok",
+176124:    descriptionForModel: "Sonnet 4.5 - the most powerful model. Generally best for most coding tasks"
+176130:    descriptionForModel: "Sonnet 4.5 with 1M context window - for long sessions with large codebases"
+176136:    descriptionForModel: "Opus 4.1 - slower and more expensive than Sonnet, generally not recommended over Sonnet 4.5"
+176142:    descriptionForModel: "Haiku 4.5 - faster and lower cost, but less capable than Sonnet 4.5. Use for simple tasks."
+176157:    description: "Sonnet 4.5 · Smartest model for daily use"
+176162:    description: "Haiku 4.5 · Fastest model for simple tasks"
+178814:Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.`);
+179675:Please migrate to a newer model. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.`);
+180217:      "anthropic-version": "2023-06-01"
+207964:  throw Error(`Failed to import '@aws-sdk/credential-providers'.You can provide a custom \`providerChainResolver\` in the client options if your runtime does not have access to '@aws-sdk/credential-providers': \`new AnthropicBedrock({ providerChainResolver })\` Original error: ${A.message}`);
+221479:        if (!A.body.anthropic_version) {
+221480:          A.body.anthropic_version = Sy8;
+235625:      projectId: Q = imA("ANTHROPIC_VERTEX_PROJECT_ID") ?? null,
+235668:        if (!A.body.anthropic_version) {
+235669:          A.body.anthropic_version = Nu8;
+235674:          throw Error("No projectId was given and it could not be resolved from credentials. The client should be instantiated with the `projectId` option or the `ANTHROPIC_VERTEX_PROJECT_ID` environment variable should be set.");
+235682:        A.path = `/projects/${this.projectId}/locations/${this.region}/publishers/anthropic/models/${B}:${I}`;
+235686:          throw Error("No projectId was given and it could not be resolved from credentials. The client should be instantiated with the `projectId` option or the `ANTHROPIC_VERTEX_PROJECT_ID` environment variable should be set.");
+235688:        A.path = `/projects/${this.projectId}/locations/${this.region}/publishers/anthropic/models/count-tokens:rawPredict`;
+235712:  let G = process.env.CLAUDE_CODE_CONTAINER_ID;
+235718:      "x-claude-remote-container-id": G
+235739:    let W = Q === BW() && process.env.ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION ? process.env.ANTHROPIC_SMALL_FAST_MODEL_AWS_REGION : Le();
+235776:        projectId: process.env.ANTHROPIC_VERTEX_PROJECT_ID

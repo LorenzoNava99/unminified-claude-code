@@ -1,0 +1,100 @@
+  let Q = A.match(/^MCP server ["']([^"']+)["']/);
+    B.push("mcp");
+  return K0(process.env.ENABLE_EXPERIMENTAL_MCP_CLI);
+  let B = A.match(/^mcp-cli\s+(call|read)\s+([a-zA-Z0-9_-]+)\/([a-zA-Z0-9_-]+)(?:\s+(.+))?$/);
+  return process.env.USE_MCP_CLI_DIR || zI0(aI9(), "claude-code-mcp-cli");
+  let B = A.name.startsWith("mcp__") ? A.name.split("__")[1] || "unknown" : "unknown";
+    isMcp: A.isMcp,
+    let I = await Promise.all(B.filter(J => J.isMcp).map(A39));
+      super(`MCP error ${A}: ${B}`);
+      this.name = "McpError";
+    "MCP-Protocol-Version": B
+    "MCP-Protocol-Version": Q
+        throw Error(`Incompatible OIDC provider at ${Y}: does not support S256 code challenge method required by MCP specification`);
+      B["mcp-protocol-version"] = this._protocolVersion;
+      B["mcp-session-id"] = this._sessionId;
+      B["mcp-protocol-version"] = this._protocolVersion;
+      let C = F.headers.get("mcp-session-id");
+    "application/vnd.3gpp.mcptt-affiliation-command+xml": {
+    "application/vnd.3gpp.mcptt-floor-request+xml": {
+    "application/vnd.3gpp.mcptt-info+xml": {
+    "application/vnd.3gpp.mcptt-location-info+xml": {
+    "application/vnd.3gpp.mcptt-mbms-usage-info+xml": {
+    "application/vnd.3gpp.mcptt-service-config+xml": {
+    "application/vnd.3gpp.mcptt-signed+xml": {
+    "application/vnd.3gpp.mcptt-ue-config+xml": {
+    "application/vnd.3gpp.mcptt-ue-init-config+xml": {
+    "application/vnd.3gpp.mcptt-user-profile+xml": {
+      updatedMCPToolOutput: k.unknown().describe("Updates the output for MCP tools").optional()
+  return A.type === "tool_use" || A.type === "server_tool_use" || A.type === "mcp_tool_use";
+  - IMPORTANT: If an MCP-provided web fetch tool is available, prefer using that tool instead of this one, as it may have fewer restrictions. All MCP-provided tools start with "mcp__".
+    mcp: {
+        mcpTools: []
+        mcpTools: []
+        mcpTools: []
+          mcpTools: []
+  let W = pJ() ? "    - EXCEPTION: `mcp-cli` commands must always be called with `dangerouslyDisableSandbox: true` as they do not work properly in sandboxed mode\n" : "";
+    "mcp-cli servers": {
+    "mcp-cli tools": {
+    "mcp-cli info": {
+    "mcp-cli grep": {
+    "mcp-cli resources": {
+    "mcp-cli read": {
+      _relevance_hints: ["asin", "atan2", "atan", "calloc", "ceil", "cosh", "cos", "exit", "exp", "fabs", "floor", "fmod", "fprintf", "fputs", "free", "frexp", "auto_ptr", "deque", "list", "queue", "stack", "vector", "map", "set", "pair", "bitset", "multiset", "multimap", "unordered_set", "fscanf", "future", "isalnum", "isalpha", "iscntrl", "isdigit", "isgraph", "islower", "isprint", "ispunct", "isspace", "isupper", "isxdigit", "tolower", "toupper", "labs", "ldexp", "log10", "log", "malloc", "realloc", "memchr", "memcmp", "memcpy", "memset", "modf", "pow", "printf", "putchar", "puts", "scanf", "sinh", "sin", "snprintf", "sprintf", "sqrt", "sscanf", "strcat", "strchr", "strcmp", "strcpy", "strcspn", "strlen", "strncat", "strncmp", "strncpy", "strpbrk", "strrchr", "strspn", "strstr", "tanh", "tan", "unordered_map", "unordered_multiset", "unordered_multimap", "priority_queue", "make_pair", "array", "shared_ptr", "abort", "terminate", "abs", "acos", "vfprintf", "vprintf", "vsprintf", "endl", "initializer_list", "unique_ptr", "complex", "imaginary", "std", "string", "wstring", "cin", "cout", "cerr", "clog", "stdin", "stdout", "stderr", "stringstream", "istringstream", "ostringstream"],
+      _relevance_hints: ["asin", "atan2", "atan", "calloc", "ceil", "cosh", "cos", "exit", "exp", "fabs", "floor", "fmod", "fprintf", "fputs", "free", "frexp", "auto_ptr", "deque", "list", "queue", "stack", "vector", "map", "set", "pair", "bitset", "multiset", "multimap", "unordered_set", "fscanf", "future", "isalnum", "isalpha", "iscntrl", "isdigit", "isgraph", "islower", "isprint", "ispunct", "isspace", "isupper", "isxdigit", "tolower", "toupper", "labs", "ldexp", "log10", "log", "malloc", "realloc", "memchr", "memcmp", "memcpy", "memset", "modf", "pow", "printf", "putchar", "puts", "scanf", "sinh", "sin", "snprintf", "sprintf", "sqrt", "sscanf", "strcat", "strchr", "strcmp", "strcpy", "strcspn", "strlen", "strncat", "strncmp", "strncpy", "strpbrk", "strrchr", "strspn", "strstr", "tanh", "tan", "unordered_map", "unordered_multiset", "unordered_multimap", "priority_queue", "make_pair", "array", "shared_ptr", "abort", "terminate", "abs", "acos", "vfprintf", "vprintf", "vsprintf", "endl", "initializer_list", "unique_ptr", "complex", "imaginary", "std", "string", "wstring", "cin", "cout", "cerr", "clog", "stdin", "stdout", "stderr", "stringstream", "istringstream", "ostringstream"],
+      built_in: "std string wstring cin cout cerr clog stdin stdout stderr stringstream istringstream ostringstream auto_ptr deque list queue stack vector map set pair bitset multiset multimap unordered_set unordered_map unordered_multiset unordered_multimap priority_queue make_pair array shared_ptr abort terminate abs acos asin atan2 atan calloc ceil cosh cos exit exp fabs floor fmod fprintf fputs free frexp fscanf future isalnum isalpha iscntrl isdigit isgraph islower isprint ispunct isspace isupper isxdigit tolower toupper labs ldexp log10 log malloc realloc memchr memcmp memcpy memset modf pow printf putchar puts scanf sinh sin snprintf sprintf sqrt sscanf strcat strchr strcmp strcpy strcspn strlen strncat strncmp strncpy strpbrk strrchr strspn strstr tanh tan vfprintf vprintf vsprintf endl initializer_list unique_ptr _Bool complex _Complex imaginary _Imaginary",
+      _relevance_hints: ["asin", "atan2", "atan", "calloc", "ceil", "cosh", "cos", "exit", "exp", "fabs", "floor", "fmod", "fprintf", "fputs", "free", "frexp", "auto_ptr", "deque", "list", "queue", "stack", "vector", "map", "set", "pair", "bitset", "multiset", "multimap", "unordered_set", "fscanf", "future", "isalnum", "isalpha", "iscntrl", "isdigit", "isgraph", "islower", "isprint", "ispunct", "isspace", "isupper", "isxdigit", "tolower", "toupper", "labs", "ldexp", "log10", "log", "malloc", "realloc", "memchr", "memcmp", "memcpy", "memset", "modf", "pow", "printf", "putchar", "puts", "scanf", "sinh", "sin", "snprintf", "sprintf", "sqrt", "sscanf", "strcat", "strchr", "strcmp", "strcpy", "strcspn", "strlen", "strncat", "strncmp", "strncpy", "strpbrk", "strrchr", "strspn", "strstr", "tanh", "tan", "unordered_map", "unordered_multiset", "unordered_multimap", "priority_queue", "make_pair", "array", "shared_ptr", "abort", "terminate", "abs", "acos", "vfprintf", "vprintf", "vsprintf", "endl", "initializer_list", "unique_ptr", "complex", "imaginary", "std", "string", "wstring", "cin", "cout", "cerr", "clog", "stdin", "stdout", "stderr", "stringstream", "istringstream", "ostringstream"],
+        keyword: "goto gosub return break repeat loop continue wait await dim sdim foreach dimtype dup dupptr end stop newmod delmod mref run exgoto on mcall assert logmes newlab resume yield onexit onerror onkey onclick oncmd exist delete mkdir chdir dirlist bload bsave bcopy memfile if else poke wpoke lpoke getstr chdpm memexpand memcpy memset notesel noteadd notedel noteload notesave randomize noteunsel noteget split strrep setease button chgdisp exec dialog mmload mmplay mmstop mci pset pget syscolor mes print title pos circle cls font sysfont objsize picload color palcolor palette redraw width gsel gcopy gzoom gmode bmpsave hsvcolor getkey listbox chkbox combox input mesbox buffer screen bgscr mouse objsel groll line clrobj boxf objprm objmode stick grect grotate gsquare gradf objimage objskip objenable celload celdiv celput newcom querycom delcom cnvstow comres axobj winobj sendmsg comevent comevarg sarrayconv callfunc cnvwtos comevdisp libptr system hspstat hspver stat cnt err strsize looplev sublev iparam wparam lparam refstr refdval int rnd strlen length length2 length3 length4 vartype gettime peek wpeek lpeek varptr varuse noteinfo instr abs limit getease str strmid strf getpath strtrim sin cos tan atan sqrt double absf expf logf limitf powf geteasef mousex mousey mousew hwnd hinstance hdc ginfo objinfo dirinfo sysinfo thismod __hspver__ __hsp30__ __date__ __time__ __line__ __file__ _debug __hspdef__ and or xor not screen_normal screen_palette screen_hide screen_fixedsize screen_tool screen_frame gmode_gdi gmode_mem gmode_rgb0 gmode_alpha gmode_rgb0alpha gmode_add gmode_sub gmode_pixela ginfo_mx ginfo_my ginfo_act ginfo_sel ginfo_wx1 ginfo_wy1 ginfo_wx2 ginfo_wy2 ginfo_vx ginfo_vy ginfo_sizex ginfo_sizey ginfo_winx ginfo_winy ginfo_mesx ginfo_mesy ginfo_r ginfo_g ginfo_b ginfo_paluse ginfo_dispx ginfo_dispy ginfo_cx ginfo_cy ginfo_intid ginfo_newid ginfo_sx ginfo_sy objinfo_mode objinfo_bmscr objinfo_hwnd notemax notesize dir_cur dir_exe dir_win dir_sys dir_cmdline dir_desktop dir_mydoc dir_tv font_normal font_bold font_italic font_underline font_strikeout font_antialias objmode_normal objmode_guifont objmode_usefont gsquare_grad msgothic msmincho do until while wend for next _break _continue switch case default swbreak swend ddim ldim alloc m_pi rad2deg deg2rad ease_linear ease_quad_in ease_quad_out ease_quad_inout ease_cubic_in ease_cubic_out ease_cubic_inout ease_quartic_in ease_quartic_out ease_quartic_inout ease_bounce_in ease_bounce_out ease_bounce_inout ease_shake_in ease_shake_out ease_shake_inout ease_loop"
+      args: ["--mcp-cli"]
+      # Check for mcp-cli availability
+      echo "# Check for mcp-cli availability" >> "$SNAPSHOT_FILE"
+      echo "if ! command -v mcp-cli >/dev/null 2>&1; then" >> "$SNAPSHOT_FILE"
+      echo '  alias mcp-cli='"'${Y.replace(/'/g, "'\\''")}'" >> "$SNAPSHOT_FILE"
+    structuredContent: k.array(k.any()).optional().describe("Structured content blocks from mcp-cli commands")
+Note: Full mcp-cli output (${N.length.toLocaleString()} characters) saved to ${r}. You can use the ${I8.name} tool to access the complete output.`;
+      message: "Invalid MCP server or tool name. Names must contain only letters, numbers, hyphens, and underscores.",
+        reason: "Security: Invalid characters in MCP identifier"
+  let Z = `mcp__${I}__${G}`;
+      message: `MCP tool ${I}/${G} has been denied`,
+      reason: "MCP tool requires permission"
+    case "mcp_tool_use":
+    case "mcp_tool_result":
+    mcpServers: k.record(k.string(), Dm)
+  J$Q = k.union([Bs.refine(A => A.endsWith(".mcpb") || A.endsWith(".dxt"), {
+    message: "MCPB file path must end with .mcpb or .dxt"
+  }).describe("Path to MCPB file relative to plugin root"), k.string().url().refine(A => A.endsWith(".mcpb") || A.endsWith(".dxt"), {
+    message: "MCPB URL must end with .mcpb or .dxt"
+  }).describe("URL to MCPB file")]);
+    mcpServers: k.union([R8A.describe("MCP servers to include in the plugin (in addition to those in the .mcp.json file, if it exists)"), J$Q.describe("Path or URL to MCPB file containing MCP server configuration"), k.record(k.string(), Dm).describe("MCP server configurations keyed by server name"), k.array(k.union([R8A.describe("Path to MCP servers configuration file"), J$Q.describe("Path or URL to MCPB file"), k.record(k.string(), Dm).describe("Inline MCP server configurations")])).describe("Array of MCP server configurations (paths, MCPB files, or inline definitions)")])
+        mcpTools: []
+  mcpClient;
+    this.mcpClient = A;
+    if (!this.initialized || !this.mcpClient || this.mcpClient.type !== "connected") {
+      }, this.mcpClient);
+    if (!this.initialized || !this.mcpClient || this.mcpClient.type !== "connected") {
+      }, this.mcpClient);
+    if (!this.initialized || !this.mcpClient || this.mcpClient.type !== "connected") {
+      let G = await Rx("getDiagnostics", {}, this.mcpClient);
+    case "mcp_resource":
+      }, "Read MCP resource "), Q2.default.createElement(w, {
+  let G = A.filter(Z => !Z.isMcp);
+  let G = A.filter(X => X.isMcp);
+    mcpToolTokens: J,
+    mcpToolDetails: Z
+  let I = A.filter(G => !G.isMcp);
+    mcpToolTokens: V,
+    mcpToolDetails: K
+      name: "MCP tools",
+    mcpTools: K,
+  let N = I.filter(R => !R.isMcp);
+        mcpToolTokens: R
+    mcp_tools_count: D,
+    mcp_servers_count: E,
+    mcp_tools_tokens: H,
+    non_mcp_tools_count: U,
+    non_mcp_tools_tokens: L
+          mcpTools: []
+    mcp_config: qA5
+    mcp_config: T45
+  let J = B.server?.mcp_config;
+    Y?.warn(`Extension ${B.name} has missing required configuration, skipping MCP config`);

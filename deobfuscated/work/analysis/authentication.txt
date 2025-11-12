@@ -1,0 +1,40 @@
+4067:    name: "CLAUDE_CODE_MAX_OUTPUT_TOKENS",
+4133:    sessionIngressToken: undefined,
+4134:    oauthTokenFromFd: undefined,
+4135:    apiKeyFromFd: undefined,
+4144:    tokenCounter: null,
+4186:    inputTokens: 0,
+4187:    outputTokens: 0,
+4188:    cacheReadInputTokens: 0,
+4189:    cacheCreationInputTokens: 0,
+4194:  I.inputTokens += B.input_tokens;
+4195:  I.outputTokens += B.output_tokens;
+4196:  I.cacheReadInputTokens += B.cache_read_input_tokens ?? 0;
+4197:  I.cacheCreationInputTokens += B.cache_creation_input_tokens ?? 0;
+4232:  return rp(Object.values(YB.modelUsage), "inputTokens");
+4235:  return rp(Object.values(YB.modelUsage), "outputTokens");
+4238:  return rp(Object.values(YB.modelUsage), "cacheReadInputTokens");
+4241:  return rp(Object.values(YB.modelUsage), "cacheCreationInputTokens");
+4311:  YB.tokenCounter = B("claude_code.token.usage", {
+4312:    description: "Number of tokens used",
+4313:    unit: "tokens"
+4339:  return YB.tokenCounter;
+4399:  return YB.sessionIngressToken;
+4402:  YB.sessionIngressToken = A;
+4405:  return YB.oauthTokenFromFd;
+4408:  YB.oauthTokenFromFd = A;
+4411:  return YB.apiKeyFromFd;
+4414:  YB.apiKeyFromFd = A;
+7695:    tokenChars: O39
+8643:    tokenChars: kGA
+9302:      G.auth = `${Z.username}:${Z.password}`;
+9328:          delete G.headers.authorization;
+9333:          G.auth = undefined;
+9336:      if (G.auth && !I.headers.authorization) {
+9337:        I.headers.authorization = "Basic " + Buffer.from(G.auth).toString("base64");
+9726:    tokenChars: L79
+9962:          secure: !!A.socket.authorized || !!A.socket.encrypted,
+14573:    progressToken: k.optional(n30)
+14690:      progressToken: n30
+14917:      maxTokens: k.number().int(),
+14925:    stopReason: k.optional(k.enum(["endTurn", "stopSequence", "maxTokens"]).or(k.string())),

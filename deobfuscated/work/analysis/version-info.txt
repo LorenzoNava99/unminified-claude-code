@@ -1,0 +1,50 @@
+// Version: 2.0.37
+  if (typeof process === "undefined" || typeof process.versions === "undefined" || typeof process.versions.node === "undefined") {
+        if (oZ.versions?.electron) {
+          A[I] = I === this._versionOptionName ? this._version : this[I];
+    version(A, B, Q) {
+        return this._version;
+      this._version = A;
+      B = B || "-V, --version";
+      Q = Q || "output the version number";
+      this._versionOptionName = I.attributeName();
+        this._exit(0, "commander.version", A);
+  if ("TEAMCITY_VERSION" in tZ) {
+    if (/^(9\.(0*[1-9]\d*)\.|\d{2,}\.)/.test(tZ.TEAMCITY_VERSION)) {
+    let Y = Number.parseInt((tZ.TERM_PROGRAM_VERSION || "").split(".")[0], 10);
+      protocolVersion: $41[1],
+    if (!$41.includes(G.protocolVersion)) {
+      throw RangeError(`Unsupported protocol version: ${G.protocolVersion} (supported versions: ${$41.join(", ")})`);
+      "Sec-WebSocket-Version": G.protocolVersion,
+      if (G.protocolVersion < 13) {
+      let Y = +A.headers["sec-websocket-version"];
+        Gl(this, A, B, 400, "Missing or invalid Sec-WebSocket-Version header", {
+          "Sec-WebSocket-Version": "13, 8"
+      version: 1,
+          if (!GG9(A.data, G.version)) {
+          if (!YG9(A.data, G.version)) {
+    version: k.string()
+      protocolVersion: k.string(),
+    protocolVersion: k.string(),
+      version: "2.1.0",
+            protocolVersion: Tf,
+        if (!fLA.includes(Q.protocolVersion)) {
+          throw Error(`Server's protocol version is not supported: ${Q.protocolVersion}`);
+        this._serverVersion = Q.serverInfo;
+        if (A.setProtocolVersion) {
+          A.setProtocolVersion(Q.protocolVersion);
+    getServerVersion() {
+      return this._serverVersion;
+    software_version: k.string().optional(),
+    protocolVersion: B?.protocolVersion,
+    "MCP-Protocol-Version": B
+  let J = I?.protocolVersion ?? Tf;
+  protocolVersion: Q = Tf
+    "MCP-Protocol-Version": Q
+    if (this._protocolVersion) {
+      B["mcp-protocol-version"] = this._protocolVersion;
+  setProtocolVersion(A) {
+    this._protocolVersion = A;
+    if (this._protocolVersion) {
+      B["mcp-protocol-version"] = this._protocolVersion;
+  setProtocolVersion(A) {

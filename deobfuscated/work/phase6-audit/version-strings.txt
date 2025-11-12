@@ -1,0 +1,100 @@
+      version: "2.1.0",
+  RX9.version = "18.3.1";
+  HE0.SDK_VERSION = "3.12.1";
+        reconcilerVersion: "18.3.1"
+          minNpmVersion: "4.13.0",
+          maxNpmVersion: "4.21.0"
+          minNpmVersion: "4.22.0",
+        version: "16.13.1",
+    SEMVER_SPEC_VERSION: "2.0.0",
+    version: "0.33.5",
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.797.0",
+    version: "3.797.0",
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.797.0",
+    version: "2.3.1",
+    version: "6.7.1",
+    version: "9.15.1",
+        VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    version: "3.840.0",
+    version: "3.840.0",
+    version: "3.840.0",
+      VERSION: "2.0.37"
+  FvQ.VERSION = "1.9.0";
+      if (B.VTE_VERSION === "0.50.0") {
+        version: "0.0.1",
+      VERSION: "2.0.37"
+      VERSION: "2.0.37"
+      minVersion: "0.0.0"
+      VERSION: "2.0.37"
+        VERSION: "2.0.37"
+    VERSION: "2.0.37"
+        VERSION: "2.0.37"
+          VERSION: "2.0.37"
+      VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+      VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+          VERSION: "2.0.37"
+          VERSION: "2.0.37"
+            VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+      VERSION: "2.0.37"
+  VERSION: "2.0.37"
+      VERSION: "2.0.37"
+    VERSION: "2.0.37"
+    VERSION: "2.0.37"
+        VERSION: "2.0.37"
+      VERSION: "2.0.37"
+        VERSION: "2.0.37"
+    VERSION: "2.0.37"
+  nN.version = "7.0.0";
+  L42.VERSION = "2.1.0";
+  MK2.VERSION = "0.204.0";
+  UD2.VERSION = "0.204.0";
+    version: "1.14.0",
+  VN2.VERSION = "0.204.0";
+  rL2.VERSION = "0.204.0";
+  KM2.VERSION = "0.204.0";
+  oO2.VERSION = "0.204.0";
+  DR2.VERSION = "0.204.0";
+      VERSION: "2.0.37"
+        VERSION: "2.0.37"
+    VERSION: "2.0.37"
+      VERSION: "2.0.37"
+  VERSION: "2.0.37"
+    VERSION: "2.0.37"
+        VERSION: "2.0.37"
+      VERSION: "2.0.37"
+      VERSION: "2.0.37"
+  Fd2.version = "1.3.0";
+      version: "1.0.0",
+      VERSION: "2.0.37"
+      VERSION: "2.0.37"
+              VERSION: "2.0.37"
+      VERSION: "2.0.37"
+     "version": "string",        // Claude Code app version (e.g., "1.0.71")
+    VERSION: "2.0.37"
+            VERSION: "2.0.37"
+        VERSION: "2.0.37"
+      VERSION: "2.0.37"
+    VERSION: "2.0.37"
+        VERSION: "2.0.37"
+          VERSION: "2.0.37"
+      VERSION: "2.0.37"

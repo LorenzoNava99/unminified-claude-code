@@ -1,0 +1,200 @@
+8:import { createRequire as DB9 } from "node:module";
+873:      var A = GGA && GGA.require && GGA.require("util").types;
+3769:import * as G4 from "fs";
+3770:import { stat as n59, open as a59 } from "fs/promises";
+3954:import { join as o59 } from "path";
+3955:import { homedir as t59 } from "os";
+4105:import { cwd as e59 } from "process";
+4106:import { realpathSync as AI9 } from "fs";
+4107:import { randomUUID as Y50 } from "crypto";
+4455:import { dirname as l91, join as i50 } from "path";
+4863:        if (A.required || A.optional || A.isBoolean() && typeof A.defaultValue === "boolean") {
+4986:      this.required = A.includes("<");
+5400:        throw Error(`a default value for a required argument is never used: '${A.name()}'`);
+5574:        throw Error("To add an Option object use addOption() instead of option() or requiredOption()");
+6213:      let B = `error: missing required argument '${A}'`;
+6225:      let B = `error: required option '${A.flags}' not specified`;
+6617:import { join as zI0 } from "path";
+6618:import { tmpdir as aI9 } from "os";
+6619:import { writeFileSync as sI9, mkdirSync as rI9, rmSync as oI9 } from "fs";
+6894:import G41 from "node:process";
+6895:import Z39 from "node:os";
+6896:import MI0 from "node:tty";
+7337:        throw new Error("Cannot require module bufferutil");
+7708:        throw new Error("Cannot require module utf-8-validate");
+10608:    throw Error(`Can't use "invalid_type_error" or "required_error" in conjunction with custom error map.`);
+17102:  var rZ9 = AMA.toHash(["type", "format", "pattern", "maxLength", "minLength", "maxProperties", "minProperties", "maxItems", "minItems", "maximum", "minimum", "uniqueItems", "multipleOf", "required", "enum"]);
+18063:          throw Error("parent schema must have all required keywords: " + QA.join(","));
+20269:                W = B.errSchemaPath + "/required";
+20274:                  G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + t1 + "' } ";
+20278:                      G += "is a required property";
+20280:                      G += "should have required property \\'" + t1 + "\\'";
+20533:            G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + g + "' } ";
+20537:                G += "is a required property";
+20539:                G += "should have required property \\'" + g + "\\'";
+20593:            G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + g + "' } ";
+20597:                G += "is a required property";
+20599:                G += "should have required property \\'" + g + "\\'";
+20636:            G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + g + "' } ";
+20640:                G += "is a required property";
+20642:                G += "should have required property \\'" + g + "\\'";
+20661:          G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + g + "' } ";
+20665:              G += "is a required property";
+20667:              G += "should have required property \\'" + g + "\\'";
+20702:              G += " { keyword: 'required' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { missingProperty: '" + g + "' } ";
+20706:                  G += "is a required property";
+20708:                  G += "should have required property \\'" + g + "\\'";
+20865:      rules: ["maxProperties", "minProperties", "required", "dependencies", "propertyNames", {
+20910:  var mG0 = ["multipleOf", "maximum", "exclusiveMaximum", "minimum", "exclusiveMinimum", "maxLength", "minLength", "pattern", "additionalItems", "maxItems", "minItems", "uniqueItems", "maxProperties", "minProperties", "required", "additionalProperties", "enum", "format", "const"];
+21470:          required: ["macro"]
+21626:    required: ["$data"],
+22825:import EMA from "node:process";
+22826:import { PassThrough as vJ9 } from "node:stream";
+23831:    throw Error("client_secret_basic authentication requires a client_secret");
+23904:      throw Error("Existing OAuth client information is required when exchanging an authorization code");
+25206:import { setMaxListeners as XX9 } from "events";
+35491:      throw new dF9("a function is required");
+36465:import hC9 from "url";
+36470:import gC9 from "crypto";
+38283:import QK9 from "stream";
+38423:import GK9 from "util";
+38424:import { Readable as ZK9 } from "stream";
+38476:    throw TypeError("FormData instance required");
+38518:import FK9 from "stream";
+38680:import DK9 from "http";
+38681:import EK9 from "https";
+38682:import HK9 from "util";
+38683:import hf from "zlib";
+38684:import kAA from "stream";
+38685:import { EventEmitter as zK9 } from "events";
+43021:      KI1.Log.warn("Creating multiple Statsig clients with the same SDK key can lead to unexpected behavior. Multi-instance support requires different SDK keys.");
+44106:import * as lZA from "path";
+44107:import { existsSync as Uz0, mkdirSync as rH9, readdirSync as oH9, readFileSync as tH9, writeFileSync as eH9, unlinkSync as Az9 } from "fs";
+55636:          G.error(Error("opts.stdio conflicts with provided spawn opts.stdin observable, 'pipe' is required"));
+55854:import { accessSync as ob9 } from "fs";
+55855:import { join as a71 } from "path";
+55856:import { homedir as tb9 } from "os";
+55857:import { constants as VT0 } from "fs";
+57658:import { readFile as Kf9 } from "fs/promises";
+59980:import { execSync as KTA } from "node:child_process";
+59981:import * as zP0 from "node:path/win32";
+59982:import * as u1A from "node:path";
+60063:    console.error("Claude Code on Windows requires git-bash (https://git-scm.com/downloads/win). If installed but not in PATH, set environment variable pointing to your bash.exe, similar to: CLAUDE_CODE_GIT_BASH_PATH=C:\\Program Files\\Git\\bin\\bash.exe");
+60067:import { homedir as $P0 } from "os";
+60068:import { isAbsolute as zh9, join as Uh9, resolve as wh9, normalize as qP0, dirname as $h9 } from "path";
+60121:import NP0 from "node:process";
+60451:import ETA from "node:process";
+60452:import $YA from "node:path";
+60453:import { fileURLToPath as RP0 } from "node:url";
+60837:import { constants as fh9 } from "node:os";
+60869:import { constants as gh9 } from "node:os";
+60940:import lh9 from "node:process";
+61281:import rh9 from "node:os";
+61375:import { createWriteStream as Ig9 } from "node:fs";
+61376:import { ChildProcess as Gg9 } from "node:child_process";
+61724:import { createReadStream as Mg9, readFileSync as Og9 } from "node:fs";
+61725:import { setTimeout as Rg9 } from "node:timers/promises";
+61891:import { Buffer as kg9 } from "node:buffer";
+61892:import { ChildProcess as _g9 } from "node:child_process";
+61964:import { debuglog as hg9 } from "node:util";
+61965:import gg9 from "node:process";
+61984:import { Buffer as mg9 } from "node:buffer";
+61985:import dg9 from "node:path";
+61986:import sG1 from "node:child_process";
+61987:import RTA from "node:process";
+62366:import { fileURLToPath as ig9 } from "node:url";
+62367:import * as Hh from "node:path";
+62368:import { homedir as ng9 } from "node:os";
+62369:import { execFile as ag9 } from "child_process";
+62459:    let G = await NB("codesign", ["--sign", "-", "--force", "--preserve-metadata=entitlements,requirements,flags,runtime", B]);
+62773:import { PassThrough as nj0 } from "node:stream";
+71434:          w1("makeClassHandle requires ptr and ptrType");
+71535:          throw TypeError("registerType registeredInstance requires argPackAdvance");
+76809:              throw TypeError("Constructor PseudoMap requires 'new'");
+89782:import * as $y0 from "node:assert";
+90189:import rZ1 from "node:process";
+90199:    throw TypeError("The `x` argument is required");
+90208:    throw TypeError("The `x` argument is required");
+90744:import { EventEmitter as Jd9 } from "events";
+91280:import * as wPA from "node:fs";
+91281:import { cwd as Ik0 } from "node:process";
+91375:import { Buffer as zd9 } from "node:buffer";
+92400:import { Stream as xd9 } from "node:stream";
+93062:import { PassThrough as id9 } from "stream";
+93227:import { readFileSync as nd9, existsSync as ad9, mkdirSync as sd9, readdirSync as rd9 } from "node:fs";
+93228:import { join as PY1 } from "node:path";
+93641:      throw new Error("Cannot require module ../../image-processor.node");
+94607:        throw TypeError("a Comparator is required");
+94763:        throw TypeError("a Range is required");
+95199:          throw new Error("Cannot require module @img/sharp-libvips-dev/include");
+95208:        throw new Error("Cannot require module @img/sharp-libvips-dev/cplusplus");
+98609:  var Cv0 = () => Error("JP2 output requires libvips with support for OpenJPEG");
+99464:          throw new Error("Cannot require module @img/sharp-wasm32/versions");
+102668:import { execSync as TjA } from "child_process";
+102669:import { basename as Tn9, extname as Pn9, isAbsolute as jn9 } from "path";
+102923:import { join as bn9 } from "path";
+102994:import { homedir as fn9 } from "os";
+102995:import { join as hn9 } from "path";
+103084:import { homedir as mn9 } from "os";
+103085:import { join as dn9 } from "path";
+103160:import { randomBytes as bJ1 } from "crypto";
+103161:import { EOL as aI, homedir as xjA, platform as vjA } from "os";
+103162:import { dirname as ln9, join as xk } from "path";
+103244:      I = `local wezterm = require 'wezterm'
+103394:    throw Error(`Failed to install iTerm2 Shift+Enter key binding. ${G ? "Your settings have been restored from backup." : I && NA().existsSync(I) ? `Restoring from backup failed, try manually with: defaults import com.googlecode.iterm2 ${I}` : "No backup was available to restore from."}`);
+103581:import { join as bb0 } from "path";
+104434:import { stat as hs9, lstat as of0, readdir as gs9, realpath as us9 } from "node:fs/promises";
+104435:import { Readable as ms9 } from "node:stream";
+104436:import { resolve as tf0, relative as ds9, join as cs9, sep as ps9 } from "node:path";
+104446:    throw Error("readdirp: root argument is required. Usage: readdirp(root, options)");
+104680:import { watchFile as rs9, unwatchFile as Yh0, watch as os9 } from "fs";
+104681:import { open as ts9, stat as Xh0, lstat as es9, realpath as nJ1 } from "fs/promises";
+104682:import * as vG from "path";
+104683:import { type as Ar9 } from "os";
+105180:import { stat as Kr9 } from "fs";
+105181:import { stat as Dr9, readdir as Er9 } from "fs/promises";
+105182:import { EventEmitter as Hr9 } from "events";
+105183:import * as F6 from "path";
+105901:import * as Oh0 from "path";
+113664:        throw new JH(`Missing required parameter: '${W}'`);
+120912:        case "required":
+125680:        throw new kF1.CredentialsProviderError("HTTP credential provider response not of the required format, an object matching: { AccessKeyId: string, SecretAccessKey: string, Token: string, Expiration: string(rfc3339) }", {
+126212:  var At0 = "required";
+127442:        require: "./dist-cjs/submodules/sso-oidc/index.js"
+127449:        require: "./dist-cjs/submodules/sts/index.js"
+127459:  var $e0 = "required";
+128605:      throw new XU.TokenProviderError(`Profile '${G}' is missing required property 'sso_session'.`);
+128614:        throw new XU.TokenProviderError(`Sso session '${Y}' is missing required property '${E}'.`, false);
+129063:  var nAB = "required";
+131297:  var a0B = "required";
+139815:        throw new ZK1.CredentialsProviderError("HTTP credential provider response not of the required format, an object matching: { AccessKeyId: string, SecretAccessKey: string, Token: string, Expiration: string(rfc3339) }", {
+145287:        case "required":
+147845:  var w7B = "required";
+151256:        require: "./dist-cjs/submodules/sso-oidc/index.js"
+151263:        require: "./dist-cjs/submodules/sts/index.js"
+151345:  var nZB = "required";
+152660:      throw new _M.TokenProviderError(`Profile '${G}' is missing required property 'sso_session'.`);
+152669:        throw new _M.TokenProviderError(`Sso session '${Y}' is missing required property '${E}'.`, false);
+153118:  var OJB = "required";
+158570:        message: `${B} argument${B !== 1 ? "s" : ""} required, but${A ? " only" : ""} ${A} found.`,
+158774:              message: `Missing required key "${J}".`
+168207:          throw TypeError("RequestInit: duplex option is required when sending a body.");
+169240:      return W3("proxy authentication required");
+173644:import { Agent as dt4 } from "https";
+174435:        throw TypeError("At least one of max, maxSize, or ttl is required");
+178067:    throw Error("`File` is not defined as a global, which is required for file uploads." + (B ? " Update to Node 20 LTS or newer, or set `globalThis.File` to `import('node:buffer').File`." : ""));
+179897:      throw new y2("Streaming is required for operations that may take longer than 10 minutes. See https://github.com/anthropics/anthropic-sdk-typescript#streaming-responses for more details");
+180140:      throw new y2("Streaming is required for operations that may take longer than 10 minutes. See https://github.com/anthropics/anthropic-sdk-typescript#long-requests for more details");
+189696:        case "required":
+190138:        throw new R$1.CredentialsProviderError("HTTP credential provider response not of the required format, an object matching: { AccessKeyId: string, SecretAccessKey: string, Token: string, Expiration: string(rfc3339) }", {
+190532:  var PTB = "required";
+191639:        require: "./dist-cjs/submodules/sso-oidc/index.js"
+191646:        require: "./dist-cjs/submodules/sts/index.js"
+191656:  var dPB = "required";
+192802:      throw new RU.TokenProviderError(`Profile '${G}' is missing required property 'sso_session'.`);
+192811:        throw new RU.TokenProviderError(`Sso session '${Y}' is missing required property '${E}'.`, false);
+193260:  var HSB = "required";
+195494:  var zkB = "required";
+198520:        throw new CN1.CredentialsProviderError("HTTP credential provider response not of the required format, an object matching: { AccessKeyId: string, SecretAccessKey: string, Token: string, Expiration: string(rfc3339) }", {
+202294:        case "required":
+202603:        require: "./dist-cjs/submodules/sso-oidc/index.js"

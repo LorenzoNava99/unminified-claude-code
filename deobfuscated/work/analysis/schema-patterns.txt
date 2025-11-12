@@ -1,0 +1,200 @@
+    errorMaps: [A.common.contextualErrorMap, A.schemaErrorMap, Q, Q === Ik ? undefined : Ik].filter(G => G)
+      schemaErrorMap: this._def.errorMap,
+        schemaErrorMap: this._def.errorMap,
+      schemaErrorMap: this._def.errorMap,
+      schemaErrorMap: this._def.errorMap,
+      schemaErrorMap: this._def.errorMap,
+      schema: this,
+      schema: this,
+    return Gk(A.schema);
+          throw Error(`A discriminator value for key \`${A}\` could not be extracted from all schema options`);
+      throw Error("You must pass an array of schemas to z.tuple([ ... ])");
+          errorMaps: [B.common.contextualErrorMap, B.schemaErrorMap, de(), Ik].filter(X => X),
+          errorMaps: [B.common.contextualErrorMap, B.schemaErrorMap, de(), Ik].filter(X => X),
+    get schema() {
+      return this._def.schema;
+      if (this._def.schema._def.typeName === zB.ZodEffects) {
+        return this._def.schema.sourceType();
+        return this._def.schema;
+            let J = await this._def.schema._parseAsync({
+          let Y = this._def.schema._parseSync({
+          let Y = this._def.schema._parseSync({
+          return this._def.schema._parseAsync({
+          let Z = this._def.schema._parseSync({
+          return this._def.schema._parseAsync({
+      schema: A,
+      schema: B,
+    schemaHasRules: xZ9,
+    schemaHasRulesExcept: vZ9,
+    schemaUnknownRules: bZ9,
+  yf.schema = BMA;
+    I = I || this._schemas[Q];
+      if (t41(I.schema, this._opts.inlineRefs)) {
+        return I.schema;
+      Z = G.schema;
+      Y = Z.validate || A.call(this, Z.schema, B, undefined, J);
+    var G = tLA(this._getId(A.schema));
+    if (Object.keys(A.schema).length === 0 || I !== G) {
+        Y = this._schemas[Z];
+              schema: Y,
+      if (!A.schema) {
+      G = tLA(this._getId(A.schema));
+    return N70.call(this, Q, G, A.schema, A);
+        schema: G,
+              Q = W.schema;
+    if (Q !== undefined && Q !== I.schema) {
+        schema: Q,
+        if (H && H.schema) {
+          if (!q70(Y, H.schema)) {
+            throw Error("id \"" + K + "\" resolves to more than one schema");
+              throw Error("id \"" + K + "\" resolves to more than one schema");
+    var Z = B.schema.$async === true;
+    var Y = B.util.schemaHasRulesExcept(B.schema, B.RULES.all, "$ref");
+    var J = B.self._getId(B.schema);
+      var X = B.util.schemaUnknownRules(B.schema, B.RULES.keywords);
+    if (typeof B.schema == "boolean" || !Y && !B.schema.$ref) {
+      var Q = "false schema";
+      var V = B.schema[Q];
+      var K = B.schemaPath + B.util.getProperty(Q);
+      if (B.schema === false) {
+          G += " { keyword: '" + (f || "false schema") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: {} ";
+            G += " , message: 'boolean schema is false' ";
+            G += " , schema: false , parentSchema: validate.schema" + B.schemaPath + " , data: " + E + " ";
+      B.rootId = B.resolve.fullPath(B.self._getId(B.root.schema));
+      if (B.schema.default !== undefined && B.opts.useDefaults && B.opts.strictDefaults) {
+        var N = "default is ignored in the schema root";
+        throw Error("async schema in sync schema");
+    var _ = B.schema.type;
+    if (_ && B.opts.nullable && B.schema.nullable === true) {
+    if (B.schema.$ref && Y) {
+        throw Error("$ref: validation keywords used in schema at path \"" + B.errSchemaPath + "\" (see option extendRefs)");
+        B.logger.warn("$ref: keywords ignored in schema at path \"" + B.errSchemaPath + "\"");
+    if (B.schema.$comment && B.opts.$comment) {
+        var K = B.schemaPath + ".type";
+        var K = B.schemaPath + ".type";
+            G += " if (" + y + " == 'object' && Array.isArray(" + E + ") && " + E + ".length == 1) { " + E + " = " + E + "[0]; " + y + " = typeof " + E + "; if (" + B.util.checkDataType(B.schema.type, E, B.opts.strictNumbers) + ") " + c + " = " + E + "; } ";
+            G += " { keyword: '" + (f || "type") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: { type: '";
+              G += " , schema: validate.schema" + K + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + E + " ";
+            G += " { keyword: '" + (f || "type") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: { type: '";
+              G += " , schema: validate.schema" + K + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + E + " ";
+    if (B.schema.$ref && !Y) {
+              if (r.type == "object" && B.schema.properties) {
+                var V = B.schema.properties;
+              } else if (r.type == "array" && Array.isArray(B.schema.items)) {
+                var wA = B.schema.items;
+                var K = B.schemaPath + ".type";
+                  G += " { keyword: '" + (f || "type") + "' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(D) + " , params: { type: '";
+                    G += " , schema: validate.schema" + K + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + E + " ";
+      return B.schema[G1.keyword] !== undefined || G1.implements && i1(G1);
+        if (B.schema[t1[x0]] !== undefined) {
+      schema: A,
+        L.schema = U.schema;
+      var QA = !y || y && y.schema == p;
+      if (y.schema != B.schema) {
+        schema: p,
+        schemaPath: "",
+        G.logger.error("Error compiling schema, function code:", WA);
+      RA.schema = p;
+          schema: p,
+          throw Error("parent schema must have all required keywords: " + QA.join(","));
+            var RA = "keyword schema is invalid: " + G.errorsText(DA.errors);
+      schema: A,
+      if (G.schema == A && G.root == B && G.baseId == Q) {
+    var J = B.schema[Q];
+        V = B.root.schema.$async === true;
+            G += " { keyword: '$ref' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(X) + " , params: { ref: '" + B.util.escapeQuotes(J) + "' } ";
+              G += " , schema: " + B.util.toQuotedString(J) + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + F + " ";
+        L.schema = D.schema;
+        L.schemaPath = "";
+        var $ = B.validate(L).replace(/validate\.schema/g, D.code);
+          throw Error("async schema referenced by sync schema");
+    var Z = B.schema[Q];
+    var Y = B.schemaPath + B.util.getProperty(Q);
+        if (B.opts.strictKeywords ? typeof E == "object" && Object.keys(E).length > 0 || E === false : B.util.schemaHasRules(E, B.RULES.all)) {
+          W.schema = E;
+          W.schemaPath = Y + "[" + H + "]";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+        return B.util.schemaHasRules(f, B.RULES.all);
+          D.schema = R;
+          D.schemaPath = X + "[" + P + "]";
+        G += " { keyword: 'anyOf' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+          G += " , message: 'should match some schema in anyOf' ";
+          G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+    var Z = B.schema[Q];
+      G += " self._opts.$comment(" + X + ", " + B.util.toQuotedString(Y) + ", validate.root.schema);";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+      G += " var schema" + Z + " = " + B.util.getData(J.$data, Y, B.dataPathArr) + "; ";
+      D = "schema" + Z;
+      G += " var schema" + Z + " = validate.schema" + X + ";";
+    G += "var " + V + " = equal(" + C + ", schema" + Z + "); if (!" + V + ") {   ";
+      G += " { keyword: 'const' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { allowedValue: schema" + Z + " } ";
+        G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+    var R = B.opts.strictKeywords ? typeof J == "object" && Object.keys(J).length > 0 || J === false : B.util.schemaHasRules(J, B.RULES.all);
+      D.schema = J;
+      D.schemaPath = X;
+      G += " { keyword: 'contains' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: {} ";
+        G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+            G += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { property: '" + B.util.escapeQuotes(P) + "', missingProperty: '" + y + "', depsCount: " + $.length + ", deps: '" + B.util.escapeQuotes($.length == 1 ? $[0] : $.join(", ")) + "' } ";
+              G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+                G += " { keyword: 'dependencies' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { property: '" + B.util.escapeQuotes(P) + "', missingProperty: '" + y + "', depsCount: " + $.length + ", deps: '" + B.util.escapeQuotes($.length == 1 ? $[0] : $.join(", ")) + "' } ";
+                  G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+      if (B.opts.strictKeywords ? typeof N == "object" && Object.keys(N).length > 0 || N === false : B.util.schemaHasRules(N, B.RULES.all)) {
+        K.schema = N;
+        K.schemaPath = X + B.util.getProperty(P);
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+      G += " var schema" + Z + " = " + B.util.getData(J.$data, Y, B.dataPathArr) + "; ";
+      D = "schema" + Z;
+    var H = "schema" + Z;
+      G += " var " + H + " = validate.schema" + X + ";";
+      G += " if (schema" + Z + " === undefined) " + V + " = true; else if (!Array.isArray(schema" + Z + ")) " + V + " = false; else {";
+      G += " { keyword: 'enum' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { allowedValues: schema" + Z + " } ";
+        G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+      G += " var schema" + Z + " = " + B.util.getData(J.$data, Y, B.dataPathArr) + "; ";
+      K = "schema" + Z;
+          B.logger.warn("unknown format \"" + J + "\" ignored in schema at path \"" + B.errSchemaPath + "\"");
+          throw Error("unknown format \"" + J + "\" is used in schema at path \"" + B.errSchemaPath + "\"");
+          throw Error("async format in sync schema");
+      G += " { keyword: 'format' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { format:  ";
+        G += " , schema:  ";
+          G += "validate.schema" + X;
+        G += "         , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+    var H = B.schema.then;
+    var U = B.schema.else;
+    var L = H !== undefined && (B.opts.strictKeywords ? typeof H == "object" && Object.keys(H).length > 0 || H === false : B.util.schemaHasRules(H, B.RULES.all));
+    var N = U !== undefined && (B.opts.strictKeywords ? typeof U == "object" && Object.keys(U).length > 0 || U === false : B.util.schemaHasRules(U, B.RULES.all));
+      D.schema = J;
+      D.schemaPath = X;
+        D.schema = B.schema.then;
+        D.schemaPath = B.schemaPath + ".then";
+        D.schema = B.schema.else;
+        D.schemaPath = B.schemaPath + ".else";
+        G += " { keyword: 'if' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { failingKeyword: " + R + " } ";
+          G += ` , message: 'should match "' + ${R} + '" schema' `;
+          G += " , schema: validate.schema" + X + " , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);
+      var R = B.schema.additionalItems;
+          G += " { keyword: 'additionalItems' , dataPath: (dataPath || '') + " + B.errorPath + " , schemaPath: " + B.util.toQuotedString(W) + " , params: { limit: " + J.length + " } ";
+            G += " , schema: false , parentSchema: validate.schema" + B.schemaPath + " , data: " + C + " ";
+          if (B.opts.strictKeywords ? typeof i == "object" && Object.keys(i).length > 0 || i === false : B.util.schemaHasRules(i, B.RULES.all)) {
+            D.schema = i;
+            D.schemaPath = X + "[" + g + "]";
+      if (typeof R == "object" && (B.opts.strictKeywords ? typeof R == "object" && Object.keys(R).length > 0 || R === false : B.util.schemaHasRules(R, B.RULES.all))) {
+        D.schema = R;
+        D.schemaPath = B.schemaPath + ".additionalItems";
+    } else if (B.opts.strictKeywords ? typeof J == "object" && Object.keys(J).length > 0 || J === false : B.util.schemaHasRules(J, B.RULES.all)) {
+      D.schema = J;
+      D.schemaPath = X;
+    var J = B.schema[Q];
+    var X = B.schemaPath + B.util.getProperty(Q);

@@ -1,0 +1,500 @@
+82:  try {
+85:  } catch (Z) {}
+273:    try {
+275:    } catch (B) {}
+276:    try {
+278:    } catch (B) {}
+449:    try {
+453:    } catch (B) {}
+815:var eQ9 = "[object Error]";
+872:    try {
+878:    } catch (B) {}
+1366:    throw TypeError(E99);
+2009:  b49 = mE(cJ, "Promise");
+2022:var x40 = "[object Promise]";
+2346:var _89 = "[object Error]";
+2593:var H69 = "[object Error]";
+3348:    throw TypeError(w59);
+3778:  try {
+3784:  } catch (Q) {
+3809:  try {
+3860:      try {
+3886:      try {
+3988:        throw Error(`Invalid environment variable format: ${Q}, environment variables should be added as: -e KEY1=value1 -e KEY2=value2`);
+4156:    inMemoryErrorLog: [],
+4316:    description: "Count of code editing tool permission decisions (accept/reject) for Edit, Write, and NotebookEdit tools"
+4426:  return [...YB.inMemoryErrorLog];
+4429:  if (YB.inMemoryErrorLog.length >= 100) {
+4430:    YB.inMemoryErrorLog.shift();
+4432:  YB.inMemoryErrorLog.push(A);
+4522:    try {
+4530:        try {
+4532:        } catch {}
+4535:    } catch {}
+4630:  class a91 extends Error {
+4633:      Error.captureStackTrace(this, this.constructor);
+4637:      this.nestedError = undefined;
+4643:      Error.captureStackTrace(this, this.constructor);
+4647:  YI9.CommanderError = a91;
+4648:  YI9.InvalidArgumentError = e50;
+4652:    InvalidArgumentError: WI9
+4703:          throw new WI9(`Allowed choices are ${this.argChoices.join(", ")}.`);
+4980:    InvalidArgumentError: zI9
+5056:          throw new zI9(`Allowed choices are ${this.argChoices.join(", ")}.`);
+5217:    CommanderError: e91
+5261:      this._showHelpAfterError = false;
+5262:      this._showSuggestionAfterError = true;
+5268:        outputError: (B, Q) => Q(B)
+5286:      this._showHelpAfterError = A._showHelpAfterError;
+5287:      this._showSuggestionAfterError = A._showSuggestionAfterError;
+5347:    showHelpAfterError(A = true) {
+5351:      this._showHelpAfterError = A;
+5354:    showSuggestionAfterError(A = true) {
+5355:      this._showSuggestionAfterError = !!A;
+5360:        throw Error(`Command passed to .addCommand() must have a name
+5397:        throw Error(`only the last argument can be variadic '${B.name()}'`);
+5400:        throw Error(`a default value for a required argument is never used: '${A.name()}'`);
+5446:        throw Error(`Unexpected value for event passed to hook : '${A}'.
+5462:            throw B;
+5493:      try {
+5495:      } catch (G) {
+5503:        throw G;
+5510:        throw Error(`Cannot add option '${A.flags}'${this._name && ` to command '${this._name}'`} due to conflicting flag '${Q}'
+5523:        throw Error(`cannot add command '${G}' as already have command '${I}'`);
+5574:        throw Error("To add an Option object use addOption() instead of option() or requiredOption()");
+5627:        throw Error(`passThroughOptions cannot be used for '${this._name}' without turning on enablePositionalOptions for parent command(s)`);
+5632:        throw Error("call .storeOptionsAsProperties() before adding options");
+5635:        throw Error("call .storeOptionsAsProperties() before setting option values");
+5672:        throw Error("first parameter to parse must be array or undefined");
+5710:          throw Error(`unexpected parse option { from: '${B.from}' }`);
+5752:        try {
+5754:        } catch (F) {
+5815:          throw Error(C);
+5817:          throw Error(`'${Z}' not executable`);
+5823:          F.nestedError = W;
+6170:      this._outputConfiguration.outputError(`${A}
+6172:      if (typeof this._showHelpAfterError === "string") {
+6173:        this._outputConfiguration.writeErr(`${this._showHelpAfterError}
+6175:      } else if (this._showHelpAfterError) {
+6259:      if (A.startsWith("--") && this._showSuggestionAfterError) {
+6288:      if (this._showSuggestionAfterError) {
+6346:        throw Error("Command alias can't be the same as its name");
+6351:        throw Error(`cannot add alias '${A}' to command '${this.name()}' as already have command '${I}'`);
+6429:          throw Error("outputHelp callback must return a string or a Buffer");
+6474:        throw Error(`Unexpected value for position to addHelpText.
+6542:    CommanderError: xI9,
+6543:    InvalidArgumentError: FI0
+6559:  bI9.CommanderError = xI9;
+6560:  bI9.InvalidArgumentError = FI0;
+6561:  bI9.InvalidOptionArgumentError = FI0;
+6569:  hz.CommanderError = nL.CommanderError;
+6571:  hz.InvalidArgumentError = nL.InvalidArgumentError;
+6572:  hz.InvalidOptionArgumentError = nL.InvalidArgumentError;
+6597:    CommanderError: zFI,
+6598:    InvalidArgumentError: UFI,
+6599:    InvalidOptionArgumentError: wFI,
+6611:  await Promise.all(Array.from(I41).map(A => A()));
+6637:    try {
+6642:    } catch {}
+6665:  try {
+6678:  } catch {}
+6691:  try {
+6695:    let I = await Promise.all(B.filter(J => J.isMcp).map(A39));
+6708:  } catch {}
+7089:    throw Error("The `level` option should be an integer from 0 to 3");
+7335:    try {
+7337:        throw new Error("Cannot require module bufferutil");
+7353:    } catch (A) {}
+7451:          A(Error("The deflate stream was closed while data was being processed"));
+7464:        throw Error("None of the extension offers can be accepted");
+7485:        throw Error("Unexpected parameter \"client_no_context_takeover\"");
+7492:        throw Error("Unexpected or invalid parameter \"client_max_window_bits\"");
+7501:            throw Error(`Parameter "${Q}" must have only a single value`);
+7508:                throw TypeError(`Invalid value for parameter "${Q}": ${I}`);
+7512:              throw TypeError(`Invalid value for parameter "${Q}": ${I}`);
+7517:              throw TypeError(`Invalid value for parameter "${Q}": ${I}`);
+7522:              throw TypeError(`Invalid value for parameter "${Q}": ${I}`);
+7525:            throw Error(`Unknown parameter "${Q}"`);
+7634:    this[be] = RangeError("Max payload size exceeded");
+7706:    try {
+7708:        throw new Error("Cannot require module utf-8-validate");
+7717:    } catch (A) {}
+7835:        let I = this.createError(RangeError, "RSV2 and RSV3 must be clear", true, 1002, "WS_ERR_UNEXPECTED_RSV_2_3");
+7841:        let I = this.createError(RangeError, "RSV1 must be clear", true, 1002, "WS_ERR_UNEXPECTED_RSV_1");
+7850:          let I = this.createError(RangeError, "RSV1 must be clear", true, 1002, "WS_ERR_UNEXPECTED_RSV_1");
+7855:          let I = this.createError(RangeError, "invalid opcode 0", true, 1002, "WS_ERR_INVALID_OPCODE");
+7862:          let I = this.createError(RangeError, `invalid opcode ${this._opcode}`, true, 1002, "WS_ERR_INVALID_OPCODE");
+7869:          let I = this.createError(RangeError, "FIN must be set", true, 1002, "WS_ERR_EXPECTED_FIN");
+7874:          let I = this.createError(RangeError, "RSV1 must be clear", true, 1002, "WS_ERR_UNEXPECTED_RSV_1");
+7879:          let I = this.createError(RangeError, `invalid payload length ${this._payloadLength}`, true, 1002, "WS_ERR_INVALID_CONTROL_PAYLOAD_LENGTH");
+7884:        let I = this.createError(RangeError, `invalid opcode ${this._opcode}`, true, 1002, "WS_ERR_INVALID_OPCODE");
+7894:          let I = this.createError(RangeError, "MASK must be set", true, 1002, "WS_ERR_EXPECTED_MASK");
+7899:        let I = this.createError(RangeError, "MASK must be clear", true, 1002, "WS_ERR_UNEXPECTED_MASK");
+7927:        let I = this.createError(RangeError, "Unsupported WebSocket frame: payload length > 2^53 - 1", false, 1009, "WS_ERR_UNSUPPORTED_DATA_PAYLOAD_LENGTH");
+7938:          let B = this.createError(RangeError, "Max payload size exceeded", false, 1009, "WS_ERR_UNSUPPORTED_MESSAGE_LENGTH");
+7992:            let Z = this.createError(RangeError, "Max payload size exceeded", false, 1009, "WS_ERR_UNSUPPORTED_MESSAGE_LENGTH");
+8040:          let G = this.createError(Error, "invalid UTF-8 sequence", true, 1007, "WS_ERR_INVALID_UTF8");
+8066:            let G = this.createError(RangeError, `invalid status code ${Q}`, true, 1002, "WS_ERR_INVALID_CLOSE_CODE");
+8072:            let G = this.createError(Error, "invalid UTF-8 sequence", true, 1007, "WS_ERR_INVALID_UTF8");
+8095:    createError(A, B, Q, I, G) {
+8099:      Error.captureStackTrace(Z, this.createError);
+8231:        throw TypeError("First argument must be a valid error code number");
+8238:          throw RangeError("The message must not be greater than 123 bytes");
+8279:        throw RangeError("The data size must not be greater than 125 bytes");
+8318:        throw RangeError("The data size must not be greater than 125 bytes");
+8399:          let Y = Error("The socket was closed while the blob was being read");
+8412:      }).catch(G => {
+8426:          let J = Error("The socket was closed while data was being compressed");
+8484:  var G30 = Symbol("kError");
+8628:    ErrorEvent: yGA,
+8677:            throw SyntaxError(`Unexpected character at index ${C}`);
+8691:          throw SyntaxError(`Unexpected character at index ${C}`);
+8704:            throw SyntaxError(`Unexpected character at index ${C}`);
+8720:          throw SyntaxError(`Unexpected character at index ${C}`);
+8724:          throw SyntaxError(`Unexpected character at index ${C}`);
+8743:          throw SyntaxError(`Unexpected character at index ${C}`);
+8757:          throw SyntaxError(`Unexpected character at index ${C}`);
+8776:        throw SyntaxError(`Unexpected character at index ${C}`);
+8780:      throw SyntaxError("Unexpected end of input");
+9041:        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+9064:        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+9096:        throw Error("WebSocket is not open: readyState 0 (CONNECTING)");
+9224:      throw RangeError(`Unsupported protocol version: ${G.protocolVersion} (supported versions: ${$41.join(", ")})`);
+9230:      try {
+9232:      } catch (E) {
+9233:        throw SyntaxError(`Invalid URL: ${B}`);
+9253:      let E = SyntaxError(X);
+9255:        throw E;
+9288:          throw SyntaxError("An invalid or duplicated subprotocol was specified");
+9368:        try {
+9370:        } catch (N) {
+9371:          let $ = SyntaxError(`Invalid URL: ${H}`);
+9421:        try {
+9423:        } catch (_) {
+9432:        try {
+9434:        } catch (_) {
+9472:    let I = Error(Q);
+9473:    Error.captureStackTrace(I, uz);
+9497:      let I = Error(`WebSocket is not open: readyState ${A.readyState} (${Qk[A.readyState]})`);
+9745:          throw SyntaxError(`Unexpected character at index ${G}`);
+9752:          throw SyntaxError(`The "${J}" subprotocol is duplicated`);
+9757:        throw SyntaxError(`Unexpected character at index ${G}`);
+9761:      throw SyntaxError("Unexpected end of input");
+9765:      throw SyntaxError(`The "${Z}" subprotocol is duplicated`);
+9814:        throw TypeError("One and only one of the \"port\", \"server\", or \"noServer\" options must be specified");
+9851:        throw Error("The server is operating in \"noServer\" mode");
+9862:            A(Error("The server is not running"));
+9937:        try {
+9939:        } catch (C) {
+9948:        try {
+9954:        } catch (V) {
+9985:        throw Error("server.handleUpgrade() was called more than once with the same socket, possibly due to a misconfiguration");
+10063:    if (A.listenerCount("wsClientError")) {
+10064:      let Y = Error(G);
+10065:      Error.captureStackTrace(Y, Gl);
+10066:      A.emit("wsClientError", Y, Q, B);
+10116:      if (A.then && typeof A.then === "function" && A.catch && typeof A.catch === "function") {
+10139:      throw Error();
+10209:  dE = class dE extends Error {
+10228:      this.name = "ZodError";
+10241:            Z.unionErrors.map(I);
+10243:            I(Z.returnTypeError);
+10245:            I(Z.argumentsError);
+10274:        throw Error(`Not a ZodError: ${A}`);
+10299:        formErrors: Q,
+10300:        fieldErrors: B
+10303:    get formErrors() {
+10408:      Q = B.defaultError;
+10438:    errorMaps: [A.common.contextualErrorMap, A.schemaErrorMap, Q, Q === Ik ? undefined : Ik].filter(G => G)
+10537:      defaultError: J
+10559:var ce = A => typeof Promise !== "undefined" && A instanceof Promise;
+10608:    throw Error(`Can't use "invalid_type_error" or "required_error" in conjunction with custom error map.`);
+10623:          message: X ?? J.defaultError
+10628:          message: X ?? I ?? J.defaultError
+10633:          message: J.defaultError
+10637:        message: X ?? Q ?? J.defaultError
+10655:      schemaErrorMap: this._def.errorMap,
+10667:        schemaErrorMap: this._def.errorMap,
+10676:      throw Error("Synchronous parse encountered promise.");
+10682:    return Promise.resolve(B);
+10689:    throw Q.error;
+10696:        contextualErrorMap: B?.errorMap
+10699:      schemaErrorMap: this._def.errorMap,
+10718:      schemaErrorMap: this._def.errorMap,
+10724:      try {
+10739:      } catch (Q) {
+10764:    throw Q.error;
+10770:        contextualErrorMap: B?.errorMap,
+10774:      schemaErrorMap: this._def.errorMap,
+10784:    let G = await (ce(I) ? I : Promise.resolve(I));
+10805:      if (typeof Promise !== "undefined" && Z instanceof Promise) {
+10867:    this.catch = this.catch.bind(this);
+10927:  catch(A) {
+10932:      catchValue: B,
+10991:  try {
+11011:  } catch {
+11142:      if (Z instanceof Promise) {
+11177:      throw Error("Validation failed but no issues detected.");
+11486:          try {
+11488:          } catch {
+12182:        try {
+12184:        } catch {
+12672:        return Promise.all([...B.data].map((Z, Y) => {
+12765:      if (!(this._def.catchall instanceof XT) || this._def.unknownKeys !== "strip") {
+12785:      if (this._def.catchall instanceof XT) {
+12809:          throw Error("Internal ZodObject error: invalid unknownKeys value.");
+12812:        let X = this._def.catchall;
+12826:        return Promise.resolve().then(async () => {
+12855:            let I = this._def.errorMap?.(B, Q).message ?? Q.defaultError;
+12892:        catchall: A._def.catchall,
+12905:    catchall(A) {
+12908:        catchall: A
+12979:      catchall: XT.create(),
+12988:      catchall: XT.create(),
+12997:      catchall: XT.create(),
+13023:          unionErrors: Z
+13028:        return Promise.all(Q.map(async G => {
+13082:          unionErrors: Y
+13150:          throw Error(`A discriminator value for key \`${A}\` could not be extracted from all schema options`);
+13154:            throw Error(`Discriminator property ${String(A)} has duplicate value ${String(Y)}`);
+13194:        return Promise.all([this._def.left._parseAsync({
+13266:        return Promise.all(G).then(Z => {
+13285:      throw Error("You must pass an array of schemas to z.tuple([ ... ])");
+13380:        return Promise.resolve().then(async () => {
+13487:        return Promise.all(Y).then(J => Z(J));
+13547:          errorMaps: [B.common.contextualErrorMap, B.schemaErrorMap, de(), Ik].filter(X => X),
+13550:            argumentsError: J
+13558:          errorMaps: [B.common.contextualErrorMap, B.schemaErrorMap, de(), Ik].filter(X => X),
+13561:            returnTypeError: J
+13566:        errorMap: B.common.contextualErrorMap
+13573:          let W = await Y._def.args.parseAsync(J, G).catch(V => {
+13575:            throw X;
+13578:          return await Y._def.returns._def.type.parseAsync(F, G).catch(V => {
+13580:            throw X;
+13588:            throw new dE([Q(J, X.error)]);
+13593:            throw new dE([I(W, F.error)]);
+13800:      let Q = B.parsedType === fB.promise ? B.data : Promise.resolve(B.data);
+13804:          errorMap: B.common.contextualErrorMap
+13812:      typeName: zB.ZodPromise,
+13850:          return Promise.resolve(Z).then(async Y => {
+13895:            return Promise.resolve(J);
+13897:          if (J instanceof Promise) {
+13898:            throw Error("Async refinement encountered during synchronous parse operation. Use .parseAsync instead.");
+13951:          if (Y instanceof Promise) {
+13952:            throw Error("Asynchronous transform encountered during synchronous parse operation. Use .parseAsync instead.");
+13967:            return Promise.resolve(I.transform(Z.value, G)).then(Y => ({
+14082:            value: G.status === "valid" ? G.value : this._def.catchValue({
+14093:          value: I.status === "valid" ? I.value : this._def.catchValue({
+14110:      catchValue: typeof B.catch === "function" ? B.catch : () => B.catch,
+14275:    A.ZodPromise = "ZodPromise";
+14350:  setErrorMap: () => g79,
+14381:  getErrorMap: () => de,
+14386:  defaultErrorMap: () => Ik,
+14409:  ZodPromise: () => Wl,
+14427:  ZodError: () => dE,
+14608:    A[A.ParseError = -32700] = "ParseError";
+14612:    A[A.InternalError = -32603] = "InternalError";
+14710:    try {
+14713:    } catch (B) {
+14867:    isError: k.optional(k.boolean())
+15021:  JD = class JD extends Error {
+15026:      this.name = "McpError";
+15070:      throw new JD(YD.RequestTimeout, "Maximum total timeout exceeded", {
+15114:        this._onerror(Error(`Unknown message type: ${JSON.stringify(J)}`));
+15145:    Promise.resolve().then(() => Q(A)).catch(I => this._onerror(Error(`Uncaught error in notification handler: ${I}`)));
+15159:        }).catch(X => this._onerror(Error(`Failed to send an error response: ${X}`)));
+15180:    Promise.resolve().then(() => G(A, J)).then(X => {
+15204:            code: Number.isSafeInteger(X.code) ? X.code : YD.InternalError,
+15209:    }).catch(X => this._onerror(Error(`Failed to send response: ${X}`))).finally(() => {
+15221:      this._onerror(Error(`Received a progress notification for an unknown token: ${JSON.stringify(A)}`));
+15227:      try {
+15229:      } catch (J) {
+15240:      this._onerror(Error(`Received a response for an unknown message ID: ${JSON.stringify(A)}`));
+15266:    return new Promise((Y, J) => {
+15270:        J(Error("Not connected"));
+15277:        W.throwIfAborted();
+15312:          }).catch(R => this._onerror(Error(`Failed to send cancellation: ${R}`)));
+15320:        if (N instanceof Error) {
+15323:        try {
+15326:        } catch (R) {
+15344:      }).catch(N => {
+15352:      throw Error("Not connected");
+15360:      Promise.resolve().then(() => {
+15371:          J.send(X, B).catch(W => this._onerror(W));
+15386:      return Promise.resolve(B(A.parse(I), G));
+15394:      throw Error(`A request handler for ${A} already exists, which would be overridden`);
+15398:    this._notificationHandlers.set(A.shape.method.value, Q => Promise.resolve(B(A.parse(Q))));
+15574:        try {
+15581:        } catch (A6) {
+15585:          try {
+15591:              throw pQ;
+15603:          throw TypeError("Invalid attempt to destructure non-iterable instance");
+15638:      throw RangeError(f[Y1]);
+15766:      try {
+15773:      } catch (_A) {
+15777:        try {
+15783:            throw A6;
+15797:        try {
+15804:        } catch (_A) {
+15808:          try {
+15814:              throw S8;
+15827:        try {
+15851:        } catch (_A) {
+15855:          try {
+15861:              throw P9;
+16095:            try {
+16097:            } catch (pQ) {
+16158:            throw Error("Unexpected dot segment condition");
+16173:          try {
+16175:          } catch (q9) {
+16435:            try {
+16437:            } catch (pI) {
+16456:            try {
+16458:            } catch (L9) {
+16820:        throw Error("Invalid JSON-pointer: " + A);
+16827:        throw Error("Invalid JSON-pointer: " + A);
+16833:          throw Error("Cannot access property/index " + I + " levels up, current level is " + B);
+16838:        throw Error("Cannot access data " + I + " levels up, current level is " + B);
+17220:            throw Error("id \"" + K + "\" resolves to more than one schema");
+17225:              throw Error("id \"" + K + "\" resolves to more than one schema");
+17259:    A.prototype = Object.create(Error.prototype);
+17327:        throw TypeError("Converting circular structure to JSON");
+17361:          throw Error(W);
+17383:      var R = !B.opts.allErrors;
+17396:        if (B.createErrors !== false) {
+17412:            G += " throw new ValidationError([" + U + "]); ";
+17417:          G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+17447:          throw Error(N);
+17450:      G += " var vErrors = null; ";
+17463:        throw Error("async schema in sync schema");
+17468:    var R = !B.opts.allErrors;
+17490:        throw Error("$ref: validation keywords used in schema at path \"" + B.errSchemaPath + "\" (see option extendRefs)");
+17547:          if (B.createErrors !== false) {
+17575:              G += " throw new ValidationError([" + U + "]); ";
+17580:            G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+17594:          if (B.createErrors !== false) {
+17622:              G += " throw new ValidationError([" + U + "]); ";
+17627:            G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+17677:                            throw Error(N);
+17712:                            throw Error(N);
+17764:                if (B.createErrors !== false) {
+17792:                    G += " throw new ValidationError([" + U + "]); ";
+17797:                  G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+17822:        G += " else throw new ValidationError(vErrors); ";
+17824:        G += " validate.errors = vErrors; ";
+17885:    try {
+17925:        MissingRefError: S70.MissingRef,
+17944:      try {
+17945:        var PA = Function("self", "RULES", "formats", "root", "refVal", "defaults", "customRules", "equal", "ucs2length", "ValidationError", WA);
+17948:      } catch (tA) {
+17949:        G.logger.error("Error compiling schema, function code:", WA);
+17950:        throw tA;
+18063:          throw Error("parent schema must have all required keywords: " + QA.join(","));
+18073:              throw Error(RA);
+18098:        throw Error("custom keyword \"" + p.keyword + "\"failed to compile");
+18279:    try {
+18282:    } catch (B) {
+18294:    var W = !B.opts.allErrors;
+18310:        var E = B.MissingRefError.message(B.baseId, J);
+18316:          if (B.createErrors !== false) {
+18332:              G += " throw new ValidationError([" + U + "]); ";
+18337:            G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+18348:          throw new B.MissingRefError(B.baseId, J, E);
+18387:          throw Error("async schema referenced by sync schema");
+18392:        G += " try { await " + x + "; ";
+18396:        G += " } catch (e) { if (!(e instanceof ValidationError)) throw e; if (vErrors === null) vErrors = e.errors; else vErrors = vErrors.concat(e.errors); errors = vErrors.length; ";
+18405:        G += " if (!" + x + ") { if (vErrors === null) vErrors = " + K + ".errors; else vErrors = vErrors.concat(" + K + ".errors); errors = vErrors.length; } ";
+18420:    var X = !B.opts.allErrors;
+18466:    var F = !B.opts.allErrors;
+18504:      if (B.createErrors !== false) {
+18516:      G += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+18519:          G += " throw new ValidationError(vErrors); ";
+18521:          G += " validate.errors = vErrors; return false; ";
+18524:      G += " } else {  errors = " + K + "; if (vErrors !== null) { if (" + K + ") vErrors.length = " + K + "; else vErrors = null; } ";
+18525:      if (B.opts.allErrors) {
+18539:    var J = !B.opts.allErrors;
+18557:    var F = !B.opts.allErrors;
+18575:    if (B.createErrors !== false) {
+18591:        G += " throw new ValidationError([" + H + "]); ";
+18596:      G += " var err = " + H + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+18613:    var F = !B.opts.allErrors;
+18653:    if (B.createErrors !== false) {
+18669:        G += " throw new ValidationError([" + i + "]); ";
+18674:      G += " var err = " + i + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+18678:      G += "  errors = " + K + "; if (vErrors !== null) { if (" + K + ") vErrors.length = " + K + "; else vErrors = null; } ";
+18680:    if (B.opts.allErrors) {
+18694:    var F = !B.opts.allErrors;
+18752:          if (B.createErrors !== false) {
+18774:              G += " throw new ValidationError([" + BA + "]); ";
+18779:            G += " var err = " + BA + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+18801:              if (B.createErrors !== false) {
+18819:              G += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; } ";
+18866:    var F = !B.opts.allErrors;
+18894:    if (B.createErrors !== false) {
+18910:        G += " throw new ValidationError([" + L + "]); ";
+18915:      G += " var err = " + L + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+18932:    var F = !B.opts.allErrors;
+18992:          throw Error("unknown format \"" + J + "\" is used in schema at path \"" + B.errSchemaPath + "\"");
+19009:          throw Error("async format in sync schema");
+19030:    if (B.createErrors !== false) {
+19064:        G += " throw new ValidationError([" + P + "]); ";
+19069:      G += " var err = " + P + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19086:    var F = !B.opts.allErrors;
+19100:      D.createErrors = false;
+19109:      D.createErrors = true;
+19110:      G += "  errors = " + K + "; if (vErrors !== null) { if (" + K + ") vErrors.length = " + K + "; else vErrors = null; }  ";
+19149:      if (B.createErrors !== false) {
+19161:      G += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19164:          G += " throw new ValidationError(vErrors); ";
+19166:          G += " validate.errors = vErrors; return false; ";
+19187:    var F = !B.opts.allErrors;
+19210:        if (B.createErrors !== false) {
+19226:            G += " throw new ValidationError([" + f + "]); ";
+19231:          G += " var err = " + f + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19328:    var F = !B.opts.allErrors;
+19347:      throw Error(Q + " must be number");
+19350:      throw Error(E + " must be number or boolean");
+19366:      if (B.createErrors !== false) {
+19382:          G += " throw new ValidationError([" + r + "]); ";
+19387:        G += " var err = " + r + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19443:    if (B.createErrors !== false) {
+19470:        G += " throw new ValidationError([" + r + "]); ";
+19475:      G += " var err = " + r + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19492:    var F = !B.opts.allErrors;
+19504:      throw Error(Q + " must be number");
+19516:    if (B.createErrors !== false) {
+19550:        G += " throw new ValidationError([" + U + "]); ";
+19555:      G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19572:    var F = !B.opts.allErrors;
+19584:      throw Error(Q + " must be number");
+19601:    if (B.createErrors !== false) {
+19635:        G += " throw new ValidationError([" + U + "]); ";
+19640:      G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19657:    var F = !B.opts.allErrors;
+19669:      throw Error(Q + " must be number");
+19681:    if (B.createErrors !== false) {
+19715:        G += " throw new ValidationError([" + U + "]); ";
+19720:      G += " var err = " + U + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19737:    var F = !B.opts.allErrors;
+19748:      throw Error(Q + " must be number");
+19768:    if (B.createErrors !== false) {
+19795:        G += " throw new ValidationError([" + E + "]); ";
+19800:      G += " var err = " + E + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19817:    var F = !B.opts.allErrors;
+19830:      K.createErrors = false;
+19832:      if (K.opts.allErrors) {
+19833:        H = K.opts.allErrors;
+19834:        K.opts.allErrors = false;
+19837:      K.createErrors = true;
+19839:        K.opts.allErrors = H;
+19846:      if (B.createErrors !== false) {
+19862:          G += " throw new ValidationError([" + L + "]); ";
+19867:        G += " var err = " + L + ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19869:      G += " } else {  errors = " + V + "; if (vErrors !== null) { if (" + V + ") vErrors.length = " + V + "; else vErrors = null; } ";
+19870:      if (B.opts.allErrors) {
+19875:      if (B.createErrors !== false) {
+19887:      G += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19903:    var F = !B.opts.allErrors;
+19942:    if (B.createErrors !== false) {
+19954:    G += ";  if (vErrors === null) vErrors = [err]; else vErrors.push(err); errors++; ";
+19957:        G += " throw new ValidationError(vErrors); ";

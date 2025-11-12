@@ -1,0 +1,40 @@
+3772:  if (!A.existsSync(B)) {
+3841:    existsSync(A) {
+3842:      return G4.existsSync(A);
+3850:    readFileSync(A, B) {
+3851:      return G4.readFileSync(A, {
+3855:    readFileBytesSync(A) {
+3856:      return G4.readFileSync(A);
+3874:    writeFileSync(A, B, Q) {
+3882:        G4.writeFileSync(A, B, G);
+3889:        G4.writeFileSync(I, B, {
+3923:    mkdirSync(A) {
+3924:      if (!G4.existsSync(A)) {
+3925:        G4.mkdirSync(A, {
+4484:  if (!NA().existsSync(l91(Al()))) {
+4485:    NA().mkdirSync(l91(Al()));
+4526:      if (!NA().existsSync(B)) {
+4527:        NA().mkdirSync(B);
+4529:      if (NA().existsSync(Q)) {
+5734:        if (t91.existsSync(C)) {
+5740:        let V = I.find(K => t91.existsSync(`${C}${K}`));
+6619:import { writeFileSync as sI9, mkdirSync as rI9, rmSync as oI9 } from "fs";
+9305:      let E = G.path.split(":");
+10246:          } else if (Z.path.length === 0) {
+10251:            while (J < Z.path.length) {
+10253:              if (J !== Z.path.length - 1) {
+10290:        if (I.path.length > 0) {
+10587:    if (!this._cachedPath.length) {
+10589:        this._cachedPath.push(...this._path, ...this._key);
+10591:        this._cachedPath.push(...this._path, this._key);
+16191:        if (Y1.path && Y1.path.charAt(0) !== "/") {
+16246:            if (uA.path.charAt(0) === "/") {
+16254:                e1.path = Y1.path.slice(0, Y1.path.lastIndexOf("/") + 1) + uA.path;
+16399:        var e1 = o1.to = o1.path ? o1.path.split(",") : [];
+16488:        var o1 = uA.path && uA.path.match(l9);
+29747:    "application/vnd.innopath.wamp.notification": {
+37961:      var B = A.path.indexOf("?");
+37965:        A.pathname = A.path.substring(0, B);
+37966:        A.search = A.path.substring(B);
+44107:import { existsSync as Uz0, mkdirSync as rH9, readdirSync as oH9, readFileSync as tH9, writeFileSync as eH9, unlinkSync as Az9 } from "fs";
+55509:    var Q = process.env.PATH.split(ZT0 ? ";" : ":");
