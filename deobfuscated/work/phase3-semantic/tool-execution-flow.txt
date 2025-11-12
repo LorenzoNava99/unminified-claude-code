@@ -1,0 +1,100 @@
+4198:  I.webSearchRequests += B.server_tool_use?.web_search_requests ?? 0;
+100623:  return A.type === "tool_use" || A.type === "server_tool_use" || A.type === "mcp_tool_use";
+101060:          if (B.usage.server_tool_use != null) {
+101061:            Q.usage.server_tool_use = B.usage.server_tool_use;
+101393:      type: "clear_tool_uses_20250919",
+101410:      type: "clear_tool_uses_20250919",
+101914:        tool_use_id: B,
+178582:  let Q = B.content.filter(G => G.type === "tool_use");
+178593:          tool_use_id: G.id,
+178606:          tool_use_id: G.id,
+178612:          tool_use_id: G.id,
+179027:  return A.type === "tool_use" || A.type === "server_tool_use";
+179462:          if (B.usage.server_tool_use != null) {
+179463:            Q.usage.server_tool_use = B.usage.server_tool_use;
+218542:    TOOL_USE: "tool_use"
+235917:    if (y3("tool_use_examples", "enabled", false) && I === "firstParty") {
+236290:          if (F.type === "tool_use" && "id" in F && F.id === A) {
+236310:            if (F.type === "tool_use" && "id" in F && F.id === A) {
+236331:          if (F.type === "tool_use" && "id" in F) {
+236332:            Z.push(`${C}:tool_use:${F.id}`);
+236333:          } else if (F.type === "tool_result" && "tool_use_id" in F) {
+236334:            Z.push(`${C}:tool_result:${F.tool_use_id}`);
+236364:                  if (F.type === "tool_use" && "id" in F) {
+236365:                    Y.push(`${C}:tool_use:${F.id}`);
+236366:                  } else if (F.type === "tool_result" && "tool_use_id" in F) {
+236367:                    Y.push(`${C}:tool_result:${F.tool_use_id}`);
+236403:    GA("tengu_tool_use_tool_result_mismatch_error", {
+236482:  if (A instanceof $4 && A.status === 400 && A.message.includes("`tool_use` ids were found without `tool_result` blocks immediately after")) {
+236497:  if (A instanceof $4 && A.status === 400 && A.message.includes("unexpected `tool_use_id` found in `tool_result`")) {
+271000:          tool_use_id: J,
+271011:            tool_use_id: J,
+271026:          tool_use_id: J,
+271046:        tool_use_id: J,
+271168:      GA("tengu_bash_tool_command_executed", {
+272725:    let G = g2(A, "tool_use_error") ?? A;
+292398:      if (G.type === "tool_use" && G.id === A) {
+292435:  let X = fwQ(A.tool_use_id, Z, Q);
+293288:    case "tool_use":
+293303:        if ("tool_use_id" in A) {
+293304:          let J = I.get(A.tool_use_id) || "unknown";
+293307:            let X = G.get(A.tool_use_id);
+293323:    case "server_tool_use":
+293330:    case "mcp_tool_use":
+304781:    case "tool_use":
+310197:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+310481:            tool_use_id: I,
+310487:            tool_use_id: I,
+310564:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+310784:          tool_use_id: X,
+310798:          tool_use_id: X,
+310806:          tool_use_id: X,
+310816:        tool_use_id: X,
+311021:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+311156:          tool_use_id: B,
+311162:        tool_use_id: B,
+324977:        if (D.type === "tool_use" && cl6.has(D.name)) {
+324981:        } else if (D.type === "tool_result" && Z.includes(D.tool_use_id)) {
+324982:          let E = il6(D.tool_use_id, D);
+324983:          Y.set(D.tool_use_id, E);
+325033:        if (E.type === "tool_result" && C(E.tool_use_id)) {
+325071:          if (H.type === "tool_use" && H.name === A7) {
+329105:  if (!Q && typeof A === "string" && g2(A, "tool_use_error")) {
+329106:    if (g2(A, "tool_use_error")?.includes("File has not been read yet")) {
+329437:          tool_use_id: Y,
+329444:          tool_use_id: Y,
+329454:        tool_use_id: Y,
+329538:  if (!B && typeof A === "string" && g2(A, "tool_use_error")) {
+329650:          tool_use_id: G,
+329659:            tool_use_id: G,
+329665:            tool_use_id: G,
+329671:            tool_use_id: G,
+329677:            tool_use_id: G,
+335490:    toolCallTokens: 0,
+335495:    toolCallsByType: new Map(),
+335716:  if (y3("tool_use_examples", "enabled", false) && A.input_examples) {
+336245:        await this.executeTool(A);
+336251:  async executeTool(A) {
+357632:    let I = Q.message.content.filter(G => G.type === "tool_use");
+357639:          tool_use_id: G.id
+357784:              let EA = yA.message.content.filter(kA => kA.type === "tool_use");
+357827:      toolUses: L.flatMap(zA => zA.message.content.filter(yA => yA.type === "tool_use")).length,
+357855:  let r = L.flatMap(PA => PA.message.content.filter(tA => tA.type === "tool_use"));
+358157:    for await (let Y of uaA(Z, B.find(J => J.message.content.some(X => X.type === "tool_use" && X.id === Z.id)), Q, G)) {
+358172:    yield* uaA(G, B.find(Z => Z.message.content.some(Y => Y.type === "tool_use" && Y.id === G.id)), Q, I);
+358184:    GA("tengu_tool_use_error", {
+358196:          content: `<tool_use_error>Error: No such tool available: ${G}</tool_use_error>`,
+358198:          tool_use_id: A.id
+358208:      GA("tengu_tool_use_cancelled", {
+358235:          content: `<tool_use_error>${C}</tool_use_error>`,
+358237:          tool_use_id: A.id
+358247:    GA("tengu_tool_use_progress", {
+358276:    GA("tengu_tool_use_error", {
+358289:          content: `<tool_use_error>InputValidationError: ${$}</tool_use_error>`,
+358291:          tool_use_id: B
+358299:    GA("tengu_tool_use_error", {
+358312:          content: `<tool_use_error>${W.message}</tool_use_error>`,
+358314:          tool_use_id: B
+358381:    GA("tengu_tool_use_can_use_tool_rejected", {
+358397:          tool_use_id: B
+358404:  GA("tengu_tool_use_can_use_tool_allowed", {
