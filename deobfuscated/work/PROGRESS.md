@@ -13,7 +13,7 @@
 |-------|--------|----------|-------|---------|-----------|
 | Phase 0: Initial Setup | ✅ Complete | 100% | Initial | 2025-11-12 | 2025-11-12 |
 | Phase 1: Analysis | ✅ Complete | 100% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | 2025-11-12 |
-| Phase 2: Function Analysis | ⏳ Available | 0% | - | - | - |
+| Phase 2: Function Analysis | 🔄 In Progress | 50% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | - |
 | Phase 3: Renaming | ⏳ Available | 0% | - | - | - |
 | Phase 4: Module Extraction | ⏳ Available | 0% | - | - | - |
 | Phase 5: Type Definitions | ⏳ Available | 0% | - | - | - |
@@ -93,20 +93,54 @@
 
 ---
 
-## Phase 2: Function Signature Analysis ⏳ AVAILABLE
+## Phase 2: Function Signature Analysis 🔄 IN PROGRESS
 
-**Status:** Not Started
-**Available for:** Any agent
+**Status:** 50% Complete
+**Current Agent:** claude/explore-project-setup-011CV4E2HNUYpg1m6kcyiSou
+**Started:** 2025-11-12
 **Estimated Duration:** 5-7 days
 
-### Recommended Tasks
+### Completed Tasks ✅
+- [x] 2.2a Mapped tool execution flow (executeToolUse, createToolExecutionStream)
+- [x] 2.2b Identified 14 tool name constants (A7=Read, x5=Edit, nW=Write, etc.)
+- [x] 2.2c Found 2 complete tool objects (bashTool, killShellTool)
+- [x] 2.2d Documented tool dispatch mechanism (line 358179)
+- [x] 2.7a Created ~60 MEDIUM confidence rename mappings
+- [x] 2.7b Documented telemetry, metrics, and helper functions
+
+### Remaining Tasks
 - [ ] 2.1 Entry point deep dive (main function, REPL startup)
-- [ ] 2.2 Tool implementation mapping (all 17 tools)
+- [ ] 2.2e Complete remaining 15 tool object mappings
+- [ ] 2.2f Map all tool call() methods
 - [ ] 2.3 API client detailed analysis (request/response flow)
 - [ ] 2.4 Hook execution engine (command execution, JSON parsing)
 - [ ] 2.5 Agent system architecture (Task tool, subagent types)
 - [ ] 2.6 CLI command routing (Commander.js integration)
-- [ ] 2.7 Create MEDIUM confidence rename mappings
+- [ ] 2.7c Expand to 150+ MEDIUM confidence mappings
+
+### Deliverables Created ✅
+- `analysis/tool-implementations.md` - Comprehensive tool mapping document
+- `mappings/medium-confidence-renames.json` - ~60 MEDIUM confidence renames
+
+### Key Findings
+**Tool Execution Flow:**
+- Main dispatcher: `uaA` (line 358179) → `executeToolUse`
+- Stream creator: `X85` (line 358244) → `createToolExecutionStream`
+- Validator: `W85` (line 358272) → `executeToolWithValidation`
+
+**Tool Name Constants (14 found):**
+- A7="Read", x5="Edit", nW="Write", m4="Bash"
+- BH="Grep", h$="Glob", VC="WebFetch", wi="WebSearch"
+- c8="Task", OjA="TodoWrite", TN="Skill", sj="SlashCommand"
+- xh="NotebookEdit", koA="ExitPlanMode"
+
+**Tool Objects Mapped:**
+- o2 = bashTool (complete implementation at line 270949)
+- K01 = killShellTool (complete implementation at line 460522)
+
+**Tool Constants:**
+- READ_MAX_LINES=2000, READ_MAX_CHARS_PER_LINE=2000
+- BASH_MAX_BYTES=3932160, BASH_TRUNCATE_THRESHOLD=2000
 
 ### Priority Tasks
 1. **Tool Implementations** (highest priority)
