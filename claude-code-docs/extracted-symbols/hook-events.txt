@@ -1,0 +1,9 @@
+PreToolUse
+PostToolUse
+UserPromptSubmit
+Stop
+SubagentStop
+SessionStart
+SessionEnd
+PreCompact
+Notification
