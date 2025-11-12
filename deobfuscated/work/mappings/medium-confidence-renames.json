@@ -109,6 +109,30 @@
     }
   },
   "tool_objects": {
+    "I8": {
+      "newName": "readTool",
+      "confidence": "MEDIUM",
+      "reason": "Read tool implementation object",
+      "location": "line 489628",
+      "type": "tool-object",
+      "toolName": "Read"
+    },
+    "lC": {
+      "newName": "writeTool",
+      "confidence": "MEDIUM",
+      "reason": "Write tool implementation object",
+      "location": "line 310305",
+      "type": "tool-object",
+      "toolName": "Write"
+    },
+    "cH": {
+      "newName": "editTool",
+      "confidence": "MEDIUM",
+      "reason": "Edit tool implementation object",
+      "location": "line 329156",
+      "type": "tool-object",
+      "toolName": "Edit"
+    },
     "o2": {
       "newName": "bashTool",
       "confidence": "MEDIUM",
@@ -116,6 +140,22 @@
       "location": "line 270949",
       "type": "tool-object",
       "toolName": "Bash"
+    },
+    "_j": {
+      "newName": "grepTool",
+      "confidence": "MEDIUM",
+      "reason": "Grep tool implementation object",
+      "location": "line 310699",
+      "type": "tool-object",
+      "toolName": "Grep"
+    },
+    "VN": {
+      "newName": "globTool",
+      "confidence": "MEDIUM",
+      "reason": "Glob tool implementation object",
+      "location": "line 311068",
+      "type": "tool-object",
+      "toolName": "Glob"
     },
     "K01": {
       "newName": "killShellTool",
@@ -465,10 +505,10 @@
   "notes": [
     "Phase 2 in progress - mapping all tool implementations",
     "14 tool name constants identified",
-    "2 tool objects fully mapped (Bash, KillShell)",
+    "7 tool objects fully mapped (Read, Write, Edit, Bash, Grep, Glob, KillShell)",
     "Core execution flow documented",
-    "~60 MEDIUM confidence renames identified so far",
-    "Need to complete remaining tool objects and helper functions",
-    "Next: Find all tool call() methods and complete mapping"
+    "~65 MEDIUM confidence renames identified so far",
+    "Need to complete remaining 10 tool objects (WebFetch, WebSearch, Task, TodoWrite, Skill, SlashCommand, NotebookEdit, ExitPlanMode, BashOutput, and 1 more)",
+    "Next: Find remaining tool objects and complete mapping"
   ]
 }
