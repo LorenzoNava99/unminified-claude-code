@@ -1,0 +1,28 @@
+59500:  UYA = ["PreToolUse", "PostToolUse", "Notification", "UserPromptSubmit", "SessionStart", "SessionEnd", "Stop", "SubagentStop", "PreCompact"];
+295383:    SubagentStop: [],
+295433:      SubagentStop: [],
+311187:When using the ${c8} tool, you must specify a subagent_type parameter to select which agent type to use.
+311250:  if (A === "general-purpose") {
+451741:      GA("tengu_subagent_at_mention", {
+451742:        is_subagent_only: x,
+459854:    agentType: "general-purpose",
+460099:  if (A?.subagent_type && A.subagent_type !== F01.agentType) {
+460100:    return A.subagent_type;
+460105:  if (!A?.subagent_type) {
+460108:  return o8A(A.subagent_type);
+460227:    subagent_type: k.string().describe("The type of specialized agent to use for this task"),
+460285:      subagent_type: B,
+478135:    SubagentStop: {},
+478257:      SubagentStop: {
+478258:        summary: "Right before a subagent (Task tool call) concludes its response",
+478260:Exit code 2 - show stderr to subagent and continue having it run
+479509:    }, "No agents found. Create specialized subagents that Claude can delegate to."), EB.createElement(w, {
+479511:    }, "Each subagent has its own context window, custom system prompt, and specific tools."), EB.createElement(w, {
+486996:        text: `Create a Task with subagent_type "statusline-setup" and the prompt "${A.trim() || "Configure my statusLine from my shell PS1 configuration"}"`
+487271:- VERY IMPORTANT: When exploring the codebase to gather context or to answer a question that is not a needle query for a specific file/class/function, it is CRITICAL that you use the ${c8} tool with subagent_type=${hw.agentType} instead of running search commands directly.
+487274:assistant: [Uses the ${c8} tool with subagent_type=${hw.agentType} to find the files that handle client errors instead of using ${h$} or ${BH} directly]
+487278:assistant: [Uses the ${c8} tool with subagent_type=${hw.agentType}]
+491941:    hook_event_name: Z ? "SubagentStop" : "Stop",
+494060:        let Q = !A.isSubAgent ? ` You MUST use a single ${c8} tool call with ${C7A.agentType} subagent type to gather information. Even if you have already started researching directly, you must immediately switch to using an agent instead.` : "";
+496901:    hooks: new Set(["PreToolUse", "PostToolUse", "Notification", "UserPromptSubmit", "SessionStart", "SessionEnd", "Stop", "SubagentStop", "PreCompact"])
+513025:      subagent_type: A.agentType,

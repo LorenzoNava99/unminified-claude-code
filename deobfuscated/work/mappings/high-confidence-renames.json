@@ -1,0 +1,237 @@
+{
+  "metadata": {
+    "created": "2025-11-12",
+    "phase": "Phase 1 - Initial Analysis",
+    "confidence_level": "HIGH",
+    "description": "Renames with very high confidence based on direct references, imports, and clear context",
+    "total_mappings": 25
+  },
+  "imports_and_builtins": {
+    "DB9": {
+      "newName": "createRequire",
+      "confidence": "HIGH",
+      "reason": "Direct import alias from node:module",
+      "location": "line 8",
+      "type": "import",
+      "code": "import { createRequire as DB9 } from \"node:module\";"
+    },
+    "FB9": {
+      "newName": "objectCreate",
+      "confidence": "HIGH",
+      "reason": "Object.create assignment",
+      "location": "line 9",
+      "type": "builtin-alias",
+      "code": "var FB9 = Object.create;"
+    },
+    "CB9": {
+      "newName": "getPrototypeOf",
+      "confidence": "HIGH",
+      "reason": "Object.getPrototypeOf destructured",
+      "location": "line 11",
+      "type": "builtin-alias",
+      "code": "getPrototypeOf: CB9"
+    },
+    "h21": {
+      "newName": "defineProperty",
+      "confidence": "HIGH",
+      "reason": "Object.defineProperty destructured",
+      "location": "line 12",
+      "type": "builtin-alias",
+      "code": "defineProperty: h21"
+    },
+    "VB9": {
+      "newName": "getOwnPropertyNames",
+      "confidence": "HIGH",
+      "reason": "Object.getOwnPropertyNames destructured",
+      "location": "line 13",
+      "type": "builtin-alias",
+      "code": "getOwnPropertyNames: VB9"
+    },
+    "KB9": {
+      "newName": "hasOwnProperty",
+      "confidence": "HIGH",
+      "reason": "Object.prototype.hasOwnProperty reference",
+      "location": "line 15",
+      "type": "builtin-alias",
+      "code": "var KB9 = Object.prototype.hasOwnProperty;"
+    }
+  },
+  "module_system": {
+    "HA": {
+      "newName": "require",
+      "confidence": "HIGH",
+      "reason": "Result of createRequire(import.meta.url)",
+      "location": "line 56",
+      "type": "module-loader",
+      "code": "var HA = DB9(import.meta.url);"
+    },
+    "T": {
+      "newName": "lazyInit",
+      "confidence": "HIGH",
+      "reason": "Lazy initialization wrapper pattern - used extensively for modules",
+      "location": "line 50-55",
+      "type": "utility-function",
+      "usage": "Wraps module initialization: var someModule = T(() => { ... })"
+    },
+    "z": {
+      "newName": "moduleWrapper",
+      "confidence": "HIGH",
+      "reason": "Module export wrapper pattern",
+      "location": "line 32-39",
+      "type": "utility-function",
+      "usage": "CommonJS-style module wrapper"
+    },
+    "IA": {
+      "newName": "interopRequireDefault",
+      "confidence": "HIGH",
+      "reason": "ESM/CommonJS interop function",
+      "location": "line 16-31",
+      "type": "utility-function",
+      "usage": "Handles __esModule property for module imports"
+    },
+    "E$": {
+      "newName": "defineExports",
+      "confidence": "HIGH",
+      "reason": "Defines getters for exports",
+      "location": "line 40-49",
+      "type": "utility-function",
+      "usage": "Sets up ES module exports"
+    }
+  },
+  "api_configuration": {
+    "w4": {
+      "newName": "getApiConfig",
+      "confidence": "HIGH",
+      "reason": "Returns API configuration object with BASE_API_URL, CONSOLE_AUTHORIZE_URL, etc.",
+      "location": "line ~55,820",
+      "type": "configuration-getter",
+      "usage": "Used in: w4().BASE_API_URL, w4().TOKEN_URL"
+    },
+    "XT0": {
+      "newName": "PRODUCTION_API_CONFIG",
+      "confidence": "HIGH",
+      "reason": "Production API configuration object",
+      "location": "line 55,827-55,839",
+      "type": "constant-object",
+      "properties": [
+        "BASE_API_URL: https://api.anthropic.com",
+        "CONSOLE_AUTHORIZE_URL",
+        "CLAUDE_AI_AUTHORIZE_URL",
+        "TOKEN_URL",
+        "API_KEY_URL",
+        "ROLES_URL",
+        "CLIENT_ID"
+      ]
+    },
+    "rb9": {
+      "newName": "LOCAL_API_CONFIG",
+      "confidence": "HIGH",
+      "reason": "Local development API configuration (localhost:3000)",
+      "location": "line 55,840+",
+      "type": "constant-object"
+    },
+    "CT0": {
+      "newName": "BASE_OAUTH_CONFIG",
+      "confidence": "HIGH",
+      "reason": "Base OAuth configuration with SCOPES",
+      "location": "line ~55,822",
+      "type": "constant-object",
+      "properties": [
+        "SCOPES array with OAuth scopes"
+      ]
+    }
+  },
+  "lodash_utilities": {
+    "at": {
+      "newName": "map",
+      "confidence": "HIGH",
+      "reason": "Lodash map function (yB9)",
+      "location": "line ~160",
+      "type": "lodash-function"
+    },
+    "nI": {
+      "newName": "isArray",
+      "confidence": "HIGH",
+      "reason": "Array.isArray alias (kB9)",
+      "location": "line ~180",
+      "type": "lodash-function"
+    },
+    "nt": {
+      "newName": "isSymbol",
+      "confidence": "HIGH",
+      "reason": "Symbol type check function (SB9)",
+      "location": "line ~150",
+      "type": "lodash-function"
+    },
+    "bz": {
+      "newName": "baseGetTag",
+      "confidence": "HIGH",
+      "reason": "Gets object type tag (TB9)",
+      "location": "line ~130",
+      "type": "lodash-function"
+    },
+    "lX": {
+      "newName": "isObject",
+      "confidence": "HIGH",
+      "reason": "Object type check (PB9)",
+      "location": "line ~140",
+      "type": "lodash-function"
+    },
+    "rt": {
+      "newName": "isFunction",
+      "confidence": "HIGH",
+      "reason": "Function type check (vB9/uB9)",
+      "location": "line ~230",
+      "type": "lodash-function"
+    }
+  },
+  "global_references": {
+    "cJ": {
+      "newName": "globalThis",
+      "confidence": "HIGH",
+      "reason": "Global object reference (zB9)",
+      "location": "line 70",
+      "type": "global-ref",
+      "code": "zB9 = aqA || HB9 || Function(\"return this\")();"
+    },
+    "xW": {
+      "newName": "Symbol",
+      "confidence": "HIGH",
+      "reason": "Native Symbol reference (UB9)",
+      "location": "line 76",
+      "type": "global-ref",
+      "code": "UB9 = cJ.Symbol;"
+    },
+    "aqA": {
+      "newName": "globalNode",
+      "confidence": "HIGH",
+      "reason": "Node.js global object (EB9)",
+      "location": "line 60",
+      "type": "global-ref"
+    },
+    "HB9": {
+      "newName": "globalSelf",
+      "confidence": "HIGH",
+      "reason": "Browser self object",
+      "location": "line 68",
+      "type": "global-ref"
+    }
+  },
+  "http_client": {
+    "SB": {
+      "newName": "httpClient",
+      "confidence": "HIGH",
+      "reason": "HTTP client used for API calls (axios-like)",
+      "location": "multiple locations",
+      "type": "http-client",
+      "usage": "SB.post(), SB.get(), SB.patch()"
+    }
+  },
+  "notes": [
+    "These 25 renames have HIGH confidence and can be applied immediately",
+    "Next phase should focus on tool implementations (Read, Write, Edit, etc.)",
+    "API client section is around lines 55,820-56,000",
+    "OAuth constants are clearly defined and can be renamed",
+    "Lodash utility functions are embedded and follow standard patterns"
+  ]
+}
