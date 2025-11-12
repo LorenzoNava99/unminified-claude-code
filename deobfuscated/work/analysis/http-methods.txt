@@ -1,0 +1,50 @@
+      method: "GET",
+      if (A.method !== "GET") {
+    method: k.literal("prompts/get"),
+    let Q = this._notificationHandlers.get(A.method) ?? this.fallbackNotificationHandler;
+    let G = this._requestHandlers.get(A.method) ?? this.fallbackRequestHandler;
+        this._pendingDebouncedNotifications.delete(A.method);
+        method: "prompts/get",
+    method: "POST",
+    method: "POST",
+    method: "POST",
+        method: "POST",
+        throw Error(`Error POSTing to endpoint (HTTP ${Y.status}): ${J}`);
+        method: "GET",
+        method: "POST",
+        throw Error(`Error POSTing to endpoint (HTTP ${F.status}): ${E}`);
+        method: "DELETE",
+      method: "post"
+    if ((B === 301 || B === 302) && this._options.method === "POST" || B === 303 && !/^(?:GET|HEAD)$/.test(this._options.method)) {
+      this._options.method = "GET";
+      method: "POST",
+      method: "POST",
+          method: "POST",
+  if (["post", "put", "patch"].indexOf(A.method) !== -1) {
+    B.method = (B.method || this.defaults.method || "get").toLowerCase();
+            method: "POST",
+        method: "POST",
+        WH9.Log.warn(`Parameter type mismatch. '${A}.${I}' was found to be type '${typeof Y}' but fallback/return type is '${typeof G}'. See https://docs.statsig.com/client/javascript-sdk/#typed-getters`);
+              y = Error("Missing method in Dispatcher: " + c);
+        var k7A = "https://reactjs.org/blog/2019/08/15/new-react-devtools.html#how-do-i-get-the-old-version-back";
+      let Z = B.getMethodName();
+    getHttpHandlerExtensionConfiguration: () => Io9,
+  }, "getHttpHandlerExtensionConfiguration");
+      this.method = B.method || "GET";
+    getHttpHandlerExtensionConfiguration: () => Tt9,
+  }, "getHttpHandlerExtensionConfiguration");
+      this.method = B.method || "GET";
+    getHttpHandlerExtensionConfiguration: () => it9,
+  }, "getHttpHandlerExtensionConfiguration");
+      this.method = B.method || "GET";
+    getHttpHandlerExtensionConfiguration: () => jA4,
+  }, "getHttpHandlerExtensionConfiguration");
+      this.method = B.method || "GET";
+            $(Error("Unexpected error: http2 request did not get a response"));
+    getHttpHandlerExtensionConfiguration: () => x14,
+  }, "getHttpHandlerExtensionConfiguration");
+      this.method = B.method || "GET";
+              Z[W][V.slice(C.httpPrefixHeaders.length)] = await Y.read([F.getValueSchema(), {
+      F.method = "POST";
+        throw Error("Empty value provided for input HTTP label: " + Q + ".");
+      throw Error("No value provided for input HTTP label: " + Q + ".");

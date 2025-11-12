@@ -1,0 +1,100 @@
+    isNonInteractiveSession: true,
+    sessionIngressToken: undefined,
+    oauthTokenFromFd: undefined,
+    sessionCounter: null,
+    sessionId: Y50(),
+  return YB.sessionId;
+  YB.sessionId = Y50();
+  return YB.sessionId;
+  YB.sessionId = A;
+  YB.sessionCounter = B("claude_code.session.count", {
+    description: "Count of CLI sessions started"
+    description: "Cost of the Claude Code session",
+  return YB.sessionCounter;
+  return YB.isNonInteractiveSession;
+  YB.isNonInteractiveSession = A;
+  return YB.sessionIngressToken;
+  YB.sessionIngressToken = A;
+  return YB.oauthTokenFromFd;
+  YB.oauthTokenFromFd = A;
+  return YB.isNonInteractiveSession && YB.clientType !== "claude-vscode";
+      isNonInteractiveSession: false,
+    if ("typ" in G && G?.typ !== "JWT") {
+        } else if (G.kind === "jwt") {
+              validation: "jwt",
+    jwt(A) {
+        kind: "jwt",
+      sessionId: Z?.sessionId,
+      if (A.sessionId !== undefined) {
+    bearer_methods_supported: k.array(k.string()).optional(),
+    let G = `${B ? `HTTP ${B}: ` : ""}Invalid OAuth error response: ${I}. Raw body: ${Q}`;
+      throw Error("Existing OAuth client information is required when exchanging an authorization code");
+      throw Error("OAuth client information must be saveable for dynamic registration");
+  await A.redirectToAuthorization(K);
+  if (Q.toLowerCase() !== "bearer" || !I) {
+  let I = await QX9(A, "oauth-protected-resource", Q, {
+    throw Error("Resource server does not implement OAuth 2.0 Protected Resource Metadata.");
+    throw Error(`HTTP ${I.status} trying to load well-known OAuth protected resource metadata.`);
+      url: new URL("/.well-known/oauth-authorization-server", B.origin),
+      type: "oauth"
+    url: new URL(`/.well-known/oauth-authorization-server${G}`, B.origin),
+    type: "oauth"
+    url: new URL("/.well-known/oauth-authorization-server", B.origin),
+    type: "oauth"
+      throw Error(`HTTP ${X.status} trying to load ${J === "oauth" ? "OAuth" : "OpenID provider"} metadata from ${Y}`);
+    if (J === "oauth") {
+      throw Error("Incompatible auth server: does not support grant type refresh_token");
+      let Q = await this._authProvider.tokens();
+        B.Authorization = `Bearer ${Q.access_token}`;
+    this._sessionId = B?.sessionId;
+      let I = await this._authProvider.tokens();
+        B.Authorization = `Bearer ${I.access_token}`;
+    if (this._sessionId) {
+      B["mcp-session-id"] = this._sessionId;
+      let C = F.headers.get("mcp-session-id");
+        this._sessionId = C;
+  get sessionId() {
+    return this._sessionId;
+  async terminateSession() {
+    if (!this._sessionId) {
+        throw new xMA(Z.status, `Failed to terminate session: ${Z.statusText}`);
+      this._sessionId = undefined;
+    "application/at+jwt": {
+    "application/jwt": {
+    "application/oauth-authz-req+jwt": {
+    "application/secevent+jwt": {
+    "application/session-info": {
+    "application/token-introspection+jwt": {
+    "application/vnd.sigrok.session": {
+    "application/vnd.uplanet.bearer-choice": {
+    "application/vnd.uplanet.bearer-choice-wbxml": {
+    SessionID: "sid",
+  zH0.StatsigSession = zH0.SessionID = undefined;
+  zH0.SessionID = {
+      return zH0.StatsigSession.get(A).data.sessionID;
+  zH0.StatsigSession = {
+    overrideInitialSessionID: (A, B) => {
+        sessionID: (0, KH0.getUUID)(),
+        sessionID: A,
+      Q.sessionID = (0, KH0.getUUID)();
+          name: "session_expired"
+    return `statsig.session_id.${(0, TE9._getStorageKey)(A)}`;
+      PE9.Log.warn("Failed to save SessionID");
+          [WM.NetworkParam.SessionID]: MH0.SessionID.get(A.sdkKey)
+    let Z = MH0.SessionID.get(Q);
+        sessionID: Z,
+      if (I?.initialSessionID) {
+        YH9.StatsigSession.overrideInitialSessionID(I.initialSessionID, A);
+        session: m8.StatsigSession.get(this._sdkKey),
+      return "-local-oauth";
+      return "-staging-oauth";
+var S1A = "oauth-2025-04-20";
+    SCOPES: [ab9, "user:profile", lRA, "user:sessions:claude_code"]
+    CONSOLE_AUTHORIZE_URL: "https://console.anthropic.com/oauth/authorize",
+    CLAUDE_AI_AUTHORIZE_URL: "https://claude.ai/oauth/authorize",
+    TOKEN_URL: "https://console.anthropic.com/v1/oauth/token",
+    API_KEY_URL: "https://api.anthropic.com/api/oauth/claude_cli/create_api_key",
+    ROLES_URL: "https://api.anthropic.com/api/oauth/claude_cli/roles",
+    CONSOLE_SUCCESS_URL: "https://console.anthropic.com/buy_credits?returnUrl=/oauth/code/success%3Fapp%3Dclaude-code",
+    CLAUDEAI_SUCCESS_URL: "https://console.anthropic.com/oauth/code/success?app=claude-code",
+    MANUAL_REDIRECT_URL: "https://console.anthropic.com/oauth/code/callback",
