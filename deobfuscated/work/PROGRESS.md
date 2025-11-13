@@ -16,7 +16,8 @@
 | Phase 2: Function Analysis | ✅ Nearly Complete | 90% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | 2025-11-12 |
 | Phase 3: Renaming (MEDIUM) | ✅ Complete | 100% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | 2025-11-12 |
 | Phase 3.5: Renaming (LOW) | ✅ Complete | 100% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | 2025-11-12 |
-| Phase 4: Module Extraction | 🔄 Planning | 5% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | - |
+| Phase 4.1: Schema Extraction | ✅ Complete | 100% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | 2025-11-12 |
+| Phase 4.2-4.4: Module Extraction | 🔄 In Progress | 10% | 011CV4E2HNUYpg1m6kcyiSou | 2025-11-12 | - |
 | Phase 5: Type Definitions | ⏳ Available | 0% | - | - | - |
 | Phase 6: Documentation | ⏳ Available | 0% | - | - | - |
 
@@ -350,4 +351,142 @@ Tool dependencies are now crystal clear, making Phase 4 module extraction signif
 ---
 
 **Phase 3.5: COMPLETE** ✅ - Ready for Phase 4 (Module Extraction)
+
+
+---
+
+## Phase 4.1: Tool Schema Extraction ✅ COMPLETE
+
+**Status:** 100% Complete
+**Current Agent:** claude/explore-project-setup-011CV4E2HNUYpg1m6kcyiSou
+**Started:** 2025-11-12
+**Completed:** 2025-11-12
+
+### Summary
+Successfully extracted ALL 16 tool validation schemas from the monolithic 515K-line file into clean, standalone, well-documented modules. This represents the foundation for Phase 4 module extraction work.
+
+### Schemas Extracted (16/16) ✅
+
+**File Operation Tools (3):**
+1. Read Tool - Multi-format file reading (text/image/notebook/PDF)
+2. Write Tool - File creation/updates with diff patches
+3. Edit Tool - String replacement with diff tracking
+
+**Shell & Search Tools (3):**
+4. Bash Tool - Command execution with sandbox support
+5. Grep Tool - Code search with ripgrep (3 output modes)
+6. Glob Tool - File pattern matching
+
+**Web Tools (2):**
+7. WebFetch Tool - URL content fetching with AI processing
+8. WebSearch Tool - Web search with domain filtering
+
+**Agent & Task Tools (2):**
+9. Task Tool - Agent invocation (most complex, 3 execution modes)
+10. TodoWrite Tool - Task tracking with 3 states
+
+**Specialized Tools (6):**
+11. NotebookEdit Tool - Jupyter notebook cell editing
+12. SlashCommand Tool - Custom command execution
+13. Skill Tool - Skill invocation
+14. BashOutput Tool - Background shell output retrieval
+15. KillShell Tool - Background shell termination
+16. ExitPlanMode Tool - Plan mode exit prompt
+
+### Deliverables ✅
+- **17 schema files:** 16 individual tool schemas + 1 central index
+- **~1,200 lines of code:** Full Zod validation schemas
+- **~600 lines of documentation:** Comprehensive JSDoc comments
+- **50+ schema objects:** Input/output schemas and related types
+
+### Statistics
+
+| Metric | Value |
+|--------|-------|
+| **Tools Extracted** | 16/16 (100%) |
+| **Schema Files** | 17 |
+| **Total Lines** | ~1,200 |
+| **Zod Schemas** | 50+ |
+| **Related Types** | 20+ |
+
+### Code Quality Improvement
+
+**Before Phase 4.1:**
+```javascript
+// Buried in 515K-line file
+var ay6 = zod.strictObject({
+  pattern: zod.string().describe("..."),
+  // ...
+});
+```
+
+**After Phase 4.1:**
+```javascript
+/**
+ * Grep Tool - Input/Output Schemas
+ *
+ * Zod validation schemas for the Grep tool
+ */
+const { z } = require('zod');
+
+/**
+ * Input schema for Grep tool
+ * @property {string} pattern - The regex pattern
+ * ...
+ */
+const grepInputSchema = z.strictObject({
+  pattern: z.string().describe("..."),
+  // ...
+});
+
+module.exports = { grepInputSchema, grepOutputSchema };
+```
+
+### Benefits Achieved
+1. **Modularity:** Each tool schema is now standalone
+2. **Documentation:** Rich JSDoc comments for every field
+3. **Reusability:** Schemas can be used outside main codebase
+4. **Type Safety:** Clear contracts for all tool I/O
+5. **Maintainability:** Changes isolated to specific schemas
+6. **Testing:** Easy to unit test individual schemas
+
+### Complexity Breakdown
+
+**Simple Schemas (5 tools):** 1-2 fields
+- Glob, KillShell, Skill, SlashCommand, ExitPlanMode
+
+**Medium Complexity (6 tools):** 2-7 fields
+- Write, Edit, WebFetch, WebSearch, TodoWrite, NotebookEdit
+
+**High Complexity (5 tools):** 10+ fields or discriminated unions
+- Read, Bash, Grep, BashOutput, Task
+
+### Files Created
+```
+phase4-modules/schemas/
+├── bash-tool-schema.js
+├── bashoutput-tool-schema.js
+├── edit-tool-schema.js
+├── exitplanmode-tool-schema.js
+├── glob-tool-schema.js
+├── grep-tool-schema.js
+├── index.js (central export)
+├── killshell-tool-schema.js
+├── notebookedit-tool-schema.js
+├── read-tool-schema.js
+├── skill-tool-schema.js
+├── slashcommand-tool-schema.js
+├── task-tool-schema.js
+├── todowrite-tool-schema.js
+├── webfetch-tool-schema.js
+├── websearch-tool-schema.js
+└── write-tool-schema.js
+```
+
+### Report
+- `analysis/PHASE4.1_COMPLETE.md` - Comprehensive completion report
+
+---
+
+**Phase 4.1: COMPLETE** ✅ - Foundation set for remaining Phase 4 work
 
