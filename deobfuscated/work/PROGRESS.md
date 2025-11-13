@@ -490,3 +490,341 @@ phase4-modules/schemas/
 
 **Phase 4.1: COMPLETE** ✅ - Foundation set for remaining Phase 4 work
 
+---
+
+## Phase 4.2.1: Tool Execution Engine ✅ COMPLETE
+
+**Completed:** 2025-11-13
+**Agent:** claude/explore-project-setup-011CV4E2HNUYpg1m6kcyiSou
+**Duration:** ~2 hours
+
+### Overview
+
+Extracted the complete tool execution pipeline from the monolithic file into clean, well-documented, standalone modules. This includes the main execution dispatcher, streaming infrastructure, validation pipeline, and hook integration.
+
+### Files Created (4 files)
+
+**1. async-queue.js** (228 lines)
+- AsyncQueue class implementing async iterator protocol
+- Supports streaming tool execution results
+- Features: enqueue, done, error, return operations
+- One-time iteration enforcement
+
+**2. tool-helpers.js** (415 lines)
+- 8 helper functions + 2 constants
+- Input validation error formatting
+- Hook error formatting
+- Message creation (cancelled, progress, hook messages)
+- MCP tool detection
+- UUID generation
+- Original locations documented for each function
+
+**3. tool-executor.js** (1,157 lines)
+- 5 main execution functions
+- Complete 9-phase execution pipeline
+- ~400 lines of JSDoc documentation
+- All external dependencies documented with TODOs
+- Placeholder implementations for missing modules
+
+**4. index.js** (85 lines)
+- Central module export
+- Clean public API
+
+**Total:** ~1,800 lines (code + docs) across 4 files
+
+### Functions Extracted
+
+**Core Execution (3 functions):**
+1. **executeToolUse** (line 358179) - Main dispatcher
+   - Original name: uaA
+   - Entry point for all tool executions
+   - Handles tool lookup, abortion check, error handling
+
+2. **createToolExecutionStream** (line 358244) - Stream creation
+   - Original name: X85
+   - Wraps execution in AsyncQueue for streaming
+   - Manages progress callbacks
+
+3. **executeToolWithValidation** (line 358272) - Core pipeline
+   - Original name: W85
+   - 345 lines, most complex function
+   - 9-phase execution pipeline
+
+**Hook Integration (2 functions):**
+4. **executePreToolUseHooks** (line 358711) - Pre-execution hooks
+   - Already well-named ✅
+   - Handles permission overrides
+   - Supports blocking, stopping, input modification
+
+5. **executePostToolUseHooks** (line 358618) - Post-execution hooks
+   - Original name: F85
+   - Handles MCP output modification
+   - Supports additional context injection
+
+**Helper Functions (10 functions):**
+- formatInputValidationError (line 358886)
+- formatHookError (line 358837)
+- extractErrorMessages (line 358858)
+- createToolCancelledResult (line 493283)
+- createToolProgressMessage (line 493269)
+- createHookMessage (line 490499)
+- isMcpTool / Ev (line 357413)
+- formatValidationPath / faQ (line 358871)
+- generateUuid (wrapper for MR/C1I)
+
+**Constants:**
+- TOOL_CANCELLED_MESSAGE (line 494370)
+- REQUEST_INTERRUPTED_MESSAGE (line 494368)
+
+### Execution Pipeline (9 Phases)
+
+The **executeToolWithValidation** function implements a comprehensive 9-phase pipeline:
+
+1. **Schema Validation** - Zod input validation
+2. **Custom Validation** - Optional tool-specific validation
+3. **PreToolUse Hooks** - Execute pre-execution hooks
+4. **Telemetry Recording** - Record tool invocation
+5. **Permission Checking** - Check tool permissions (with hook override)
+6. **Tool Parameters** - Build telemetry parameters
+7. **Tool Execution** - Execute the tool's call() method
+8. **PostToolUse Hooks** - Execute post-execution hooks
+9. **Error Handling** - Comprehensive error handling
+
+### Features
+
+- **Complete error handling** at every stage
+- **Hook permission overrides** (allow/deny/ask behavior)
+- **Progress streaming** with AsyncQueue
+- **MCP tool support** with output modification
+- **Comprehensive telemetry** integration
+- **User modification tracking**
+- **Context modification** support
+- **Abort signal** propagation
+- **Tool timing** reports
+- **Validation** at multiple levels
+
+### External Dependencies
+
+All external dependencies clearly documented with TODO comments:
+
+**Telemetry (9 functions):**
+- recordTelemetryEvent, recordToolInvocation, incrementToolInvocationCount
+- recordToolDecision, incrementToolRejection, recordToolPermissionGranted
+- recordToolDuration, JhQ, Ug1, ON
+
+**Tool Timing:**
+- toolTimingReporter (reportToolStart, reportToolComplete, reportToolError)
+
+**Messages:**
+- createToolResultMessage
+
+**Hooks:**
+- iterateToolHooks (PreToolUse iterator)
+- iteratePostToolHooks / Kc1 (PostToolUse iterator)
+- formatHookBlockingError, formatPermissionBehavior
+
+**Logging:**
+- logError, m (debug logging)
+
+**Tool Constants:**
+- TOOL_READ, TOOL_WRITE, TOOL_EDIT, TOOL_BASH (from phase4-modules/shared-utils/tool-constants.js)
+
+### Statistics
+
+| Metric | Value |
+|--------|-------|
+| **Files Created** | 4 |
+| **Functions Extracted** | 18 |
+| **Lines of Code** | ~1,400 |
+| **Lines of Documentation** | ~400 |
+| **Total Lines** | ~1,800 |
+| **External Dependencies** | 25+ (documented) |
+
+### Integration Points
+
+**Imports from Phase 4.1:**
+- Tool constants (TOOL_READ, TOOL_WRITE, etc.)
+
+**Provides for Phase 4.2.2:**
+- createHookMessage
+- formatHookError
+- Hook execution framework
+
+**Provides for Phase 4.2.3:**
+- Permission checking integration points
+- Tool validation framework
+
+---
+
+**Phase 4.2.1: COMPLETE** ✅ - Core execution engine extracted
+
+---
+
+## Phase 4.2.2: Hook System Analysis ✅ COMPLETE
+
+**Completed:** 2025-11-13
+**Agent:** claude/explore-project-setup-011CV4E2HNUYpg1m6kcyiSou
+**Status:** Analysis Complete - Ready for Extraction
+
+### Overview
+
+Comprehensive analysis of the hook system architecture completed. The hook system provides extensibility by allowing user-defined shell commands, prompts, or callbacks to execute at specific points in the tool execution lifecycle.
+
+### Analysis Document
+
+**File:** `analysis/PHASE4.2.2_ANALYSIS.md` (530+ lines)
+
+Complete architectural analysis including:
+- Hook event types and flow
+- Function identification and renaming plan
+- Execution modes (streaming vs non-streaming)
+- Dependencies and integration points
+- Extraction roadmap
+
+### Hook Architecture
+
+**9 Hook Event Types (line 59500):**
+1. **PreToolUse** - Before tool execution
+2. **PostToolUse** - After tool execution
+3. **Notification** - When notifications sent
+4. **UserPromptSubmit** - Before prompt submission
+5. **SessionStart** - At session start
+6. **SessionEnd** - At session end
+7. **Stop** - When execution stopped
+8. **SubagentStop** - When subagent stopped
+9. **PreCompact** - Before context compaction
+
+**3 Hook Types:**
+- **Command Hooks** - Execute shell commands
+- **Prompt Hooks** - Send prompts to Claude
+- **Callback Hooks** - Execute JavaScript functions
+
+### Functions Identified (20 total)
+
+**Hook Event Iterators (8):**
+1. iterateToolHooks (491885) ✅ already well-named
+2. Kc1 → iteratePostToolHooks (491902)
+3. sc1 → executeNotificationHooks (491919)
+4. Dc1 → executeStopHooks (491938)
+5. dt1 → executeUserPromptSubmitHooks (491953)
+6. Bx1 → executeSessionStartHooks (491967)
+7. Ix1 → executePreCompactHooks (491981)
+8. ee1 → executeSessionEndHooks (492020+)
+
+**Core Executors (2):**
+1. P$A → executeHooksStream (491419) - Streaming executor
+2. k00 → executeHooks (491752) - Non-streaming executor
+
+**Hook Type Executors (3):**
+1. S00 → executeHookCommand (491515) - Shell commands
+2. Os2 → executePromptHook (491511) - Claude prompts
+3. n1I → executeCallbackHook (491472) - JavaScript callbacks
+
+**Helper Functions (7):**
+1. DR → buildHookInput - Prepares hook input data
+2. y00 → getMatchingHooks - Finds matching hooks
+3. Fy → DEFAULT_HOOK_TIMEOUT_MS - Timeout constant
+4. lazyInit$A → generateHookUuid - UUID generation
+5. M0 → getSettings - Config getter
+6. Ts2 → isWorkspaceTrustRequired - Security check
+7. nB1 → combineAbortSignals (491471) - Signal combining
+
+### Hook Execution Flow
+
+**Streaming Hooks (PreToolUse, PostToolUse, etc.):**
+```
+Event Trigger
+  ↓
+Hook Iterator (e.g., iterateToolHooks)
+  ↓
+Build Hook Input (buildHookInput)
+  ↓
+Main Executor (executeHooksStream)
+  ↓
+Get Matching Hooks (getMatchingHooks)
+  ↓
+For Each Hook:
+  ├─ Command Hook → executeHookCommand
+  ├─ Prompt Hook → executePromptHook
+  └─ Callback Hook → executeCallbackHook
+  ↓
+Yield Results as Stream
+```
+
+**Non-Streaming Hooks (Notification, PreCompact):**
+```
+Event Trigger
+  ↓
+Hook Function
+  ↓
+Build Hook Input
+  ↓
+Executor (executeHooks)
+  ↓
+Execute All Hooks in Parallel
+  ↓
+Await All Results
+  ↓
+Return Aggregated Results
+```
+
+### Hook Result Schema
+
+Hook results contain:
+- **message**: Hook message (progress, error, etc.)
+- **outcome**: "success" | "non_blocking_error" | "blocking_error" | "cancelled"
+- **hook**: Reference to hook definition
+- **succeeded**: Boolean success flag
+- **output**: Hook output (for command hooks)
+- **permissionBehavior**: "allow" | "deny" | "ask" (PreToolUse only)
+- **hookPermissionDecisionReason**: Reason for permission decision
+- **updatedInput**: Modified input (PreToolUse only)
+- **updatedMCPToolOutput**: Modified output (PostToolUse for MCP tools)
+- **blockingError**: Error that blocks execution
+- **preventContinuation**: Flag to stop execution
+- **stopReason**: Reason for stopping
+- **additionalContexts**: Additional context to add
+- **aborted**: Whether hook was aborted
+
+### Extraction Plan (6 Phases)
+
+Detailed roadmap for extracting hook system:
+
+1. **Phase 4.2.2.1:** Hook types and constants (~100 lines)
+2. **Phase 4.2.2.2:** Hook helpers (~150 lines)
+3. **Phase 4.2.2.3:** Hook executors (~200 lines)
+4. **Phase 4.2.2.4:** Main hook engine (~300 lines)
+5. **Phase 4.2.2.5:** Hook event functions (~200 lines)
+6. **Phase 4.2.2.6:** Module index (~50 lines)
+
+**Total Estimated:** 6 files, ~1,000 lines code, ~400 lines docs = ~1,400 lines
+
+### Dependencies
+
+**From Phase 4.2.1 (Tool Execution) ✅:**
+- createHookMessage
+- generateUuid
+- formatHookError
+- recordTelemetryEvent
+- logError
+
+**Pending:**
+- Telemetry module
+- Config/Settings module
+- AbortSignal operations
+- Shell execution (child_process)
+
+### Complexity Assessment
+
+**Complexity:** High
+- Multiple execution modes (streaming, non-streaming)
+- 3 hook types (command, prompt, callback)
+- Security considerations (workspace trust)
+- Timeout and cancellation handling
+- Shell execution with proper error handling
+- Permission system integration
+
+---
+
+**Phase 4.2.2 Analysis: COMPLETE** ✅ - Ready for extraction
+
