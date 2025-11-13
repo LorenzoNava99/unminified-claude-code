@@ -1,0 +1,12 @@
+# Backup files from extractions
+*.backup-before-*
+*.backup
+
+# Temporary scripts
+extract_*.sh
+
+# Test output files
+test-output.txt
+
+# Node modules
+node_modules/
