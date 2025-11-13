@@ -1,0 +1,1019 @@
+{
+  "type": "enhanced-dependency-analysis",
+  "timestamp": "2025-11-13T13:04:47.723Z",
+  "summary": {
+    "type1": 10,
+    "type2": 0,
+    "type3": 38,
+    "unknown": 76,
+    "totalLines": {
+      "type1": 1143,
+      "type2": 0,
+      "type3": 4461
+    }
+  },
+  "type1Modules": [
+    {
+      "name": "OtelSemanticAttributes",
+      "lines": 567,
+      "occurrences": 0,
+      "category": "opentelemetry",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 2,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelSemanticConventions",
+      "lines": 144,
+      "occurrences": 0,
+      "category": "opentelemetry",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 2,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "otelCoreUtils",
+      "lines": 105,
+      "occurrences": 24,
+      "category": "numberedFunctions",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 38,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 5
+      }
+    },
+    {
+      "name": "GenericErrorExports",
+      "lines": 95,
+      "occurrences": 12,
+      "category": "numberedClasses",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 12,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "OtelMetrics",
+      "lines": 57,
+      "occurrences": 0,
+      "category": "opentelemetry",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 2,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "GrpcChannelOptionsExports",
+      "lines": 54,
+      "occurrences": 5,
+      "category": "grpcExtended",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 7,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "ValidationErrorExports",
+      "lines": 41,
+      "occurrences": 14,
+      "category": "numberedClasses",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 8,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtlpSharedConfigExports",
+      "lines": 35,
+      "occurrences": 10,
+      "category": "opentelemetryExtended",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 10,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 4
+      }
+    },
+    {
+      "name": "PlatformNormalizerExports",
+      "lines": 29,
+      "occurrences": 6,
+      "category": "platformUtils",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 3,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "StatsigMetadataExports",
+      "lines": 16,
+      "occurrences": 7,
+      "category": "statsig",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 3,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    }
+  ],
+  "type2Modules": [],
+  "type3Modules": [
+    {
+      "name": "MetricsUtilsExports",
+      "lines": 534,
+      "occurrences": 26,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 14 unrenamed functions",
+      "unnamedDeps": [
+        "dE2",
+        "AE",
+        "g8",
+        "Kz",
+        "xeA",
+        "beA",
+        "addTrace",
+        "refChild",
+        "unrefChild",
+        "getChildLists"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 69,
+        "unnamedDepsCount": 14,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 5
+      }
+    },
+    {
+      "name": "ReactExports",
+      "lines": 449,
+      "occurrences": 37,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "setState"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 49,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 5
+      }
+    },
+    {
+      "name": "GrpcChannelCredentialsExports",
+      "lines": 364,
+      "occurrences": 5,
+      "category": "grpcExtended",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 20 unrenamed functions",
+      "unnamedDeps": [
+        "MeA",
+        "da1",
+        "eD",
+        "IR",
+        "K7",
+        "g8",
+        "TypeError",
+        "ReA",
+        "createSsl",
+        "OeA"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 63,
+        "unnamedDepsCount": 20,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 5
+      }
+    },
+    {
+      "name": "WebHookExports",
+      "lines": 350,
+      "occurrences": 11,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 14 unrenamed functions",
+      "unnamedDeps": [
+        "PF",
+        "Vo",
+        "g8",
+        "eA",
+        "withOnReceiveMetadata",
+        "withOnReceiveMessage",
+        "withOnReceiveStatus",
+        "withStart",
+        "withSendMessage",
+        "withHalfClose"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 54,
+        "unnamedDepsCount": 14,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "GrpcServiceConfigValidationExports",
+      "lines": 333,
+      "occurrences": 5,
+      "category": "grpcExtended",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "g8"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 27,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 4
+      }
+    },
+    {
+      "name": "HtmlParserExports",
+      "lines": 275,
+      "occurrences": 34,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 5 unrenamed functions",
+      "unnamedDeps": [
+        "dZQ",
+        "AS1",
+        "firstChild",
+        "lastChild",
+        "nodeType"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 23,
+        "unnamedDepsCount": 5,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "WebUtilsExports",
+      "lines": 184,
+      "occurrences": 18,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 6 unrenamed functions",
+      "unnamedDeps": [
+        "uH2",
+        "IA1",
+        "nz2",
+        "QU2",
+        "IU2",
+        "v5"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 52,
+        "unnamedDepsCount": 6,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "OtelHistogramAggregatorExports",
+      "lines": 148,
+      "occurrences": 6,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 6 unrenamed functions",
+      "unnamedDeps": [
+        "yIA",
+        "tO",
+        "setStartTime",
+        "createAccumulation",
+        "SzA",
+        "toMetricData"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 23,
+        "unnamedDepsCount": 6,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 4
+      }
+    },
+    {
+      "name": "DomNamespaceExports",
+      "lines": 113,
+      "occurrences": 31,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "orA",
+        "trA"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 13,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "OtelAggregationExports",
+      "lines": 111,
+      "occurrences": 32,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 9 unrenamed functions",
+      "unnamedDeps": [
+        "t2",
+        "BJ2",
+        "Fn1",
+        "atA",
+        "hzA",
+        "stA",
+        "rtA",
+        "Cn1",
+        "Vn1"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 29,
+        "unnamedDepsCount": 9,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "OtlpSpanTransformExports",
+      "lines": 110,
+      "occurrences": 10,
+      "category": "opentelemetryExtended",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "HeA",
+        "EeA"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 25,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "FunctionNodeExports",
+      "lines": 102,
+      "occurrences": 12,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 3 unrenamed functions",
+      "unnamedDeps": [
+        "iUA",
+        "WN2",
+        "Xo1"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 29,
+        "unnamedDepsCount": 3,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 4
+      }
+    },
+    {
+      "name": "OtelTimeExports",
+      "lines": 94,
+      "occurrences": 26,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 7 unrenamed functions",
+      "unnamedDeps": [
+        "ei1",
+        "s$5",
+        "TypeError",
+        "r$5",
+        "o$5",
+        "t$5",
+        "e$5"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 28,
+        "unnamedDepsCount": 7,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "QueryFormatterExports",
+      "lines": 94,
+      "occurrences": 14,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "Copyright",
+        "tF0"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 23,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "GrpcLoadBalancerExports",
+      "lines": 91,
+      "occurrences": 10,
+      "category": "grpcAndNetworking",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "K7",
+        "g8"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 22,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "FileWriterExports",
+      "lines": 89,
+      "occurrences": 22,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "t2",
+        "q6"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 17,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OAuthClientExports",
+      "lines": 87,
+      "occurrences": 17,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 7 unrenamed functions",
+      "unnamedDeps": [
+        "q6",
+        "Qc",
+        "fn1",
+        "SS",
+        "t2",
+        "selectAggregation",
+        "selectAggregationTemporality"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 22,
+        "unnamedDepsCount": 7,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "YieldExpressionExports",
+      "lines": 80,
+      "occurrences": 11,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "uV"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 22,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelAttributeUtilsExports",
+      "lines": 72,
+      "occurrences": 8,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "t2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 15,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "ProtobufLoaderExports",
+      "lines": 66,
+      "occurrences": 8,
+      "category": "protobuf",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 5 unrenamed functions",
+      "unnamedDeps": [
+        "IA1",
+        "az2",
+        "ms1",
+        "sz2",
+        "rz2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 28,
+        "unnamedDepsCount": 5,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 4
+      }
+    },
+    {
+      "name": "OtelAttributesProcessorExports",
+      "lines": 62,
+      "occurrences": 10,
+      "category": "opentelemetryExtended",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 5 unrenamed functions",
+      "unnamedDeps": [
+        "O5",
+        "WF2",
+        "FF2",
+        "CF2",
+        "XF2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 17,
+        "unnamedDepsCount": 5,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelLoggerProviderExports",
+      "lines": 60,
+      "occurrences": 7,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 9 unrenamed functions",
+      "unnamedDeps": [
+        "t2",
+        "fi1",
+        "fIA",
+        "q6",
+        "GL2",
+        "JL2",
+        "UL2",
+        "getLogger",
+        "_shutdown"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 23,
+        "unnamedDepsCount": 9,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "GrpcPickerExports",
+      "lines": 60,
+      "occurrences": 8,
+      "category": "grpcExtended",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "PF",
+        "g8"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 12,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "StsClientExports",
+      "lines": 59,
+      "occurrences": 6,
+      "category": "awsServices",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 14 unrenamed functions",
+      "unnamedDeps": [
+        "_JA",
+        "xJA",
+        "vJA",
+        "i0A",
+        "W8",
+        "_Q",
+        "sJ",
+        "b6",
+        "x8",
+        "V6"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 22,
+        "unnamedDepsCount": 14,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "PromiseValidatorExports",
+      "lines": 58,
+      "occurrences": 12,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 3 unrenamed functions",
+      "unnamedDeps": [
+        "q6",
+        "LV2",
+        "BigInt"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 17,
+        "unnamedDepsCount": 3,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "CrcUtilsExports",
+      "lines": 55,
+      "occurrences": 8,
+      "category": "crcAndHashing",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 3 unrenamed functions",
+      "unnamedDeps": [
+        "ZM1",
+        "YM1",
+        "KcB"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 18,
+        "unnamedDepsCount": 3,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "PredicateExports",
+      "lines": 50,
+      "occurrences": 6,
+      "category": "predicates",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "hasWildcard"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 11,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "DataValidatorExports",
+      "lines": 47,
+      "occurrences": 10,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "t2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 17,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 5
+      }
+    },
+    {
+      "name": "DomImplementationExports",
+      "lines": 47,
+      "occurrences": 7,
+      "category": "domAndParsing",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 4 unrenamed functions",
+      "unnamedDeps": [
+        "GzA",
+        "RoA",
+        "Ul1",
+        "zl1"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 14,
+        "unnamedDepsCount": 4,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 1
+      }
+    },
+    {
+      "name": "OtelAggregationTypeExports",
+      "lines": 44,
+      "occurrences": 6,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "XJ2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 10,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
+      }
+    },
+    {
+      "name": "BufferWrapperExports",
+      "lines": 41,
+      "occurrences": 10,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "t2",
+        "tO"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 12,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "XmlParserExports",
+      "lines": 26,
+      "occurrences": 14,
+      "category": "numberedClasses",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "DataView",
+        "ArrayBuffer"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 10,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "ConfigLimitsExports",
+      "lines": 24,
+      "occurrences": 6,
+      "category": "config",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "q6"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 5,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelSpanProcessorExports",
+      "lines": 19,
+      "occurrences": 6,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "FO2",
+        "HO2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 5,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelSpanProcessorReExports",
+      "lines": 18,
+      "occurrences": 6,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "zO2"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 4,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "GlobalErrorHandlerExports",
+      "lines": 17,
+      "occurrences": 6,
+      "category": "errorHandling",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 1 unrenamed functions",
+      "unnamedDeps": [
+        "oi1"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 6,
+        "unnamedDepsCount": 1,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelAggregationSelectorsExports",
+      "lines": 15,
+      "occurrences": 6,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 2 unrenamed functions",
+      "unnamedDeps": [
+        "ktA",
+        "gzA"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 4,
+        "unnamedDepsCount": 2,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "OtelNoopLoggerExports",
+      "lines": 13,
+      "occurrences": 6,
+      "category": "opentelemetryAdvanced",
+      "type": "Type 3 (Unrenamed Deps)",
+      "extractable": false,
+      "reason": "Depends on 3 unrenamed functions",
+      "unnamedDeps": [
+        "StA",
+        "getLogger",
+        "yi1"
+      ],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 6,
+        "unnamedDepsCount": 3,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 2
+      }
+    }
+  ]
+}

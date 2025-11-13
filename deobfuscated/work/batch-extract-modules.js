@@ -16,11 +16,18 @@ console.log('='.repeat(60));
 const graphFile = path.join(__dirname, 'step17-module-analysis/dependency-graph.json');
 const depGraph = JSON.parse(fs.readFileSync(graphFile, 'utf8'));
 
-// Modules to extract
+// Modules to extract (Type 1 - Independent modules)
 const modulesToExtract = [
   'OtelSemanticAttributes',
   'OtelSemanticConventions',
-  'OtelHistogramAggregatorExports'
+  'otelCoreUtils',
+  'GenericErrorExports',
+  'OtelMetrics',
+  'GrpcChannelOptionsExports',
+  'ValidationErrorExports',
+  'OtlpSharedConfigExports',
+  'PlatformNormalizerExports',
+  'StatsigMetadataExports'
 ];
 
 console.log(`\n📋 Modules to extract: ${modulesToExtract.length}\n`);
@@ -114,7 +121,19 @@ export const ${moduleName} = ${variableName};
     .toLowerCase()
     .replace(/^-/, '');
 
-  const outputDir = path.join(__dirname, '../src/modules/opentelemetry');
+  // Determine subdirectory based on category
+  let subdir = 'misc';
+  if (moduleInfo.category.includes('opentelemetry') || moduleInfo.category.includes('otel')) {
+    subdir = 'opentelemetry';
+  } else if (moduleInfo.category.includes('grpc')) {
+    subdir = 'grpc';
+  } else if (moduleInfo.category.includes('platform')) {
+    subdir = 'platform';
+  } else if (moduleInfo.category.includes('statsig')) {
+    subdir = 'statsig';
+  }
+
+  const outputDir = path.join(__dirname, '../src/modules', subdir);
   const outputFile = path.join(outputDir, `${filename}.js`);
 
   // Create directory if needed
