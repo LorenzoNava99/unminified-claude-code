@@ -97,6 +97,13 @@ function analyzeModule(moduleName, moduleInfo) {
       continue;
     }
 
+    // Check if it's a static method (defined with 'static' keyword)
+    const staticMethodPattern = new RegExp(`static\\s+${funcName}\\s*\\(`);
+    if (staticMethodPattern.test(code)) {
+      // It's a static method defined in this module, safe
+      continue;
+    }
+
     // Check if it's defined within the module itself
     // Look for "function funcName(" or "var funcName = ..." or "funcName.prototype"
     const definedInModule = new RegExp(`(function\\s+${funcName}\\s*\\(|var\\s+${funcName}\\s*=|const\\s+${funcName}\\s*=|let\\s+${funcName}\\s*=|${funcName}\\.prototype)`).test(code);

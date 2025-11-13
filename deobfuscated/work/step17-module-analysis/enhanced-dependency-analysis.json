@@ -1,15 +1,15 @@
 {
   "type": "enhanced-dependency-analysis",
-  "timestamp": "2025-11-13T13:04:47.723Z",
+  "timestamp": "2025-11-13T13:23:37.431Z",
   "summary": {
-    "type1": 10,
+    "type1": 11,
     "type2": 0,
-    "type3": 38,
+    "type3": 37,
     "unknown": 76,
     "totalLines": {
-      "type1": 1143,
+      "type1": 1193,
       "type2": 0,
-      "type3": 4461
+      "type3": 4411
     }
   },
   "type1Modules": [
@@ -113,6 +113,23 @@
         "unnamedDepsCount": 0,
         "renamedDepsCount": 0,
         "builtInCallsCount": 2
+      }
+    },
+    {
+      "name": "PredicateExports",
+      "lines": 50,
+      "occurrences": 6,
+      "category": "predicates",
+      "type": "Type 1 (Independent)",
+      "extractable": true,
+      "reason": "No external dependencies",
+      "unnamedDeps": [],
+      "renamedDeps": [],
+      "stats": {
+        "totalFunctionCalls": 11,
+        "unnamedDepsCount": 0,
+        "renamedDepsCount": 0,
+        "builtInCallsCount": 3
       }
     },
     {
@@ -240,7 +257,7 @@
       "category": "grpcExtended",
       "type": "Type 3 (Unrenamed Deps)",
       "extractable": false,
-      "reason": "Depends on 20 unrenamed functions",
+      "reason": "Depends on 17 unrenamed functions",
       "unnamedDeps": [
         "MeA",
         "da1",
@@ -250,13 +267,13 @@
         "g8",
         "TypeError",
         "ReA",
-        "createSsl",
-        "OeA"
+        "OeA",
+        "na1"
       ],
       "renamedDeps": [],
       "stats": {
         "totalFunctionCalls": 63,
-        "unnamedDepsCount": 20,
+        "unnamedDepsCount": 17,
         "renamedDepsCount": 0,
         "builtInCallsCount": 5
       }
@@ -776,25 +793,6 @@
         "unnamedDepsCount": 3,
         "renamedDepsCount": 0,
         "builtInCallsCount": 2
-      }
-    },
-    {
-      "name": "PredicateExports",
-      "lines": 50,
-      "occurrences": 6,
-      "category": "predicates",
-      "type": "Type 3 (Unrenamed Deps)",
-      "extractable": false,
-      "reason": "Depends on 1 unrenamed functions",
-      "unnamedDeps": [
-        "hasWildcard"
-      ],
-      "renamedDeps": [],
-      "stats": {
-        "totalFunctionCalls": 11,
-        "unnamedDepsCount": 1,
-        "renamedDepsCount": 0,
-        "builtInCallsCount": 3
       }
     },
     {
