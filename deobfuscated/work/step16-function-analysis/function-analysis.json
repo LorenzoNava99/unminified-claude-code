@@ -1,0 +1,132 @@
+{
+  "type": "function-analysis",
+  "totalFunctions": 19,
+  "analyzed": 7,
+  "results": [
+    {
+      "identifier": "v1",
+      "occurrences": 904,
+      "status": "analyzed",
+      "category": "unknown",
+      "suggested": "v1",
+      "confidence": "low",
+      "evidence": [],
+      "definitionSnippet": "function v1(ZA, e) {\n        if (!e.P || !e.O) {\n          w1(\"makeClassHandle requires ptr and ptrType\");\n        }",
+      "sampleCalls": [
+        " var l = M.tag;\n      if (l === 5 || l === 6) {\n        M = M.stateNode;\n        if (O) {\n          v1(b, M, O);\n        } else {\n          n0(b, M);\n        }\n      } else if (l !== 4 && (M = M.child, M !== null)) {\n        fb(M, O, b);\n        M = ",
+        "\n      var X1 = undefined;\n      function w1(ZA) {\n        throw new X1(ZA);\n      }\n      function v1(ZA, e) {\n        if (!e.P || !e.O) {\n          w1(\"makeClassHandle requires ptr and ptrType\");\n        }\n        if (!!e.U !== !!e.createLazyModule",
+        "e.fromWireType = function (ZA) {\n        function e() {\n          if (this.da) {\n            return v1(this.N.X, {\n              P: this.wa,\n              O: MA,\n              U: this,\n              createLazyModule: ZA\n            });\n          } el"
+      ]
+    },
+    {
+      "identifier": "zA",
+      "occurrences": 863,
+      "status": "analyzed",
+      "category": "unknown",
+      "suggested": "zA",
+      "confidence": "low",
+      "evidence": [],
+      "definitionSnippet": "function zA(uA) {\n      return y(uA, function (F1) {\n        if (P.test(F1)) {\n          return \"xn--\" + PA(F1);\n        }",
+      "sampleCalls": [
+        "ice(4).toLowerCase());\n        } else {\n          return F1;\n        }\n      });\n    }\n    function zA(uA) {\n      return y(uA, function (F1) {\n        if (P.test(F1)) {\n          return \"xn--\" + PA(F1);\n        } else {\n          return F1;\n        ",
+        "gth > 1 ? kAA.pipeline(WA, utils.noop) : WA[0];\n        let zA = kAA.finished(PA, () => {\n          zA();\n          H();\n        });\n        let yA = {\n          status: DA.statusCode,\n          statusText: DA.statusMessage,\n          headers: new EZ",
+        "   p4 = true;\n        return false;\n      }\n      if (M.tag !== 3 && (M.tag !== 5 || L9(M.type) && !zA(M.type, M.memoizedProps))) {\n        var O = J4;\n        if (O) {\n          if (a7(M)) {\n            OV();\n            throw Error(G(418));\n       "
+      ]
+    },
+    {
+      "identifier": "BA",
+      "occurrences": 634,
+      "status": "analyzed",
+      "category": "unknown",
+      "suggested": "BA",
+      "confidence": "low",
+      "evidence": [],
+      "definitionSnippet": "function BA(uA) {\n      return String.fromCodePoint.apply(String, C(uA));\n    }",
+      "sampleCalls": [
+        "    }\n        } else {\n          uA.push(e1);\n        }\n      }\n      return uA;\n    }\n    function BA(uA) {\n      return String.fromCodePoint.apply(String, C(uA));\n    }\n    function QA(uA) {\n      if (uA - 48 < 10) {\n        return uA - 22;\n      }",
+        ");\n    }\n    function Ht(M) {\n      var O = gX(gZ.current);\n      var b = gX(TV.current);\n      O = BA(b, M.type, O);\n      if (b !== O) {\n        Y4(wE, M);\n        Y4(TV, O);\n      }\n    }\n    function Ip(M) {\n      if (wE.current === M) {\n        ",
+        "\n      }\n      var F = Q.noExitRuntime || true;\n      if (typeof WebAssembly != \"object\") {\n        BA(\"no native wasm support detected\");\n      }\n      var C;\n      var V = false;\n      function K(ZA, e, MA) {\n        MA = e + MA;\n        for (var _"
+      ]
+    },
+    {
+      "identifier": "QA",
+      "occurrences": 625,
+      "status": "analyzed",
+      "category": "math",
+      "suggested": "mathOperation",
+      "confidence": "low",
+      "evidence": [
+        "mathematical operation"
+      ],
+      "definitionSnippet": "function QA(uA) {\n      if (uA - 48 < 10) {\n        return uA - 22;\n      }",
+      "sampleCalls": [
+        " }\n    function BA(uA) {\n      return String.fromCodePoint.apply(String, C(uA));\n    }\n    function QA(uA) {\n      if (uA - 48 < 10) {\n        return uA - 22;\n      }\n      if (uA - 65 < 26) {\n        return uA - 65;\n      }\n      if (uA - 97 < 26) {",
+        "B6 += K) {\n          if (A6 >= o1) {\n            r(\"invalid-input\");\n          }\n          var x4 = QA(uA.charCodeAt(A6++));\n          if (x4 >= K || x4 > i((V - e1) / j8)) {\n            r(\"overflow\");\n          }\n          e1 += x4 * j8;\n          v",
+        "      let QA = nK0(J, DA => utils.isArray(DA) ? DA : [DA]);\n        J = (DA, WA, RA) => {\n          QA(DA, WA, (PA, tA, zA) => {\n            if (PA) {\n              return RA(PA);\n            }\n            let yA = utils.isArray(tA) ? tA.map(EA => ID"
+      ]
+    },
+    {
+      "identifier": "YA",
+      "occurrences": 601,
+      "status": "not-found",
+      "category": "unknown"
+    },
+    {
+      "identifier": "ZA",
+      "occurrences": 592,
+      "status": "analyzed",
+      "category": "unknown",
+      "suggested": "ZA",
+      "confidence": "low",
+      "evidence": [],
+      "definitionSnippet": "function ZA(M, O) {\n      var b = M.type.contextTypes;\n      if (!b) {\n        return P5;\n      }",
+      "sampleCalls": [
+        "];\n    }\n  } catch (E) {}\n  if (!J) {\n    J = B;\n  }\n  let X = await tJ9(B, A, Y);\n  let W = await ZZA(J, {\n    fetchFn: Z\n  });\n  let F = await Promise.resolve(A.clientInformation());\n  if (!F) {\n    if (Q !== undefined) {\n      throw Error(\"Existin",
+        "resource} does not match expected ${I} (or origin)`);\n  }\n  return new URL(Q.resource);\n}\nfunction GZA(A) {\n  let B = A.headers.get(\"WWW-Authenticate\");\n  if (!B) {\n    return;\n  }\n  let [Q, I] = B.split(\" \");\n  if (Q.toLowerCase() !== \"bearer\" || !I",
+        "/.well-known/openid-configuration`, B.origin),\n    type: \"oidc\"\n  });\n  return I;\n}\nasync function ZZA(A, {\n  fetchFn: B = fetch,\n  protocolVersion: Q = Tf\n} = {}) {\n  var I;\n  let G = {\n    \"MCP-Protocol-Version\": Q\n  };\n  let Z = IX9(A);\n  for (let"
+      ]
+    },
+    {
+      "identifier": "JA",
+      "occurrences": 553,
+      "status": "analyzed",
+      "category": "unknown",
+      "suggested": "JA",
+      "confidence": "low",
+      "evidence": [],
+      "definitionSnippet": "function JA(Y1) {\n      return Y1.replace(/^0*(.*)/, \"$1\") || \"0\";\n    }",
+      "sampleCalls": [
+        "eplace(uA.NOT_FRAGMENT, kA).replace(uA.PCT_ENCODED, G);\n      }\n      return Y1;\n    }\n    function JA(Y1) {\n      return Y1.replace(/^0*(.*)/, \"$1\") || \"0\";\n    }\n    function KA(Y1, uA) {\n      var F1 = Y1.match(uA.IPV4ADDRESS) || [];\n      var o1 ",
+        "message;\n          }\n        };\n        return MA;\n      }\n      var K1 = undefined;\n      function JA(ZA) {\n        throw new K1(ZA);\n      }\n      var KA = ZA => {\n        if (!ZA) {\n          JA(\"Cannot use deleted val. handle = \" + ZA);\n        }",
+        "tion JA(ZA) {\n        throw new K1(ZA);\n      }\n      var KA = ZA => {\n        if (!ZA) {\n          JA(\"Cannot use deleted val. handle = \" + ZA);\n        }\n        return EA[ZA].value;\n      };\n      var $A = ZA => {\n        switch (ZA) {\n          c"
+      ]
+    },
+    {
+      "identifier": "XA",
+      "occurrences": 544,
+      "status": "not-found",
+      "category": "unknown"
+    },
+    {
+      "identifier": "WA",
+      "occurrences": 529,
+      "status": "analyzed",
+      "category": "unknown",
+      "suggested": "WA",
+      "confidence": "low",
+      "evidence": [],
+      "definitionSnippet": "function WA(uA, F1, o1) {\n      var e1 = 0;\n      uA = o1 ? i(uA / U) : uA >> 1;\n      uA += i(uA / F1);\n      for (; uA > _ * E >> 1; e1 += K) {\n        uA = i(uA / _);\n      }",
+      "sampleCalls": [
+        " function DA(uA, F1) {\n      return uA + 22 + (uA < 26) * 75 - ((F1 != 0) << 5);\n    }\n    function WA(uA, F1, o1) {\n      var e1 = 0;\n      uA = o1 ? i(uA / U) : uA >> 1;\n      uA += i(uA / F1);\n      for (; uA > _ * E >> 1; e1 += K) {\n        uA = ",
+        "\"overflow\");\n          }\n          j8 *= Y8;\n        }\n        var Q4 = F1.length + 1;\n        pQ = WA(e1 - N9, Q4, N9 == 0);\n        if (i(e1 / Q4) > V - WB) {\n          r(\"overflow\");\n        }\n        WB += i(e1 / Q4);\n        e1 %= Q4;\n        F1",
+        "            M9 = i(e / MA);\n              }\n              F1.push(g(DA(M9, 0)));\n              pQ = WA(WB, t5, L9 == x4);\n              WB = 0;\n              ++L9;\n            }\n          }\n        } catch (_A) {\n          n6 = true;\n          P9 = _"
+      ]
+    },
+    {
+      "identifier": "fA",
+      "occurrences": 525,
+      "status": "not-found",
+      "category": "unknown"
+    }
+  ]
+}
