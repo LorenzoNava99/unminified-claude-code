@@ -14,25 +14,8 @@
     "validate": "node work/validate-transformations.js"
   },
   "dependencies": {
-    "localforage": "^1.10.0",
-    "axios": "1.8.4",
     "zod": "^3.23.0",
-    "@aws-sdk/signature-v4": "3.840.0",
-    "@aws-sdk/core": "3.840.0",
-    "@aws-sdk/client-bedrock": "3.840.0",
-    "@aws-sdk/client-bedrock-runtime": "3.797.0",
-    "commander": "^9.15.1",
-    "react": "^18.3.1",
-    "react-reconciler": "^0.29.0",
-    "@modelcontextprotocol/sdk": "^3.12.1",
-    "@opentelemetry/api": "^1.8.0",
-    "@opentelemetry/core": "^1.21.0",
-    "@opentelemetry/resources": "^1.21.0",
-    "@opentelemetry/sdk-metrics": "^1.21.0",
-    "@opentelemetry/sdk-trace-base": "^1.21.0",
-    "@opentelemetry/sdk-trace-node": "^1.21.0",
-    "@opentelemetry/semantic-conventions": "^1.21.0",
-    "semver": "^7.5.4"
+    "axios": "1.8.4"
   },
   "devDependencies": {
     "jest": "^29.7.0",
