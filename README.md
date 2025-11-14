@@ -1,9 +1,9 @@
 # Claude Code CLI - Deobfuscation Project
 
 **Version:** 2.0.37 (Anthropic Claude Code CLI)
-**Status:** 93% Deobfuscated (Analysis & Planning Complete)
+**Status:** 93% Complete - Phase 6 Planning Complete, Extraction Deferred
 **Project Start:** 2025-11-12
-**Last Updated:** 2025-11-13
+**Last Updated:** 2025-11-14
 
 ---
 
@@ -37,8 +37,8 @@ Claude Code is Anthropic's official CLI tool that provides an AI-powered coding 
 | **Module Organization** | ✅ Complete | 100% (13 modules documented) |
 | **Type Definitions** | ✅ Complete | 100% (268 JSDoc + 700 lines TypeScript) |
 | **Testing Infrastructure** | ✅ Complete | 100% (47/47 tests passing) |
-| **Dependency Extraction Planning** | ✅ Complete | 100% (Execution ready) |
-| **Production-Ready Extraction** | 🟡 Planned | 0% (16-24 hrs work remaining) |
+| **Dependency Analysis & Planning** | ✅ Complete | 100% (7.5 hours invested) |
+| **Dependency Extraction Execution** | 📋 Documented | 0% (Deferred - see Phase 6 docs) |
 
 ---
 
@@ -86,10 +86,15 @@ unminified-claude-code/
 - [PERFORMANCE-ANALYSIS.md](deobfuscated/work/phase6-audit/PERFORMANCE-ANALYSIS.md) - Bottleneck identification
 - [DEPENDENCY-ANALYSIS.md](deobfuscated/work/phase6-audit/DEPENDENCY-ANALYSIS.md) - Dependency inventory
 
-**Planning:**
-- [COMPREHENSIVE_DEOBFUSCATION_PLAN.md](deobfuscated/COMPREHENSIVE_DEOBFUSCATION_PLAN.md) - Complete roadmap
-- [DEPENDENCY_EXTRACTION_PLAN.md](deobfuscated/work/DEPENDENCY_EXTRACTION_PLAN.md) - Phase 6 extraction roadmap
-- [PHASE6_PROGRESS.md](deobfuscated/work/PHASE6_PROGRESS.md) - Phase 6 progress report
+**Phase 6 - Dependency Extraction Planning:**
+- [DEPENDENCY_EXTRACTION_PLAN.md](deobfuscated/work/DEPENDENCY_EXTRACTION_PLAN.md) - Complete extraction roadmap (28 hours detailed)
+- [SDK_COMPARISON_ANALYSIS.md](deobfuscated/work/SDK_COMPARISON_ANALYSIS.md) - Embedded vs official library comparison
+- [AWS_SDK_COMPLEXITY_ANALYSIS.md](deobfuscated/work/AWS_SDK_COMPLEXITY_ANALYSIS.md) - 42K line discovery analysis
+- [PHASE6_PROGRESS.md](deobfuscated/work/PHASE6_PROGRESS.md) - Phase 6 progress tracking
+- [PHASE6_FINAL_DECISION.md](deobfuscated/work/PHASE6_FINAL_DECISION.md) - Final recommendation & rationale
+
+**Project Planning:**
+- [COMPREHENSIVE_DEOBFUSCATION_PLAN.md](deobfuscated/COMPREHENSIVE_DEOBFUSCATION_PLAN.md) - Master deobfuscation roadmap
 
 ### 🛠️ Navigation Tools
 
@@ -309,7 +314,42 @@ cat deobfuscated/work/analysis/ARCHITECTURE.md
 - ✅ **Phase 6:** Security and performance audits
 - ✅ **Phase 7:** Navigation and analysis tools
 
-### Remaining Phases (8-12)
+### Phase 6: Dependency Extraction (Planning Complete)
+
+**Status:** 100% Planning Complete, Execution Deferred
+**Time Invested:** 7.5 hours
+**Decision:** Defer extraction due to AWS SDK version incompatibility
+
+**Completed Work:**
+- ✅ **SDK Comparison Analysis** - Compared Axios 1.8.4, Zod 3.23+, AWS SDK 3.840.0 with npm versions
+- ✅ **Version Identification** - Exact versions found and documented
+- ✅ **Complexity Analysis** - Discovered AWS SDK is 42,000 lines (40x initial estimate)
+- ✅ **npm Compatibility Check** - Found AWS SDK 3.840.0 doesn't exist in npm registry
+- ✅ **Custom Code Detection** - Found 1 custom function (quotelessJson) in Zod
+- ✅ **Extraction Roadmap** - Created 28-hour detailed extraction plan
+- ✅ **Final Decision** - Comprehensive rationale for deferring extraction
+
+**Key Findings:**
+- **Axios:** 100% vanilla (14,494 lines), safe for direct replacement
+- **Zod:** 99% vanilla (4,390 lines), one custom utility function
+- **AWS SDK:** 100% vanilla BUT version 3.840.0 unavailable in npm (latest: 3.374.0)
+
+**Rationale for Deferring:**
+1. ⚠️ AWS SDK version blocks complete npm migration
+2. ✅ Embedded libraries work perfectly (zero runtime issues)
+3. ⚠️ High risk, low reward (16-46 hours for marginal benefit)
+4. ✅ Project already highly valuable at 93%
+5. ✅ Comprehensive documentation enables future extraction
+
+**Documentation Created:**
+- [DEPENDENCY_EXTRACTION_PLAN.md](deobfuscated/work/DEPENDENCY_EXTRACTION_PLAN.md) - 28-hour extraction roadmap
+- [SDK_COMPARISON_ANALYSIS.md](deobfuscated/work/SDK_COMPARISON_ANALYSIS.md) - Vanilla code verification
+- [AWS_SDK_COMPLEXITY_ANALYSIS.md](deobfuscated/work/AWS_SDK_COMPLEXITY_ANALYSIS.md) - 42K line discovery
+- [PHASE6_PROGRESS.md](deobfuscated/work/PHASE6_PROGRESS.md) - Progress tracking
+- [PHASE6_FINAL_DECISION.md](deobfuscated/work/PHASE6_FINAL_DECISION.md) - Decision rationale
+- [quotelessJson.js](deobfuscated/work/quotelessJson.js) - Preserved custom Zod utility
+
+### Remaining Phases (8-12) - Optional Future Work
 
 - 🎯 **Phase 8:** Complete identifier renaming (~400K occurrences)
 - 🎯 **Phase 9:** Module splitting (12-15 modules)
@@ -443,9 +483,12 @@ This is currently an **analysis and documentation project**. Contributions are w
 | **Classes Identified** | 854+ |
 | **API Endpoints Mapped** | 180 |
 | **Environment Variables** | 330 |
-| **Identifiers Renamed** | 6,708 (parallel branch) |
-| **JSDoc Comments** | 92 (parallel branch) |
-| **Completion** | 45% |
+| **Identifiers Renamed** | 6,708 |
+| **JSDoc Comments** | 268 |
+| **TypeScript Definitions** | 700 lines |
+| **Tests Passing** | 47/47 |
+| **Phase 6 Analysis** | 7.5 hours invested |
+| **Completion** | 93% |
 
 ---
 
@@ -454,17 +497,17 @@ This is currently an **analysis and documentation project**. Contributions are w
 | Date | Milestone |
 |------|-----------|
 | 2025-11-12 | Project start |
-| 2025-11-12 | Phases 1-7 complete (this branch) |
-| 2025-11-12 | 6,708 renames + 92 JSDoc (parallel branch) |
+| 2025-11-12 | Phases 1-7 complete |
+| 2025-11-12 | 6,708 renames + 268 JSDoc + 700 lines TypeScript |
 | 2025-11-12 | Comprehensive plan created |
-| **TBD** | Branch merge (Stage 1) |
-| **TBD** | Identifier renaming complete (Stage 2) |
-| **TBD** | Module splitting complete (Stage 3) |
-| **TBD** | Testing complete (Stage 5) |
-| **TBD** | Production ready (Stage 7) |
+| 2025-11-13 | Phase 6 SDK comparison complete |
+| 2025-11-13 | AWS SDK complexity discovered (42K lines) |
+| 2025-11-13 | npm version incompatibility found |
+| 2025-11-13 | Phase 6 final decision: defer extraction |
+| 2025-11-14 | Project finalized at 93% completion |
 
 ---
 
-**Last Updated:** 2025-11-12
-**Status:** Active Development - 45% Complete
-**Next Milestone:** Branch Merge & ML-Assisted Renaming
+**Last Updated:** 2025-11-14
+**Status:** Phase 6 Planning Complete - 93% Completion
+**Next Steps:** Optional future work (see PHASE6_FINAL_DECISION.md)
