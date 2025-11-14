@@ -243,15 +243,26 @@ deobfuscated.js → deobfuscated.js.backup-phase6
 | Package.json creation | ✅ Complete | 0.5 hours | 0 |
 | Extraction plan | ✅ Complete | 2 hours | 0 |
 | Reference analysis | ✅ Complete | 1 hour | 0 |
-| **Planning Total** | ✅ **100%** | **6.5 hours** | **0** |
+| **AWS SDK complexity analysis** | ✅ **Complete** | **1 hour** | **0** |
+| **Planning Total** | ✅ **100%** | **7.5 hours** | **0** |
 | | | | |
-| AWS SDK extraction | ⏳ Ready | 0 | 2-3 hours |
+| AWS SDK extraction | ⚠️ HIGH RISK | 0 | 15-25 hours |
 | Zod extraction | ⏳ Ready | 0 | 4-6 hours |
 | Axios extraction | ⏳ Ready | 0 | 8-12 hours |
 | Final validation | ⏳ Ready | 0 | 2-3 hours |
-| **Execution Total** | ⏳ **0%** | **0** | **16-24 hours** |
+| **Execution Total** | ⏳ **0%** | **0** | **29-46 hours** |
 | | | | |
-| **Phase 6 Overall** | **35% Complete** | **6.5 hours** | **16-24 hours** |
+| **Phase 6 Overall** | **40% Complete** | **7.5 hours** | **29-46 hours** |
+
+### Critical Update: AWS SDK Complexity
+
+**Discovery:** AWS SDK is 4x more complex than initially estimated:
+- Original estimate: 1,072 lines, one module
+- Actual: **42,000+ lines, 4+ modules** (@aws-sdk/signature-v4 x2, client-bedrock, client-bedrock-runtime)
+- Risk level: **HIGH** (was LOW)
+- Effort: 15-25 hours (was 2-3 hours)
+
+**Recommendation:** Extract Axios & Zod only, defer AWS SDK extraction.
 
 ---
 
